@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HomeView = () => {
+const HomeView = (): JSX.Element => {
 	return <div>Test</div>;
 };
 
