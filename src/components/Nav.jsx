@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const NavStyle = styled.nav`
+const NavStyle: StyledComponent<'nav', any, {}, never> = styled.nav`
 	max-width: 1630px;
 	padding: 0 15px;
 	margin: 0 auto;

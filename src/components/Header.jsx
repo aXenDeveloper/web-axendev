@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Nav from './Nav';
 
-const ContainerStyle = styled.div`
+const ContainerStyle: StyledComponent<'div', any, {}, never> = styled.div`
 	max-width: 1630px;
 	padding: 0 15px;
 	margin: 0 auto;

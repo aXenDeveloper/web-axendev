@@ -2,9 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './components/Root';
 import reportWebVitals from './reportWebVitals';
-import { createGlobalStyle } from 'styled-components';
+import {
+	GlobalStyleComponent,
+	DefaultTheme,
+	createGlobalStyle
+} from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
   	body {
 		font-family: 'Lato', sans-serif;
 		margin: 0;
