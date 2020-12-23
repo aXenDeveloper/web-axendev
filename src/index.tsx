@@ -2,22 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './components/Root';
 import reportWebVitals from './reportWebVitals';
-import {
-	GlobalStyleComponent,
-	DefaultTheme,
-	createGlobalStyle
-} from 'styled-components';
-
-const GlobalStyle: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
-  	body {
-		font-family: 'Lato', sans-serif;
-		margin: 0;
-  	}
-`;
 
 ReactDOM.render(
 	<React.StrictMode>
-		<GlobalStyle />
 		<Root />
 	</React.StrictMode>,
 	document.getElementById('root')
