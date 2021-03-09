@@ -24,3 +24,55 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* ===== Flex ===== */
+.flex {
+  display: flex;
+
+  &_jc {
+    &\:between {
+      justify-content: space-between;
+    }
+
+    /* &\:center {
+      justify-content: center;
+    }
+
+    &\:around {
+      justify-content: space-around;
+    }
+
+    &\:start {
+      justify-content: flex-start;
+    }
+
+    &\:end {
+      justify-content: flex-start;
+    } */
+  }
+
+  &_ai {
+    &\:center {
+      align-items: center;
+    }
+
+    /* &\:start {
+      align-items: flex-start;
+    }
+
+    &\:end {
+      align-items: flex-end;
+    } */
+  }
+}
+
+/* ===== Padding ===== */
+.padding {
+  padding: var(--sp-4);
+
+  &\:half {
+    padding: var(--sp-2);
+  }
+}
+
+@import './layout';

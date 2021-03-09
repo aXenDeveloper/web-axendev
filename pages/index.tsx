@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout from '../components/layouts/Layout';
 
-export default function Home() {
+const Home = () => {
   return (
     <Layout>
       <Head>
@@ -10,4 +10,6 @@ export default function Home() {
       </Head>
     </Layout>
   );
-}
+};
+
+export default Home;
