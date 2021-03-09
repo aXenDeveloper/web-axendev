@@ -8,6 +8,8 @@ const Home = () => {
         <title>aXenDev.net</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <main className="container">Home</main>
     </Layout>
   );
 };

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Logo from './Logo';
+import Nav from './Nav';
 import UserBar from './UserBar';
 
 const Header = () => {
@@ -14,6 +15,8 @@ const Header = () => {
 
         <UserBar />
       </div>
+
+      <Nav />
     </header>
   );
 };
