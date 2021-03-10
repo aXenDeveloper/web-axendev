@@ -1,7 +1,10 @@
 import Head from 'next/head';
 import Layout from '../components/layouts/Layout';
+import useTranslation from 'next-translate/useTranslation';
 
 const Home = () => {
+  const { t } = useTranslation('common');
+
   return (
     <Layout>
       <Head>
@@ -9,7 +12,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container">Home</main>
+      <main className="container">{t('title')}</main>
     </Layout>
   );
 };

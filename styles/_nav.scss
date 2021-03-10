@@ -11,5 +11,9 @@
       display: block;
       padding: var(--sp-5) var(--sp-6);
     }
+
+    &.active {
+      color: red;
+    }
   }
 }
