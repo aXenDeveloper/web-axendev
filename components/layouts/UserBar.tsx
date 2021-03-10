@@ -1,6 +1,10 @@
+import ChangeLang from '../ChangeLang';
+
 const UserBar = () => (
-  <ul>
-    <li>test</li>
+  <ul className="userBar">
+    <li>
+      <ChangeLang />
+    </li>
   </ul>
 );
 

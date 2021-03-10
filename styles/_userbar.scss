@@ -1,0 +1,22 @@
+.userBar {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &_lang {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+      &:not(:last-child) {
+        margin-right: var(--sp-2);
+      }
+
+      a img {
+        border-radius: var(--border-radius);
+      }
+    }
+  }
+}
