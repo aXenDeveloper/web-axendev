@@ -4,3 +4,79 @@
   margin: 0 auto;
   position: relative;
 }
+
+/* ===== navBar ===== */
+.navBar {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+
+  border-top: 1px solid var(--border-color);
+
+  li {
+    a {
+      display: block;
+      padding: var(--sp-5) var(--sp-6);
+      position: relative;
+
+      &:hover {
+        text-decoration: none;
+
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        border-radius: var(--border-radius);
+        background-color: var(--color-main);
+        transition: transform 0.3s;
+        transform: scaleX(0);
+      }
+    }
+
+    &.active {
+      a {
+        font-weight: bold;
+        color: var(--color-main);
+
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
+
+/* ===== breadcrumb ===== */
+.breadcrumb {
+  padding: 0;
+  margin: var(--sp-4) 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+
+  li {
+    &:not(:last-child) {
+      margin-right: var(--sp-2);
+    }
+
+    &:not(:first-child) svg {
+      margin-right: var(--sp-2);
+    }
+
+    &:first-child svg {
+      margin-right: var(--sp-1);
+    }
+  }
+}

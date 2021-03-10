@@ -23,6 +23,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    color: var(--color-main);
+    text-decoration: underline;
+  }
 }
 
 /* ===== Flex ===== */
@@ -76,4 +81,3 @@ a {
 }
 
 @import './layout';
-@import './nav';
