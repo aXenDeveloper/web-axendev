@@ -3,7 +3,7 @@ import Layout from '../components/layouts/Layout';
 import useTranslation from 'next-translate/useTranslation';
 
 const Home = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('global');
 
   return (
     <Layout>

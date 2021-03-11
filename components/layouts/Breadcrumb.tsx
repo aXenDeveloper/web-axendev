@@ -10,7 +10,7 @@ const Breadcrumb = () => {
     .split('/')
     .slice(1)
     .filter(x => x);
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('global');
 
   return (
     <div className="container">

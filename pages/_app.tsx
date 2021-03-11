@@ -1,4 +1,5 @@
 import '../styles/global.scss';
+import 'tippy.js/dist/tippy.css';
 import NextNprogress from 'nextjs-progressbar';
 
 const MyApp = ({ Component, pageProps }) => {

@@ -8,6 +8,7 @@
     margin: 0;
     list-style: none;
     display: flex;
+    line-height: 1;
 
     li {
       &:not(:last-child) {
