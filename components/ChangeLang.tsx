@@ -8,7 +8,7 @@ const ChangeLang = () => {
   const { asPath } = useRouter();
 
   const handleChangeLang = (lang: string) => {
-    Cookies.set('NEXT_LOCALE', lang);
+    Cookies.set('NEXT_LOCALE', lang, { expires: 365 });
   };
 
   return (

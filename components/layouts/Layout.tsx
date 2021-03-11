@@ -2,11 +2,15 @@ import { FC } from 'react';
 import Breadcrumb from './Breadcrumb';
 import Header from './Header';
 
-const Layout: FC = ({ children }) => {
+type LayoutType = {
+  desableBreadcrumb?: boolean;
+};
+
+const Layout: FC<LayoutType> = ({ children, desableBreadcrumb }) => {
   return (
     <>
       <Header />
-      <Breadcrumb />
+      {!desableBreadcrumb && <Breadcrumb />}
       {children}
     </>
   );

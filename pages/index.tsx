@@ -1,18 +1,18 @@
 import Head from 'next/head';
 import Layout from '../components/layouts/Layout';
-import useTranslation from 'next-translate/useTranslation';
+import HeaderHome from '../components/home/HeaderHome';
+import Breadcrumb from '../components/layouts/Breadcrumb';
 
 const Home = () => {
-  const { t } = useTranslation('global');
-
   return (
-    <Layout>
+    <Layout desableBreadcrumb>
       <Head>
         <title>aXenDev.net</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container">{t('title')}</main>
+      <HeaderHome />
+      <Breadcrumb />
     </Layout>
   );
 };

@@ -80,5 +80,19 @@ a {
   }
 }
 
+/* ===== Text ===== */
+.text {
+  &_weight {
+    &\:bold {
+      font-weight: bold;
+    }
+  }
+
+  &\:color {
+    color: var(--color-main);
+  }
+}
+
 @import './layout';
 @import './userbar';
+@import './home';
