@@ -13,7 +13,7 @@ const Breadcrumb = () => {
   const { t } = useTranslation('global');
 
   return (
-    <div className="container">
+    <div className="container responsive_show:desktop">
       <ul className="breadcrumb">
         <li>
           <FontAwesomeIcon icon={faHome} />

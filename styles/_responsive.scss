@@ -1,0 +1,9 @@
+.responsive {
+  &_show {
+    @media (max-width: 980px) {
+      &\:desktop {
+        display: none;
+      }
+    }
+  }
+}

@@ -8,7 +8,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className="container">
+      <div className="container responsive_show:desktop">
         <ul className="navBar">
           <li className={pathname == '/' ? 'active' : ''}>
             <Link href="/">{t('page_home')}</Link>
