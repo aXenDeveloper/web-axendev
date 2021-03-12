@@ -9,8 +9,8 @@ const HeaderHome = () => {
         <div className="homeTop_text">
           <span>
             {t('home_header_text_amazing')}{' '}
-            <span className="text_weight:bold text:color">{t('home_header_text_projects')}</span> {t('home_header_text_for')}{' '}
-            <span className="text_weight:bold text:color">{t('home_header_text_you')}</span>!
+            <span className="text-weight:bold text:color">{t('home_header_text_projects')}</span> {t('home_header_text_for')}{' '}
+            <span className="text-weight:bold text:color">{t('home_header_text_you')}</span>!
           </span>
         </div>
       </div>

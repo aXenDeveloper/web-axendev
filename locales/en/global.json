@@ -2,8 +2,12 @@
   "title": "Hello world!",
   "page_home": "Home",
   "page_contact": "Contact",
+  "page_404": "Error",
   "home_header_text_amazing": "Amazing",
   "home_header_text_projects": "Projects",
   "home_header_text_for": "for",
-  "home_header_text_you": "YOU"
+  "home_header_text_you": "YOU",
+  "error_title": "Oops, something went wrong (╯°□°）╯︵ ┻━┻",
+  "error_code": "Error code",
+  "error_text_404": "This page does not exist"
 }

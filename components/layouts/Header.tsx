@@ -6,7 +6,7 @@ import UserBar from './UserBar';
 const Header = () => {
   return (
     <header>
-      <div className="container flex flex_jc:between flex_ai:center padding">
+      <div className="container flex flex-jc:between flex-ai:center padding">
         <Link href="/">
           <a className="padding:half">
             <Logo />

@@ -2,8 +2,12 @@
   "title": "Cześć świecie!",
   "page_home": "Strona Główna",
   "page_contact": "Kontakt",
+  "page_404": "Błąd",
   "home_header_text_amazing": "Niesamowite",
   "home_header_text_projects": "Projekty",
   "home_header_text_for": "dla",
-  "home_header_text_you": "CIEBIE"
+  "home_header_text_you": "CIEBIE",
+  "error_title": "Ups, coś poszło nie tak (╯°□°）╯︵ ┻━┻",
+  "error_code": "Kod błędu",
+  "error_text_404": "Ta strona nie istnieje"
 }

@@ -80,3 +80,51 @@
     }
   }
 }
+
+/* ===== errorPage ===== */
+.errorPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90rem;
+  margin: 5rem 0;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &_icon {
+    font-size: 10rem;
+    margin-right: 3rem;
+    line-height: 0;
+
+    @media screen and (max-width: 767px) {
+      margin: 0;
+    }
+  }
+
+  &_content {
+    margin: 2rem 0;
+
+    &\:title {
+      color: var(--color-light);
+    }
+
+    p {
+      margin: 1rem 0;
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+
+    &\:code {
+      font-style: italic;
+      color: var(--color-light);
+
+      span {
+        font-weight: bold;
+        color: var(--color-body);
+      }
+    }
+  }
+}
