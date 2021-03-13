@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout from '../components/layouts/Layout';
 import HeaderHome from '../components/home/HeaderHome';
+import TabsHome from '../components/home/tabs/TabsHome';
 
 const Home = () => {
   return (
@@ -11,6 +12,9 @@ const Home = () => {
       </Head>
 
       <HeaderHome />
+      <main className="container">
+        <TabsHome />
+      </main>
     </Layout>
   );
 };
