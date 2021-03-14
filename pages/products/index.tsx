@@ -1,9 +1,19 @@
+import useTranslation from 'next-translate/useTranslation';
+import Head from 'next/head';
 import Layout from '../../components/layouts/Layout';
 
-const Products = () => (
-  <Layout>
-    <main className="container">test</main>
-  </Layout>
-);
+const Products = () => {
+  const { t } = useTranslation('global');
+
+  return (
+    <Layout>
+      <Head>
+        <title>{t('page_products')} - aXenDev.net</title>
+      </Head>
+
+      <main className="container">test</main>
+    </Layout>
+  );
+};
 
 export default Products;
