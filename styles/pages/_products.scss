@@ -1,0 +1,22 @@
+.products {
+  display: flex;
+  position: relative;
+
+  @media screen and (max-width: 980px) {
+    flex-direction: column;
+  }
+
+  &_nav {
+    flex: 0 0 30rem;
+    margin-right: var(--sp-6);
+
+    @media screen and (max-width: 980px) {
+      flex: 1;
+      margin: 0 0 var(--sp-6) 0;
+    }
+  }
+
+  &_content {
+    flex: 1;
+  }
+}

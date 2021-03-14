@@ -128,3 +128,21 @@
     }
   }
 }
+
+/* ===== Box ===== */
+.box {
+  background-color: var(--box-background);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+
+  &_title {
+    padding: var(--sp-4) var(--sp-5);
+
+    h2,
+    h3 {
+      margin: 0;
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+  }
+}

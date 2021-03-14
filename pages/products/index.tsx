@@ -13,6 +13,22 @@ const Products = () => {
 
       <main className="container">
         <h1>{t('page_products')}</h1>
+
+        <div className="products">
+          <div className="products_nav box">
+            <div className="box_title">
+              <h3>Category</h3>
+            </div>
+
+            <div className="padding:half">
+              <ul>
+                <li>test</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="products_content">content</div>
+        </div>
       </main>
     </Layout>
   );
