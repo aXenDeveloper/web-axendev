@@ -1,10 +1,7 @@
 import { FC } from 'react';
 import Breadcrumb from './Breadcrumb';
 import Header from './Header';
-
-type LayoutType = {
-  desableBreadcrumb?: boolean;
-};
+import { LayoutType } from './LayoutsType';
 
 const Layout: FC<LayoutType> = ({ children, desableBreadcrumb }) => {
   return (

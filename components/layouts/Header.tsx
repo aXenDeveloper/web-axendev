@@ -1,5 +1,5 @@
 import Logo from './Logo';
-import Nav from './Nav';
+import NavBar from './nav/NavBar';
 import UserBar from './UserBar';
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
         <UserBar />
       </div>
 
-      <Nav />
+      <NavBar />
     </header>
   );
 };
