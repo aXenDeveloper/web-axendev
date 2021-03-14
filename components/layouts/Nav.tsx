@@ -13,6 +13,11 @@ const Nav = () => {
           <li className={pathname == '/' ? 'active' : ''}>
             <Link href="/">{t('page_home')}</Link>
           </li>
+
+          <li className={pathname == '/products' ? 'active' : ''}>
+            <Link href="/products">{t('page_products')}</Link>
+          </li>
+
           <li className={pathname == '/contact' ? 'active' : ''}>
             <Link href="/contact">{t('page_contact')}</Link>
           </li>

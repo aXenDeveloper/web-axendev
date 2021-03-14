@@ -26,24 +26,27 @@
   }
 
   &Tabs {
-    margin-top: -6rem;
+    margin-top: -14rem;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
-    @media screen and (max-width: 767px) {
+    /* @media screen and (max-width: 767px) {
       flex-direction: column;
-    }
+    } */
 
     &_tab {
       border-radius: var(--border-radius-2);
       background: #fff;
       box-shadow: var(--box-shadow);
-      margin: 0 2rem;
+      margin: 2rem;
       padding: var(--sp-6);
-      flex: 1;
+      flex: 0 1 310px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      text-align: center;
 
       &\: {
         &icon {
@@ -60,14 +63,9 @@
         }
 
         &title {
-          margin: 1rem 0 0 0;
-          font-size: 2.5rem;
+          margin-top: 1rem;
+          font-size: 2rem;
           font-weight: bold;
-        }
-
-        &content {
-          margin: 0;
-          text-align: center;
         }
       }
     }

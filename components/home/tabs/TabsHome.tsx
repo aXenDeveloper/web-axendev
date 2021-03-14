@@ -4,21 +4,13 @@ import TabHome from './TabHome';
 const TabsHome = () => {
   return (
     <section className="homeTabs padding">
-      <TabHome title="Wysoka jakość" icon={faAward}>
-        Najnowsze standardy SEO
-      </TabHome>
+      <TabHome icon={faAward}>Jakość</TabHome>
 
-      <TabHome title="Szybkość działania" icon={faCogs}>
-        Maksymalna optymalizacja
-      </TabHome>
+      <TabHome icon={faCogs}>Optymalizacja</TabHome>
 
-      <TabHome title="Zgodne z UX" icon={faUsers}>
-        Najważniejsi użytkownicy
-      </TabHome>
+      <TabHome icon={faUsers}>UX / UI</TabHome>
 
-      <TabHome title="Testowanie" icon={faVial}>
-        Minimalna ilość błędów
-      </TabHome>
+      <TabHome icon={faVial}>Testy</TabHome>
     </section>
   );
 };

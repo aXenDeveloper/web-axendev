@@ -12,9 +12,7 @@ const Home = () => {
       </Head>
 
       <HeaderHome />
-      <main className="container">
-        <TabsHome />
-      </main>
+      <main className="container"></main>
     </Layout>
   );
 };

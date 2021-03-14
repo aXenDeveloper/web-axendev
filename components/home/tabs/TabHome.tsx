@@ -4,16 +4,14 @@ import { FC } from 'react';
 
 type TabHomeType = {
   icon: IconDefinition;
-  title: string;
 };
 
-const TabHome: FC<TabHomeType> = ({ children, icon, title }) => (
+const TabHome: FC<TabHomeType> = ({ children, icon }) => (
   <div className="homeTabs_tab">
     <div className="homeTabs_tab:icon">
       <FontAwesomeIcon icon={icon} />
     </div>
-    <h2 className="homeTabs_tab:title">{title}</h2>
-    <p className="homeTabs_tab:content">{children}</p>
+    <span className="homeTabs_tab:title">{children}</span>
   </div>
 );
 
