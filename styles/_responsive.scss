@@ -6,4 +6,12 @@
       }
     }
   }
+
+  &_hide {
+    @media (min-width: 980px) {
+      &\:desktop {
+        display: none;
+      }
+    }
+  }
 }

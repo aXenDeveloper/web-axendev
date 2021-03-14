@@ -11,7 +11,9 @@ const Products = () => {
         <title>{t('page_products')} - aXenDev.net</title>
       </Head>
 
-      <main className="container">test</main>
+      <main className="container">
+        <h1>{t('page_products')}</h1>
+      </main>
     </Layout>
   );
 };

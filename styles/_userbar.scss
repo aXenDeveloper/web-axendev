@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
+
+  li:not(:last-child) {
+    margin-right: var(--sp-2);
+  }
 
   &_lang {
     padding: 0;
@@ -10,14 +16,8 @@
     display: flex;
     line-height: 0;
 
-    li {
-      &:not(:last-child) {
-        margin-right: var(--sp-2);
-      }
-
-      a img {
-        border-radius: var(--border-radius);
-      }
+    > li a img {
+      border-radius: var(--border-radius);
     }
   }
 }
