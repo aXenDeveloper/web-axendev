@@ -1,11 +1,18 @@
+import { DarkThemeContextType } from '../../context/contextTypes';
+import { useDarkTheme } from '../../context/useDarkTheme';
+
 const DarkButton = () => {
+  const { setDarkTheme } = useDarkTheme() as DarkThemeContextType;
+
   const handleButton = () => {
-    if (!localStorage.getItem('darkMode')) {
-      document.body.classList.add('darkMode');
-      localStorage.setItem('darkMode', '1');
+    if (!localStorage.getItem('darkTheme')) {
+      document.body.classList.add('darkTheme');
+      localStorage.setItem('darkTheme', '1');
+      setDarkTheme(true);
     } else {
-      document.body.classList.remove('darkMode');
-      localStorage.removeItem('darkMode');
+      document.body.classList.remove('darkTheme');
+      localStorage.removeItem('darkTheme');
+      setDarkTheme(false);
     }
   };
 

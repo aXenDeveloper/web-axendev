@@ -1,5 +1,5 @@
 (function () {
-  if (localStorage.getItem('darkMode')) {
-    document.body.classList.add('darkMode');
+  if (localStorage.getItem('darkTheme')) {
+    document.body.classList.add('darkTheme');
   }
 })();
