@@ -4,7 +4,7 @@ import UserBar from './UserBar';
 
 const Header = () => {
   return (
-    <header>
+    <header className="header">
       <div className="container flex flex-jc:between flex-ai:center padding">
         <Logo />
 

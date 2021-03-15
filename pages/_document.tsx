@@ -3,7 +3,8 @@ import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/do
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
+    const test123 = 1;
+    return { ...initialProps, test123 };
   }
 
   render() {
@@ -17,6 +18,7 @@ class MyDocument extends Document {
           ></link>
         </Head>
         <body>
+          <script src="initialTheme.js" />
           <Main />
           <NextScript />
         </body>
