@@ -4,6 +4,7 @@
   list-style: none;
   display: flex;
   align-items: center;
+  color: var(--color-light);
 
   li:not(:last-child) {
     margin-right: var(--sp-2);
@@ -19,5 +20,12 @@
     > li a img {
       border-radius: var(--border-radius);
     }
+  }
+
+  &_button {
+    background-color: transparent;
+    border: 0;
+    font-size: 2.5rem;
+    cursor: pointer;
   }
 }

@@ -1,3 +1,5 @@
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { DarkThemeContextType } from '../../context/contextTypes';
 import { useDarkTheme } from '../../context/useDarkTheme';
 
@@ -16,7 +18,11 @@ const DarkButton = () => {
     }
   };
 
-  return <button onClick={handleButton}>Dark</button>;
+  return (
+    <button onClick={handleButton} className="userBar_button userBar_button_dark">
+      <FontAwesomeIcon icon={faMoon} />
+    </button>
+  );
 };
 
 export default DarkButton;
