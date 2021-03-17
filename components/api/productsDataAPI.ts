@@ -1,7 +1,7 @@
 import { productsDataAPIType } from './productsDataAPIType';
 const productsDataAPI: productsDataAPIType[] = [
   {
-    name: '(aXen) Advanced Server List',
+    name: 'Advanced Server List',
     key: 'ips-app-advanced-serverlist',
     category: 'ips-community-suite',
     img: 'https://axendev.net/myapps/app/serverlist/1.png',
@@ -10,7 +10,9 @@ const productsDataAPI: productsDataAPIType[] = [
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9852-axen-advanced-server-list/',
       demo: 'https://1shot2kill.pl/'
     },
-    price: 0
+    price: {
+      price: 0
+    }
   },
   {
     name: '(React) Weather app',
@@ -20,10 +22,12 @@ const productsDataAPI: productsDataAPIType[] = [
     links: {
       github: 'https://github.com/aXenDeveloper/react-weather'
     },
-    price: 0
+    price: {
+      price: 0
+    }
   },
   {
-    name: '(aXen) Number of entries Chatbox+',
+    name: 'Number of entries Chatbox+',
     key: 'ips-number-of-entries-chatbox-plus',
     category: 'ips-community-suite',
     img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-number-of-entries-chatbox-plus/main/1.png',
@@ -31,10 +35,12 @@ const productsDataAPI: productsDataAPIType[] = [
       github: 'https://github.com/aXenDeveloper/ips-number-of-entries-chatbox-plus',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9598-axen-number-of-entries-chatbox/'
     },
-    price: 0
+    price: {
+      price: 0
+    }
   },
   {
-    name: '[Dark / Light] Fluent Design Theme Edition',
+    name: 'Fluent Design Theme Edition',
     key: 'ips-theme-fluent-design',
     category: 'ips-community-suite',
     img: '',
@@ -42,15 +48,13 @@ const productsDataAPI: productsDataAPIType[] = [
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9539-dark-light-fluent-design-theme-edition/',
       demo: 'https://1shot2kill.pl/index.php?app=core&module=system&controller=theme&do=change&id=500'
     },
-    price: [
-      {
-        price: 34.99,
-        link: 'ipsmarketplace'
-      }
-    ]
+    price: {
+      price: 34.99,
+      link: 'ipsmarketplace'
+    }
   },
   {
-    name: '(aXen) Administrative bar',
+    name: 'Administrative bar',
     key: 'ips-administrative-bar',
     category: 'ips-community-suite',
     img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png',
@@ -58,10 +62,12 @@ const productsDataAPI: productsDataAPIType[] = [
       github: 'https://github.com/aXenDeveloper/ips-administrative-bar',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9497-axen-administrative-bar/'
     },
-    price: 0
+    price: {
+      price: 0
+    }
   },
   {
-    name: '(aXen) Article System in Pages',
+    name: 'Article System in Pages',
     key: 'ips-article-system-in-pages',
     category: 'ips-community-suite',
     img: '',
@@ -69,20 +75,25 @@ const productsDataAPI: productsDataAPIType[] = [
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9490-axen-article-system-in-pages/',
       demo: 'https://1shot2kill.pl/portal/'
     },
-    price: 10
+    price: {
+      price: 10,
+      link: 'ipsmarketplace'
+    }
   },
   {
-    name: '(aXen) Font Awesome 5 in IPS',
+    name: 'Font Awesome 5 in IPS',
     key: 'ips-fontawesome5',
     category: 'ips-community-suite',
     links: {
       github: 'https://github.com/aXenDeveloper/ips-fontawesome5',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9439-axen-font-awesome-5-in-ips/'
     },
-    price: 0
+    price: {
+      price: 0
+    }
   },
   {
-    name: '(aXen) Group formatting in mention',
+    name: 'Group formatting in mention',
     key: 'ips-group-formatting-in-mention',
     category: 'ips-community-suite',
     img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-group-formatting-in-mention/master/1.png',
@@ -90,10 +101,12 @@ const productsDataAPI: productsDataAPIType[] = [
       github: 'https://github.com/aXenDeveloper/ips-group-formatting-in-mention',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9273-axen-group-formatting-in-mention/'
     },
-    price: 0
+    price: {
+      price: 0
+    }
   },
   {
-    name: '(aXen) Number of entries Chatbox Free',
+    name: 'Number of entries Chatbox Free',
     key: 'ips-number-of-entries-chatbox',
     category: 'ips-community-suite',
     img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-number-of-entries-chatbox/main/1.png',
@@ -101,10 +114,12 @@ const productsDataAPI: productsDataAPIType[] = [
       github: 'https://github.com/aXenDeveloper/ips-number-of-entries-chatbox',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/8761-axen-number-of-entries-chatbox-free/'
     },
-    price: 0
+    price: {
+      price: 0
+    }
   },
   {
-    name: '(aXen) Secondary Groups Indicator',
+    name: 'Secondary Groups Indicator',
     key: 'ips-secondary-groups-indicator',
     category: 'ips-community-suite',
     img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-secondary-groups-indicator/master/1.png',
@@ -112,7 +127,9 @@ const productsDataAPI: productsDataAPIType[] = [
       github: 'https://github.com/aXenDeveloper/ips-secondary-groups-indicator',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/8760-axen-secondary-groups-indicator/'
     },
-    price: 0
+    price: {
+      price: 0
+    }
   }
 ];
 

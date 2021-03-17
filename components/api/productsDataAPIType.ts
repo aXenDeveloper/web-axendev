@@ -8,10 +8,8 @@ export type productsDataAPIType = {
     ipsmarketplace?: string;
     demo?: string;
   };
-  price:
-    | {
-        price: number;
-        link: 'ipsmarketplace';
-      }[]
-    | number;
+  price: {
+    price: number;
+    link?: 'ipsmarketplace';
+  };
 };
