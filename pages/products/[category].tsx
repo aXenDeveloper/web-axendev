@@ -18,6 +18,7 @@ const ProductsCategoryPage: FC<ProductsCategoryPageType> = ({ productsFilterByCa
 
   useEffect(() => {
     setData([...productsFilterByCategory]);
+    setSortData('DESC');
   }, [productsFilterByCategory]);
 
   useEffect(() => {
