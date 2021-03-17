@@ -5,8 +5,10 @@ import productsDataAPI from '../../components/api/productsDataAPI';
 import ProductsCategory from '../../components/products/ProductsCategory';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import useTranslation from 'next-translate/useTranslation';
 
 const CategoryProducts = ({ productsFilterByCategory, category }) => {
+  const { t } = useTranslation('global');
   const { push, query } = useRouter();
 
   const [data, setData] = useState(productsFilterByCategory);
@@ -66,7 +68,7 @@ const CategoryProducts = ({ productsFilterByCategory, category }) => {
       </Head>
 
       <main className="container">
-        <h1>test</h1>
+        <h1>{t(`page_products_${category}`)}</h1>
 
         <div className="products">
           <ProductsCategory handleSelectSortData={handleSelectSortData} sortData={sortData} />
