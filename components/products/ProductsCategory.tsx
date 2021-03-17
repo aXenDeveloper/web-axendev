@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { FC } from 'react';
-import { ProductsCategoryType } from './ProductsTypes';
+import Link from 'next/link';
+import { ProductsCategoryType } from '../../types/components/productsTypes';
 
 const ProductsCategory: FC<ProductsCategoryType> = ({ handleSelectSortData, sortData }) => {
   return (

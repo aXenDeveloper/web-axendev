@@ -1,8 +1,8 @@
 import { FC, useEffect, useState } from 'react';
 import { DarkThemeContext } from '../../context/useDarkTheme';
+import { LayoutType } from '../../types/components/layoutsType';
 import Breadcrumb from './Breadcrumb';
 import Header from './Header';
-import { LayoutType } from './LayoutsType';
 
 const Layout: FC<LayoutType> = ({ children, desableBreadcrumb }) => {
   const [getDarkTheme, setDarkTheme] = useState(false);

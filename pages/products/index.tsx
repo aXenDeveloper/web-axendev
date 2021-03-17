@@ -1,12 +1,14 @@
+import { FC } from 'react';
+import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import useTranslation from 'next-translate/useTranslation';
-import Head from 'next/head';
+import { ProductsPageType } from '../../types/pagesTypes';
 import productsDataAPI from '../../components/api/productsDataAPI';
 import Layout from '../../components/layouts/Layout';
 import ProductsCategory from '../../components/products/ProductsCategory';
 import ProductsContent from '../../components/products/ProductsContent';
 
-const Products = ({ products }) => {
+const ProductsPage: FC<ProductsPageType> = ({ products }) => {
   const { t } = useTranslation('global');
 
   return (
@@ -36,19 +38,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default Products;
-
-/* const sortData = (e: string) => {
-    const sortedProducts = dataProducts.sort((a, b) => {
-      const sortType = {
-        priceDESC: b.price.price - a.price.price,
-        priceASC: a.price.price - b.price.price,
-        DESC: b.id - a.id,
-        ASC: a.id - b.id
-      };
-
-      return sortType[e];
-    });
-
-    setDataProducts(sortedProducts);
-  }; */
+export default ProductsPage;

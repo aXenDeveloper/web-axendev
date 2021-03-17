@@ -1,4 +1,4 @@
-import { productsDataAPIType } from './productsDataAPIType';
+import { productsDataAPIType } from '../../types/api/productsDataAPIType';
 const productsDataAPI: productsDataAPIType[] = [
   {
     id: 10,

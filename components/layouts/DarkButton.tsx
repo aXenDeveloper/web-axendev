@@ -1,7 +1,7 @@
+import { useDarkTheme } from '../../context/useDarkTheme';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { DarkThemeContextType } from '../../context/contextTypes';
-import { useDarkTheme } from '../../context/useDarkTheme';
+import { DarkThemeContextType } from '../../types/api/contextTypes';
 
 const DarkButton = () => {
   const { setDarkTheme } = useDarkTheme() as DarkThemeContextType;

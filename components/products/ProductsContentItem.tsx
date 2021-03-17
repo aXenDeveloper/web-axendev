@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { ProductsContentItemType } from './ProductsTypes';
+import { ProductsContentItemType } from '../../types/components/productsTypes';
 
 const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
   const { name } = product;

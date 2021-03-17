@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import Layout from '../components/layouts/Layout';
 import HeaderHome from '../components/home/HeaderHome';
-import TabsHome from '../components/home/tabs/TabsHome';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <Layout desableBreadcrumb>
       <Head>
@@ -17,4 +16,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

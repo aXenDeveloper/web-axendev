@@ -1,6 +1,6 @@
+import { useState } from 'react';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
 
 const DrawerMobile = () => {
   const [isOpen, setIsOpen] = useState(false);

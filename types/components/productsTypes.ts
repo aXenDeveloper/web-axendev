@@ -1,10 +1,5 @@
 import { productsDataAPIType } from '../api/productsDataAPIType';
 
-type QuerySort = {
-  sort: string;
-  category: string;
-};
-
 export type ProductsContentType = {
   products: productsDataAPIType[];
 };

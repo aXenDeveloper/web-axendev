@@ -1,8 +1,8 @@
-import useTranslation from 'next-translate/useTranslation';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
 
 const Breadcrumb = () => {
   const { asPath } = useRouter();
@@ -11,8 +11,6 @@ const Breadcrumb = () => {
     .slice(1)
     .filter(x => x);
   const { t } = useTranslation('global');
-
-  console.log(path);
 
   return (
     <div className="container responsive_show:desktop">

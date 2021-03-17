@@ -2,7 +2,7 @@ import useTranslation from 'next-translate/useTranslation';
 import ErrorPage from '../components/ErrorPage';
 import Layout from '../components/layouts/Layout';
 
-const Error404 = () => {
+const Error404Page = () => {
   const { t } = useTranslation('global');
 
   return (
@@ -12,4 +12,4 @@ const Error404 = () => {
   );
 };
 
-export default Error404;
+export default Error404Page;

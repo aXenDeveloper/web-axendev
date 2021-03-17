@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useDarkTheme } from '../../context/useDarkTheme';
-import { DarkThemeContextType } from '../../context/contextTypes';
+import { DarkThemeContextType } from '../../types/api/contextTypes';
 
 const Logo = () => {
   const { getDarkTheme } = useDarkTheme() as DarkThemeContextType;

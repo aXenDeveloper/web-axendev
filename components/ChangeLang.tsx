@@ -1,7 +1,7 @@
-import Cookies from 'js-cookie';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Cookies from 'js-cookie';
 import Tippy from '@tippyjs/react';
 
 const ChangeLang = () => {

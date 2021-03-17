@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NavItemType } from './NavType';
+import { NavItemType } from '../../../types/components/navType';
 
 const NavItem: FC<NavItemType> = ({ name, icon }) => {
   const { pathname } = useRouter();

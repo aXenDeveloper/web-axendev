@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import ProductsContentItem from './ProductsContentItem';
-import { ProductsContentType } from './ProductsTypes';
+import { ProductsContentType } from '../../types/components/productsTypes';
 
 const ProductsContent: FC<ProductsContentType> = ({ products }) => {
   return (

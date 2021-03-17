@@ -1,13 +1,15 @@
+import { FC, useEffect, useState } from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { GetStaticPaths } from 'next';
+import useTranslation from 'next-translate/useTranslation';
+import { ProductsCategoryPageStaticPropsType, ProductsCategoryPageType } from '../../types/pagesTypes';
 import Layout from '../../components/layouts/Layout';
 import ProductsContent from '../../components/products/ProductsContent';
 import productsDataAPI from '../../components/api/productsDataAPI';
 import ProductsCategory from '../../components/products/ProductsCategory';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
-import useTranslation from 'next-translate/useTranslation';
 
-const CategoryProducts = ({ productsFilterByCategory, category }) => {
+const ProductsCategoryPage: FC<ProductsCategoryPageType> = ({ productsFilterByCategory, category }) => {
   const { t } = useTranslation('global');
   const { push, query } = useRouter();
 
@@ -39,7 +41,7 @@ const CategoryProducts = ({ productsFilterByCategory, category }) => {
     setSortData(typeSort);
 
     const sortData = [...data].sort((a, b) => {
-      const sortType = {
+      const sortType: { [typeSort: string]: number } = {
         priceDESC: b.price.price - a.price.price,
         priceASC: a.price.price - b.price.price,
         DESC: b.id - a.id,
@@ -56,7 +58,7 @@ const CategoryProducts = ({ productsFilterByCategory, category }) => {
         pathname: `/products/${category}`,
         query: { sort: typeSort }
       },
-      null,
+      undefined,
       { shallow: true }
     );
   };
@@ -82,19 +84,19 @@ const CategoryProducts = ({ productsFilterByCategory, category }) => {
   );
 };
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [{ params: { category: 'react' } }, { params: { category: 'ips-community-suite' } }],
     fallback: false
   };
-}
+};
 
-export async function getStaticProps({ params }) {
+export const getStaticProps = async ({ params }: ProductsCategoryPageStaticPropsType) => {
   const filterData = productsDataAPI.filter(el => el.category === params.category);
 
   return {
     props: { productsFilterByCategory: filterData, category: params.category }
   };
-}
+};
 
-export default CategoryProducts;
+export default ProductsCategoryPage;
