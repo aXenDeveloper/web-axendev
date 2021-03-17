@@ -1,6 +1,7 @@
 import { productsDataAPIType } from './productsDataAPIType';
 const productsDataAPI: productsDataAPIType[] = [
   {
+    id: 10,
     name: 'Advanced Server List',
     key: 'ips-app-advanced-serverlist',
     category: 'ips-community-suite',
@@ -15,6 +16,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
+    id: 9,
     name: '(React) Weather app',
     key: 'react-weather',
     category: 'react',
@@ -27,6 +29,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
+    id: 8,
     name: 'Number of entries Chatbox+',
     key: 'ips-number-of-entries-chatbox-plus',
     category: 'ips-community-suite',
@@ -40,6 +43,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
+    id: 7,
     name: 'Fluent Design Theme Edition',
     key: 'ips-theme-fluent-design',
     category: 'ips-community-suite',
@@ -54,6 +58,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
+    id: 6,
     name: 'Administrative bar',
     key: 'ips-administrative-bar',
     category: 'ips-community-suite',
@@ -67,6 +72,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
+    id: 5,
     name: 'Article System in Pages',
     key: 'ips-article-system-in-pages',
     category: 'ips-community-suite',
@@ -81,6 +87,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
+    id: 4,
     name: 'Font Awesome 5 in IPS',
     key: 'ips-fontawesome5',
     category: 'ips-community-suite',
@@ -93,6 +100,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
+    id: 3,
     name: 'Group formatting in mention',
     key: 'ips-group-formatting-in-mention',
     category: 'ips-community-suite',
@@ -106,6 +114,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
+    id: 2,
     name: 'Number of entries Chatbox Free',
     key: 'ips-number-of-entries-chatbox',
     category: 'ips-community-suite',
@@ -119,6 +128,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
+    id: 1,
     name: 'Secondary Groups Indicator',
     key: 'ips-secondary-groups-indicator',
     category: 'ips-community-suite',

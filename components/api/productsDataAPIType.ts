@@ -1,4 +1,5 @@
 export type productsDataAPIType = {
+  id: number;
   name: string;
   key: string;
   category: string;

@@ -18,7 +18,7 @@ class MyDocument extends Document {
           ></link>
         </Head>
         <body>
-          <script src="initialTheme.js" />
+          <script src="/initialTheme.js" />
           <Main />
           <NextScript />
         </body>
