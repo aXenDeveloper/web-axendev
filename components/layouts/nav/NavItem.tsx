@@ -6,13 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavItemType } from '../../../types/components/navType';
 
 const NavItem: FC<NavItemType> = ({ name, icon }) => {
-  const { pathname } = useRouter();
+  const { asPath } = useRouter();
+  const getPathSplit = asPath.split('/')[1];
   const { t } = useTranslation('global');
 
   const getNamePath = name === 'home' ? '' : name;
 
   return (
-    <li className={pathname == `/${getNamePath}` ? 'active' : ''}>
+    <li className={getPathSplit == getNamePath ? 'active' : ''}>
       <Link href={`/${getNamePath}`}>
         <a>
           <FontAwesomeIcon icon={icon} /> {t(`page_${name}`)}
