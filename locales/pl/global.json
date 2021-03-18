@@ -13,5 +13,19 @@
   "error_title": "Ups, coś poszło nie tak (╯°□°）╯︵ ┻━┻",
   "error_code": "Kod błędu",
   "error_text_404": "Ta strona nie istnieje",
-  "products_price_free": "Za darmo"
+  "products_price_free": "Za darmo",
+  "products_category": "Kategoria",
+  "products_buyNow": "Kup teraz",
+  "products_category_ips-community-suite": "IPS Community Suite",
+  "products_category_react": "React",
+  "products_desc_react-weather": "Aplikacja pogodowa, która pozwala sprawdzić aktualną pogodę i prognozę w wybranym mieście.",
+  "products_desc_ips-theme-fluent-design": "Fluent Design Theme Edition to połączenie stylów Fluent Design Microsoft, iOS Design, Android Design i Google Design. Wprowadziliśmy również wiele interesujących funkcji, które są unikalne w standardowych motywach.",
+  "products_desc_ips-article-system-in-pages": "Modyfikacja pozwala na zmianę wyglądu oraz dodanie wielu funkcjonalności do zarządzania rekordami. Wymaga aplikacji Pages IPS (CMS).",
+  "products_desc_ips-app-advanced-serverlist": "(IPS App) Aplikacja pokazuje informacje o serwerach z biblioteki GameQ.",
+  "products_desc_ips-number-of-entries-chatbox-plus": "(IPS Plugin) Wtyczka wyświetla użytkownikom liczbę ich wpisów z aplikacji Chatbox+.",
+  "products_desc_ips-administrative-bar": "(IPS Plugin) Wtyczka dodaje pasek administracyjny znany z poprzednich wersji IP.Board.",
+  "products_desc_ips-fontawesome5": "(IPS Plugin) Wtyczka wyświetla ikony z Font Awesome 5.",
+  "products_desc_ips-group-formatting-in-mention": "(IPS Plugin) Wtyczka formatuje nazwę użytkownika we wzmiance.",
+  "products_desc_ips-number-of-entries-chatbox": "(IPS Plugin) Wtyczka wyświetla użytkownikom liczbę ich wpisów z aplikacji Chatbox Free.",
+  "products_desc_ips-secondary-groups-indicator": "(IPS Plugin) Wtyczka wyświetla grupy dodatkowe."
 }

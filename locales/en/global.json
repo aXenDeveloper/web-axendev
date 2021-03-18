@@ -13,5 +13,19 @@
   "error_title": "Oops, something went wrong (╯°□°）╯︵ ┻━┻",
   "error_code": "Error code",
   "error_text_404": "This page does not exist",
-  "products_price_free": "Free"
+  "products_price_free": "Free",
+  "products_category": "Category",
+  "products_buyNow": "Buy now",
+  "products_category_ips-community-suite": "IPS Community Suite",
+  "products_category_react": "React",
+  "products_desc_react-weather": "Weather app that allows you to check the current weather and forecast in your chosen city.",
+  "products_desc_ips-theme-fluent-design": "Fluent Design Theme Edition is a combination of Fluent Design styles Microsoft, iOS Design, Android Design and Google Design. We have also introduced many interesting features that are unique in standard themes.",
+  "products_desc_ips-article-system-in-pages": "The modification allows you to change the appearance and add many functionalities to manage records. Requires Pages IPS (CMS) application.",
+  "products_desc_ips-app-advanced-serverlist": "(IPS App) This app shows servers information from GameQ library.",
+  "products_desc_ips-number-of-entries-chatbox-plus": "(IPS Plugin) Plugin displays users the number of their entries from Chatbox+ application.",
+  "products_desc_ips-administrative-bar": "(IPS Plugin) The plugin adds the administration bar known from previous versions of IP.Board.",
+  "products_desc_ips-fontawesome5": "(IPS Plugin) The plugin shows icons from Font Awesome 5.",
+  "products_desc_ips-group-formatting-in-mention": "(IPS Plugin) The plugin formats the user name in the mention.",
+  "products_desc_ips-number-of-entries-chatbox": "(IPS Plugin) Plugin displays users the number of their entries from Chatbox Free application.",
+  "products_desc_ips-secondary-groups-indicator": "(IPS Plugin) The plugin show secondary groups."
 }

@@ -1,10 +1,14 @@
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FC } from 'react';
 import { ProductsContentItemType } from '../../types/components/productsTypes';
 
 const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
-  const { name, img, price } = product;
+  const { name, img, price, links, key, category } = product;
   const { t } = useTranslation('global');
 
   return (
@@ -19,16 +23,39 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
         </div>
 
         <div className="products_content_item_generic:price">
-          {price.price ? `$${price.price}` : t('products_price_free')}
+          {price.price ? `$${price.price.toFixed(2)}` : t('products_price_free')}
         </div>
       </div>
 
       <div className="products_content_item_main">
         <h4>{name}</h4>
+        <span className="text:light">
+          {t('products_category')}:{' '}
+          <Link href={`/products/${category}`}>
+            <a className="text-weight:700">{t(`products_category_${category}`)}</a>
+          </Link>
+        </span>
 
-        <p>Test desc</p>
+        <p>{t(`products_desc_${key}`)}</p>
 
-        <div className="products_content_item_main_buttons">test</div>
+        <div className="products_content_item_main_buttons">
+          {price.link && (
+            <a
+              href={links[price.link]}
+              className="button button_medium button_primary"
+              target="blank"
+              rel="noopener nofollow"
+            >
+              <FontAwesomeIcon icon={faShoppingCart} /> {t('products_buyNow')}
+            </a>
+          )}
+
+          {links.github && (
+            <a href={links.github} className="button button_medium button_light" target="blank" rel="noopener nofollow">
+              <FontAwesomeIcon icon={faGithub} /> Github
+            </a>
+          )}
+        </div>
       </div>
     </li>
   );

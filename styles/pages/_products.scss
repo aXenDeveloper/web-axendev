@@ -42,21 +42,20 @@
       display: flex;
 
       &:not(:last-child) {
-        // margin-bottom: var(--sp-6);
         border-bottom: 1px solid var(--border-color);
       }
 
       &_generic {
-        flex: 0 0 25rem;
+        flex: 0 0 20rem;
         padding: var(--sp-6) var(--sp-4);
 
         &\:img {
           position: relative;
-          height: 20rem;
+          height: 15rem;
         }
 
         &\:price {
-          padding: var(--sp-4);
+          margin-top: var(--sp-2);
           font-size: 1.7rem;
           text-align: center;
           color: var(--products-price);
@@ -70,7 +69,7 @@
         flex-direction: column;
 
         h4 {
-          font-size: 1.85rem;
+          font-size: 2rem;
           margin: 0;
         }
 

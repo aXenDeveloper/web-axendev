@@ -11,9 +11,10 @@
   --sp-10: 64px;
 
   --color-main: #c72c20;
+  --color-main-hover: #de4033;
   --background-body: #f5f5f5;
   --color-body: #1b1b1b;
-  --container-width: 1630px;
+  --container-width: 1500px;
   --border-color: rgb(0, 0, 0, 0.1);
   --border-radius: var(--sp-1);
   --border-radius-2: var(--sp-3);
@@ -22,4 +23,11 @@
   --box-shadow: 0px 2px 4px -1px rgb(0, 0, 0, 0.15);
   --userbar-color: #404040;
   --products-price: #b30c0c;
+
+  --button-light: #f3f0ee;
+  --button-light-hover: #e0dfdf;
+  --button-light-color: #000;
+  --button-primary: var(--color-main);
+  --button-primary-hover: var(--color-main-hover);
+  --button-primary-color: #fff;
 }

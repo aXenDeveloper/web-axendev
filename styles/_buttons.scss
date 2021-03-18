@@ -1,2 +1,37 @@
 .button {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: var(--border-radius);
+  transition: background-color 0.15s ease-in-out;
+
+  &_light {
+    background-color: var(--button-light);
+    color: var(--button-light-color);
+
+    &:hover {
+      background-color: var(--button-light-hover);
+      color: var(--button-light-color);
+    }
+  }
+
+  &_primary {
+    background-color: var(--button-primary);
+    color: var(--button-primary-color);
+
+    &:hover {
+      background-color: var(--button-primary-hover);
+      color: var(--button-primary-color);
+    }
+  }
+
+  &_medium {
+    padding: 0 2rem;
+    line-height: 2.5;
+  }
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
