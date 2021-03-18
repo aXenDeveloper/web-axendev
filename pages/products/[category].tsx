@@ -87,7 +87,12 @@ const ProductsCategoryPage: FC<ProductsCategoryPageType> = ({ productsFilterByCa
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [{ params: { category: 'react' } }, { params: { category: 'ips-community-suite' } }],
+    paths: [
+      { params: { category: 'react' }, locale: 'en' },
+      { params: { category: 'react' }, locale: 'pl' },
+      { params: { category: 'ips-community-suite' }, locale: 'en' },
+      { params: { category: 'ips-community-suite' }, locale: 'pl' }
+    ],
     fallback: false
   };
 };
