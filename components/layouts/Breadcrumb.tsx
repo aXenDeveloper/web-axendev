@@ -21,7 +21,10 @@ const Breadcrumb = () => {
         </li>
 
         {path.map((pageElement, index) => {
-          const pathNameLang = path.slice(0, index + 1).join('_');
+          const pathNameLang = path
+            .slice(0, index + 1)
+            .join('_')
+            .split('?')[0];
 
           return (
             <li key={`page_${pageElement}`}>
