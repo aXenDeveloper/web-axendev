@@ -2,10 +2,10 @@ import { FC } from 'react';
 import Link from 'next/link';
 import { ProductsCategoryType } from '../../types/components/productsTypes';
 
-const ProductsCategory: FC<ProductsCategoryType> = ({ handleSelectSortData, sortData }) => {
+const ProductsNav: FC<ProductsCategoryType> = ({ handleSelectSortData, sortData }) => {
   return (
-    <div className="products_nav">
-      <div className="box">
+    <ul className="products_nav">
+      <li className="box">
         <div className="box_title">
           <h3>Category</h3>
         </div>
@@ -20,9 +20,9 @@ const ProductsCategory: FC<ProductsCategoryType> = ({ handleSelectSortData, sort
             </li>
           </ul>
         </div>
-      </div>
+      </li>
 
-      <div className="box">
+      <li className="box">
         <div className="box_title">
           <h3>Filter</h3>
         </div>
@@ -35,9 +35,9 @@ const ProductsCategory: FC<ProductsCategoryType> = ({ handleSelectSortData, sort
             <option value="priceASC">priceASC</option>
           </select>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   );
 };
 
-export default ProductsCategory;
+export default ProductsNav;

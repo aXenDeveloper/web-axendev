@@ -4,12 +4,12 @@ import { ProductsContentType } from '../../types/components/productsTypes';
 
 const ProductsContent: FC<ProductsContentType> = ({ products }) => {
   return (
-    <div className="box padding">
-      <ul>
+    <div className="box">
+      <ol className="products_content_ol">
         {products.map(product => (
           <ProductsContentItem key={product.key} product={product} />
         ))}
-      </ul>
+      </ol>
     </div>
   );
 };

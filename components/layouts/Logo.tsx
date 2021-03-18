@@ -10,7 +10,7 @@ const Logo = () => {
   return (
     <Link href="/">
       <a className="padding:half">
-        <Image src={setLogoSrc} alt="Logo aXenDev.net" width={300} height={90} />
+        <Image src={setLogoSrc} alt="Logo aXenDev.net" width={300} height={90} objectFit="cover" unoptimized />
       </a>
     </Link>
   );

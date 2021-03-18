@@ -76,7 +76,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Article System in Pages',
     key: 'ips-article-system-in-pages',
     category: 'ips-community-suite',
-    img: '',
+    img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png',
     links: {
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9490-axen-article-system-in-pages/',
       demo: 'https://1shot2kill.pl/portal/'
@@ -91,6 +91,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Font Awesome 5 in IPS',
     key: 'ips-fontawesome5',
     category: 'ips-community-suite',
+    img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png',
     links: {
       github: 'https://github.com/aXenDeveloper/ips-fontawesome5',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9439-axen-font-awesome-5-in-ips/'

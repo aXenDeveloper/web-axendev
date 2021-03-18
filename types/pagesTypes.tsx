@@ -4,12 +4,12 @@ export type ProductsPageType = {
   products: productsDataAPIType[];
 };
 
-export type ProductsCategoryPageType = {
+export type ProductsNavPageType = {
   productsFilterByCategory: productsDataAPIType[];
   category: string;
 };
 
-export type ProductsCategoryPageStaticPropsType = {
+export type ProductsNavPageStaticPropsType = {
   params: {
     category: string;
   };

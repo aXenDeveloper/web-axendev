@@ -10,7 +10,13 @@
 
   &_nav {
     flex: 0 0 30rem;
-    margin-right: var(--sp-6);
+    padding: 0;
+    margin: 0 var(--sp-6) 0 0;
+    list-style: none;
+
+    > li:not(:last-child) {
+      margin-bottom: var(--sp-6);
+    }
 
     @media screen and (max-width: 980px) {
       flex: 1;
@@ -25,5 +31,54 @@
 
   &_content {
     flex: 1;
+
+    &_ol {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    &_item {
+      display: flex;
+
+      &:not(:last-child) {
+        // margin-bottom: var(--sp-6);
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      &_generic {
+        flex: 0 0 25rem;
+        padding: var(--sp-6) var(--sp-4);
+
+        &\:img {
+          position: relative;
+          height: 20rem;
+        }
+
+        &\:price {
+          padding: var(--sp-4);
+          font-size: 1.7rem;
+          text-align: center;
+          color: var(--products-price);
+        }
+      }
+
+      &_main {
+        flex: 1;
+        padding: var(--sp-6) var(--sp-4);
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+          font-size: 1.85rem;
+          margin: 0;
+        }
+
+        p {
+          margin: var(--sp-4) 0;
+          flex: 1;
+        }
+      }
+    }
   }
 }

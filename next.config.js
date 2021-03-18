@@ -1,5 +1,8 @@
 const nextTranslate = require('next-translate');
 
 module.exports = {
-  ...nextTranslate()
+  ...nextTranslate(),
+  images: {
+    domains: ['axendev.net', 'raw.githubusercontent.com']
+  }
 };

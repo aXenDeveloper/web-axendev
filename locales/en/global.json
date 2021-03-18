@@ -12,5 +12,6 @@
   "home_header_text_you": "YOU",
   "error_title": "Oops, something went wrong (╯°□°）╯︵ ┻━┻",
   "error_code": "Error code",
-  "error_text_404": "This page does not exist"
+  "error_text_404": "This page does not exist",
+  "products_price_free": "Free"
 }

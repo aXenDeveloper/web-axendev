@@ -6,7 +6,7 @@ import useTranslation from 'next-translate/useTranslation';
 import { ProductsPageType } from '../../types/pagesTypes';
 import productsDataAPI from '../../components/api/productsDataAPI';
 import Layout from '../../components/layouts/Layout';
-import ProductsCategory from '../../components/products/ProductsCategory';
+import ProductsNav from '../../components/products/ProductsNav';
 import ProductsContent from '../../components/products/ProductsContent';
 
 const ProductsPage: FC<ProductsPageType> = ({ products }) => {
@@ -74,7 +74,7 @@ const ProductsPage: FC<ProductsPageType> = ({ products }) => {
         <h1>{t('page_products')}</h1>
 
         <div className="products">
-          <ProductsCategory handleSelectSortData={handleSelectSortData} sortData={sortData} />
+          <ProductsNav handleSelectSortData={handleSelectSortData} sortData={sortData} />
 
           <div className="products_content">
             <ProductsContent products={data} />

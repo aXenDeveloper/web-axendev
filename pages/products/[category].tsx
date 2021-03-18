@@ -3,13 +3,13 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { GetStaticPaths } from 'next';
 import useTranslation from 'next-translate/useTranslation';
-import { ProductsCategoryPageStaticPropsType, ProductsCategoryPageType } from '../../types/pagesTypes';
+import { ProductsNavPageStaticPropsType, ProductsNavPageType } from '../../types/pagesTypes';
 import Layout from '../../components/layouts/Layout';
 import ProductsContent from '../../components/products/ProductsContent';
 import productsDataAPI from '../../components/api/productsDataAPI';
-import ProductsCategory from '../../components/products/ProductsCategory';
+import ProductsNav from '../../components/products/ProductsNav';
 
-const ProductsCategoryPage: FC<ProductsCategoryPageType> = ({ productsFilterByCategory, category }) => {
+const ProductsCategoryPage: FC<ProductsNavPageType> = ({ productsFilterByCategory, category }) => {
   const { t } = useTranslation('global');
   const { push, query } = useRouter();
 
@@ -74,7 +74,7 @@ const ProductsCategoryPage: FC<ProductsCategoryPageType> = ({ productsFilterByCa
         <h1>{t(`page_products_${category}`)}</h1>
 
         <div className="products">
-          <ProductsCategory handleSelectSortData={handleSelectSortData} sortData={sortData} />
+          <ProductsNav handleSelectSortData={handleSelectSortData} sortData={sortData} />
 
           <div className="products_content">
             <ProductsContent products={data} />
@@ -97,7 +97,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async ({ params }: ProductsCategoryPageStaticPropsType) => {
+export const getStaticProps = async ({ params }: ProductsNavPageStaticPropsType) => {
   const filterData = productsDataAPI.filter(el => el.category === params.category);
 
   return {

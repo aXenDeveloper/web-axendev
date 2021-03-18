@@ -12,5 +12,6 @@
   "home_header_text_you": "CIEBIE",
   "error_title": "Ups, coś poszło nie tak (╯°□°）╯︵ ┻━┻",
   "error_code": "Kod błędu",
-  "error_text_404": "Ta strona nie istnieje"
+  "error_text_404": "Ta strona nie istnieje",
+  "products_price_free": "Za darmo"
 }
