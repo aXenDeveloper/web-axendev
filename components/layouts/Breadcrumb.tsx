@@ -6,7 +6,7 @@ import { faHome, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
 
 const Breadcrumb = () => {
-  const { asPath } = useRouter();
+  const { asPath, pathname } = useRouter();
   const path = asPath
     .split('/')
     .slice(1)
@@ -44,7 +44,7 @@ const Breadcrumb = () => {
             return (
               <li key={`page_${pageElement}`}>
                 <FontAwesomeIcon icon={faChevronRight} />
-                <Link href={`/${pageElement}`}>{t(`page_${pathNameLang}`)}</Link>
+                <Link href={`/${pageElement}`}>{pathname === '/404' ? t(`page_404`) : t(`page_${pathNameLang}`)}</Link>
               </li>
             );
           })}

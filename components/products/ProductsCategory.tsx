@@ -4,7 +4,11 @@ import { useRouter } from 'next/router';
 
 const ProductsCategory = () => {
   const { asPath } = useRouter();
-  const currentPath = asPath.split('/')[2];
+  const currentPath = asPath
+    .split('/')
+    .join('?')
+    .split('?')
+    .filter(x => x)[1];
   const { t } = useTranslation('global');
 
   return (

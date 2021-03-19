@@ -19,6 +19,7 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
             src={img || 'https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png'}
             objectFit="cover"
             layout="fill"
+            placeholder="blur"
           />
         </div>
 

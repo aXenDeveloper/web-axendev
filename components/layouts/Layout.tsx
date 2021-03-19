@@ -14,8 +14,12 @@ const Layout: FC<LayoutType> = ({ children, desableBreadcrumb }) => {
   return (
     <DarkThemeContext.Provider value={{ getDarkTheme, setDarkTheme }}>
       <Header />
+
       {!desableBreadcrumb && <Breadcrumb />}
+
       {children}
+
+      {!desableBreadcrumb && <Breadcrumb />}
     </DarkThemeContext.Provider>
   );
 };
