@@ -1,14 +1,16 @@
+import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const ProductsCategory = () => {
   const { asPath } = useRouter();
   const currentPath = asPath.split('/')[2];
+  const { t } = useTranslation('global');
 
   return (
     <li className="box">
       <div className="box_title">
-        <h3>Category</h3>
+        <h3>{t('products_categories')}</h3>
       </div>
 
       <div className="padding:half">

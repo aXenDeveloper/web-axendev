@@ -41,6 +41,10 @@
     &_item {
       display: flex;
 
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+
       &:not(:last-child) {
         border-bottom: 1px solid var(--border-color);
       }
@@ -76,6 +80,33 @@
         p {
           margin: var(--sp-4) 0;
           flex: 1;
+        }
+
+        &_buttons {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          display: flex;
+
+          @media screen and (max-width: 767px) {
+            flex-direction: column;
+          }
+
+          > li {
+            @media screen and (max-width: 767px) {
+              .button {
+                display: block;
+              }
+            }
+
+            &:not(:last-child) {
+              margin-right: var(--sp-3);
+
+              @media screen and (max-width: 767px) {
+                margin: 0 0 var(--sp-3) 0;
+              }
+            }
+          }
         }
       }
     }

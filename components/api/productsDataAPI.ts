@@ -22,7 +22,8 @@ const productsDataAPI: productsDataAPIType[] = [
     category: 'react',
     img: 'https://raw.githubusercontent.com/aXenDeveloper/react-weather/main/screenshots/1-min.png',
     links: {
-      github: 'https://github.com/aXenDeveloper/react-weather'
+      github: 'https://github.com/aXenDeveloper/react-weather',
+      demo: 'https://weather.axendev.net/'
     },
     price: {
       price: 0

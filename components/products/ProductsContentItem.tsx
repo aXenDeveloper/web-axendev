@@ -30,7 +30,7 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
       <div className="products_content_item_main">
         <h4>{name}</h4>
         <span className="text:light">
-          {t('products_category')}:{' '}
+          {t('products_in')}:{' '}
           <Link href={`/products/${category}`}>
             <a className="text-weight:700">{t(`products_category_${category}`)}</a>
           </Link>
@@ -38,24 +38,49 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
 
         <p>{t(`products_desc_${key}`)}</p>
 
-        <div className="products_content_item_main_buttons">
+        <ul className="products_content_item_main_buttons">
           {price.link && (
-            <a
-              href={links[price.link]}
-              className="button button_medium button_primary"
-              target="blank"
-              rel="noopener nofollow"
-            >
-              <FontAwesomeIcon icon={faShoppingCart} /> {t('products_buyNow')}
-            </a>
+            <li>
+              <a
+                href={links[price.link]}
+                className="button button_medium button_primary"
+                target="blank"
+                rel="noopener nofollow"
+              >
+                <FontAwesomeIcon icon={faShoppingCart} /> {t('products_buyNow')}
+              </a>
+            </li>
           )}
 
           {links.github && (
-            <a href={links.github} className="button button_medium button_light" target="blank" rel="noopener nofollow">
-              <FontAwesomeIcon icon={faGithub} /> Github
-            </a>
+            <li>
+              <a href={links.github} className="button button_medium button_primary" target="blank" rel="noopener nofollow">
+                <FontAwesomeIcon icon={faGithub} /> Github
+              </a>
+            </li>
           )}
-        </div>
+
+          {links.ipsmarketplace && (
+            <li>
+              <a
+                href={links.ipsmarketplace}
+                className="button button_medium button_light"
+                target="blank"
+                rel="noopener nofollow"
+              >
+                IPS Marketplace
+              </a>
+            </li>
+          )}
+
+          {links.demo && (
+            <li>
+              <a href={links.demo} className="button button_medium button_light" target="blank" rel="noopener nofollow">
+                Demo
+              </a>
+            </li>
+          )}
+        </ul>
       </div>
     </li>
   );

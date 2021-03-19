@@ -7,6 +7,10 @@
 
 .header {
   background-color: var(--box-background);
+
+  &_logo {
+    padding: var(--sp-3) 0;
+  }
 }
 
 /* ===== navBar ===== */
