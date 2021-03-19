@@ -80,4 +80,30 @@
       }
     }
   }
+
+  &_category {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &_item {
+      > a {
+        display: block;
+        padding: var(--sp-2) var(--sp-3);
+
+        &:hover {
+          background-color: var(--theme-area-background);
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+
+      &\:active {
+        a {
+          background-color: var(--theme-area-background);
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }

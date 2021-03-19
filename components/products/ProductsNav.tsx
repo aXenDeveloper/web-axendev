@@ -1,26 +1,11 @@
 import { FC } from 'react';
-import Link from 'next/link';
 import { ProductsCategoryType } from '../../types/components/productsTypes';
+import ProductsCategory from './ProductsCategory';
 
 const ProductsNav: FC<ProductsCategoryType> = ({ handleSelectSortData, sortData }) => {
   return (
     <ul className="products_nav">
-      <li className="box">
-        <div className="box_title">
-          <h3>Category</h3>
-        </div>
-
-        <div className="padding:half">
-          <ul>
-            <li>
-              <Link href="/products/ips-community-suite">IPS Community Suite</Link>
-            </li>
-            <li>
-              <Link href="/products/react">React</Link>
-            </li>
-          </ul>
-        </div>
-      </li>
+      <ProductsCategory />
 
       <li className="box">
         <div className="box_title">
