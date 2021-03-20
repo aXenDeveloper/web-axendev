@@ -4,6 +4,7 @@
   font-weight: 400;
   border-radius: var(--border-radius);
   transition: background-color 0.15s ease-in-out;
+  position: relative;
 
   &_light {
     background-color: var(--button-light);
@@ -16,12 +17,21 @@
   }
 
   &_primary {
-    background-color: var(--button-primary);
+    background-image: var(--button-primary);
     color: var(--button-primary-color);
+
+    > span {
+      position: relative;
+      z-index: 5;
+    }
 
     &:hover {
       background-color: var(--button-primary-hover);
       color: var(--button-primary-color);
+
+      &::after {
+        opacity: 1;
+      }
     }
   }
 
@@ -33,5 +43,22 @@
   &:hover {
     text-decoration: none;
     cursor: pointer;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--border-radius);
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+    z-index: 1;
   }
 }

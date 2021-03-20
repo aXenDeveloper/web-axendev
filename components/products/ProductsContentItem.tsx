@@ -48,7 +48,9 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
                 target="blank"
                 rel="noopener nofollow"
               >
-                <FontAwesomeIcon icon={faShoppingCart} /> {t('products_buyNow')}
+                <span>
+                  <FontAwesomeIcon icon={faShoppingCart} /> {t('products_buyNow')}
+                </span>
               </a>
             </li>
           )}
@@ -56,7 +58,9 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
           {links.github && (
             <li>
               <a href={links.github} className="button button_medium button_primary" target="blank" rel="noopener nofollow">
-                <FontAwesomeIcon icon={faGithub} /> Github
+                <span>
+                  <FontAwesomeIcon icon={faGithub} /> Github
+                </span>
               </a>
             </li>
           )}

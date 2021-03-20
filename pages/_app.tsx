@@ -6,7 +6,7 @@ import NextNprogress from 'nextjs-progressbar';
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <NextNprogress color="var(--color-main)" startPosition={0.3} stopDelayMs={200} height={3} />
+      <NextNprogress color="var(--gradient-primary)" startPosition={0.3} stopDelayMs={200} height={3} />
       <Component {...pageProps} />
     </>
   );

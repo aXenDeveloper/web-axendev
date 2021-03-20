@@ -94,6 +94,13 @@ a {
     color: var(--color-main);
   }
 
+  &\:gradient {
+    color: var(--color-main);
+    background-image: var(--button-primary);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   &\:light {
     color: var(--color-light);
   }
