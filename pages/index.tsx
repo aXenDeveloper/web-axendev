@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout from '../components/layouts/Layout';
 import HeaderHome from '../components/home/HeaderHome';
+import SkillsHome from '../components/home/SkillsHome';
 
 const HomePage = () => {
   return (
@@ -11,7 +12,7 @@ const HomePage = () => {
       </Head>
 
       <HeaderHome />
-      <main className="container"></main>
+      <SkillsHome />
     </Layout>
   );
 };

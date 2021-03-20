@@ -67,11 +67,13 @@ const ProductsCategoryPage: FC<ProductsNavPageType> = ({ productsFilterByCategor
   return (
     <Layout>
       <Head>
-        <title>Category - aXenDev.net</title>
+        <title>
+          {t(`page_products_${category}`)} - {t('page_products')} - aXenDev.net
+        </title>
       </Head>
 
       <main className="container">
-        <h1>{t(`page_products_${category}`)}</h1>
+        <h1 className="page_title">{t(`page_products_${category}`)}</h1>
 
         <div className="products">
           <ProductsNav handleSelectSortData={handleSelectSortData} sortData={sortData} />

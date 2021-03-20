@@ -71,7 +71,7 @@ const ProductsPage: FC<ProductsPageType> = ({ products }) => {
       </Head>
 
       <main className="container">
-        <h1>{t('page_products')}</h1>
+        <h1 className="page_title">{t('page_products')}</h1>
 
         <div className="products">
           <ProductsNav handleSelectSortData={handleSelectSortData} sortData={sortData} />

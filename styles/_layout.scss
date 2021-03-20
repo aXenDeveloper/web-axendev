@@ -169,3 +169,12 @@
     }
   }
 }
+
+/* ===== Pages ===== */
+.page {
+  &_title {
+    font-size: 4rem;
+    text-align: center;
+    margin: var(--sp-5) 0;
+  }
+}

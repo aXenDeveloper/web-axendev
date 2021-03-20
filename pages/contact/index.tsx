@@ -13,7 +13,7 @@ const Contact = () => {
       </Head>
 
       <main className="container">
-        <h1>{t('page_contact')}</h1>
+        <h1 className="page_title">{t('page_contact')}</h1>
 
         <Tippy content={<span>Tooltip</span>}>
           <button>My button</button>
