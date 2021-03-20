@@ -1,20 +1,32 @@
+import { faCogs, faPaintBrush, faTools } from '@fortawesome/free-solid-svg-icons';
+import SkillsHomeItem from './SkillsHomeItem';
+
 const SkillsHome = () => {
   return (
     <section className="home_skills">
       <div className="container">
-        <h2>Skills</h2>
+        <header className="home_skills_title">
+          <h2>Skills</h2>
+          <p>Test something desc section</p>
+        </header>
 
         <ul className="home_skills_contain">
-          <li className="home_skills_backend">
-            <article>
-              <header>header</header>
-              backend
-            </article>
-          </li>
+          <SkillsHomeItem title="Back-end" icon={faCogs}>
+            <li>C#</li>
+          </SkillsHomeItem>
 
-          <li className="home_skills_frontend">frontend</li>
+          <SkillsHomeItem title="Front-end" icon={faPaintBrush} highlight>
+            <li>HTML</li>
+            <li>CSS / SASS</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS / SASS</li>
+            <li>JavaScript</li>
+          </SkillsHomeItem>
 
-          <li className="home_skills_tools">tools</li>
+          <SkillsHomeItem title="Tools" icon={faTools}>
+            <li>VS Code</li>
+          </SkillsHomeItem>
         </ul>
       </div>
     </section>
