@@ -16,8 +16,7 @@ const Breadcrumb = () => {
   const [breadcrumbs, setBreadcrumbs] = useState<string[]>();
 
   useEffect(() => {
-    const linkPath = asPath.split('/');
-    linkPath.shift();
+    const linkPath = asPath.split('/').filter(x => x);
 
     const pathArray = linkPath.map((path, i) => {
       return linkPath.slice(0, i + 1).join('/');

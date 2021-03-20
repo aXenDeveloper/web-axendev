@@ -13,6 +13,21 @@
   }
 }
 
+.footer {
+  background-color: var(--box-background);
+  padding: var(--sp-8) 0;
+  margin-top: var(--sp-5);
+
+  &_copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color-light);
+  }
+}
+
 /* ===== navBar ===== */
 .navBar {
   padding: 0;

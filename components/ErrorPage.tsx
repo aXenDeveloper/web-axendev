@@ -11,7 +11,7 @@ const ErrorPage: FC<ErrorPageType> = ({ children, code }) => {
   const { t } = useTranslation('global');
 
   return (
-    <div className="container flex flex-ai:center flex-jc:center">
+    <div className="container flex flex_ai:center flex_jc:center">
       <div className="errorPage">
         <div className="errorPage_icon">
           <FontAwesomeIcon icon={faExclamationTriangle} />

@@ -35,7 +35,7 @@ a {
 .flex {
   display: flex;
 
-  &-jc {
+  &_jc {
     &\:between {
       justify-content: space-between;
     }
@@ -58,7 +58,7 @@ a {
     } */
   }
 
-  &-ai {
+  &_ai {
     &\:center {
       align-items: center;
     }
@@ -84,7 +84,7 @@ a {
 
 /* ===== Text ===== */
 .text {
-  &-weight {
+  &_weight {
     &\:700 {
       font-weight: 700;
     }
