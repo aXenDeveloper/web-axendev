@@ -36,5 +36,7 @@
   "products_desc_ips-secondary-groups-indicator": "(IPS Plugin) The plugin show secondary groups.",
   "footer_copyright": "Copyright",
   "footer_powered_by": "Powered by",
-  "footer_copyright_github": "See how the website was made on GitHub"
+  "footer_copyright_github": "See how the website was made on GitHub",
+  "home_skills_title": "Technologies",
+  "home_skills_desc": "What do I use for my projects?"
 }
