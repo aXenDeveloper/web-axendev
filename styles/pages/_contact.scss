@@ -1,0 +1,20 @@
+.contact {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  &_content {
+    flex: 1;
+  }
+
+  &_other {
+    margin-left: var(--sp-6);
+    flex: 0 0 35rem;
+
+    @media screen and (max-width: 767px) {
+      margin: var(--sp-6) 0 0 0;
+    }
+  }
+}
