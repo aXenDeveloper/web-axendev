@@ -5,6 +5,7 @@
   color: var(--input-color);
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
   border: 1px solid var(--input-border);
+  font-family: inherit;
 
   &_select {
     padding: var(--sp-3) var(--sp-5) var(--sp-3) var(--sp-3);
@@ -24,6 +25,14 @@
   &_text {
     padding: var(--sp-3) var(--sp-4);
   }
+
+  &_textarea {
+    padding: var(--sp-3) var(--sp-4);
+    max-width: 100%;
+    min-height: 10rem;
+    font-size: inherit;
+    resize: vertical;
+  }
 }
 
 .form {
@@ -33,19 +42,25 @@
 
   &_input {
     position: relative;
-    height: 5rem;
     background-color: var(--input-background);
 
-    &:not(:last-child) {
-      margin-bottom: 1.5rem;
+    &_text {
+      height: 5rem;
     }
 
-    > .input {
+    &_textarea {
+      height: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: var(--sp-6);
+    }
+
+    > .input_text {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
       border: 1px solid var(--input-border);
       outline: none;
       z-index: 1;
@@ -58,10 +73,15 @@
       }
 
       &:focus + .input_label,
-      &:not(:placeholder-shown).input:not(:focus) + .input_label {
+      &:not(:placeholder-shown).input_text:not(:focus) + .input_label {
         transform: translate(1rem, -2.4rem);
         font-size: var(--input-font-size-label);
       }
+    }
+
+    > .input_textarea + .input_label {
+      transform: translate(1rem, -2.4rem);
+      font-size: var(--input-font-size-label);
     }
 
     > .input_label {
