@@ -8,6 +8,7 @@ import productsDataAPI from '../../../components/api/productsDataAPI';
 import Layout from '../../../components/layouts/Layout';
 import ProductImage from '../../../components/products/item/ProductImage';
 import ProductLinks from '../../../components/products/ProductLinks';
+import Breadcrumb from '../../../components/layouts/Breadcrumb';
 
 const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
   const { t } = useTranslation('global');
@@ -20,6 +21,8 @@ const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
           {name} - {t('page_products')} - aXenDev.net
         </title>
       </Head>
+
+      <Breadcrumb>{name}</Breadcrumb>
 
       <main className="container container:small">
         <h1 className="page_title">{name}</h1>
@@ -49,6 +52,8 @@ const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
           </li>
         </ul>
       </main>
+
+      <Breadcrumb>{name}</Breadcrumb>
     </Layout>
   );
 };

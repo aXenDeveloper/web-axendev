@@ -1,11 +1,11 @@
+import { FC, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useState } from 'react';
 
-const Breadcrumb = () => {
+const Breadcrumb: FC = ({ children }) => {
   const { asPath, pathname } = useRouter();
   const path = asPath
     .split('/')
@@ -22,7 +22,7 @@ const Breadcrumb = () => {
       return linkPath.slice(0, i + 1).join('/');
     });
 
-    setBreadcrumbs(pathArray);
+    setBreadcrumbs(pathArray.slice(0, pathArray.length - 1));
   }, [asPath]);
 
   return (
@@ -43,10 +43,15 @@ const Breadcrumb = () => {
             return (
               <li key={`page_${pageElement}`}>
                 <FontAwesomeIcon icon={faChevronRight} />
-                <Link href={`/${pageElement}`}>{pathname === '/404' ? t(`page_404`) : t(`page_${pathNameLang}`)}</Link>
+                <Link href={`/${pageElement}`}>{pathname === '/404' ? t('page_404') : t(`page_${pathNameLang}`)}</Link>
               </li>
             );
           })}
+
+        <li className="text:light">
+          <FontAwesomeIcon icon={faChevronRight} />
+          <span>{children}</span>
+        </li>
       </ul>
     </div>
   );

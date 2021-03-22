@@ -5,7 +5,7 @@ import SkillsHome from '../components/home/SkillsHome';
 
 const HomePage = () => {
   return (
-    <Layout desableBreadcrumb>
+    <Layout>
       <Head>
         <title>aXenDev.net</title>
         <link rel="icon" href="/favicon.ico" />

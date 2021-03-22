@@ -5,9 +5,10 @@ import { GetStaticPaths } from 'next';
 import useTranslation from 'next-translate/useTranslation';
 import { ProductsNavPageStaticPropsType, ProductsNavPageType } from '../../../types/pagesTypes';
 import Layout from '../../../components/layouts/Layout';
-import ProductsContent from '../../../components/products/ProductsContent';
+import ProductsContent from '../../../components/products/content/ProductsContent';
 import productsDataAPI from '../../../components/api/productsDataAPI';
 import ProductsNav from '../../../components/products/ProductsNav';
+import Breadcrumb from '../../../components/layouts/Breadcrumb';
 
 const ProductsCategoryPage: FC<ProductsNavPageType> = ({ productsFilterByCategory, category }) => {
   const { t } = useTranslation('global');
@@ -72,6 +73,8 @@ const ProductsCategoryPage: FC<ProductsNavPageType> = ({ productsFilterByCategor
         </title>
       </Head>
 
+      <Breadcrumb>{t(`page_products_${category}`)}</Breadcrumb>
+
       <main className="container">
         <h1 className="page_title">{t(`page_products_${category}`)}</h1>
 
@@ -83,6 +86,8 @@ const ProductsCategoryPage: FC<ProductsNavPageType> = ({ productsFilterByCategor
           </div>
         </div>
       </main>
+
+      <Breadcrumb>{t(`page_products_${category}`)}</Breadcrumb>
     </Layout>
   );
 };

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from '../components/layouts/Layout';
 import useTranslation from 'next-translate/useTranslation';
 import ContactForm from '../components/contact/ContactForm';
+import Breadcrumb from '../components/layouts/Breadcrumb';
 
 const ContactPage = () => {
   const { t } = useTranslation('global');
@@ -11,6 +12,8 @@ const ContactPage = () => {
       <Head>
         <title>{t('page_contact')} - aXenDev.net</title>
       </Head>
+
+      <Breadcrumb>{t('page_contact')}</Breadcrumb>
 
       <main className="container container:small">
         <h1 className="page_title">{t('page_contact')}</h1>
@@ -49,6 +52,8 @@ const ContactPage = () => {
           </ul>
         </div>
       </main>
+
+      <Breadcrumb>{t('page_contact')}</Breadcrumb>
     </Layout>
   );
 };
