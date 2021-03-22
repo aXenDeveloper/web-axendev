@@ -14,7 +14,8 @@
     "next-translate": "^1.0.4",
     "nextjs-progressbar": "0.0.8",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "swiper": "^6.5.0"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",

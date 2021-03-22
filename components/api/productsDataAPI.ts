@@ -5,7 +5,17 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Advanced Server List',
     key: 'ips-app-advanced-serverlist',
     category: 'ips-community-suite',
-    img: 'https://axendev.net/myapps/app/serverlist/1.png',
+    img: [
+      'https://axendev.net/myapps/app/serverlist/1.png',
+      'https://axendev.net/myapps/app/serverlist/2.png',
+      'https://axendev.net/myapps/app/serverlist/3.png',
+      'https://axendev.net/myapps/app/serverlist/4.png',
+      'https://axendev.net/myapps/app/serverlist/5.png',
+      'https://axendev.net/myapps/app/serverlist/6.png',
+      'https://axendev.net/myapps/app/serverlist/7.png',
+      'https://axendev.net/myapps/app/serverlist/8.png',
+      'https://axendev.net/myapps/app/serverlist/9.png'
+    ],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-app-advanced-serverlist',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9852-axen-advanced-server-list/',
@@ -20,7 +30,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: '(React) Weather app',
     key: 'react-weather',
     category: 'react',
-    img: 'https://raw.githubusercontent.com/aXenDeveloper/react-weather/main/screenshots/1-min.png',
+    img: ['https://raw.githubusercontent.com/aXenDeveloper/react-weather/main/screenshots/1-min.png'],
     links: {
       github: 'https://github.com/aXenDeveloper/react-weather',
       demo: 'https://weather.axendev.net/'
@@ -34,7 +44,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Number of entries Chatbox+',
     key: 'ips-number-of-entries-chatbox-plus',
     category: 'ips-community-suite',
-    img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-number-of-entries-chatbox-plus/main/1.png',
+    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-number-of-entries-chatbox-plus/main/1.png'],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-number-of-entries-chatbox-plus',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9598-axen-number-of-entries-chatbox/'
@@ -48,7 +58,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Fluent Design Theme Edition',
     key: 'ips-theme-fluent-design',
     category: 'ips-community-suite',
-    img: '',
+    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png'],
     links: {
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9539-dark-light-fluent-design-theme-edition/',
       demo: 'https://1shot2kill.pl/index.php?app=core&module=system&controller=theme&do=change&id=500'
@@ -63,7 +73,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Administrative bar',
     key: 'ips-administrative-bar',
     category: 'ips-community-suite',
-    img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png',
+    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png'],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-administrative-bar',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9497-axen-administrative-bar/'
@@ -77,7 +87,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Article System in Pages',
     key: 'ips-article-system-in-pages',
     category: 'ips-community-suite',
-    img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png',
+    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png'],
     links: {
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9490-axen-article-system-in-pages/',
       demo: 'https://1shot2kill.pl/portal/'
@@ -92,7 +102,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Font Awesome 5 in IPS',
     key: 'ips-fontawesome5',
     category: 'ips-community-suite',
-    img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png',
+    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png'],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-fontawesome5',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9439-axen-font-awesome-5-in-ips/'
@@ -106,7 +116,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Group formatting in mention',
     key: 'ips-group-formatting-in-mention',
     category: 'ips-community-suite',
-    img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-group-formatting-in-mention/master/1.png',
+    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-group-formatting-in-mention/master/1.png'],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-group-formatting-in-mention',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9273-axen-group-formatting-in-mention/'
@@ -120,7 +130,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Number of entries Chatbox Free',
     key: 'ips-number-of-entries-chatbox',
     category: 'ips-community-suite',
-    img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-number-of-entries-chatbox/main/1.png',
+    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-number-of-entries-chatbox/main/1.png'],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-number-of-entries-chatbox',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/8761-axen-number-of-entries-chatbox-free/'
@@ -134,7 +144,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Secondary Groups Indicator',
     key: 'ips-secondary-groups-indicator',
     category: 'ips-community-suite',
-    img: 'https://raw.githubusercontent.com/aXenDeveloper/ips-secondary-groups-indicator/master/1.png',
+    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-secondary-groups-indicator/master/1.png'],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-secondary-groups-indicator',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/8760-axen-secondary-groups-indicator/'

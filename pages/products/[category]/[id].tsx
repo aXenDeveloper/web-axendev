@@ -1,23 +1,37 @@
+import { FC } from 'react';
+import Head from 'next/head';
 import { GetStaticPaths } from 'next';
 import useTranslation from 'next-translate/useTranslation';
-import Head from 'next/head';
-import { FC } from 'react';
-import productsDataAPI from '../../../components/api/productsDataAPI';
-import Layout from '../../../components/layouts/Layout';
 import { productsDataAPIType } from '../../../types/api/productsDataAPIType';
 import { ProductsItemPageStaticPropsType, ProductsItemPageType } from '../../../types/pagesTypes';
+import productsDataAPI from '../../../components/api/productsDataAPI';
+import Layout from '../../../components/layouts/Layout';
+import ProductImage from '../../../components/products/item/ProductImage';
 
 const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
   const { t } = useTranslation('global');
+  const { name, key, img } = product;
 
   return (
     <Layout>
       <Head>
         <title>
-          {product.name} - {t('page_products')} - aXenDev.net
+          {name} - {t('page_products')} - aXenDev.net
         </title>
       </Head>
-      <div>{product.name}</div>
+
+      <main className="container">
+        <h1 className="page_title">{name}</h1>
+
+        <div className="box padding">
+          <h2>Description</h2>
+          <p>{t(`products_desc_${key}`)}</p>
+
+          <h2>Graphic</h2>
+
+          <ProductImage images={img} />
+        </div>
+      </main>
     </Layout>
   );
 };

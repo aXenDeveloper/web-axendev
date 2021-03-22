@@ -3,7 +3,7 @@ export type productsDataAPIType = {
   name: string;
   key: string;
   category: string;
-  img: string;
+  img: string[];
   links: {
     github?: string;
     ipsmarketplace?: string;

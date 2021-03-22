@@ -12,3 +12,7 @@ export type ProductsCategoryType = {
   sortData: string;
   handleSelectSortData(el: string): void;
 };
+
+export type ProductImageType = {
+  images: string[];
+};

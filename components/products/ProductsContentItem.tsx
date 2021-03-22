@@ -14,15 +14,10 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
   return (
     <li className="products_content_item">
       <div className="products_content_item_generic">
-        <Link href={`products/${category}/${key}`}>
+        <Link href={`/products/${category}/${key}`}>
           <a>
             <div className="products_content_item_generic:img">
-              <Image
-                src={img || 'https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png'}
-                objectFit="cover"
-                layout="fill"
-                placeholder="blur"
-              />
+              <Image src={img[0]} objectFit="cover" layout="fill" placeholder="blur" />
             </div>
           </a>
         </Link>
@@ -33,7 +28,7 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
       </div>
 
       <div className="products_content_item_main">
-        <Link href={`products/${category}/${key}`}>
+        <Link href={`/products/${category}/${key}`}>
           <a>
             <h4>{name}</h4>
           </a>
