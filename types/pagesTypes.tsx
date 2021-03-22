@@ -14,3 +14,13 @@ export type ProductsNavPageStaticPropsType = {
     category: string;
   };
 };
+
+export type ProductsItemPageType = {
+  product: productsDataAPIType;
+};
+
+export type ProductsItemPageStaticPropsType = {
+  params: {
+    id: string;
+  };
+};

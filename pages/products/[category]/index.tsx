@@ -3,11 +3,11 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { GetStaticPaths } from 'next';
 import useTranslation from 'next-translate/useTranslation';
-import { ProductsNavPageStaticPropsType, ProductsNavPageType } from '../../types/pagesTypes';
-import Layout from '../../components/layouts/Layout';
-import ProductsContent from '../../components/products/ProductsContent';
-import productsDataAPI from '../../components/api/productsDataAPI';
-import ProductsNav from '../../components/products/ProductsNav';
+import { ProductsNavPageStaticPropsType, ProductsNavPageType } from '../../../types/pagesTypes';
+import Layout from '../../../components/layouts/Layout';
+import ProductsContent from '../../../components/products/ProductsContent';
+import productsDataAPI from '../../../components/api/productsDataAPI';
+import ProductsNav from '../../../components/products/ProductsNav';
 
 const ProductsCategoryPage: FC<ProductsNavPageType> = ({ productsFilterByCategory, category }) => {
   const { t } = useTranslation('global');

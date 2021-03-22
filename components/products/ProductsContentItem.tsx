@@ -14,14 +14,18 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
   return (
     <li className="products_content_item">
       <div className="products_content_item_generic">
-        <div className="products_content_item_generic:img">
-          <Image
-            src={img || 'https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png'}
-            objectFit="cover"
-            layout="fill"
-            placeholder="blur"
-          />
-        </div>
+        <Link href={`products/${category}/${key}`}>
+          <a>
+            <div className="products_content_item_generic:img">
+              <Image
+                src={img || 'https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png'}
+                objectFit="cover"
+                layout="fill"
+                placeholder="blur"
+              />
+            </div>
+          </a>
+        </Link>
 
         <div className="products_content_item_generic:price">
           {price.price ? `$${price.price.toFixed(2)}` : t('products_price_free')}
@@ -29,7 +33,12 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
       </div>
 
       <div className="products_content_item_main">
-        <h4>{name}</h4>
+        <Link href={`products/${category}/${key}`}>
+          <a>
+            <h4>{name}</h4>
+          </a>
+        </Link>
+
         <span className="text:light">
           {t('products_in')}:{' '}
           <Link href={`/products/${category}`}>
