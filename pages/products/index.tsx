@@ -7,7 +7,7 @@ import { ProductsPageType } from '../../types/pagesTypes';
 import productsDataAPI from '../../components/api/productsDataAPI';
 import Layout from '../../components/layouts/Layout';
 import ProductsNav from '../../components/products/ProductsNav';
-import ProductsContent from '../../components/products/ProductsContent';
+import ProductsContent from '../../components/products/content/ProductsContent';
 
 const ProductsPage: FC<ProductsPageType> = ({ products }) => {
   const { t } = useTranslation('global');

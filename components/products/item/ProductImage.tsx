@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ProductImageType } from '../../../types/components/productsTypes';
@@ -19,9 +18,11 @@ const ProductImage: FC<ProductImageType> = ({ images }) => {
         navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
       >
         {images.map(el => (
-          <SwiperSlide>
-            <img src={el} className="swiper-lazy" />
-            <div className="swiper-lazy-preloader"></div>
+          <SwiperSlide key={el}>
+            <a href={el} target="blank" rel="noopener nofollow">
+              <img src={el} className="swiper-lazy" />
+              <div className="swiper-lazy-preloader"></div>
+            </a>
           </SwiperSlide>
         ))}
       </Swiper>

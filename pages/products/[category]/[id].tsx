@@ -7,10 +7,11 @@ import { ProductsItemPageStaticPropsType, ProductsItemPageType } from '../../../
 import productsDataAPI from '../../../components/api/productsDataAPI';
 import Layout from '../../../components/layouts/Layout';
 import ProductImage from '../../../components/products/item/ProductImage';
+import ProductLinks from '../../../components/products/ProductLinks';
 
 const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
   const { t } = useTranslation('global');
-  const { name, key, img } = product;
+  const { name, key, img, price, links } = product;
 
   return (
     <Layout>
@@ -20,17 +21,33 @@ const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
         </title>
       </Head>
 
-      <main className="container">
+      <main className="container container:small">
         <h1 className="page_title">{name}</h1>
 
-        <div className="box padding">
-          <h2>Description</h2>
-          <p>{t(`products_desc_${key}`)}</p>
+        <ul className="box padding products_item">
+          <li>
+            <h2 className="products_item_h2">
+              {t('product_price')}: <span>{price.price ? '$' + price.price.toFixed(2) : t('products_price_free')}</span>
+            </h2>
+          </li>
 
-          <h2>Graphic</h2>
+          <li>
+            <h2 className="products_item_h2">Description</h2>
+            <p className="products_item_p">{t(`products_desc_${key}`)}</p>
+          </li>
 
-          <ProductImage images={img} />
-        </div>
+          <li>
+            <h2 className="products_item_h2">Links</h2>
+            <ul className="products_item_links">
+              <ProductLinks price={price} links={links} />
+            </ul>
+          </li>
+
+          <li>
+            <h2 className="products_item_h2">Graphic</h2>
+            <ProductImage images={img} />
+          </li>
+        </ul>
       </main>
     </Layout>
   );

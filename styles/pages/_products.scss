@@ -141,14 +141,37 @@
   }
 
   &_item {
+    margin: 0;
+    list-style: none;
+
+    > li:not(:last-child) {
+      margin-bottom: var(--sp-6);
+    }
+
+    &_h2 {
+      margin: 0 0 var(--sp-2) 0;
+      font-size: 2.5rem;
+      display: flex;
+      align-items: center;
+
+      > span {
+        margin-left: var(--sp-4);
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--products-price);
+      }
+    }
+
     &_img {
       position: relative;
 
       .swiper-slide {
         display: flex;
+        align-items: center;
         justify-content: center;
+        min-height: 30rem;
 
-        > img {
+        img {
           max-width: 100%;
         }
       }
@@ -176,6 +199,33 @@
 
       .swiper-button-prev {
         left: 0;
+      }
+    }
+
+    &_links {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+
+      > li {
+        flex: 1;
+
+        &:not(:last-child) {
+          margin-right: var(--sp-6);
+
+          @media screen and (max-width: 767px) {
+            margin: 0 0 var(--sp-4) 0;
+          }
+        }
+
+        .button {
+          width: 100%;
+        }
       }
     }
   }

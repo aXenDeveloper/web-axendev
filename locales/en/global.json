@@ -45,5 +45,6 @@
   "contact_form_title": "Title",
   "contact_form_text": "Content",
   "contact_form_send": "Send",
-  "contact_form_clear": "Clear form"
+  "contact_form_clear": "Clear form",
+  "product_price": "Price"
 }

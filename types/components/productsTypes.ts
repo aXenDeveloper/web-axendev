@@ -16,3 +16,15 @@ export type ProductsCategoryType = {
 export type ProductImageType = {
   images: string[];
 };
+
+export type ProductLinksType = {
+  price: {
+    price: number;
+    link?: 'ipsmarketplace';
+  };
+  links: {
+    github?: string;
+    ipsmarketplace?: string;
+    demo?: string;
+  };
+};

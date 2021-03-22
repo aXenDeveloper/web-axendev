@@ -11,7 +11,7 @@ import ProductsNav from '../../../components/products/ProductsNav';
 
 const ProductsCategoryPage: FC<ProductsNavPageType> = ({ productsFilterByCategory, category }) => {
   const { t } = useTranslation('global');
-  const { push, query, asPath } = useRouter();
+  const { push, query } = useRouter();
 
   const [data, setData] = useState(productsFilterByCategory);
   const [sortData, setSortData] = useState('DESC');
