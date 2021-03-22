@@ -98,4 +98,17 @@
       color: var(--input-color-label);
     }
   }
+
+  &_bottom {
+    padding: 0;
+    margin: var(--sp-6) 0 0 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > li:not(:last-child) {
+      margin-right: var(--sp-6);
+    }
+  }
 }

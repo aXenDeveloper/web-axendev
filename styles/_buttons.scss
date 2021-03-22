@@ -7,10 +7,12 @@
   position: relative;
   font-family: inherit;
   border: 0;
+  border: 1px solid transparent;
 
   &_light {
     background-color: var(--button-light);
     color: var(--button-light-color);
+    border-color: var(--color-main);
 
     &:hover {
       background-color: var(--button-light-hover);

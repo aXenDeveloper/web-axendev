@@ -3,6 +3,10 @@
   padding: 0 1.5rem;
   margin: 0 auto;
   position: relative;
+
+  &\:small {
+    max-width: var(--container-small-width);
+  }
 }
 
 .header {
@@ -161,6 +165,7 @@
 
   &_title {
     padding: var(--sp-3) var(--sp-5);
+    text-align: center;
 
     h2,
     h3 {

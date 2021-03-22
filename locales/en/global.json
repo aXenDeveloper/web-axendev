@@ -38,5 +38,12 @@
   "footer_powered_by": "Powered by",
   "footer_copyright_github": "See how the website was made on GitHub",
   "home_skills_title": "Technologies",
-  "home_skills_desc": "What do I use for my projects?"
+  "home_skills_desc": "What do I use for my projects?",
+  "contact_form": "Contact via the form",
+  "contact_form_name": "Your name",
+  "contact_form_email": "Your email",
+  "contact_form_title": "Title",
+  "contact_form_text": "Content",
+  "contact_form_send": "Send",
+  "contact_form_clear": "Clear form"
 }

@@ -10,11 +10,28 @@
   }
 
   &_other {
-    margin-left: var(--sp-6);
+    margin: 0 0 0 var(--sp-6);
+    padding: 0;
+    list-style: none;
     flex: 0 0 35rem;
 
     @media screen and (max-width: 767px) {
       margin: var(--sp-6) 0 0 0;
+    }
+
+    &_list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: var(--sp-4);
+        }
+        a {
+          display: block;
+        }
+      }
     }
   }
 }

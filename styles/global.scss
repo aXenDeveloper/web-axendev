@@ -82,6 +82,23 @@ a {
   }
 }
 
+/* ===== Margin ===== */
+.margin {
+  margin: var(--sp-6);
+
+  &\:half {
+    margin: var(--sp-3);
+  }
+
+  &_top {
+    margin-top: var(--sp-6);
+
+    &\:half {
+      margin-top: var(--sp-3);
+    }
+  }
+}
+
 /* ===== Text ===== */
 .text {
   &_weight {
