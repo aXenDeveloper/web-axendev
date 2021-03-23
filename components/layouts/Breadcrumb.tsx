@@ -4,8 +4,9 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { BreadcrumbType } from '../../types/components/layoutTypes';
 
-const Breadcrumb: FC = ({ children }) => {
+const Breadcrumb: FC<BreadcrumbType> = ({ children, small }) => {
   const { asPath, pathname } = useRouter();
   const path = asPath
     .split('/')
@@ -26,7 +27,7 @@ const Breadcrumb: FC = ({ children }) => {
   }, [asPath]);
 
   return (
-    <div className="container responsive_show:desktop">
+    <div className={`container${small ? ' container:small' : ''} responsive_show:desktop`}>
       <ul className="breadcrumb">
         <li>
           <FontAwesomeIcon icon={faHome} />

@@ -16,7 +16,7 @@ const ContactPage = () => {
         <title>{t('page_contact')} - aXenDev.net</title>
       </Head>
 
-      <Breadcrumb>{t('page_contact')}</Breadcrumb>
+      <Breadcrumb small>{t('page_contact')}</Breadcrumb>
 
       <main className="container container:small">
         <h1 className="page_title">{t('page_contact')}</h1>
@@ -61,7 +61,7 @@ const ContactPage = () => {
         </div>
       </main>
 
-      <Breadcrumb>{t('page_contact')}</Breadcrumb>
+      <Breadcrumb small>{t('page_contact')}</Breadcrumb>
     </Layout>
   );
 };
