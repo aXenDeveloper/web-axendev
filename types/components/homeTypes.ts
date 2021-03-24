@@ -5,3 +5,7 @@ export type SkillsHomeItemType = {
   highlight?: boolean;
   icon: IconDefinition;
 };
+
+export type CooperationHomeItemType = {
+  number: number;
+};

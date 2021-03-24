@@ -158,20 +158,100 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
     }
 
     &_contant {
       flex: 0 1 50%;
 
+      @media screen and (max-width: 767px) {
+        order: 1;
+      }
+
       &_title {
         margin: 0 0 var(--sp-6) 0;
         font-weight: 700;
         font-size: 3.5rem;
+
+        @media screen and (max-width: 767px) {
+          text-align: center;
+        }
+      }
+
+      > p {
+        margin: var(--sp-4) 0;
+
+        @media screen and (max-width: 767px) {
+          text-align: center;
+        }
+      }
+
+      &_cooperation {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 1rem;
+          background-color: var(--color-main);
+          position: absolute;
+          top: 20px;
+          bottom: 20px;
+          left: 16px;
+          z-index: 1;
+          opacity: 0.15;
+        }
+
+        &_item {
+          display: flex;
+          align-items: center;
+          margin-bottom: var(--sp-6);
+
+          &\:number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 50px;
+            padding: var(--sp-4);
+            background-image: var(--gradient-primary);
+            margin-right: var(--sp-6);
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            flex-shrink: 0;
+            z-index: 5;
+          }
+
+          &\:content {
+            > h3 {
+              font-size: 2rem;
+              margin: 0 0 var(--sp-3) 0;
+            }
+
+            > p {
+              margin: 0;
+            }
+          }
+        }
       }
     }
 
     &_image {
       flex: 0 0 35%;
+      width: 90%;
+
+      @media screen and (max-width: 767px) {
+        order: 0;
+        margin-bottom: var(--sp-6);
+      }
     }
   }
 }

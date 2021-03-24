@@ -1,6 +1,6 @@
 module.exports = {
   locales: ['en', 'pl'],
-  defaultLocale: 'en',
+  defaultLocale: 'pl',
   pages: {
     '*': ['global']
   }
