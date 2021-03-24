@@ -1,4 +1,12 @@
-import { faCss3, faGithub, faHtml5, faJs, faNodeJs, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
+import {
+  faCss3,
+  faGithub,
+  faHtml5,
+  faJs,
+  faNodeJs,
+  faPhp,
+  faReact
+} from '@fortawesome/free-brands-svg-icons';
 import { faCode, faCogs, faPaintBrush, faTools } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useTranslation from 'next-translate/useTranslation';
@@ -56,8 +64,6 @@ const SkillsHome = () => {
 
             <li>TypeScript</li>
             <li>Jest</li>
-            <li>SEO</li>
-            <li>UX / UI</li>
           </SkillsHomeItem>
 
           <SkillsHomeItem title="Tools" icon={faTools}>

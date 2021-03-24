@@ -45,6 +45,12 @@
     line-height: 2.5;
   }
 
+  &_large {
+    padding: 0 3rem;
+    line-height: 2.2;
+    font-size: 2rem;
+  }
+
   &:hover {
     text-decoration: none;
     cursor: pointer;

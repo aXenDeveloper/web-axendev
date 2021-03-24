@@ -25,8 +25,25 @@ const Footer = () => {
 
           <span>
             {t('footer_powered_by')}{' '}
-            <a href="https://nextjs.org/" target="blank" rel="noopener nofollow" className="text:color text_weight:700">
+            <a
+              href="https://nextjs.org/"
+              target="blank"
+              rel="noopener nofollow"
+              className="text:color text_weight:700"
+            >
               NextJS
+            </a>
+          </span>
+
+          <span>
+            Illustration by{' '}
+            <a
+              href="https://storyset.com/web"
+              target="blank"
+              rel="noopener nofollow"
+              className="text:color text_weight:700"
+            >
+              Freepik Storyset
             </a>
           </span>
         </div>

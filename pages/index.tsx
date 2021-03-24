@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from '../components/layouts/Layout';
 import HeaderHome from '../components/home/HeaderHome';
 import SkillsHome from '../components/home/SkillsHome';
+import DoHome from '../components/home/DoHome';
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       </Head>
 
       <HeaderHome />
+      <DoHome />
       <SkillsHome />
     </Layout>
   );

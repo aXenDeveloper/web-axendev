@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50rem;
+    height: calc(100vh - 187px);
 
     @media screen and (max-width: 767px) {
       height: 35rem;
@@ -147,6 +147,31 @@
           }
         }
       }
+    }
+  }
+
+  &_section {
+    background-color: #fff;
+    padding: var(--sp-8) 0;
+
+    > .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &_contant {
+      flex: 0 1 50%;
+
+      &_title {
+        margin: 0 0 var(--sp-6) 0;
+        font-weight: 700;
+        font-size: 3.5rem;
+      }
+    }
+
+    &_image {
+      flex: 0 0 35%;
     }
   }
 }
