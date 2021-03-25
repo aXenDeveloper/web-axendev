@@ -2,8 +2,11 @@ import { useDarkTheme } from '../../context/useDarkTheme';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { DarkThemeContextType } from '../../types/api/contextTypes';
+import Tippy from '@tippyjs/react';
+import useTranslation from 'next-translate/useTranslation';
 
 const DarkButton = () => {
+  const { t } = useTranslation('global');
   const { setDarkTheme } = useDarkTheme() as DarkThemeContextType;
 
   const handleButton = () => {
@@ -19,9 +22,15 @@ const DarkButton = () => {
   };
 
   return (
-    <button onClick={handleButton} className="userBar_button userBar_button_dark">
-      <FontAwesomeIcon icon={faMoon} />
-    </button>
+    <Tippy content={t('button_dark')}>
+      <button
+        onClick={handleButton}
+        className="userBar_button userBar_button_dark"
+        aria-label={t('button_dark')}
+      >
+        <FontAwesomeIcon icon={faMoon} />
+      </button>
+    </Tippy>
   );
 };
 

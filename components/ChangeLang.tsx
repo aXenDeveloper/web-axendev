@@ -15,10 +15,10 @@ const ChangeLang = () => {
     <ul className="userBar_lang">
       <li>
         <Tippy content={'Polish (PL)'}>
-          <span>
+          <span className="userBar_lang_item">
             <Link href={asPath} locale="pl">
               <a onClick={() => handleChangeLang('pl')}>
-                <Image src="/flags/pl.png" width={40} height={25} />
+                <Image src="/flags/pl.png" objectFit="cover" layout="fill" alt="Polish (PL)" />
               </a>
             </Link>
           </span>
@@ -27,10 +27,10 @@ const ChangeLang = () => {
 
       <li>
         <Tippy content={'English (USA)'}>
-          <span>
+          <span className="userBar_lang_item">
             <Link href={asPath} locale="en">
               <a onClick={() => handleChangeLang('en')}>
-                <Image src="/flags/us.png" width={40} height={25} />
+                <Image src="/flags/us.png" objectFit="cover" layout="fill" alt="English (USA)" />
               </a>
             </Link>
           </span>

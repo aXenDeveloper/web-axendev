@@ -71,5 +71,8 @@
   "home_client_list_2_1": "The product complies with the latest SEO standards",
   "home_client_list_2_2": " standards",
   "home_client_list_3": "E-mail summary of each collaboration",
-  "home_client_list_4": "Lifetime access to the project on"
+  "home_client_list_4": "Lifetime access to the project on",
+  "drawer_button_open": "Open menu",
+  "drawer_button_close": "Close menu",
+  "button_dark": "Toggle dark theme"
 }

@@ -71,5 +71,8 @@
   "home_client_list_2_1": "Produkt zgodny z najnowszymi standardami",
   "home_client_list_2_2": "",
   "home_client_list_3": "Podsumowanie każdej współpracy w E-mailu",
-  "home_client_list_4": "Dożywotni dostęp do projektu w serwisie"
+  "home_client_list_4": "Dożywotni dostęp do projektu w serwisie",
+  "drawer_button_open": "Otwórz menu",
+  "drawer_button_close": "Zamknij menu",
+  "button_dark": "Przełącz tryb ciemny"
 }

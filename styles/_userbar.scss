@@ -17,6 +17,13 @@
     display: flex;
     line-height: 0;
 
+    &_item {
+      display: block;
+      position: relative;
+      width: 4rem;
+      height: 2.5rem;
+    }
+
     > li a img {
       border-radius: var(--border-radius);
     }
