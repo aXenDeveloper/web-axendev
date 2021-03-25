@@ -1,5 +1,8 @@
+import { faQuestion } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const DoHome = () => {
   const { t } = useTranslation('global');
@@ -13,6 +16,16 @@ const DoHome = () => {
           </h2>
 
           <p>{t('home_do')}</p>
+
+          <div className="home_section_contant_buttons">
+            <Link href="/faq">
+              <a className="button button_large button_primary">
+                <span>
+                  <FontAwesomeIcon icon={faQuestion} /> {t('page_faq')}
+                </span>
+              </a>
+            </Link>
+          </div>
         </div>
 
         <div className="home_section_image">
@@ -21,7 +34,7 @@ const DoHome = () => {
             objectFit="cover"
             layout="responsive"
             width={470}
-            height={420}
+            height={450}
             unoptimized
           />
         </div>

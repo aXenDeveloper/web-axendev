@@ -152,7 +152,7 @@
 
   &_section {
     background-color: #fff;
-    padding: var(--sp-8) 0;
+    padding: var(--sp-10) 0;
 
     > .container {
       display: flex;
@@ -189,6 +189,14 @@
         }
       }
 
+      &_buttons {
+        margin-top: var(--sp-6);
+
+        @media screen and (max-width: 767px) {
+          text-align: center;
+        }
+      }
+
       &_cooperation {
         margin: 0;
         padding: 0;
@@ -201,11 +209,12 @@
           width: 1rem;
           background-color: var(--color-main);
           position: absolute;
-          top: 20px;
-          bottom: 20px;
-          left: 16px;
+          top: 6rem;
+          bottom: 6rem;
+          left: 1.6rem;
           z-index: 1;
           opacity: 0.15;
+          border-radius: 1rem;
         }
 
         &_item {

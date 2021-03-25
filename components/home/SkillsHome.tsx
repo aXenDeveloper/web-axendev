@@ -64,6 +64,8 @@ const SkillsHome = () => {
 
             <li>TypeScript</li>
             <li>Jest</li>
+            <li>UX / UI</li>
+            <li>SEO</li>
           </SkillsHomeItem>
 
           <SkillsHomeItem title="Tools" icon={faTools}>
