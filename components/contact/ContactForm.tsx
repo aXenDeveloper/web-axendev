@@ -1,5 +1,5 @@
 import useTranslation from 'next-translate/useTranslation';
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 
 const ContactForm = () => {
   const [inputName, setInputName] = useState('');
@@ -14,10 +14,6 @@ const ContactForm = () => {
 
   const { t } = useTranslation('global');
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-  };
-
   const handleClearButton = () => {
     setInputName('');
     setInputEmail('');
@@ -27,7 +23,7 @@ const ContactForm = () => {
 
   return (
     <div className="contact_content">
-      <form action="https://files.axendev.net/mail.php" method="POST" onSubmit={handleSubmit}>
+      <form action="https://files.axendev.net/mail.php" method="POST">
         <ul className="form">
           <li className="form_input form_input_text">
             <input
@@ -100,7 +96,11 @@ const ContactForm = () => {
           </li>
 
           <li>
-            <button type="button" className="button button_medium button_light" onClick={handleClearButton}>
+            <button
+              type="button"
+              className="button button_medium button_light"
+              onClick={handleClearButton}
+            >
               <span>{t('contact_form_clear')}</span>
             </button>
           </li>
