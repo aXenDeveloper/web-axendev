@@ -61,4 +61,36 @@
       display: block;
     }
   }
+
+  &_nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    > li {
+      a {
+        display: block;
+        padding: var(--sp-3) var(--sp-5);
+        text-decoration: none;
+      }
+
+      &.active {
+        border-left: 3px solid var(--color-main);
+        color: var(--color-main);
+      }
+    }
+  }
+
+  &_action {
+    padding: var(--sp-6);
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > li:not(:last-child) {
+      margin-right: var(--sp-2);
+    }
+  }
 }

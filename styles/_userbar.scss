@@ -6,8 +6,10 @@
   align-items: center;
   color: var(--userbar-color);
 
-  li:not(:last-child) {
-    margin-right: var(--sp-2);
+  @media screen and (min-width: 767px) {
+    > li:not(:last-child) {
+      margin-right: var(--sp-2);
+    }
   }
 
   &_lang {
@@ -16,6 +18,10 @@
     list-style: none;
     display: flex;
     line-height: 0;
+
+    > li:not(:last-child) {
+      margin-right: var(--sp-2);
+    }
 
     &_item {
       display: block;

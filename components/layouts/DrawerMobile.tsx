@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useTranslation from 'next-translate/useTranslation';
+import ChangeLang from '../ChangeLang';
+import NavItems from './nav/NavItems';
+import DarkButton from './DarkButton';
 
 const DrawerMobile = () => {
   const { t } = useTranslation('global');
@@ -29,7 +32,20 @@ const DrawerMobile = () => {
       </button>
 
       <div className={`drawer${isOpen ? ' drawer:active' : ''}`}>
-        <div className="padding">test</div>
+        <ul className="drawer_action">
+          <li>
+            <DarkButton />
+          </li>
+          <li>
+            <ChangeLang />
+          </li>
+        </ul>
+
+        <nav>
+          <ul className="drawer_nav">
+            <NavItems />
+          </ul>
+        </nav>
       </div>
 
       <div
