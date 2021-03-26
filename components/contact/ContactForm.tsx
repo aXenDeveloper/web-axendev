@@ -1,7 +1,10 @@
 import useTranslation from 'next-translate/useTranslation';
+import { useRouter } from 'next/router';
 import { ChangeEvent, useState } from 'react';
 
 const ContactForm = () => {
+  const { locale } = useRouter();
+
   const [inputName, setInputName] = useState('');
   const [inputEmail, setInputEmail] = useState('');
   const [inputTitle, setInputTitle] = useState('');
@@ -23,7 +26,7 @@ const ContactForm = () => {
 
   return (
     <div className="contact_content">
-      <form action="https://files.axendev.net/mail.php" method="POST">
+      <form action={`https://files.axendev.net/mails/mail_${locale}.php`} method="POST">
         <ul className="form">
           <li className="form_input form_input_text">
             <input
