@@ -1,20 +1,32 @@
 const HomeDoSVG = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-    <g id="freepik--Floor--inject-185">
-      <ellipse cx="250" cy="358.49" rx="222.5" ry="128.46" style={{ fill: '#f5f5f5' }}></ellipse>
+    <g>
+      <ellipse
+        cx="250"
+        cy="358.49"
+        rx="222.5"
+        ry="128.46"
+        style={{ fill: 'var(--svg-shadow)' }}
+      ></ellipse>
     </g>
-    <g id="freepik--Shadows--inject-185">
-      <ellipse cx="95.58" cy="369.76" rx="24.63" ry="14.22" style={{ fill: '#e6e6e6' }}></ellipse>
+    <g>
+      <ellipse
+        cx="95.58"
+        cy="369.76"
+        rx="24.63"
+        ry="14.22"
+        style={{ fill: 'var(--svg-shadow-2)' }}
+      ></ellipse>
       <path
         d="M285.26,293.53,123.38,387a4,4,0,0,0,0,7l95.14,54.93a15.73,15.73,0,0,0,15.73,0l161.88-93.46a4,4,0,0,0,0-7L301,293.53A15.73,15.73,0,0,0,285.26,293.53Z"
-        style={{ fill: '#e6e6e6' }}
+        style={{ fill: 'var(--svg-shadow-2)' }}
       ></path>
       <path
         d="M236.65,294.44l-64.8,37.42a8.55,8.55,0,0,0,0,14.82l32.63,18.84a14.23,14.23,0,0,0,14.2,0l64.81-37.42a8.56,8.56,0,0,0,0-14.82l-32.64-18.84A14.18,14.18,0,0,0,236.65,294.44Z"
-        style={{ fill: '#e6e6e6' }}
+        style={{ fill: 'var(--svg-shadow-2)' }}
       ></path>
     </g>
-    <g id="freepik--Plant--inject-185">
+    <g>
       <path
         d="M96.88,333s-15.22-14.87-6.56-39.77c4.85-13.95,20.94-24.2,30.1-25.16a42.92,42.92,0,0,0-7.16,12.07l-11.54,7.67,10.61-3.32-2.26,9.08s-9.86,6-11.32,7.26L109.38,298S108.56,323.72,96.88,333Z"
         style={{ fill: '#C72C20' }}
@@ -389,7 +401,7 @@ const HomeDoSVG = () => (
       ></path>
       <polygon
         points="251.34 298.95 225.48 313.88 191.82 294.45 217.69 279.52 251.34 298.95"
-        style={{ fill: '#e6e6e6' }}
+        style={{ fill: 'var(--svg-shadow-2)' }}
       ></polygon>
       <polygon
         points="252.83 298.46 225.81 311.18 193.89 288.99 220.92 276.28 252.83 298.46"

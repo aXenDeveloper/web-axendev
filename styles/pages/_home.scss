@@ -1,7 +1,7 @@
 .home {
   &_top {
     position: relative;
-    background-color: #fff;
+    background-color: var(--box-background);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,7 +142,7 @@
   }
 
   &_section {
-    background-color: #fff;
+    background-color: var(--box-background);
     padding: var(--sp-10) 0;
 
     > .container {
