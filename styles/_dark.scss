@@ -4,11 +4,21 @@
   --color-light: #969696;
   --box-background: #13121a;
   --userbar-color: #dadada;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --img-loading: #1b1a25;
+  --theme-area-background: #1d1b27;
 
   --svg-shadow: #1b1a25;
   --svg-shadow-2: #22212f;
 
+  --button-light: #13121a;
+  --button-light-hover: #2b1111;
+  --button-light-color: #fff;
+
+  --input: #13121a;
   --input-color: #e6e6e6;
+  --input-border: #252525;
+  --input-background: #13121a;
 }
 
 .darkTheme .userBar .userBar_button_dark {

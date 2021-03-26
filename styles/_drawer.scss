@@ -16,12 +16,15 @@
   }
 
   &_button {
+    border: 0;
+    cursor: pointer;
+    color: inherit;
+
     &_open {
       width: 48px;
       height: 48px;
       font-size: 2.5rem;
       background: transparent;
-      border: 0;
     }
 
     &_close {
@@ -35,8 +38,6 @@
       top: 5px;
       right: calc(30rem + 0.5rem);
       z-index: 2000;
-      border: 0;
-      cursor: pointer;
       opacity: 0;
       display: none;
 

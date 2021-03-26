@@ -17,7 +17,7 @@ const DrawerMobile = () => {
     <>
       <button
         onClick={handleOpenDrawer}
-        className="drawer_button_open"
+        className="drawer_button drawer_button_open"
         aria-label={t('drawer_button_open')}
       >
         <FontAwesomeIcon icon={faBars} />
@@ -25,7 +25,9 @@ const DrawerMobile = () => {
 
       <button
         onClick={handleCloseDrawer}
-        className={`drawer_button_close${isOpen ? ' drawer_button_close:active' : ''}`}
+        className={`drawer_button drawer_button_close${
+          isOpen ? ' drawer_button_close:active' : ''
+        }`}
         aria-label={t('drawer_button_close')}
       >
         <FontAwesomeIcon icon={faTimes} />

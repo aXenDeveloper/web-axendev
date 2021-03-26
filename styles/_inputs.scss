@@ -6,6 +6,7 @@
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
   border: 1px solid var(--input-border);
   font-family: inherit;
+  background-color: var(--input);
 
   &_select {
     padding: var(--sp-3) var(--sp-5) var(--sp-3) var(--sp-3);
