@@ -1,30 +1,166 @@
 .home {
-  &_top {
-    position: relative;
-    background-color: var(--box-background);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 187px);
+  &_section {
+    padding: var(--sp-10) 0;
 
-    @media screen and (max-width: 767px) {
-      height: calc(100vh - 121px);
+    &\:background {
+      background-color: var(--box-background);
     }
 
-    &_text {
-      font-size: 6rem;
-      line-height: 1.3;
-      max-width: 60rem;
-      margin: 0;
-      z-index: 1;
-      color: #000;
-      text-align: center;
-      font-weight: 700;
-      margin: var(--sp-6) var(--sp-1);
+    > .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
       @media screen and (max-width: 767px) {
-        font-size: 4rem;
-        max-width: 40rem;
+        flex-direction: column;
+      }
+    }
+
+    &_contant {
+      flex: 0 1 50%;
+
+      @media screen and (max-width: 767px) {
+        order: 1;
+      }
+
+      &_title {
+        margin: 0 0 var(--sp-6) 0;
+        font-weight: 700;
+        font-size: 3.5rem;
+
+        @media screen and (max-width: 767px) {
+          text-align: center;
+        }
+      }
+
+      > p {
+        margin: var(--sp-4) 0;
+
+        @media screen and (max-width: 767px) {
+          text-align: center;
+        }
+      }
+
+      &_buttons {
+        margin-top: var(--sp-6);
+
+        @media screen and (max-width: 767px) {
+          text-align: center;
+        }
+      }
+
+      &_cooperation {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 1rem;
+          background-color: var(--color-main);
+          position: absolute;
+          top: 6rem;
+          bottom: 6rem;
+          left: 1.6rem;
+          z-index: 1;
+          opacity: 0.15;
+          border-radius: 1rem;
+        }
+
+        &_item {
+          display: flex;
+          align-items: center;
+          margin-bottom: var(--sp-6);
+
+          &\:number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 50px;
+            padding: var(--sp-4);
+            background-image: var(--gradient-primary);
+            margin-right: var(--sp-6);
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            flex-shrink: 0;
+            z-index: 5;
+          }
+
+          &\:content {
+            > h3 {
+              font-size: 2rem;
+              margin: 0 0 var(--sp-3) 0;
+            }
+
+            > p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &_image {
+      flex: 0 0 35%;
+      width: 90%;
+      position: relative;
+      z-index: 50;
+
+      @media screen and (max-width: 767px) {
+        order: 0;
+        margin-bottom: var(--sp-6);
+      }
+    }
+  }
+
+  &_top {
+    position: relative;
+    overflow: hidden;
+
+    > .container {
+      justify-content: center;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      background-image: url('/assets/logo512.png');
+      display: block;
+      width: 512px;
+      height: 512px;
+      position: absolute;
+    }
+
+    &::after {
+      top: 0;
+      left: 0;
+      transform: translate(-186px, -216px) rotate(45deg) scale(0.7);
+
+      @media screen and (min-width: 768px) and (max-width: 980px) {
+        transform: translate(-186px, -228px) rotate(45deg) scale(0.5);
+      }
+
+      @media screen and (max-width: 767px) {
+        transform: translate(-203px, -233px) rotate(45deg) scale(0.4);
+      }
+    }
+
+    &::before {
+      bottom: 0;
+      right: 0;
+      transform: translate(149px, 195px) rotate(41deg);
+
+      @media screen and (min-width: 768px) and (max-width: 980px) {
+        transform: translate(163px, 219px) rotate(41deg) scale(0.7);
+      }
+
+      @media screen and (max-width: 767px) {
+        transform: translate(188px, 227px) rotate(41deg) scale(0.5);
       }
     }
   }
@@ -137,120 +273,6 @@
             min-width: 2rem;
           }
         }
-      }
-    }
-  }
-
-  &_section {
-    background-color: var(--box-background);
-    padding: var(--sp-10) 0;
-
-    > .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      @media screen and (max-width: 767px) {
-        flex-direction: column;
-      }
-    }
-
-    &_contant {
-      flex: 0 1 50%;
-
-      @media screen and (max-width: 767px) {
-        order: 1;
-      }
-
-      &_title {
-        margin: 0 0 var(--sp-6) 0;
-        font-weight: 700;
-        font-size: 3.5rem;
-
-        @media screen and (max-width: 767px) {
-          text-align: center;
-        }
-      }
-
-      > p {
-        margin: var(--sp-4) 0;
-
-        @media screen and (max-width: 767px) {
-          text-align: center;
-        }
-      }
-
-      &_buttons {
-        margin-top: var(--sp-6);
-
-        @media screen and (max-width: 767px) {
-          text-align: center;
-        }
-      }
-
-      &_cooperation {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: relative;
-
-        &::after {
-          content: '';
-          display: block;
-          width: 1rem;
-          background-color: var(--color-main);
-          position: absolute;
-          top: 6rem;
-          bottom: 6rem;
-          left: 1.6rem;
-          z-index: 1;
-          opacity: 0.15;
-          border-radius: 1rem;
-        }
-
-        &_item {
-          display: flex;
-          align-items: center;
-          margin-bottom: var(--sp-6);
-
-          &\:number {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 4.5rem;
-            height: 4.5rem;
-            border-radius: 50px;
-            padding: var(--sp-4);
-            background-image: var(--gradient-primary);
-            margin-right: var(--sp-6);
-            font-size: 2rem;
-            font-weight: 700;
-            color: #fff;
-            flex-shrink: 0;
-            z-index: 5;
-          }
-
-          &\:content {
-            > h3 {
-              font-size: 2rem;
-              margin: 0 0 var(--sp-3) 0;
-            }
-
-            > p {
-              margin: 0;
-            }
-          }
-        }
-      }
-    }
-
-    &_image {
-      flex: 0 0 35%;
-      width: 90%;
-
-      @media screen and (max-width: 767px) {
-        order: 0;
-        margin-bottom: var(--sp-6);
       }
     }
   }

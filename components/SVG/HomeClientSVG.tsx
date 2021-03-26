@@ -852,7 +852,7 @@ const HomeClientSVG = () => (
         ></path>
       </g>
     </g>
-    <g>
+    <g className="animation_fromTopToDown">
       <path
         d="M426.24,172.63l3.93-2.27a.39.39,0,0,0,.19-.17l.72-1.26-2.33-1.35.07.21Z"
         style={{ fill: '#C72C20' }}

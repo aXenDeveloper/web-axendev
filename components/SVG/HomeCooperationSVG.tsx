@@ -601,7 +601,7 @@ const HomeCooperationSVG = () => (
         ></path>
       </g>
     </g>
-    <g>
+    <g className="animation_fromTopToDown">
       <g>
         <g>
           <path

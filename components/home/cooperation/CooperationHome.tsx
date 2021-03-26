@@ -6,7 +6,7 @@ const CooperationHome = () => {
   const { t } = useTranslation('global');
 
   return (
-    <section className="home_section">
+    <section className="home_section home_section:background">
       <div className="container container:small">
         <div className="home_section_image">
           <HomeCooperationSVG />

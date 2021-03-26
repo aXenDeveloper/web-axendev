@@ -6,3 +6,21 @@
     opacity: 1;
   }
 }
+
+.animation {
+  &_fromTopToDown {
+    animation: fromTopToDown 5s ease-in-out infinite;
+  }
+}
+
+@keyframes fromTopToDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
