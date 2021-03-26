@@ -5,16 +5,15 @@ const HeaderHome = () => {
 
   return (
     <section className="home_top">
-      <video autoPlay muted loop className="home_top_video">
-        <source src="/assets/header_home.mp4" />
-      </video>
-
       <div className="home_top_text">
-        {t('home_header_text_amazing')} <span className="text:gradient">{t('home_header_text_projects')}</span>{' '}
-        {t('home_header_text_for')} <span className="text:gradient">{t('home_header_text_you')}</span>!
+        {t('home_header_text_amazing')}{' '}
+        <span className="text:gradient">{t('home_header_text_projects')}</span>{' '}
+        {t('home_header_text_for')}{' '}
+        <span className="text:gradient">{t('home_header_text_you')}</span>!
       </div>
     </section>
   );
 };
 
 export default HeaderHome;
+// /assets/header_home.mp4

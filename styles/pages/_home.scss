@@ -1,24 +1,14 @@
 .home {
   &_top {
     position: relative;
-    background-color: #000;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     height: calc(100vh - 187px);
 
     @media screen and (max-width: 767px) {
-      height: 35rem;
-    }
-
-    &_video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.35;
+      height: calc(100vh - 121px);
     }
 
     &_text {
@@ -27,7 +17,7 @@
       max-width: 60rem;
       margin: 0;
       z-index: 1;
-      color: #fff;
+      color: #000;
       text-align: center;
       font-weight: 700;
       margin: var(--sp-6) var(--sp-1);

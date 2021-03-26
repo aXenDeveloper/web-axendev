@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useTranslation from 'next-translate/useTranslation';
-import Image from 'next/image';
+import HomeCooperationSVG from '../../SVG/HomeCooperationSVG';
 import CooperationHomeItem from './CooperationHomeItem';
 
 const CooperationHome = () => {
@@ -10,14 +9,7 @@ const CooperationHome = () => {
     <section className="home_section">
       <div className="container container:small">
         <div className="home_section_image">
-          <Image
-            src="/freepik/home_cooperation.svg"
-            objectFit="cover"
-            layout="responsive"
-            width={470}
-            height={450}
-            unoptimized
-          />
+          <HomeCooperationSVG />
         </div>
 
         <div className="home_section_contant">

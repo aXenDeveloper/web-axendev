@@ -1,8 +1,8 @@
 import { faQuestion } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useTranslation from 'next-translate/useTranslation';
-import Image from 'next/image';
 import Link from 'next/link';
+import HomeDoSVG from '../SVG/HomeDoSVG';
 
 const DoHome = () => {
   const { t } = useTranslation('global');
@@ -29,14 +29,7 @@ const DoHome = () => {
         </div>
 
         <div className="home_section_image">
-          <Image
-            src="/freepik/home_do.svg"
-            objectFit="cover"
-            layout="responsive"
-            width={470}
-            height={450}
-            unoptimized
-          />
+          <HomeDoSVG />
         </div>
       </div>
     </section>

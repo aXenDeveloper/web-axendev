@@ -1,8 +1,8 @@
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useTranslation from 'next-translate/useTranslation';
-import Image from 'next/image';
 import Link from 'next/link';
+import HomeClientSVG from '../SVG/HomeClientSVG';
 
 const ClientHome = () => {
   const { t } = useTranslation('global');
@@ -46,14 +46,7 @@ const ClientHome = () => {
         </div>
 
         <div className="home_section_image">
-          <Image
-            src="/freepik/home_client.svg"
-            objectFit="cover"
-            layout="responsive"
-            width={470}
-            height={450}
-            unoptimized
-          />
+          <HomeClientSVG />
         </div>
       </div>
     </section>
