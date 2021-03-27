@@ -4,13 +4,6 @@
 
 The repository shows the source code for the aXenDev.net website.
 
-## Table of contents 📖
-
-- [Install 🧰](#install-)
-- [Deployment 🔨](#deployment-)
-- [Packages 📂](#packages-)
-- [Resources used 📝](#resources-used-)
-
 ## Install 🧰
 
 Use commands:

@@ -6,14 +6,18 @@ import Breadcrumb from '../components/layouts/Breadcrumb';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComments, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faProductHunt } from '@fortawesome/free-brands-svg-icons';
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
+import { useRouter } from 'next/router';
 
 const ContactPage = () => {
+  const { locale } = useRouter();
   const { t } = useTranslation('global');
 
   return (
     <Layout>
       <Head>
         <title>{t('page_contact')} - aXenDev.net</title>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       </Head>
 
       <Breadcrumb small>{t('page_contact')}</Breadcrumb>
@@ -22,7 +26,12 @@ const ContactPage = () => {
         <h1 className="page_title">{t('page_contact')}</h1>
 
         <div className="contact box padding">
-          <ContactForm />
+          <GoogleReCaptchaProvider
+            reCaptchaKey={process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA}
+            language={locale}
+          >
+            <ContactForm />
+          </GoogleReCaptchaProvider>
 
           <div className="contact_other padding:half">
             <ul className="contact_other_list">
@@ -36,7 +45,11 @@ const ContactPage = () => {
                 <span className="contact_other_list_item_icon">
                   <FontAwesomeIcon icon={faComments} />
                 </span>
-                <a href="https://invisioncommunity.com/profile/580858-axendev/" target="blank" rel="noopener nofollow">
+                <a
+                  href="https://invisioncommunity.com/profile/580858-axendev/"
+                  target="blank"
+                  rel="noopener nofollow"
+                >
                   Invisioncommunity.com
                 </a>
               </li>
@@ -44,7 +57,11 @@ const ContactPage = () => {
                 <span className="contact_other_list_item_icon">
                   <FontAwesomeIcon icon={faComments} />
                 </span>
-                <a href="https://invisioncommunity.com/profile/580858-axendev/" target="blank" rel="noopener nofollow">
+                <a
+                  href="https://invisioncommunity.com/profile/580858-axendev/"
+                  target="blank"
+                  rel="noopener nofollow"
+                >
                   forum.Invisionize.pl
                 </a>
               </li>
@@ -52,7 +69,11 @@ const ContactPage = () => {
                 <span className="contact_other_list_item_icon">
                   <FontAwesomeIcon icon={faProductHunt} />
                 </span>
-                <a href="https://pecetowicz.pl/profile/36319-axendev/" target="blank" rel="noopener nofollow">
+                <a
+                  href="https://pecetowicz.pl/profile/36319-axendev/"
+                  target="blank"
+                  rel="noopener nofollow"
+                >
                   Pecetowicz.pl
                 </a>
               </li>
