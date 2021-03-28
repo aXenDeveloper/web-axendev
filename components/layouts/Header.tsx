@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container flex flex_jc:between flex_ai:center padding">
-        <Logo />
+        <Logo header />
 
         <UserBar />
       </div>
