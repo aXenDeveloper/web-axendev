@@ -10,15 +10,20 @@ const DarkButton = () => {
   const { setDarkTheme } = useDarkTheme() as DarkThemeContextType;
 
   const handleButton = () => {
-    if (!localStorage.getItem('darkTheme')) {
+    const checkDark =
+      window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (!document.body.classList.contains('darkTheme')) {
       document.body.classList.add('darkTheme');
-      localStorage.setItem('darkTheme', '1');
+      localStorage.setItem('aXenDev_darkTheme', '1');
       setDarkTheme(true);
     } else {
       document.body.classList.remove('darkTheme');
-      localStorage.removeItem('darkTheme');
+      localStorage.removeItem('aXenDev_darkTheme');
       setDarkTheme(false);
     }
+
+    localStorage.setItem('aXenDev_darkTheme_manual', '1');
   };
 
   return (

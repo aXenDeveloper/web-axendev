@@ -7,7 +7,14 @@ const Layout: FC = ({ children }) => {
   const [getDarkTheme, setDarkTheme] = useState(false);
 
   useEffect(() => {
-    setDarkTheme(localStorage.getItem('darkTheme') ? true : false);
+    const checkDark =
+      window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    setDarkTheme(
+      localStorage.getItem('aXenDev_darkTheme')
+        ? true
+        : false || (checkDark && !localStorage.getItem('aXenDev_darkTheme_manual'))
+    );
   }, [getDarkTheme]);
 
   return (

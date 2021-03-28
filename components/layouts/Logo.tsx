@@ -10,7 +10,14 @@ const Logo = () => {
   return (
     <Link href="/">
       <a className="header_logo">
-        <Image src={setLogoSrc} alt="Logo aXenDev.net" width={300} height={90} objectFit="cover" unoptimized />
+        <Image
+          src={setLogoSrc}
+          alt="Logo aXenDev.net"
+          width={300}
+          height={90}
+          objectFit="cover"
+          unoptimized
+        />
       </a>
     </Link>
   );
