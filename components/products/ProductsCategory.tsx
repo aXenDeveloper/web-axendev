@@ -24,11 +24,27 @@ const ProductsCategory = () => {
               currentPath === 'ips-community-suite' ? ' products_category_item:active' : ''
             }`}
           >
-            <Link href="/products/ips-community-suite">IPS Community Suite</Link>
+            <Link href="/products/ips-community-suite">
+              {t('page_products_ips-community-suite')}
+            </Link>
           </li>
 
-          <li className={`products_category_item${currentPath === 'react' ? ' products_category_item:active' : ''}`}>
-            <Link href="/products/react">React</Link>
+          <li
+            className={`products_category_item${
+              currentPath === 'react' ? ' products_category_item:active' : ''
+            }`}
+          >
+            <Link href="/products/react">{t('page_products_react')}</Link>
+          </li>
+
+          <li
+            className={`products_category_item${
+              currentPath === 'ips-community-suite-lang' ? ' products_category_item:active' : ''
+            }`}
+          >
+            <Link href="/products/ips-community-suite-lang">
+              {t('page_products_ips-community-suite-lang')}
+            </Link>
           </li>
         </ul>
       </div>

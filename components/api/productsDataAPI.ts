@@ -1,7 +1,20 @@
 import { productsDataAPIType } from '../../types/api/productsDataAPIType';
 const productsDataAPI: productsDataAPIType[] = [
   {
-    id: 10,
+    id: 13,
+    name: '(aXen) Server List - Polish translation',
+    key: 'ips-lang-polish-axen-advanced-serverlist',
+    category: 'ips-community-suite-lang',
+    img: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-axen-advanced-serverlist'
+    },
+    price: {
+      price: 0
+    }
+  },
+  {
+    id: 12,
     name: 'Advanced Server List',
     key: 'ips-app-advanced-serverlist',
     category: 'ips-community-suite',
@@ -26,7 +39,20 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
-    id: 9,
+    id: 11,
+    name: '[BNS] CJ Duplicate Member Logger - Polish translation',
+    key: 'ips-lang-polish-cj-duplicate-member',
+    category: 'ips-community-suite-lang',
+    img: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-cj-duplicate-member'
+    },
+    price: {
+      price: 0
+    }
+  },
+  {
+    id: 10,
     name: '(React) Weather app',
     key: 'react-weather',
     category: 'react',
@@ -45,7 +71,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
-    id: 8,
+    id: 9,
     name: 'Number of entries Chatbox+',
     key: 'ips-number-of-entries-chatbox-plus',
     category: 'ips-community-suite',
@@ -64,7 +90,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
-    id: 7,
+    id: 8,
     name: 'Fluent Design Theme Edition',
     key: 'ips-theme-fluent-design',
     category: 'ips-community-suite',
@@ -88,6 +114,19 @@ const productsDataAPI: productsDataAPIType[] = [
     price: {
       price: 34.99,
       link: 'ipsmarketplace'
+    }
+  },
+  {
+    id: 7,
+    name: '(BIM) Chatbox+ - Polish translation',
+    key: 'ips-lang-polish-chatbox-plus',
+    category: 'ips-community-suite-lang',
+    img: ['https://files.axendev.net/projects/ips/langs/chatbox+/1.png'],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-chatbox-plus'
+    },
+    price: {
+      price: 0
     }
   },
   {

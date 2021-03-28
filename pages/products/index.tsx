@@ -91,8 +91,10 @@ const ProductsPage: FC<ProductsPageType> = ({ products }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
+  const products = productsDataAPI.filter(el => el.category !== 'ips-community-suite-lang');
+
   return {
-    props: { products: productsDataAPI }
+    props: { products }
   };
 };
 
