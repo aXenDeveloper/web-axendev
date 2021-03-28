@@ -74,5 +74,9 @@
   "home_client_list_4": "Lifetime access to the project on",
   "drawer_button_open": "Open menu",
   "drawer_button_close": "Close menu",
-  "button_dark": "Toggle dark theme"
+  "button_dark": "Toggle dark theme",
+  "home_header_or": "or",
+  "home_header_products": "Check my products",
+  "home_header_cooperate": "Cooperate",
+  "home_header": "I creates websites and applications front-end that build a vibrant community."
 }

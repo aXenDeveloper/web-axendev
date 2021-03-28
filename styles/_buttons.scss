@@ -7,23 +7,24 @@
   text-align: center;
   position: relative;
   font-family: inherit;
-  border: 0;
   border: 1px solid transparent;
 
   &_light {
-    background-color: var(--button-light);
+    background-color: transparent;
     color: var(--button-light-color);
     border-color: var(--color-main);
 
     &:hover {
       background-color: var(--button-light-hover);
       color: var(--button-light-color);
+      text-decoration: none;
     }
   }
 
   &_primary {
     background-image: var(--button-primary);
     color: var(--button-primary-color);
+    border: 0;
 
     > span {
       position: relative;
@@ -33,6 +34,7 @@
     &:hover {
       background-color: var(--button-primary-hover);
       color: var(--button-primary-color);
+      text-decoration: none;
 
       &::after {
         opacity: 1;
@@ -52,7 +54,6 @@
   }
 
   &:hover {
-    text-decoration: none;
     cursor: pointer;
   }
 

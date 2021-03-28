@@ -56,7 +56,8 @@ const productsDataAPI: productsDataAPIType[] = [
     ],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-number-of-entries-chatbox-plus',
-      ipsmarketplace: 'https://invisioncommunity.com/files/file/9598-axen-number-of-entries-chatbox/'
+      ipsmarketplace:
+        'https://invisioncommunity.com/files/file/9598-axen-number-of-entries-chatbox/'
     },
     price: {
       price: 0
@@ -67,10 +68,22 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Fluent Design Theme Edition',
     key: 'ips-theme-fluent-design',
     category: 'ips-community-suite',
-    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png'],
+    img: [
+      'https://files.axendev.net/projects/ips/themes/fluent/fluent.gif',
+      'https://files.axendev.net/projects/ips/themes/fluent/1.png',
+      'https://files.axendev.net/projects/ips/themes/fluent/2.png',
+      'https://files.axendev.net/projects/ips/themes/fluent/3.png',
+      'https://files.axendev.net/projects/ips/themes/fluent/4.png',
+      'https://files.axendev.net/projects/ips/themes/fluent/5.png',
+      'https://files.axendev.net/projects/ips/themes/fluent/6.png',
+      'https://files.axendev.net/projects/ips/themes/fluent/7.png',
+      'https://files.axendev.net/projects/ips/themes/fluent/8.png'
+    ],
     links: {
-      ipsmarketplace: 'https://invisioncommunity.com/files/file/9539-dark-light-fluent-design-theme-edition/',
-      demo: 'https://1shot2kill.pl/index.php?app=core&module=system&controller=theme&do=change&id=500'
+      ipsmarketplace:
+        'https://invisioncommunity.com/files/file/9539-dark-light-fluent-design-theme-edition/',
+      demo:
+        'https://1shot2kill.pl/index.php?app=core&module=system&controller=theme&do=change&id=500'
     },
     price: {
       price: 34.99,
@@ -114,7 +127,7 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Font Awesome 5 in IPS',
     key: 'ips-fontawesome5',
     category: 'ips-community-suite',
-    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png'],
+    img: ['https://files.axendev.net/projects/ips/plugins/fontawesome5/1.png'],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-fontawesome5',
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9439-axen-font-awesome-5-in-ips/'
@@ -128,10 +141,13 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Group formatting in mention',
     key: 'ips-group-formatting-in-mention',
     category: 'ips-community-suite',
-    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-group-formatting-in-mention/master/1.png'],
+    img: [
+      'https://raw.githubusercontent.com/aXenDeveloper/ips-group-formatting-in-mention/master/1.png'
+    ],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-group-formatting-in-mention',
-      ipsmarketplace: 'https://invisioncommunity.com/files/file/9273-axen-group-formatting-in-mention/'
+      ipsmarketplace:
+        'https://invisioncommunity.com/files/file/9273-axen-group-formatting-in-mention/'
     },
     price: {
       price: 0
@@ -149,7 +165,8 @@ const productsDataAPI: productsDataAPIType[] = [
     ],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-number-of-entries-chatbox',
-      ipsmarketplace: 'https://invisioncommunity.com/files/file/8761-axen-number-of-entries-chatbox-free/'
+      ipsmarketplace:
+        'https://invisioncommunity.com/files/file/8761-axen-number-of-entries-chatbox-free/'
     },
     price: {
       price: 0
@@ -169,7 +186,8 @@ const productsDataAPI: productsDataAPIType[] = [
     ],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-secondary-groups-indicator',
-      ipsmarketplace: 'https://invisioncommunity.com/files/file/8760-axen-secondary-groups-indicator/'
+      ipsmarketplace:
+        'https://invisioncommunity.com/files/file/8760-axen-secondary-groups-indicator/'
     },
     price: {
       price: 0
