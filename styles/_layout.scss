@@ -72,13 +72,19 @@
 }
 
 /* ===== navBar ===== */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid var(--border-color);
+}
+
 .navBar {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
-
-  border-top: 1px solid var(--border-color);
 
   li {
     a {

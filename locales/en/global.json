@@ -83,5 +83,6 @@
   "home_header_or": "or",
   "home_header_products": "Check my products",
   "home_header_cooperate": "Cooperate",
-  "home_header": "I creates websites and applications front-end that build a vibrant community."
+  "home_header": "I creates websites and applications front-end that build a vibrant community.",
+  "button_github_tooltip": "Go to my GitHub"
 }

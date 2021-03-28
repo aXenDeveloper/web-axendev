@@ -1,13 +1,16 @@
+import GitHubButton from './GitHubButton';
 import NavItems from './NavItems';
 
 const Nav = () => (
-  <nav>
-    <div className="container responsive_show:desktop">
+  <div className="container responsive_show:desktop">
+    <nav className="nav">
       <ul className="navBar">
         <NavItems />
       </ul>
-    </div>
-  </nav>
+
+      <GitHubButton />
+    </nav>
+  </div>
 );
 
 export default Nav;
