@@ -31,20 +31,20 @@ const ProductsCategory = () => {
 
           <li
             className={`products_category_item${
-              currentPath === 'react' ? ' products_category_item:active' : ''
-            }`}
-          >
-            <Link href="/products/react">{t('page_products_react')}</Link>
-          </li>
-
-          <li
-            className={`products_category_item${
               currentPath === 'ips-community-suite-lang' ? ' products_category_item:active' : ''
             }`}
           >
             <Link href="/products/ips-community-suite-lang">
               {t('page_products_ips-community-suite-lang')}
             </Link>
+          </li>
+
+          <li
+            className={`products_category_item${
+              currentPath === 'react' ? ' products_category_item:active' : ''
+            }`}
+          >
+            <Link href="/products/react">{t('page_products_react')}</Link>
           </li>
         </ul>
       </div>

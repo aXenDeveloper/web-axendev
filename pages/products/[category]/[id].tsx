@@ -24,13 +24,14 @@ const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
 
       <Breadcrumb>{name}</Breadcrumb>
 
-      <main className="container container:small">
+      <main className="container container:medium">
         <h1 className="page_title">{name}</h1>
 
         <ul className="box padding products_item">
           <li>
             <h2 className="products_item_h2">
-              {t('product_price')}: <span>{price.price ? '$' + price.price.toFixed(2) : t('products_price_free')}</span>
+              {t('product_price')}:{' '}
+              <span>{price.price ? '$' + price.price.toFixed(2) : t('products_price_free')}</span>
             </h2>
           </li>
 

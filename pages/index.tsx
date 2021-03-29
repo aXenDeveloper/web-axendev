@@ -10,7 +10,6 @@ const HomePage = () => {
     <Layout>
       <Head>
         <title>aXenDev.net</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <HeaderHome />

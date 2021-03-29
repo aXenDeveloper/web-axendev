@@ -1,8 +1,10 @@
 import Tippy from '@tippyjs/react';
 import useTranslation from 'next-translate/useTranslation';
+import { useRouter } from 'next/router';
 
 const FooterCopyright = () => {
   const { t } = useTranslation('global');
+  const { asPath } = useRouter();
 
   return (
     <div className="footer_copyright">
@@ -33,17 +35,19 @@ const FooterCopyright = () => {
         </a>
       </span>
 
-      <span>
-        Illustration by{' '}
-        <a
-          href="https://storyset.com/web"
-          target="blank"
-          rel="noopener nofollow"
-          className="text:color text_weight:700"
-        >
-          Freepik Storyset
-        </a>
-      </span>
+      {asPath === '/' && (
+        <span>
+          Illustration by{' '}
+          <a
+            href="https://storyset.com/web"
+            target="blank"
+            rel="noopener nofollow"
+            className="text:color text_weight:700"
+          >
+            Freepik Storyset
+          </a>
+        </span>
+      )}
     </div>
   );
 };

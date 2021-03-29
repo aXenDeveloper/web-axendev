@@ -7,7 +7,7 @@ const CooperationHome = () => {
 
   return (
     <section className="home_section home_section:background">
-      <div className="container container:small">
+      <div className="container container:medium">
         <div className="home_section_image">
           <HomeCooperationSVG />
         </div>

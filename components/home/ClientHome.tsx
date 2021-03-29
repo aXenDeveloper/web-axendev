@@ -9,7 +9,7 @@ const ClientHome = () => {
 
   return (
     <section className="home_section home_section:background">
-      <div className="container container:small">
+      <div className="container container:medium">
         <div className="home_section_contant">
           <h2 className="home_section_contant_title">
             {t('home_client_title_1')}{' '}

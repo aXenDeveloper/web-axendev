@@ -4,9 +4,8 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { BreadcrumbType } from '../../types/components/layoutTypes';
 
-const Breadcrumb: FC<BreadcrumbType> = ({ children, small }) => {
+const Breadcrumb: FC = ({ children }) => {
   const { asPath, pathname } = useRouter();
   const path = asPath
     .split('/')
@@ -27,7 +26,7 @@ const Breadcrumb: FC<BreadcrumbType> = ({ children, small }) => {
   }, [asPath]);
 
   return (
-    <div className={`container${small ? ' container:small' : ''} responsive_show:desktop`}>
+    <div className="container responsive_show:desktop">
       <ul className="breadcrumb">
         <li>
           <FontAwesomeIcon icon={faHome} />
@@ -44,7 +43,9 @@ const Breadcrumb: FC<BreadcrumbType> = ({ children, small }) => {
             return (
               <li key={`page_${pageElement}`}>
                 <FontAwesomeIcon icon={faChevronRight} />
-                <Link href={`/${pageElement}`}>{pathname === '/404' ? t('page_404') : t(`page_${pathNameLang}`)}</Link>
+                <Link href={`/${pageElement}`}>
+                  {pathname === '/404' ? t('page_404') : t(`page_${pathNameLang}`)}
+                </Link>
               </li>
             );
           })}

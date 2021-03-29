@@ -4,6 +4,10 @@
   margin: 0 auto;
   position: relative;
 
+  &\:medium {
+    max-width: var(--container-medium-width);
+  }
+
   &\:small {
     max-width: var(--container-small-width);
   }

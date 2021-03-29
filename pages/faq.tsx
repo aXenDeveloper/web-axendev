@@ -12,13 +12,13 @@ const FaqPage = () => {
         <title>{t('page_faq')} - aXenDev.net</title>
       </Head>
 
-      <Breadcrumb small>{t('page_faq')}</Breadcrumb>
+      <Breadcrumb>{t('page_faq')}</Breadcrumb>
 
       <h1 className="page_title">{t('page_faq')}</h1>
 
-      <main className="container container:small">test</main>
+      <main className="container container:medium">test</main>
 
-      <Breadcrumb small>{t('page_faq')}</Breadcrumb>
+      <Breadcrumb>{t('page_faq')}</Breadcrumb>
     </Layout>
   );
 };

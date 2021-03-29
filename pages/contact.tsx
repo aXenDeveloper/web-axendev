@@ -20,7 +20,7 @@ const ContactPage = () => {
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       </Head>
 
-      <Breadcrumb small>{t('page_contact')}</Breadcrumb>
+      <Breadcrumb>{t('page_contact')}</Breadcrumb>
 
       <main className="container container:small">
         <h1 className="page_title">{t('page_contact')}</h1>
@@ -32,57 +32,10 @@ const ContactPage = () => {
           >
             <ContactForm />
           </GoogleReCaptchaProvider>
-
-          <div className="contact_other padding:half">
-            <ul className="contact_other_list">
-              <li className="contact_other_list_item">
-                <span className="contact_other_list_item_icon">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </span>
-                <a href="mailto:ithereplay@gmail.com">ithereplay@gmail.com</a>
-              </li>
-              <li className="contact_other_list_item">
-                <span className="contact_other_list_item_icon">
-                  <FontAwesomeIcon icon={faComments} />
-                </span>
-                <a
-                  href="https://invisioncommunity.com/profile/580858-axendev/"
-                  target="blank"
-                  rel="noopener nofollow"
-                >
-                  Invisioncommunity.com
-                </a>
-              </li>
-              <li className="contact_other_list_item">
-                <span className="contact_other_list_item_icon">
-                  <FontAwesomeIcon icon={faComments} />
-                </span>
-                <a
-                  href="https://invisioncommunity.com/profile/580858-axendev/"
-                  target="blank"
-                  rel="noopener nofollow"
-                >
-                  forum.Invisionize.pl
-                </a>
-              </li>
-              <li className="contact_other_list_item">
-                <span className="contact_other_list_item_icon">
-                  <FontAwesomeIcon icon={faProductHunt} />
-                </span>
-                <a
-                  href="https://pecetowicz.pl/profile/36319-axendev/"
-                  target="blank"
-                  rel="noopener nofollow"
-                >
-                  Pecetowicz.pl
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       </main>
 
-      <Breadcrumb small>{t('page_contact')}</Breadcrumb>
+      <Breadcrumb>{t('page_contact')}</Breadcrumb>
     </Layout>
   );
 };
