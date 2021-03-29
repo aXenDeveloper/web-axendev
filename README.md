@@ -41,6 +41,7 @@ See the section about [deployment](https://nextjs.org/docs/deployment) for more 
 | [SASS](https://www.npmjs.com/package/sass)                                           | CSS Preprocessors                           |
 | [SwiperJS](https://swiperjs.com/)                                                    | Swiper                                      |
 | [React Google Recaptcha v3](https://www.npmjs.com/package/react-google-recaptcha-v3) | Google Recaptcha                            |
+| [React Collapse](https://www.npmjs.com/package/react-collapse)                       | Collapse                                    |
 
 ## Resources used 📝
 

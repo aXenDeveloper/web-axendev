@@ -1,2 +1,45 @@
 .faq {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &_item {
+    background-color: var(--box-background);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: var(--sp-5);
+
+    &_header {
+      display: flex;
+      align-items: center;
+
+      &\:svg {
+        color: var(--color-main);
+        margin-right: var(--sp-4);
+        line-height: 0;
+
+        svg {
+          transition: transform 0.2s ease;
+        }
+
+        &.open svg {
+          transform: rotate(-180deg);
+        }
+      }
+
+      &\:question {
+        margin: 0;
+        line-height: 1;
+        font-size: 2rem;
+      }
+    }
+
+    &_answer {
+      padding-top: var(--sp-4);
+    }
+
+    .ReactCollapse--collapse {
+      transition: height 0.2s ease;
+    }
+  }
 }

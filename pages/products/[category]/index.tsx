@@ -107,7 +107,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params }: ProductsNavPageStaticPropsType) => {
-  const filterData = productsDataAPI.filter(el => el.category === params.category);
+  const filterData = productsDataAPI.filter(el => el.category === params.category).reverse();
 
   return {
     props: { productsFilterByCategory: filterData, category: params.category }

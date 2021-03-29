@@ -1,3 +1,4 @@
+import { faqDataAPIType } from './api/faqDataAPIType';
 import { productsDataAPIType } from './api/productsDataAPIType';
 
 export type ProductsPageType = {
@@ -23,4 +24,8 @@ export type ProductsItemPageStaticPropsType = {
   params: {
     id: string;
   };
+};
+
+export type FaqPageType = {
+  faqListData: faqDataAPIType;
 };
