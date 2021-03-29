@@ -14,9 +14,9 @@ const FaqTabsItem: FC<FaqTabsItemType> = ({ children, question }) => {
   return (
     <li className={`faq_item`}>
       <div className="faq_item_header" onClick={handleClickItem}>
-        <span className={`faq_item_header:svg${isOpen ? ' open' : ''}`}>
+        <button className={`faq_item_header:svg${isOpen ? ' open' : ''}`}>
           <FontAwesomeIcon icon={faArrowDown} />
-        </span>
+        </button>
 
         <h2 className="faq_item_header:question">{question}</h2>
       </div>

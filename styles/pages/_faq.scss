@@ -7,16 +7,20 @@
     background-color: var(--box-background);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
-    padding: var(--sp-5);
 
     &_header {
       display: flex;
       align-items: center;
+      padding: var(--sp-5);
+      cursor: pointer;
 
       &\:svg {
+        background-color: transparent;
+        border: 0;
         color: var(--color-main);
-        margin-right: var(--sp-4);
-        line-height: 0;
+        margin-right: var(--sp-3);
+        font-size: 1.6rem;
+        cursor: inherit;
 
         svg {
           transition: transform 0.2s ease;
@@ -35,7 +39,7 @@
     }
 
     &_answer {
-      padding-top: var(--sp-4);
+      padding: 0 var(--sp-5) var(--sp-5) var(--sp-5);
     }
 
     .ReactCollapse--collapse {
