@@ -12,7 +12,12 @@ const ProductLinks: FC<ProductLinksType> = ({ price, links }) => {
     <>
       {price.link && (
         <li>
-          <a href={links[price.link]} className="button button_medium button_primary" target="blank" rel="noopener nofollow">
+          <a
+            href={links[price.link]}
+            className="button button_medium button_primary"
+            target="blank"
+            rel="noopener nofollow"
+          >
             <span>
               <FontAwesomeIcon icon={faShoppingCart} /> {t('products_buyNow')}
             </span>
@@ -22,7 +27,12 @@ const ProductLinks: FC<ProductLinksType> = ({ price, links }) => {
 
       {links.github && (
         <li>
-          <a href={links.github} className="button button_medium button_primary" target="blank" rel="noopener nofollow">
+          <a
+            href={links.github}
+            className="button button_medium button_primary"
+            target="blank"
+            rel="noopener nofollow"
+          >
             <span>
               <FontAwesomeIcon icon={faGithub} /> Github
             </span>
@@ -30,7 +40,7 @@ const ProductLinks: FC<ProductLinksType> = ({ price, links }) => {
         </li>
       )}
 
-      {links.ipsmarketplace && (
+      {links.ipsmarketplace && !price.link && (
         <li>
           <a
             href={links.ipsmarketplace}
@@ -45,7 +55,12 @@ const ProductLinks: FC<ProductLinksType> = ({ price, links }) => {
 
       {links.demo && (
         <li>
-          <a href={links.demo} className="button button_medium button_light" target="blank" rel="noopener nofollow">
+          <a
+            href={links.demo}
+            className="button button_medium button_light"
+            target="blank"
+            rel="noopener nofollow"
+          >
             Demo
           </a>
         </li>

@@ -76,7 +76,15 @@ const productsDataAPI: productsDataAPIType[] = [
     name: 'Article System in Pages',
     key: 'ips-article-system-in-pages',
     category: 'ips-community-suite',
-    img: ['https://raw.githubusercontent.com/aXenDeveloper/ips-administrative-bar/master/1.png'],
+    img: [
+      'https://files.axendev.net/projects/ips/plugins/articlesystem/1.png',
+      'https://files.axendev.net/projects/ips/plugins/articlesystem/2.png',
+      'https://files.axendev.net/projects/ips/plugins/articlesystem/3.png',
+      'https://files.axendev.net/projects/ips/plugins/articlesystem/4.png',
+      'https://files.axendev.net/projects/ips/plugins/articlesystem/5.png',
+      'https://files.axendev.net/projects/ips/plugins/articlesystem/6.png',
+      'https://files.axendev.net/projects/ips/plugins/articlesystem/7.png'
+    ],
     links: {
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9490-axen-article-system-in-pages/',
       demo: 'https://1shot2kill.pl/portal/'
@@ -164,6 +172,24 @@ const productsDataAPI: productsDataAPIType[] = [
   },
   {
     id: 10,
+    name: '(Sourcebans++) Fluent Design Theme Edition',
+    key: 'sourcebans-web-theme-fluent',
+    category: 'others',
+    img: [
+      'https://files.axendev.net/projects/ips/themes/fluent/fluent.gif',
+      'https://raw.githubusercontent.com/aXenDeveloper/react-weather/main/screenshots/2-min.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/react-weather/main/screenshots/3-min.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/react-weather/main/screenshots/4-min.png'
+    ],
+    links: {
+      github: 'https://github.com/aXenDeveloper/sourcebans-web-theme-fluent'
+    },
+    price: {
+      price: 0
+    }
+  },
+  {
+    id: 11,
     name: '(React) Weather app',
     key: 'react-weather',
     category: 'react',
@@ -182,7 +208,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
-    id: 11,
+    id: 12,
     name: '[BNS] CJ Duplicate Member Logger - Polish translation',
     key: 'ips-lang-polish-cj-duplicate-member',
     category: 'ips-community-suite-lang',
@@ -195,7 +221,7 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
-    id: 12,
+    id: 13,
     name: 'Advanced Server List',
     key: 'ips-app-advanced-serverlist',
     category: 'ips-community-suite',
@@ -220,8 +246,8 @@ const productsDataAPI: productsDataAPIType[] = [
     }
   },
   {
-    id: 13,
-    name: '(aXen) Server List - Polish translation',
+    id: 14,
+    name: '(aXen) Advanced Server List - Polish translation',
     key: 'ips-lang-polish-axen-advanced-serverlist',
     category: 'ips-community-suite-lang',
     img: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
