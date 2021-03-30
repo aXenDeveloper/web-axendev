@@ -87,5 +87,11 @@
   "home_header_products": "Sprawdź moje produkty",
   "home_header_cooperate": "Podejmij współprace",
   "home_header": "Zajmuje się tworzeniem stron internetowych oraz aplikacji front-end, które budują tętniącą życiem społeczność.",
-  "button_github_tooltip": "Przejdź na mojego GitHuba"
+  "button_github_tooltip": "Przejdź na mojego GitHuba",
+  "footer_title_findMe_1": "Znajdź",
+  "footer_title_findMe_2": "mnie na",
+  "footer_title_products_1": "Sprawdź",
+  "footer_title_products_2": "produkty",
+  "footer_title_quickMenu_1": "Szybkie",
+  "footer_title_quickMenu_2": "menu"
 }

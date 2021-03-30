@@ -10,14 +10,14 @@
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "js-cookie": "^2.2.1",
-    "next": "^10.1.1",
+    "next": "^10.1.2",
     "next-translate": "^1.0.5",
     "nextjs-progressbar": "0.0.8",
     "react": "^17.0.2",
     "react-collapse": "^5.1.0",
     "react-dom": "^17.0.2",
     "react-google-recaptcha-v3": "^1.8.0",
-    "swiper": "^6.5.1"
+    "swiper": "^6.5.2"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -30,7 +30,6 @@
     "@types/react": "^17.0.3",
     "@types/react-collapse": "^5.0.0",
     "sass": "^1.32.8",
-    "typescript": "^4.2.3",
-    "webpack": "^5.28.0"
+    "typescript": "^4.2.3"
   }
 }

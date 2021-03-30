@@ -1,14 +1,15 @@
 import FooterGridContact from './FooterGridContact';
 import FooterGridFindMe from './FooterGridFindMe';
+import FooterGridProducts from './FooterGridProducts';
+import FooterGridQuickMenu from './FooterGridQuickMenu';
 
 const FooterGrid = () => {
   return (
     <ul className="footer_grid">
       <FooterGridContact />
+      <FooterGridProducts />
+      <FooterGridQuickMenu />
       <FooterGridFindMe />
-
-      <li className="footer_grid_item">test</li>
-      <li className="footer_grid_item">test</li>
     </ul>
   );
 };

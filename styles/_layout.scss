@@ -37,10 +37,11 @@
   }
 
   &_grid {
-    padding: 0;
-    margin: 0 0 var(--sp-8) 0;
+    padding: 0 0 var(--sp-6) 0;
+    margin: 0 0 var(--sp-6) 0;
     list-style: none;
     display: flex;
+    border-bottom: 1px solid var(--border-color);
 
     @media screen and (max-width: 767px) {
       flex-direction: column;
@@ -49,6 +50,10 @@
     &_item {
       position: relative;
       flex: 25%;
+
+      @media screen and (max-width: 767px) {
+        flex: 1;
+      }
 
       &:not(:last-child) {
         margin-right: var(--sp-4);
@@ -59,9 +64,12 @@
       }
 
       &\:title {
-        margin: 0 0 var(--sp-4) 0;
-        text-transform: uppercase;
-        font-size: 1.5rem;
+        margin: 0 0 var(--sp-6) 0;
+        font-size: 2rem;
+
+        > span {
+          color: var(--color-main);
+        }
       }
     }
 
@@ -69,7 +77,58 @@
       &\:email {
         display: block;
         font-size: 1.6rem;
-        margin-top: var(--sp-1);
+        padding: var(--sp-3) 0;
+        color: var(--color-light);
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &_findMe {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      &_item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: var(--sp-3);
+        }
+
+        &_link {
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &\:icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            background-image: var(--gradient-primary);
+            color: var(--box-background);
+            border-radius: var(--border-radius-2);
+            margin-right: var(--sp-2);
+          }
+        }
+      }
+    }
+
+    &_links {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      > li:not(:last-child) {
+        margin-bottom: var(--sp-2);
       }
     }
   }
