@@ -46,6 +46,14 @@ const ProductsCategory = () => {
           >
             <Link href="/products/react">{t('page_products_react')}</Link>
           </li>
+
+          <li
+            className={`products_category_item${
+              currentPath === 'others' ? ' products_category_item:active' : ''
+            }`}
+          >
+            <Link href="/products/others">{t('page_products_others')}</Link>
+          </li>
         </ul>
       </div>
     </li>

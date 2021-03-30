@@ -176,10 +176,16 @@ const productsDataAPI: productsDataAPIType[] = [
     key: 'sourcebans-web-theme-fluent',
     category: 'others',
     img: [
-      'https://files.axendev.net/projects/ips/themes/fluent/fluent.gif',
-      'https://raw.githubusercontent.com/aXenDeveloper/react-weather/main/screenshots/2-min.png',
-      'https://raw.githubusercontent.com/aXenDeveloper/react-weather/main/screenshots/3-min.png',
-      'https://raw.githubusercontent.com/aXenDeveloper/react-weather/main/screenshots/4-min.png'
+      'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/screenshot.jpg',
+      'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/images/demo/1.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/images/demo/2.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/images/demo/3.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/images/demo/4.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/images/demo/5.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/images/demo/6.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/images/demo/7.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/images/demo/8.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/images/demo/9.png'
     ],
     links: {
       github: 'https://github.com/aXenDeveloper/sourcebans-web-theme-fluent'
