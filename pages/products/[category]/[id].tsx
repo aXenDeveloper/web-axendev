@@ -37,19 +37,19 @@ const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
           </li>
 
           <li>
-            <h2 className="products_item_h2">Description</h2>
+            <h2 className="products_item_h2">{t('description')}</h2>
             <p className="products_item_p">{t(`products_desc_${key}`)}</p>
           </li>
 
           <li>
-            <h2 className="products_item_h2">Links</h2>
+            <h2 className="products_item_h2">{t('links')}</h2>
             <ul className="products_item_links">
               <ProductLinks price={price} links={links} />
             </ul>
           </li>
 
           <li>
-            <h2 className="products_item_h2">Graphic</h2>
+            <h2 className="products_item_h2">{t('graphics')}</h2>
             <ProductImage images={img} />
           </li>
         </ul>
