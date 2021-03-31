@@ -19,7 +19,9 @@ const ErrorPage: FC<ErrorPageType> = ({ children, code }) => {
 
         <div className="errorPage_content">
           <span className="errorPage_content:title">{t('error_title')}</span>
+
           <p>{children}</p>
+
           <span className="errorPage_content:code">
             {t('error_code')}: <span>{code}</span>
           </span>

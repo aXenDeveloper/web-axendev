@@ -1,6 +1,6 @@
 import useTranslation from 'next-translate/useTranslation';
+import Head from 'next/head';
 import ErrorPage from '../components/ErrorPage';
-import Breadcrumb from '../components/layouts/Breadcrumb';
 import Layout from '../components/layouts/Layout';
 
 const Error404Page = () => {
@@ -8,11 +8,12 @@ const Error404Page = () => {
 
   return (
     <Layout>
-      <Breadcrumb>{t('page_404')}</Breadcrumb>
+      <Head>
+        <title>{t('page_404')} - aXenDev.net</title>
+        <meta name="robots" content="noindex" />
+      </Head>
 
       <ErrorPage code={'404 Not Found'}>{t('error_text_404')}</ErrorPage>
-
-      <Breadcrumb>{t('page_404')}</Breadcrumb>
     </Layout>
   );
 };

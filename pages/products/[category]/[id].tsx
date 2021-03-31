@@ -20,6 +20,7 @@ const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
         <title>
           {name} - {t('page_products')} - aXenDev.net
         </title>
+        <meta name="description" content={t(`products_desc_${key}`)} />
       </Head>
 
       <Breadcrumb>{name}</Breadcrumb>

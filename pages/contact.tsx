@@ -18,6 +18,7 @@ const ContactPage = () => {
       <Head>
         <title>{t('page_contact')} - aXenDev.net</title>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <meta name="description" content="Masz pytanie? Skontaktuj się ze mną przez formularz" />
       </Head>
 
       <Breadcrumb>{t('page_contact')}</Breadcrumb>

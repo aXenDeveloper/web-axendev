@@ -15,6 +15,7 @@ const FaqPage: FC<FaqPageType> = ({ faqListData }) => {
     <Layout>
       <Head>
         <title>{t('page_faq')} - aXenDev.net</title>
+        <meta name="description" content="Najczęściej zadawane pytania od klientów" />
       </Head>
 
       <Breadcrumb>{t('page_faq')}</Breadcrumb>

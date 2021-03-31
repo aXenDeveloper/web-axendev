@@ -9,7 +9,11 @@ const HomePage = () => {
   return (
     <Layout>
       <Head>
-        <title>aXenDev.net</title>
+        <title>aXenDev.net - Front-end Developer</title>
+        <meta
+          name="description"
+          content="Usługi tworzenia stron internetowych oraz aplikacji front-end / IPS Invision Community, które budują tętniącą życiem społeczność"
+        />
       </Head>
 
       <HeaderHome />

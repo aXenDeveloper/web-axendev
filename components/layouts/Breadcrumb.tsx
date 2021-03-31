@@ -43,9 +43,7 @@ const Breadcrumb: FC = ({ children }) => {
             return (
               <li key={`page_${pageElement}`}>
                 <FontAwesomeIcon icon={faChevronRight} />
-                <Link href={`/${pageElement}`}>
-                  {pathname === '/404' ? t('page_404') : t(`page_${pathNameLang}`)}
-                </Link>
+                <Link href={`/${pageElement}`}>{t(`page_${pathNameLang}`)}</Link>
               </li>
             );
           })}
