@@ -60,7 +60,7 @@ const Breadcrumb: FC<BreadcrumbType> = ({ children, top }) => {
         </ul>
       </div>
 
-      {top && path.length > 1 && <BreadcrumbMobile path={path} />}
+      {top && path.length > 1 && <BreadcrumbMobile />}
     </>
   );
 };
