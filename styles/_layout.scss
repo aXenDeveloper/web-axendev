@@ -24,7 +24,6 @@
 .footer {
   background-color: var(--box-background);
   padding: var(--sp-8) 0;
-  margin-top: var(--sp-5);
   font-size: 1.4rem;
 
   &_copyright {
@@ -190,24 +189,47 @@
 
 /* ===== breadcrumb ===== */
 .breadcrumb {
-  padding: 0;
-  margin: var(--sp-4) 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1.4rem;
+  &_desktop {
+    padding: 0;
+    margin: var(--sp-4) 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
 
-  li {
-    &:not(:last-child) {
-      margin-right: var(--sp-2);
+    li {
+      &:not(:last-child) {
+        margin-right: var(--sp-2);
+      }
+
+      &:not(:first-child) svg {
+        margin-right: var(--sp-2);
+      }
+
+      &:first-child svg {
+        margin-right: var(--sp-1);
+      }
+    }
+  }
+
+  &_mobile {
+    border: 0;
+    width: 100%;
+    padding: var(--sp-3) var(--sp-4);
+    text-align: left;
+    font-size: 1.6rem;
+    background-image: var(--gradient-primary);
+    color: #fff;
+    line-height: 1.4;
+    font-family: inherit;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
     }
 
-    &:not(:first-child) svg {
-      margin-right: var(--sp-2);
-    }
-
-    &:first-child svg {
-      margin-right: var(--sp-1);
+    > svg {
+      margin-right: var(--sp-4);
     }
   }
 }

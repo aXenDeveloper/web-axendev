@@ -5,6 +5,12 @@
         display: none;
       }
     }
+
+    @media screen and (min-width: 980px) {
+      &\:mobile {
+        display: none;
+      }
+    }
   }
 
   &_hide {

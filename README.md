@@ -45,7 +45,6 @@ See the section about [deployment](https://nextjs.org/docs/deployment) for more 
 
 ## Resources used 📝
 
-| Name                                  | For              |
-| ------------------------------------- | ---------------- |
-| [StorySet.com](https://storyset.com/) | Illustration     |
-| [Coverr.co](https://coverr.co/)       | Video background |
+| Name                                  | For          |
+| ------------------------------------- | ------------ |
+| [StorySet.com](https://storyset.com/) | Illustration |

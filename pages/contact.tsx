@@ -2,10 +2,7 @@ import Head from 'next/head';
 import Layout from '../components/layouts/Layout';
 import useTranslation from 'next-translate/useTranslation';
 import ContactForm from '../components/contact/ContactForm';
-import Breadcrumb from '../components/layouts/Breadcrumb';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComments, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faProductHunt } from '@fortawesome/free-brands-svg-icons';
+import Breadcrumb from '../components/layouts/breadcrumb/Breadcrumb';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import { useRouter } from 'next/router';
 
@@ -21,7 +18,7 @@ const ContactPage = () => {
         <meta name="description" content="Masz pytanie? Skontaktuj się ze mną przez formularz" />
       </Head>
 
-      <Breadcrumb>{t('page_contact')}</Breadcrumb>
+      <Breadcrumb top>{t('page_contact')}</Breadcrumb>
 
       <main className="container container:small">
         <h1 className="page_title">{t('page_contact')}</h1>

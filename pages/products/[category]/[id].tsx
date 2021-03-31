@@ -8,7 +8,7 @@ import productsDataAPI from '../../../components/api/productsDataAPI';
 import Layout from '../../../components/layouts/Layout';
 import ProductImage from '../../../components/products/item/ProductImage';
 import ProductLinks from '../../../components/products/ProductLinks';
-import Breadcrumb from '../../../components/layouts/Breadcrumb';
+import Breadcrumb from '../../../components/layouts/breadcrumb/Breadcrumb';
 
 const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
   const { t } = useTranslation('global');
@@ -23,7 +23,7 @@ const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
         <meta name="description" content={t(`products_desc_${key}`)} />
       </Head>
 
-      <Breadcrumb>{name}</Breadcrumb>
+      <Breadcrumb top>{name}</Breadcrumb>
 
       <main className="container container:medium">
         <h1 className="page_title">{name}</h1>

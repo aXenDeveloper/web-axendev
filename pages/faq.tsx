@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { FC } from 'react';
 import faqDataAPI from '../components/api/faqDataAPI';
 import FaqTabs from '../components/faq/FaqTabs';
-import Breadcrumb from '../components/layouts/Breadcrumb';
+import Breadcrumb from '../components/layouts/breadcrumb/Breadcrumb';
 import Layout from '../components/layouts/Layout';
 import { FaqPageType } from '../types/pagesTypes';
 
@@ -18,7 +18,7 @@ const FaqPage: FC<FaqPageType> = ({ faqListData }) => {
         <meta name="description" content="Najczęściej zadawane pytania od klientów" />
       </Head>
 
-      <Breadcrumb>{t('page_faq')}</Breadcrumb>
+      <Breadcrumb top>{t('page_faq')}</Breadcrumb>
 
       <h1 className="page_title">{t('page_faq')}</h1>
 

@@ -8,7 +8,7 @@ import Layout from '../../../components/layouts/Layout';
 import ProductsContent from '../../../components/products/content/ProductsContent';
 import productsDataAPI from '../../../components/api/productsDataAPI';
 import ProductsNav from '../../../components/products/ProductsNav';
-import Breadcrumb from '../../../components/layouts/Breadcrumb';
+import Breadcrumb from '../../../components/layouts/breadcrumb/Breadcrumb';
 
 const ProductsCategoryPage: FC<ProductsNavPageType> = ({ productsFilterByCategory, category }) => {
   const { t } = useTranslation('global');
@@ -73,7 +73,7 @@ const ProductsCategoryPage: FC<ProductsNavPageType> = ({ productsFilterByCategor
         </title>
       </Head>
 
-      <Breadcrumb>{t(`page_products_${category}`)}</Breadcrumb>
+      <Breadcrumb top>{t(`page_products_${category}`)}</Breadcrumb>
 
       <main className="container">
         <h1 className="page_title">{t(`page_products_${category}`)}</h1>

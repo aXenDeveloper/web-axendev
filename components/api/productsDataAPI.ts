@@ -232,15 +232,15 @@ const productsDataAPI: productsDataAPIType[] = [
     key: 'ips-app-advanced-serverlist',
     category: 'ips-community-suite',
     img: [
-      'https://axendev.net/myapps/app/serverlist/1.png',
-      'https://axendev.net/myapps/app/serverlist/2.png',
-      'https://axendev.net/myapps/app/serverlist/3.png',
-      'https://axendev.net/myapps/app/serverlist/4.png',
-      'https://axendev.net/myapps/app/serverlist/5.png',
-      'https://axendev.net/myapps/app/serverlist/6.png',
-      'https://axendev.net/myapps/app/serverlist/7.png',
-      'https://axendev.net/myapps/app/serverlist/8.png',
-      'https://axendev.net/myapps/app/serverlist/9.png'
+      'https://files.axendev.net/projects/ips/applications/serverlist/1.png',
+      'https://files.axendev.net/projects/ips/applications/serverlist/2.png',
+      'https://files.axendev.net/projects/ips/applications/serverlist/3.png',
+      'https://files.axendev.net/projects/ips/applications/serverlist/4.png',
+      'https://files.axendev.net/projects/ips/applications/serverlist/5.png',
+      'https://files.axendev.net/projects/ips/applications/serverlist/6.png',
+      'https://files.axendev.net/projects/ips/applications/serverlist/7.png',
+      'https://files.axendev.net/projects/ips/applications/serverlist/8.png',
+      'https://files.axendev.net/projects/ips/applications/serverlist/9.png'
     ],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-app-advanced-serverlist',
