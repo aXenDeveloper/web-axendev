@@ -71,6 +71,10 @@
           color: var(--color-main);
         }
       }
+
+      a:hover {
+        text-decoration: none;
+      }
     }
 
     &_contact {
@@ -79,10 +83,6 @@
         font-size: 1.6rem;
         padding: var(--sp-3) 0;
         color: var(--color-light);
-
-        &:hover {
-          text-decoration: none;
-        }
       }
     }
 
@@ -103,10 +103,6 @@
           display: flex;
           align-items: center;
 
-          &:hover {
-            text-decoration: none;
-          }
-
           &\:icon {
             display: flex;
             align-items: center;
@@ -114,7 +110,7 @@
             width: 3rem;
             height: 3rem;
             background-image: var(--gradient-primary);
-            color: var(--box-background);
+            color: #fff;
             border-radius: var(--border-radius-2);
             margin-right: var(--sp-2);
           }

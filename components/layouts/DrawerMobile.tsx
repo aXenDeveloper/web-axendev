@@ -5,6 +5,7 @@ import useTranslation from 'next-translate/useTranslation';
 import ChangeLang from '../ChangeLang';
 import NavItems from './nav/NavItems';
 import DarkButton from './DarkButton';
+import GitHubButton from './GitHubButton';
 
 const DrawerMobile = () => {
   const { t } = useTranslation('global');
@@ -43,11 +44,15 @@ const DrawerMobile = () => {
           </li>
         </ul>
 
-        <nav>
-          <ul className="drawer_nav">
+        <nav className="drawer_nav">
+          <ul className="drawer_nav_list">
             <NavItems />
           </ul>
         </nav>
+
+        <div className="drawer_github">
+          <GitHubButton />
+        </div>
       </div>
 
       <div

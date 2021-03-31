@@ -1,4 +1,4 @@
-import GitHubButton from './GitHubButton';
+import GitHubButton from '../GitHubButton';
 import NavItems from './NavItems';
 
 const Nav = () => (

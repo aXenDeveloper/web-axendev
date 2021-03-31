@@ -64,22 +64,29 @@
   }
 
   &_nav {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    &_list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
 
-    > li {
-      a {
-        display: block;
-        padding: var(--sp-3) var(--sp-5);
-        text-decoration: none;
-      }
+      > li {
+        a {
+          display: block;
+          padding: var(--sp-3) var(--sp-5);
+          text-decoration: none;
+        }
 
-      &.active {
-        border-left: 3px solid var(--color-main);
-        color: var(--color-main);
+        &.active {
+          border-left: 3px solid var(--color-main);
+          color: var(--color-main);
+        }
       }
     }
+  }
+
+  &_github {
+    margin: var(--sp-4);
+    text-align: center;
   }
 
   &_action {
