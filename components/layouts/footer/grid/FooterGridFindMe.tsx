@@ -1,5 +1,5 @@
 import { faAccusoft } from '@fortawesome/free-brands-svg-icons';
-import { faMedkit, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faMedkit, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useTranslation from 'next-translate/useTranslation';
 
@@ -38,6 +38,20 @@ const FooterGridFindMe = () => {
               <FontAwesomeIcon icon={faMedkit} />
             </span>
             forum.invisionize.pl
+          </a>
+        </li>
+
+        <li className="footer_grid_findMe_item">
+          <a
+            href="https://www.pecetowicz.pl/profile/36319-axendev/"
+            target="blank"
+            rel="noopener nofollow"
+            className="footer_grid_findMe_item_link"
+          >
+            <span className="footer_grid_findMe_item_link:icon">
+              <FontAwesomeIcon icon={faLaptopCode} />
+            </span>
+            Pecetowicz.pl
           </a>
         </li>
       </ul>

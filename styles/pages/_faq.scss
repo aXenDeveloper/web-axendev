@@ -8,6 +8,10 @@
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 
+    &:not(:last-child) {
+      margin-bottom: var(--sp-6);
+    }
+
     &_header {
       display: flex;
       align-items: center;

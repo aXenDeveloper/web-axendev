@@ -21,7 +21,7 @@ const FaqPage: FC<FaqPageType> = ({ faqListData }) => {
 
       <h1 className="page_title">{t('page_faq')}</h1>
 
-      <main className="container container:medium">
+      <main className="container container:small">
         <FaqTabs faqListData={faqListData} />
       </main>
 
