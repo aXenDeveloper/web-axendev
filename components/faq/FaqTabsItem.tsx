@@ -1,4 +1,4 @@
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FC, useState } from 'react';
 import { FaqTabsItemType } from '../../types/components/faqTypes';
@@ -14,11 +14,11 @@ const FaqTabsItem: FC<FaqTabsItemType> = ({ children, question }) => {
   return (
     <li className={`faq_item`}>
       <div className="faq_item_header" onClick={handleClickItem}>
-        <button className={`faq_item_header:svg${isOpen ? ' open' : ''}`}>
-          <FontAwesomeIcon icon={faArrowDown} />
-        </button>
-
         <h2 className="faq_item_header:question">{question}</h2>
+
+        <button className={`faq_item_header:svg${isOpen ? ' open' : ''}`}>
+          <FontAwesomeIcon icon={faChevronDown} />
+        </button>
       </div>
 
       <Collapse isOpened={isOpen}>

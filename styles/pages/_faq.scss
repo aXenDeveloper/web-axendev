@@ -15,6 +15,7 @@
     &_header {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding: var(--sp-5);
       cursor: pointer;
 
@@ -22,7 +23,7 @@
         background-color: transparent;
         border: 0;
         color: var(--color-main);
-        margin-right: var(--sp-3);
+        margin-left: var(--sp-3);
         font-size: 1.6rem;
         cursor: inherit;
 
@@ -31,7 +32,7 @@
         }
 
         &.open svg {
-          transform: rotate(-180deg);
+          transform: rotate(90deg);
         }
       }
 

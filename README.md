@@ -4,7 +4,7 @@
 
 The repository shows the source code for the aXenDev.net website.
 
-## Install 🧰
+## 🧰 Install
 
 Use commands:
 
@@ -16,7 +16,7 @@ npm i
 npm run dev
 ```
 
-## Deployment 🔨
+## 🔨 Deployment
 
 Command:
 
@@ -27,7 +27,7 @@ npm start
 
 See the section about [deployment](https://nextjs.org/docs/deployment) for more information.
 
-## Packages 📂
+## 📂 Packages
 
 | Packages                                                                             | Description                                 |
 | ------------------------------------------------------------------------------------ | ------------------------------------------- |
@@ -43,7 +43,7 @@ See the section about [deployment](https://nextjs.org/docs/deployment) for more 
 | [React Google Recaptcha v3](https://www.npmjs.com/package/react-google-recaptcha-v3) | Google Recaptcha                            |
 | [React Collapse](https://www.npmjs.com/package/react-collapse)                       | Collapse                                    |
 
-## Resources used 📝
+## 📝 Resources used
 
 | Name                                  | For          |
 | ------------------------------------- | ------------ |
