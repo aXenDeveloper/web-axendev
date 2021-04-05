@@ -10,10 +10,10 @@ const Error404Page = () => {
     <Layout>
       <Head>
         <title>{t('page_404')} - aXenDev.net</title>
-        <meta name="robots" content="noindex" />
+        <meta property="og:image" content="https://axendev.net/assets/img_metatag.png" />
       </Head>
 
-      <ErrorPage code={'404 Not Found'}>{t('error_text_404')}</ErrorPage>
+      <ErrorPage code="404 Not Found">{t('error_text_404')}</ErrorPage>
     </Layout>
   );
 };

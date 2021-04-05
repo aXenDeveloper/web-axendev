@@ -69,7 +69,11 @@ const ProductsPage: FC<ProductsPageType> = ({ products }) => {
     <Layout>
       <Head>
         <title>{t('page_products')} - aXenDev.net</title>
+        <meta property="og:title" content={`${t('page_products')} - aXenDev.net`} />
+        <meta property="og:url" content="https://axendev.net/products" />
+        <meta name="og:description" content="Produkty stworzone przez aXenDev.net" />
         <meta name="description" content="Produkty stworzone przez aXenDev.net" />
+        <meta property="og:image" content="https://axendev.net/assets/img_metatag.png" />
       </Head>
 
       <Breadcrumb top>{t('page_products')}</Breadcrumb>

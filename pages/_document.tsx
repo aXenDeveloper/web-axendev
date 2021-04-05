@@ -18,6 +18,10 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="/favicon.ico" />
+          <meta property="og:site_name" content="aXenDev" />
+          <meta property="og:type" content="website" />
+          <meta property="og:locale" content="pl_PL" />
+          <meta name="robots" content="index" />
         </Head>
 
         <body>

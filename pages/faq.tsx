@@ -15,7 +15,11 @@ const FaqPage: FC<FaqPageType> = ({ faqListData }) => {
     <Layout>
       <Head>
         <title>{t('page_faq')} - aXenDev.net</title>
+        <meta property="og:title" content={`${t('page_faq')} - aXenDev.net`} />
+        <meta property="og:url" content="https://axendev.net/faq" />
         <meta name="description" content="Najczęściej zadawane pytania od klientów" />
+        <meta name="og:description" content="Najczęściej zadawane pytania od klientów" />
+        <meta property="og:image" content="https://axendev.net/assets/img_metatag.png" />
       </Head>
 
       <Breadcrumb top>{t('page_faq')}</Breadcrumb>

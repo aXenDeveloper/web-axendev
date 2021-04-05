@@ -14,8 +14,11 @@ const ContactPage = () => {
     <Layout>
       <Head>
         <title>{t('page_contact')} - aXenDev.net</title>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <meta property="og:title" content={`${t('page_contact')} - aXenDev.net`} />
+        <meta property="og:url" content="https://axendev.net/contact" />
         <meta name="description" content="Masz pytanie? Skontaktuj się ze mną przez formularz" />
+        <meta name="og:description" content="Masz pytanie? Skontaktuj się ze mną przez formularz" />
+        <meta property="og:image" content="https://axendev.net/assets/img_metatag.png" />
       </Head>
 
       <Breadcrumb top>{t('page_contact')}</Breadcrumb>

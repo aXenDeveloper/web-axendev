@@ -12,7 +12,7 @@ import Breadcrumb from '../../../components/layouts/breadcrumb/Breadcrumb';
 
 const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
   const { t } = useTranslation('global');
-  const { name, key, img, price, links } = product;
+  const { name, key, img, price, links, category } = product;
 
   return (
     <Layout>
@@ -20,7 +20,11 @@ const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
         <title>
           {name} - {t('page_products')} - aXenDev.net
         </title>
+        <meta property="og:title" content={`${name} - ${t('page_products')} - aXenDev.net`} />
+        <meta property="og:url" content={`https://axendev.net/products/${category}/${key}`} />
         <meta name="description" content={t(`products_desc_${key}`)} />
+        <meta name="og:description" content={t(`products_desc_${key}`)} />
+        <meta property="og:image" content={img[0]} />
       </Head>
 
       <Breadcrumb top>{name}</Breadcrumb>

@@ -43,8 +43,6 @@ const Breadcrumb: FC<BreadcrumbType> = ({ children, top }) => {
                 .join('_')
                 .split('?')[0];
 
-              console.log(`page_${pathNameLang}`);
-
               return (
                 <li key={`page_${pageElement}`}>
                   <FontAwesomeIcon icon={faChevronRight} />

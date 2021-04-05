@@ -71,6 +71,8 @@ const ProductsCategoryPage: FC<ProductsNavPageType> = ({ productsFilterByCategor
         <title>
           {t(`page_products_${category}`)} - {t('page_products')} - aXenDev.net
         </title>
+        <meta property="og:url" content={`https://axendev.net/products/${category}`} />
+        <meta property="og:image" content="https://axendev.net/assets/img_metatag.png" />
       </Head>
 
       <Breadcrumb top>{t(`page_products_${category}`)}</Breadcrumb>
