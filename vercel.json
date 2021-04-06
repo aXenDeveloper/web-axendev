@@ -1,8 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/contact",
-      "destination": "https://ips.axendev.net/contact"
-    }
-  ]
-}

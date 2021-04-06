@@ -29,19 +29,18 @@ See the section about [deployment](https://nextjs.org/docs/deployment) for more 
 
 ## 📂 Packages
 
-| Packages                                                                             | Description                                 |
-| ------------------------------------------------------------------------------------ | ------------------------------------------- |
-| [NextJS](https://nextjs.org/)                                                        | Core for Single Page Application _(SPA)_    |
-| [React](https://reactjs.org/)                                                        | Library for Single Page Application _(SPA)_ |
-| [Typescript](https://www.typescriptlang.org/)                                        | Types in JavaScript                         |
-| [Font Awesome](https://fontawesome.com/)                                             | Icons SVG                                   |
-| [js-cookie](https://www.npmjs.com/package/js-cookie)                                 | Cookies                                     |
-| [TippyJS](https://atomiks.github.io/tippyjs/)                                        | Tooltip                                     |
-| [NProgress](https://www.npmjs.com/package/nprogress)                                 | Progress bar                                |
-| [SASS](https://www.npmjs.com/package/sass)                                           | CSS Preprocessors                           |
-| [SwiperJS](https://swiperjs.com/)                                                    | Swiper                                      |
-| [React Google Recaptcha v3](https://www.npmjs.com/package/react-google-recaptcha-v3) | Google Recaptcha                            |
-| [React Collapse](https://www.npmjs.com/package/react-collapse)                       | Collapse                                    |
+| Packages                                                       | Description                                 |
+| -------------------------------------------------------------- | ------------------------------------------- |
+| [NextJS](https://nextjs.org/)                                  | Core for Single Page Application _(SPA)_    |
+| [React](https://reactjs.org/)                                  | Library for Single Page Application _(SPA)_ |
+| [Typescript](https://www.typescriptlang.org/)                  | Types in JavaScript                         |
+| [Font Awesome](https://fontawesome.com/)                       | Icons SVG                                   |
+| [js-cookie](https://www.npmjs.com/package/js-cookie)           | Cookies                                     |
+| [TippyJS](https://atomiks.github.io/tippyjs/)                  | Tooltip                                     |
+| [NProgress](https://www.npmjs.com/package/nprogress)           | Progress bar                                |
+| [SASS](https://www.npmjs.com/package/sass)                     | CSS Preprocessors                           |
+| [SwiperJS](https://swiperjs.com/)                              | Swiper                                      |
+| [React Collapse](https://www.npmjs.com/package/react-collapse) | Collapse                                    |
 
 ## 📝 Resources used
 
