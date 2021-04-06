@@ -7,11 +7,19 @@ module.exports = {
         source: '/contact',
         destination: 'https://ips.axendev.net/contact',
         permanent: true
+      },
+      {
+        source: '/forum',
+        destination: 'https://ips.axendev.net',
+        permanent: true
       }
     ];
   },
   async rewrites() {
-    return [{ source: '/contact', destination: 'https://ips.axendev.net/contact' }];
+    return [
+      { source: '/contact', destination: 'https://ips.axendev.net/contact' },
+      { source: '/forum', destination: 'https://ips.axendev.net' }
+    ];
   },
   ...nextTranslate(),
   images: {
