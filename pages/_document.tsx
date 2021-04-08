@@ -22,6 +22,7 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="pl_PL" />
           <meta name="robots" content="index" />
+          <link rel="alternate" href="https://axendev.net/" hrefLang="x-default" />
         </Head>
 
         <body>
