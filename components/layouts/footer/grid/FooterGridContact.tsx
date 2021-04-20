@@ -9,8 +9,8 @@ const FooterGridContact = () => {
     <li className="footer_grid_item text_align:center">
       <Logo />
 
-      <a className="footer_grid_contact:email" href="mailto:ithereplay@gmail.com">
-        ithereplay@gmail.com
+      <a className="footer_grid_contact:email" href="mailto:contact@axendev.net">
+        contact@aXenDev.net
       </a>
 
       <Link href="/contact">
