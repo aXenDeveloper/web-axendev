@@ -263,6 +263,19 @@ const productsDataAPI: productsDataAPIType[] = [
     price: {
       price: 0
     }
+  },
+  {
+    id: 15,
+    name: '(Adriano Faria) Contact Us - Polish translation',
+    key: 'ips-lang-polish-adriano-contact-us',
+    category: 'ips-community-suite-lang',
+    img: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-adriano-contact-us'
+    },
+    price: {
+      price: 0
+    }
   }
 ];
 
