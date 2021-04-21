@@ -190,26 +190,24 @@
 
 /* ===== breadcrumb ===== */
 .breadcrumb {
-  &_desktop {
-    padding: 0;
-    margin: var(--sp-4) 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.4rem;
+  padding: 0;
+  margin: var(--sp-4) 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
 
-    li {
-      &:not(:last-child) {
-        margin-right: var(--sp-2);
-      }
+  li {
+    &:not(:last-child) {
+      margin-right: var(--sp-2);
+    }
 
-      &:not(:first-child) svg {
-        margin-right: var(--sp-2);
-      }
+    &:not(:first-child) svg {
+      margin-right: var(--sp-2);
+    }
 
-      &:first-child svg {
-        margin-right: var(--sp-1);
-      }
+    &:first-child svg {
+      margin-right: var(--sp-1);
     }
   }
 

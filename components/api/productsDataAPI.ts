@@ -276,6 +276,28 @@ const productsDataAPI: productsDataAPIType[] = [
     price: {
       price: 0
     }
+  },
+  {
+    id: 16,
+    name: '(Express / React) Recipes app',
+    key: 'express-react-recipes',
+    category: 'react',
+    img: [
+      'https://raw.githubusercontent.com/aXenDeveloper/express-react-recipes/main/screenshots/1.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/express-react-recipes/main/screenshots/2.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/express-react-recipes/main/screenshots/3.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/express-react-recipes/main/screenshots/4.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/express-react-recipes/main/screenshots/5.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/express-react-recipes/main/screenshots/6.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/express-react-recipes/main/screenshots/7.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/express-react-recipes/main/screenshots/8.png'
+    ],
+    links: {
+      github: 'https://github.com/aXenDeveloper/express-react-recipes'
+    },
+    price: {
+      price: 0
+    }
   }
 ];
 

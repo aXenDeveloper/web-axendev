@@ -30,7 +30,7 @@ const Breadcrumb: FC<BreadcrumbType> = ({ children, top }) => {
   return (
     <>
       <div className="container responsive_show:desktop">
-        <ul className="breadcrumb_desktop">
+        <ul className="breadcrumb">
           <li>
             <FontAwesomeIcon icon={faHome} />
             <Link href="/">{t(`page_home`)}</Link>
