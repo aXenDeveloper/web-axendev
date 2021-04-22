@@ -7,7 +7,7 @@ import { NavItemType } from '../../../types/components/navType';
 
 const NavItem: FC<NavItemType> = ({ name, icon }) => {
   const { asPath } = useRouter();
-  const getPathSplit = asPath.split('/')[1];
+  const getPathSplit = asPath.split('/')[1].split('?')[0];
   const { t } = useTranslation('global');
 
   const getNamePath = name === 'home' ? '' : name;
