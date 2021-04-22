@@ -49,6 +49,14 @@ const ProductsCategory = () => {
 
           <li
             className={`products_category_item${
+              currentPath === 'typescript' ? ' products_category_item:active' : ''
+            }`}
+          >
+            <Link href="/products/typescript">{t('page_products_typescript')}</Link>
+          </li>
+
+          <li
+            className={`products_category_item${
               currentPath === 'others' ? ' products_category_item:active' : ''
             }`}
           >

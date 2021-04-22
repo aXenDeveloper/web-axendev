@@ -298,6 +298,25 @@ const productsDataAPI: productsDataAPIType[] = [
     price: {
       price: 0
     }
+  },
+  {
+    id: 17,
+    name: 'Apex Legends - Random Equipment',
+    key: 'ts-apex-legends-random-equipment',
+    category: 'typescript',
+    img: [
+      'https://raw.githubusercontent.com/aXenDeveloper/ts-apex-legends-random-equipment/master/screenshots/1.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/ts-apex-legends-random-equipment/master/screenshots/2.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/ts-apex-legends-random-equipment/master/screenshots/3.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/ts-apex-legends-random-equipment/master/screenshots/4.png'
+    ],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ts-apex-legends-random-equipment',
+      demo: 'https://apex.axendev.net/'
+    },
+    price: {
+      price: 0
+    }
   }
 ];
 

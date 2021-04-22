@@ -103,6 +103,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
       { params: { category: 'ips-community-suite' }, locale: 'pl' },
       { params: { category: 'ips-community-suite-lang' }, locale: 'en' },
       { params: { category: 'ips-community-suite-lang' }, locale: 'pl' },
+      { params: { category: 'typescript' }, locale: 'en' },
+      { params: { category: 'typescript' }, locale: 'pl' },
       { params: { category: 'others' }, locale: 'en' },
       { params: { category: 'others' }, locale: 'pl' }
     ],
