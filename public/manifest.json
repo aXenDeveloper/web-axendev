@@ -4,7 +4,7 @@
     "description": "Usługi tworzenia stron internetowych oraz aplikacji front-end / IPS Invision Community, które budują tętniącą życiem społeczność",
     "theme_color": "#c72c20",
     "background_color": "#0e0d13",
-    "display": "fullscreen",
+    "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
     "start_url": "/",
