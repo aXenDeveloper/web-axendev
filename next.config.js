@@ -1,6 +1,8 @@
 const nextTranslate = require('next-translate');
+const withPWA = require('next-pwa');
+const runtimeCaching = require('next-pwa/cache');
 
-module.exports = {
+module.exports = withPWA({
   async redirects() {
     return [
       {
@@ -27,5 +29,9 @@ module.exports = {
   },
   future: {
     webpack5: true
+  },
+  pwa: {
+    dest: 'public',
+    runtimeCaching
   }
-};
+});
