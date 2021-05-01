@@ -97,6 +97,11 @@ a {
     background-image: var(--button-primary);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    &::selection {
+      background: #fff;
+      -webkit-text-fill-color: #000;
+    }
   }
 
   &\:light {
