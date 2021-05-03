@@ -28,3 +28,8 @@ export type ProductLinksType = {
     demo?: string;
   };
 };
+
+export type ProductsCategoryItemType = {
+  name: string;
+  currentPath: string;
+};
