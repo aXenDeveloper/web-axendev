@@ -35,7 +35,7 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
         <span className="text:light">
           {t('products_in')}:{' '}
           <Link href={`/products/${category}`}>
-            <a className="text_weight:700">{t(`products_category_${category}`)}</a>
+            <a className="text_weight:700">{t(`page_products_${category}`)}</a>
           </Link>
         </span>
 

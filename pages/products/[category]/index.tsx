@@ -99,6 +99,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
     paths: [
       { params: { category: 'react' }, locale: 'en' },
       { params: { category: 'react' }, locale: 'pl' },
+      { params: { category: 'react-native' }, locale: 'en' },
+      { params: { category: 'react-native' }, locale: 'pl' },
       { params: { category: 'ips-community-suite' }, locale: 'en' },
       { params: { category: 'ips-community-suite' }, locale: 'pl' },
       { params: { category: 'ips-community-suite-lang' }, locale: 'en' },
