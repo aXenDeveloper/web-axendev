@@ -143,8 +143,7 @@ const productsDataAPI: productsDataAPIType[] = [
     links: {
       ipsmarketplace:
         'https://invisioncommunity.com/files/file/9539-dark-light-fluent-design-theme-edition/',
-      demo:
-        'https://ips.axendev.net/index.php?app=core&module=system&controller=theme&do=change&id=2'
+      demo: 'https://ips.axendev.net/index.php?app=core&module=system&controller=theme&do=change&id=2'
     },
     price: {
       price: 34.99,
@@ -331,6 +330,28 @@ const productsDataAPI: productsDataAPIType[] = [
     ],
     links: {
       github: 'https://github.com/aXenDeveloper/react-native-basic-to-do'
+    },
+    price: {
+      price: 0
+    }
+  },
+  {
+    id: 19,
+    name: 'Dynamic Theme',
+    key: 'ips-theme-dynamic',
+    category: 'ips-community-suite',
+    img: [
+      'https://raw.githubusercontent.com/aXenDeveloper/ips-theme-dynamic/master/screenshots/1.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/ips-theme-dynamic/master/screenshots/2.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/ips-theme-dynamic/master/screenshots/3.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/ips-theme-dynamic/master/screenshots/4.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/ips-theme-dynamic/master/screenshots/5.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/ips-theme-dynamic/master/screenshots/6.png'
+    ],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-theme-dynamic',
+      ipsmarketplace: 'https://invisioncommunity.com/files/file/9882-dynamic-theme/',
+      demo: 'https://ips.axendev.net/index.php?app=core&module=system&controller=theme&do=change&id=3'
     },
     price: {
       price: 0
