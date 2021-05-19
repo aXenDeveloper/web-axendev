@@ -239,7 +239,8 @@ const productsDataAPI: productsDataAPIType[] = [
       'https://files.axendev.net/projects/ips/applications/serverlist/6.png',
       'https://files.axendev.net/projects/ips/applications/serverlist/7.png',
       'https://files.axendev.net/projects/ips/applications/serverlist/8.png',
-      'https://files.axendev.net/projects/ips/applications/serverlist/9.png'
+      'https://files.axendev.net/projects/ips/applications/serverlist/9.png',
+      'https://files.axendev.net/projects/ips/applications/serverlist/10.png'
     ],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-app-advanced-serverlist',

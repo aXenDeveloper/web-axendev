@@ -15,7 +15,7 @@ const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
         <Link href={`/products/${category}/${key}`}>
           <a>
             <div className="products_content_item_generic:img">
-              <Image src={img[0]} objectFit="cover" layout="fill" placeholder="blur" />
+              <Image src={img[0]} objectFit="cover" layout="fill" />
             </div>
           </a>
         </Link>
