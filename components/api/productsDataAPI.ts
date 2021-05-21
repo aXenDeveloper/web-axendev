@@ -357,6 +357,24 @@ const productsDataAPI: productsDataAPIType[] = [
     price: {
       price: 0
     }
+  },
+  {
+    id: 20,
+    name: '(aXen) Full width widget containers',
+    key: 'ips-full-width-widget-containers',
+    category: 'ips-community-suite',
+    img: [
+      'https://raw.githubusercontent.com/aXenDeveloper/ips-full-width-widget-containers/master/screenshots/1.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/ips-full-width-widget-containers/master/screenshots/2.png'
+    ],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-full-width-widget-containers',
+      ipsmarketplace:
+        'https://invisioncommunity.com/files/file/9886-axen-full-width-widget-containers/'
+    },
+    price: {
+      price: 0
+    }
   }
 ];
 

@@ -16,7 +16,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             rel="stylesheet"
           />
-          <link rel="icon" href="icons/favicon.ico" />
+          <link rel="icon" href="https://axendev.net/icons/favicon.ico" />
           <meta property="og:site_name" content="aXenDev" />
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="pl_PL" />
