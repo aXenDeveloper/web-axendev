@@ -82,6 +82,7 @@ const SkillsHome = () => {
             <li>IPS Community Suite</li>
             <li>Adobe Photoshop</li>
             <li>Adobe Illustrator</li>
+            <li>Figma</li>
             <li>Webpack</li>
           </SkillsHomeItem>
         </ul>

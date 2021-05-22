@@ -368,9 +368,7 @@ const productsDataAPI: productsDataAPIType[] = [
       'https://raw.githubusercontent.com/aXenDeveloper/ips-full-width-widget-containers/master/screenshots/2.png'
     ],
     links: {
-      github: 'https://github.com/aXenDeveloper/ips-full-width-widget-containers',
-      ipsmarketplace:
-        'https://invisioncommunity.com/files/file/9886-axen-full-width-widget-containers/'
+      github: 'https://github.com/aXenDeveloper/ips-full-width-widget-containers'
     },
     price: {
       price: 0
