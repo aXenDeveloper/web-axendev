@@ -373,6 +373,49 @@ const productsDataAPI: productsDataAPIType[] = [
     price: {
       price: 0
     }
+  },
+  {
+    id: 21,
+    name: '(aXen) Advanced Members',
+    key: 'ips-app-advanced-members',
+    category: 'ips-community-suite',
+    img: [
+      'https://files.axendev.net/projects/ips/applications/members/2.png',
+      'https://files.axendev.net/projects/ips/applications/members/1.png',
+      'https://files.axendev.net/projects/ips/applications/members/3.png',
+      'https://files.axendev.net/projects/ips/applications/members/4.png',
+      'https://files.axendev.net/projects/ips/applications/members/5.png',
+      'https://files.axendev.net/projects/ips/applications/members/6.png',
+      'https://files.axendev.net/projects/ips/applications/members/7.png',
+      'https://files.axendev.net/projects/ips/applications/members/8.png',
+      'https://files.axendev.net/projects/ips/applications/members/9.png',
+      'https://files.axendev.net/projects/ips/applications/members/10.png',
+      'https://files.axendev.net/projects/ips/applications/members/11.png',
+      'https://files.axendev.net/projects/ips/applications/members/12.png',
+      'https://files.axendev.net/projects/ips/applications/members/13.png',
+      'https://files.axendev.net/projects/ips/applications/members/14.png'
+    ],
+    links: {
+      ipsmarketplace:
+        'https://invisioncommunity.com/files/file/9892-axen-advanced-members/'
+    },
+    price: {
+      price: 19.99,
+      link: 'ipsmarketplace'
+    }
+  },
+  {
+    id: 22,
+    name: '(aXen) Advanced Members - Polish translation',
+    key: 'ips-lang-polish-axen-advanced-members',
+    category: 'ips-community-suite-lang',
+    img: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-axen-advanced-members'
+    },
+    price: {
+      price: 0
+    }
   }
 ];
 
