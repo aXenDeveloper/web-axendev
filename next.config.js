@@ -27,9 +27,6 @@ module.exports = withPWA({
   images: {
     domains: ['raw.githubusercontent.com', 'files.axendev.net']
   },
-  future: {
-    webpack5: true
-  },
   pwa: {
     dest: 'public',
     disable: process.env.NODE_ENV === 'development',
