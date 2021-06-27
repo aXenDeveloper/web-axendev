@@ -396,8 +396,7 @@ const productsDataAPI: productsDataAPIType[] = [
       'https://files.axendev.net/projects/ips/applications/members/14.png'
     ],
     links: {
-      ipsmarketplace:
-        'https://invisioncommunity.com/files/file/9892-axen-advanced-members/'
+      ipsmarketplace: 'https://invisioncommunity.com/files/file/9892-axen-advanced-members/'
     },
     price: {
       price: 19.99,
@@ -412,6 +411,23 @@ const productsDataAPI: productsDataAPIType[] = [
     img: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-lang-polish-axen-advanced-members'
+    },
+    price: {
+      price: 0
+    }
+  },
+  {
+    id: 23,
+    name: '(aXen) Last activity in Hovercard',
+    key: 'ips-lact-activity-in-hovercard',
+    category: 'ips-community-suite',
+    img: [
+      'https://raw.githubusercontent.com/aXenDeveloper/ips-lact-activity-in-hovercard/master/screenshots/1.png'
+    ],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-lact-activity-in-hovercard',
+      ipsmarketplace:
+        'https://invisioncommunity.com/files/file/9895-axen-last-activity-in-hovercard/'
     },
     price: {
       price: 0
