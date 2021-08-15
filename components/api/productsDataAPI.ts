@@ -432,6 +432,50 @@ const productsDataAPI: productsDataAPIType[] = [
     price: {
       price: 0
     }
+  },
+  {
+    id: 24,
+    name: '(aXen) Vacation',
+    key: 'ips-app-axen-vacation',
+    category: 'ips-community-suite',
+    img: [
+      'https://files.axendev.net/projects/ips/applications/vacation/1.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/2.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/3.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/4.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/5.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/6.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/7.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/8.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/9.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/10.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/11.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/12.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/13.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/14.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/15.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/16.png'
+    ],
+    links: {
+      ipsmarketplace: 'https://invisioncommunity.com/files/file/9928-axen-vacation/'
+    },
+    price: {
+      price: 24.99,
+      link: 'ipsmarketplace'
+    }
+  },
+  {
+    id: 25,
+    name: '(aXen) Vacation - Polish translation',
+    key: 'ips-lang-polish-axen-vacation',
+    category: 'ips-community-suite-lang',
+    img: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-axen-vacation'
+    },
+    price: {
+      price: 0
+    }
   }
 ];
 
