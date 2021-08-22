@@ -399,7 +399,7 @@ const productsDataAPI: productsDataAPIType[] = [
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9892-axen-advanced-members/'
     },
     price: {
-      price: 19.99,
+      price: 14.99,
       link: 'ipsmarketplace'
     }
   },
@@ -460,7 +460,7 @@ const productsDataAPI: productsDataAPIType[] = [
       ipsmarketplace: 'https://invisioncommunity.com/files/file/9928-axen-vacation/'
     },
     price: {
-      price: 24.99,
+      price: 19.99,
       link: 'ipsmarketplace'
     }
   },
