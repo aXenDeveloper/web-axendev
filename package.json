@@ -8,14 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "js-cookie": "^3.0.0",
-    "next": "^11.1.0",
+    "js-cookie": "^3.0.1",
+    "next": "^11.1.2",
     "next-translate": "^1.0.7",
     "nextjs-progressbar": "0.0.11",
     "react": "^17.0.2",
     "react-collapse": "^5.1.0",
     "react-dom": "^17.0.2",
-    "swiper": "^6.8.1"
+    "swiper": "^7.0.2"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -24,12 +24,12 @@
     "@fortawesome/react-fontawesome": "^0.1.15",
     "@tippyjs/react": "^4.2.5",
     "@types/js-cookie": "^2.2.6",
-    "@types/node": "^16.6.1",
+    "@types/node": "^16.7.10",
     "@types/nprogress": "^0.2.0",
-    "@types/react": "^17.0.18",
+    "@types/react": "^17.0.19",
     "@types/react-collapse": "^5.0.0",
-    "next-pwa": "^5.2.24",
-    "sass": "^1.37.5",
-    "typescript": "^4.3.4"
+    "next-pwa": "^5.3.1",
+    "sass": "^1.38.2",
+    "typescript": "^4.4.2"
   }
 }

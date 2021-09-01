@@ -18,7 +18,7 @@ const ChangeLang = () => {
           <span className="userBar_lang_item">
             <Link href={asPath} locale="pl">
               <a onClick={() => handleChangeLang('pl')}>
-                <Image src="/flags/pl.png" objectFit="cover" layout="fill" alt="Polish (PL)" />
+                <Image src="/flags/pl.png" width={40} height={25} alt="Polish (PL)" />
               </a>
             </Link>
           </span>
@@ -30,7 +30,7 @@ const ChangeLang = () => {
           <span className="userBar_lang_item">
             <Link href={asPath} locale="en">
               <a onClick={() => handleChangeLang('en')}>
-                <Image src="/flags/us.png" objectFit="cover" layout="fill" alt="English (USA)" />
+                <Image src="/flags/us.png" width={40} height={25} alt="English (USA)" />
               </a>
             </Link>
           </span>
