@@ -20,7 +20,7 @@ const FooterCopyright = () => {
             aXenDev.net
           </a>
         </Tippy>{' '}
-        2019 - 2021
+        2019 - 2022
       </span>
 
       <span>
