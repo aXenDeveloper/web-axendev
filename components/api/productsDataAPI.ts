@@ -476,6 +476,20 @@ const productsDataAPI: productsDataAPIType[] = [
     price: {
       price: 0
     }
+  },
+  {
+    id: 26,
+    name: '(aXen) Font Awesome 6 in IPS',
+    key: 'ips-app-fontawesome6',
+    category: 'ips-community-suite',
+    img: ['https://files.axendev.net/projects/ips/applications/fontawesome6/1.png'],
+    links: {
+      ipsmarketplace: 'https://invisioncommunity.com/files/file/10056-axen-font-awesome-6-in-ips/',
+      github: 'https://github.com/aXenDeveloper/ips-app-fontawesome6'
+    },
+    price: {
+      price: 0
+    }
   }
 ];
 
