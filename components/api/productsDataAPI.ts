@@ -490,6 +490,42 @@ const productsDataAPI: productsDataAPIType[] = [
     price: {
       price: 0
     }
+  },
+  {
+    id: 27,
+    name: '(aXen) Content Notes',
+    key: 'ips-app-content-notes',
+    category: 'ips-community-suite',
+    img: [
+      'https://files.axendev.net/projects/ips/applications/contentnotes/1.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/2.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/3.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/4.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/5.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/6.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/7.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/8.png'
+    ],
+    links: {
+      ipsmarketplace: 'https://invisioncommunity.com/files/file/10065-axen-content-notes/'
+    },
+    price: {
+      price: 34.99,
+      link: 'ipsmarketplace'
+    }
+  },
+  {
+    id: 28,
+    name: '(aXen) Content Notes - Polish translation',
+    key: 'ips-lang-polish-axen-content-notes',
+    category: 'ips-community-suite-lang',
+    img: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-axen-content-notes'
+    },
+    price: {
+      price: 0
+    }
   }
 ];
 
