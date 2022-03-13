@@ -510,7 +510,7 @@ const productsDataAPI: productsDataAPIType[] = [
       ipsmarketplace: 'https://invisioncommunity.com/files/file/10065-axen-content-notes/'
     },
     price: {
-      price: 34.99,
+      price: 29.99,
       link: 'ipsmarketplace'
     }
   },
