@@ -3,6 +3,9 @@ import '../styles/global.scss';
 import 'tippy.js/dist/tippy.css';
 import 'swiper/css';
 import NextNprogress from 'nextjs-progressbar';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
