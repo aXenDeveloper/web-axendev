@@ -143,7 +143,7 @@ const productsDataAPI: productsDataAPIType[] = [
     links: {
       ipsmarketplace:
         'https://invisioncommunity.com/files/file/9539-dark-light-fluent-design-theme-edition/',
-      demo: 'https://ips.axendev.net/index.php?app=core&module=system&controller=theme&do=change&id=2'
+      demo: 'https://ips.axendev.net/index.php?app=core&module=system&controller=theme&do=change&id=12'
     },
     price: {
       price: 34.99,
@@ -240,7 +240,9 @@ const productsDataAPI: productsDataAPIType[] = [
       'https://files.axendev.net/projects/ips/applications/serverlist/7.png',
       'https://files.axendev.net/projects/ips/applications/serverlist/8.png',
       'https://files.axendev.net/projects/ips/applications/serverlist/9.png',
-      'https://files.axendev.net/projects/ips/applications/serverlist/10.png'
+      'https://files.axendev.net/projects/ips/applications/serverlist/10.png',
+      'https://files.axendev.net/projects/ips/applications/serverlist/11.png',
+      'https://files.axendev.net/projects/ips/applications/serverlist/12.png'
     ],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-app-advanced-serverlist',
