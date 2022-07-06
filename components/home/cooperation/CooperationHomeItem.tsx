@@ -1,8 +1,7 @@
 import useTranslation from 'next-translate/useTranslation';
-import { FC } from 'react';
 import { CooperationHomeItemType } from '../../../types/components/homeTypes';
 
-const CooperationHomeItem: FC<CooperationHomeItemType> = ({ number }) => {
+const CooperationHomeItem = ({ number }: CooperationHomeItemType) => {
   const { t } = useTranslation('global');
 
   return (

@@ -1,11 +1,10 @@
-import { FC } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ProductLinksType } from '../../types/components/productsTypes';
 
-const ProductLinks: FC<ProductLinksType> = ({ price, links }) => {
+const ProductLinks = ({ price, links }: ProductLinksType) => {
   const { t } = useTranslation('global');
 
   return (

@@ -1,11 +1,10 @@
-import { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ProductImageType } from '../../../types/components/productsTypes';
 import SwiperCore, { Lazy, Navigation } from 'swiper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-const ProductImage: FC<ProductImageType> = ({ images }) => {
+const ProductImage = ({ images }: ProductImageType) => {
   SwiperCore.use([Lazy, Navigation]);
 
   return (

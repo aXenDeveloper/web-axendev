@@ -146,7 +146,7 @@ const productsDataAPI: productsDataAPIType[] = [
       demo: 'https://ips.axendev.net/index.php?app=core&module=system&controller=theme&do=change&id=12'
     },
     price: {
-      price: 34.99,
+      price: 36.99,
       link: 'ipsmarketplace'
     }
   },

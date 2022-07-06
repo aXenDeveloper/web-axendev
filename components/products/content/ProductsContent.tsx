@@ -1,8 +1,7 @@
-import { FC } from 'react';
 import ProductsContentItem from './ProductsContentItem';
 import { ProductsContentType } from '../../../types/components/productsTypes';
 
-const ProductsContent: FC<ProductsContentType> = ({ products }) => {
+const ProductsContent = ({ products }: ProductsContentType) => {
   return (
     <div className="box">
       <ol className="products_content_ol">

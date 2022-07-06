@@ -1,13 +1,14 @@
-import { FC } from 'react';
+import { ReactNode } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-type ErrorPageType = {
+interface Props {
   code: string;
-};
+  children: ReactNode;
+}
 
-const ErrorPage: FC<ErrorPageType> = ({ children, code }) => {
+const ErrorPage = ({ children, code }: Props) => {
   const { t } = useTranslation('global');
 
   return (

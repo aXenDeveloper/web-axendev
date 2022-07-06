@@ -1,11 +1,10 @@
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FC } from 'react';
 import { ProductsContentItemType } from '../../../types/components/productsTypes';
 import ProductLinks from '../ProductLinks';
 
-const ProductsContentItem: FC<ProductsContentItemType> = ({ product }) => {
+const ProductsContentItem = ({ product }: ProductsContentItemType) => {
   const { name, img, price, links, key, category } = product;
   const { t } = useTranslation('global');
 

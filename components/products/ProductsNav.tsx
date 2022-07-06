@@ -1,9 +1,8 @@
 import useTranslation from 'next-translate/useTranslation';
-import { FC } from 'react';
 import { ProductsCategoryType } from '../../types/components/productsTypes';
 import ProductsCategory from './category/ProductsCategory';
 
-const ProductsNav: FC<ProductsCategoryType> = ({ handleSelectSortData, sortData }) => {
+const ProductsNav = ({ handleSelectSortData, sortData }: ProductsCategoryType) => {
   const { t } = useTranslation('global');
 
   return (

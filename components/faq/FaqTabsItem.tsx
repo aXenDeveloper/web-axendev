@@ -1,10 +1,14 @@
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FC, useState } from 'react';
+import { FC, ReactNode, useState } from 'react';
 import { FaqTabsItemType } from '../../types/components/faqTypes';
 import { Collapse } from 'react-collapse';
 
-const FaqTabsItem: FC<FaqTabsItemType> = ({ children, question }) => {
+interface Props extends FaqTabsItemType {
+  children: ReactNode;
+}
+
+const FaqTabsItem = ({ children, question }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClickItem = () => {

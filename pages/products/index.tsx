@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { GetStaticProps } from 'next';
@@ -10,7 +10,7 @@ import ProductsNav from '../../components/products/ProductsNav';
 import ProductsContent from '../../components/products/content/ProductsContent';
 import Breadcrumb from '../../components/layouts/breadcrumb/Breadcrumb';
 
-const ProductsPage: FC<ProductsPageType> = ({ products }) => {
+const ProductsPage = ({ products }: ProductsPageType) => {
   const { t } = useTranslation('global');
   const { push, query } = useRouter();
 

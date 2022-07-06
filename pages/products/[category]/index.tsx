@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { GetStaticPaths } from 'next';
@@ -10,7 +10,7 @@ import productsDataAPI from '../../../components/api/productsDataAPI';
 import ProductsNav from '../../../components/products/ProductsNav';
 import Breadcrumb from '../../../components/layouts/breadcrumb/Breadcrumb';
 
-const ProductsCategoryPage: FC<ProductsNavPageType> = ({ productsFilterByCategory, category }) => {
+const ProductsCategoryPage = ({ productsFilterByCategory, category }: ProductsNavPageType) => {
   const { t } = useTranslation('global');
   const { push, query } = useRouter();
 
