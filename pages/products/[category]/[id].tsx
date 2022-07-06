@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import Head from 'next/head';
 import { GetStaticPaths } from 'next';
 import useTranslation from 'next-translate/useTranslation';
@@ -10,7 +9,7 @@ import ProductImage from '../../../components/products/item/ProductImage';
 import ProductLinks from '../../../components/products/ProductLinks';
 import Breadcrumb from '../../../components/layouts/breadcrumb/Breadcrumb';
 
-const ProductsItemPage: FC<ProductsItemPageType> = ({ product }) => {
+const ProductsItemPage = ({ product }: ProductsItemPageType) => {
   const { t } = useTranslation('global');
   const { name, key, img, price, links, category } = product;
 

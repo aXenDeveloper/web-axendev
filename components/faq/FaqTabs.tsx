@@ -1,9 +1,8 @@
 import { useRouter } from 'next/router';
-import { FC } from 'react';
 import { FaqTabsType } from '../../types/components/faqTypes';
 import FaqTabsItem from './FaqTabsItem';
 
-const FaqTabs: FC<FaqTabsType> = ({ faqListData }) => {
+const FaqTabs = ({ faqListData }: FaqTabsType) => {
   const { locale } = useRouter();
 
   return (

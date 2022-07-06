@@ -1,11 +1,10 @@
-import { FC } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavItemType } from '../../../types/components/navType';
 
-const NavItem: FC<NavItemType> = ({ name, icon }) => {
+const NavItem = ({ name, icon }: NavItemType) => {
   const { asPath } = useRouter();
   const getPathSplit = asPath.split('/')[1].split('?')[0];
   const { t } = useTranslation('global');

@@ -1,9 +1,13 @@
-import { FC, useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import { DarkThemeContext } from '../../context/useDarkTheme';
 import Footer from './Footer';
 import Header from './Header';
 
-const Layout: FC = ({ children }) => {
+interface Props {
+  children: ReactNode;
+}
+
+const Layout = ({ children }: Props) => {
   const [getDarkTheme, setDarkTheme] = useState(false);
 
   useEffect(() => {

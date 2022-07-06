@@ -1,8 +1,12 @@
-import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ReactNode } from 'react';
 import { SkillsHomeItemType } from '../../types/components/homeTypes';
 
-const SkillsHomeItem: FC<SkillsHomeItemType> = ({ children, title, highlight, icon }) => (
+interface Props extends SkillsHomeItemType {
+  children: ReactNode;
+}
+
+const SkillsHomeItem = ({ children, title, highlight, icon }: Props) => (
   <li
     className={`home_skills_contain_item${highlight ? ' home_skills_contain_item:highlight' : ''}`}
   >
