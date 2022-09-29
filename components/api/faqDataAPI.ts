@@ -19,10 +19,8 @@ const faqDataAPI: faqDataAPIType = [
       pl: 'Czy wystawiam fakturę VAT (PL)?'
     },
     answer: {
-      en:
-        "No, I don't have my own company, so all orders are based on a 'umowę o działo' (PL). I do not exclude that such a possibility may appear in the future.",
-      pl:
-        'Nie, nie posiadam swojej firmy więc wszystkie zlecenia są opartę na umowę o działo. Nie wykluczam że w przyszłości może pojawić się taka możliwość.'
+      en: "No, I don't have my own company, so all orders are based on a 'umowę o działo' (PL). I do not exclude that such a possibility may appear in the future.",
+      pl: 'Nie, nie posiadam swojej firmy więc wszystkie zlecenia są opartę na umowę o działo. Nie wykluczam że w przyszłości może pojawić się taka możliwość.'
     }
   },
   {
@@ -32,9 +30,8 @@ const faqDataAPI: faqDataAPIType = [
       pl: 'Czy do zlecenia wymagam szablonu graficznego?'
     },
     answer: {
-      en:
-        "Yes, if you don't have a graphic template, I have a few recommendable graphic designers.",
-      pl: 'Tak, jeżeli takkiego nie masz to mam parę grafików godnych polecenia.'
+      en: "Yes, if you don't have a UI designer, I have a few recommendable designers.",
+      pl: 'Tak, jeżeli nie mas UI designera z to mam parę designerów godnych polecenia.'
     }
   },
   {
