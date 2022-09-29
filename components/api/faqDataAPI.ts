@@ -30,8 +30,8 @@ const faqDataAPI: faqDataAPIType = [
       pl: 'Czy do zlecenia wymagam szablonu graficznego?'
     },
     answer: {
-      en: "Yes, if you don't have a UI designer, I have a few recommendable designers.",
-      pl: 'Tak, jeżeli nie mas UI designera z to mam parę designerów godnych polecenia.'
+      en: "Yes, if you don't have a UI designer of your choice, I have a couple of designers worth recommending.",
+      pl: 'Tak, jeżeli nie posiadasz wybranego przez siebie UI designera to mam parę designerów godnych polecenia.'
     }
   },
   {
