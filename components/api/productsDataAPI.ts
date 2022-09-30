@@ -438,7 +438,7 @@ const productsDataAPI: productsDataAPIType[] = [
   {
     id: 24,
     name: '(aXen) Vacation',
-    key: 'ips-app-axen-vacation',
+    key: 'ips-app-vacation',
     category: 'ips-community-suite',
     img: [
       'https://files.axendev.net/projects/ips/applications/vacation/1.png',
