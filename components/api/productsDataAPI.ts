@@ -528,6 +528,60 @@ const productsDataAPI: productsDataAPIType[] = [
     price: {
       price: 0
     }
+  },
+  {
+    id: 29,
+    name: '(aXen) Player Panel',
+    key: 'ips-app-axen-player-panel',
+    category: 'ips-community-suite',
+    img: [
+      'https://files.axendev.net/projects/ips/applications/playerpanel/1.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/2.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/3.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/4.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/5.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/6.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/7.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/8.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/9.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/10.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/11.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/12.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/13.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/14.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/15.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/16.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/17.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/18.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/19.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/20.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/21.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/22.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/23.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/24.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/25.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/26.png'
+    ],
+    links: {
+      ipsmarketplace: 'https://invisioncommunity.com/files/file/10158-axen-player-panel/'
+    },
+    price: {
+      price: 59.99,
+      link: 'ipsmarketplace'
+    }
+  },
+  {
+    id: 30,
+    name: '(aXen) Player Panel - Polish translation',
+    key: 'ips-lang-polish-axen-player-panel',
+    category: 'ips-community-suite-lang',
+    img: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-axen-player-panel'
+    },
+    price: {
+      price: 0
+    }
   }
 ];
 
