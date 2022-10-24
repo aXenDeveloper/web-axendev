@@ -68,6 +68,7 @@ const SkillsHome = () => {
               <span>NodeJS</span>
             </li>
 
+            <li>NestJS</li>
             <li>ExpressJS</li>
             <li>MongoDB</li>
             <li>MySQL / MariaDB</li>
