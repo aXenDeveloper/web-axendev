@@ -1,36 +1,24 @@
 {
   "name": "web-axendev",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "js-cookie": "^3.0.1",
-    "next": "^12.2.0",
-    "next-pwa": "^5.5.4",
-    "next-translate": "^1.5.0",
-    "nextjs-progressbar": "^0.0.14",
-    "react": "^18.2.0",
-    "react-collapse": "^5.1.1",
-    "react-dom": "^18.2.0"
+    "next": "13.4.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/free-regular-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@tippyjs/react": "^4.2.6",
-    "@types/js-cookie": "^3.0.1",
-    "@types/node": "^18.0.3",
-    "@types/nprogress": "^0.2.0",
-    "@types/react": "^18.0.15",
-    "@types/react-collapse": "^5.0.0",
-    "sass": "^1.53.0",
-    "swiper": "^8.3.0",
-    "typescript": "^4.7.4"
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.12",
+    "@types/react-dom": "^18.2.5",
+    "eslint": "^8.43.0",
+    "eslint-config-next": "^13.4.6",
+    "typescript": "^5.1.3"
   }
 }
