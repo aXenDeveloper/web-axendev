@@ -1,0 +1,11 @@
+:root {
+  --body-background: 243 244 246;
+  --text-color: 26 26 28;
+}
+
+[theme="dark"]:root {
+  --body-background: 2 4 9;
+  --text-color: 224 224 227;
+
+  color-scheme: dark;
+}
