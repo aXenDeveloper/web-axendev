@@ -1,9 +1,5 @@
-'use client';
-
-import { useTranslations } from 'next-intl';
+import { HomeView } from '@/views/home/HomeView';
 
 export default function Home() {
-  const t = useTranslations('global');
-
-  return <div>Home - {t('test')}</div>;
+  return <HomeView />;
 }
