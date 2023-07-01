@@ -1,0 +1,11 @@
+.wrapper {
+  position: fixed;
+  z-index: 100;
+  top: var(--header-height);
+
+  width: 100%;
+  height: 100%;
+  padding: 0 1.25rem 1.25rem;
+
+  background-color: rgb(var(--body-background));
+}

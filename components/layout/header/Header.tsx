@@ -3,6 +3,7 @@ import Link from 'next-intl/link';
 import { Logo } from '@/assets/Logo';
 import style from './Header.module.scss';
 import { Nav } from './nav/Nav';
+import { Drawer } from './drawer/Drawer';
 
 export const Header = () => {
   return (
@@ -13,6 +14,7 @@ export const Header = () => {
         </Link>
 
         <Nav />
+        <Drawer />
       </div>
     </header>
   );

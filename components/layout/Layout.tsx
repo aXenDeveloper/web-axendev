@@ -9,7 +9,8 @@ interface Props {
 export const Layout = ({ children }: Props) => {
   return (
     <>
-      <Header /> {children}
+      <Header />
+      <main>{children}</main>
     </>
   );
 };
