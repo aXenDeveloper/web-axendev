@@ -1,11 +1,20 @@
 :root {
+  --radius: 0.5rem;
   --body-background: 243 244 246;
-  --text-color: 26 26 28;
+  --header-height: 4rem;
+  --layout-max-width: 76rem;
 }
 
 [theme='dark']:root {
   --body-background: 2 4 9;
-  --text-color: 224 224 227;
+  --text-color: 237 237 237;
+  --text-secondary-color: 136 136 136;
+
+  // Nav
+  --nav-color: var(--text-secondary-color);
+  --nav-color-hover: 255 255 255;
+  --nav-active: 255 255 255 / 8%;
+  --nav-active-color: 255 255 255;
 
   color-scheme: dark;
 }

@@ -1,0 +1,34 @@
+@mixin mobile-tablet {
+  @media screen and (width < 960px) {
+    @content;
+  }
+}
+
+@media screen and (width <= 767px) {
+  textarea,
+  input[type='text'],
+  input[type='password'],
+  input[type='datetime'],
+  input[type='datetime-local'],
+  input[type='date'],
+  input[type='month'],
+  input[type='time'],
+  input[type='week'],
+  input[type='number'],
+  input[type='email'],
+  input[type='url'],
+  input[type='search'],
+  input[type='tel'],
+  input[type='color'],
+  select {
+    font-size: 1rem;
+  }
+}
+
+.layout {
+  &_wrapper {
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+}

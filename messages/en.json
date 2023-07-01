@@ -1,5 +1,9 @@
 {
   "global": {
     "test": "Test EN"
+  },
+  "nav": {
+    "forum": "Forum",
+    "products": "Products"
   }
 }

@@ -1,0 +1,16 @@
+@use '@/styles/media' as *;
+
+.wrapper {
+  @include mobile-tablet {
+    display: none;
+  }
+
+  > ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+  }
+}

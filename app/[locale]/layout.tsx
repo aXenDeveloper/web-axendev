@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation';
 import { Montserrat } from 'next/font/google';
 import { NextIntlClientProvider, useLocale } from 'next-intl';
 
+import { Layout } from '@/components/layout/Layout';
+
 import '@/styles/global.scss';
 
 const montserrat = Montserrat({
@@ -36,7 +38,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <body>
         <script src="/aXenDev_theme.js" />
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <Layout>{children}</Layout>
         </NextIntlClientProvider>
       </body>
     </html>
