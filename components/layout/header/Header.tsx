@@ -5,6 +5,8 @@ import style from './Header.module.scss';
 import { Nav } from './nav/Nav';
 import { Drawer } from './drawer/Drawer';
 
+import { LanguageSwitch } from '../../switches/lang/LanguageSwitch';
+
 export const Header = () => {
   return (
     <header className={style.wrapper}>
@@ -14,6 +16,7 @@ export const Header = () => {
         </Link>
 
         <Nav />
+        <LanguageSwitch />
         <Drawer />
       </div>
     </header>

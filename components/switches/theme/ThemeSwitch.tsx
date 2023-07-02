@@ -15,6 +15,8 @@ import { useTranslations } from 'next-intl';
 import style from './ThemeSwitch.module.scss';
 import { CONFIG_LOCAL_STORAGE_THEME } from '@/config';
 
+import { Tooltip } from '../../tooltip/Tooltip';
+
 enum ThemeType {
   light = 'light',
   dark = 'dark',
@@ -102,17 +104,18 @@ export const ThemeSwitch = () => {
   return (
     <div className={style.wrapper}>
       {themes.map(item => (
-        <button
-          key={item.id}
-          type="button"
-          className={cx({
-            [style.active]: theme === item.id
-          })}
-          onClick={() => handleTheme(item.id)}
-          aria-label={t(`theme.${item.id}`)}
-        >
-          {theme === item.id ? item.icons.active : item.icons.unActive}
-        </button>
+        <Tooltip content={t(`theme.${item.id}`)} key={item.id}>
+          <button
+            type="button"
+            className={cx({
+              [style.active]: theme === item.id
+            })}
+            onClick={() => handleTheme(item.id)}
+            aria-label={t(`theme.${item.id}`)}
+          >
+            {theme === item.id ? item.icons.active : item.icons.unActive}
+          </button>
+        </Tooltip>
       ))}
     </div>
   );

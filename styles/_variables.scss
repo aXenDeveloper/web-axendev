@@ -8,7 +8,8 @@
   --body-background: 243 244 246;
   --text-color: 23 23 23;
   --text-secondary-color: 102 102 102;
-  --header-border: 0 0 0 / 10%;
+  --border-color: 0 0 0 / 10%;
+  --header-border: var(--border-color);
 
   // Buttons
   --button-secondary-border: var(--button-secondary-hover-color) / 10%;
@@ -22,6 +23,10 @@
   --nav-color-hover: 0 0 0;
   --nav-active: var(--button-secondary-active);
   --nav-active-color: 0 0 0;
+
+  // Tooltip
+  --tooltip: 255 255 255;
+  --tooltip-border: var(--border-color);
 }
 
 [theme='dark']:root {
@@ -29,7 +34,8 @@
   --body-background: 2 4 9;
   --text-color: 237 237 237;
   --text-secondary-color: 136 136 136;
-  --header-border: 255 255 255 / 10%;
+  --border-color: 255 255 255 / 10%;
+  --header-border: var(--border-color);
 
   // Buttons
   --button-secondary-hover-color: 255 255 255;
@@ -38,6 +44,9 @@
   // Nav
   --nav-color-hover: 255 255 255;
   --nav-active-color: 255 255 255;
+
+  // Tooltip
+  --tooltip: 10 10 10;
 
   color-scheme: dark;
 }
