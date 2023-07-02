@@ -5,7 +5,7 @@ import style from './Header.module.scss';
 import { Nav } from './nav/Nav';
 import { Drawer } from './drawer/Drawer';
 
-import { LanguageSwitch } from '../../switches/lang/LanguageSwitch';
+import { Switches } from '../../switches/Switches';
 
 export const Header = () => {
   return (
@@ -16,7 +16,7 @@ export const Header = () => {
         </Link>
 
         <Nav />
-        <LanguageSwitch />
+        <Switches className={style.switches} />
         <Drawer />
       </div>
     </header>

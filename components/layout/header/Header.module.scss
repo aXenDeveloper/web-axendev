@@ -1,3 +1,5 @@
+@use '@/styles/media' as *;
+
 .wrapper {
   position: sticky;
   z-index: 100;
@@ -22,5 +24,11 @@
 
   > svg {
     width: 10rem;
+  }
+}
+
+.switches:first-of-type {
+  @include mobile-tablet {
+    display: none;
   }
 }
