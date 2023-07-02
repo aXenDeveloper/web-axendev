@@ -1,19 +1,42 @@
 :root {
   --radius: 0.5rem;
-  --body-background: 243 244 246;
   --header-height: 4rem;
   --layout-max-width: 76rem;
-}
+  --animation: 0.2s ease;
 
-[theme='dark']:root {
-  --body-background: 2 4 9;
-  --text-color: 237 237 237;
-  --text-secondary-color: 136 136 136;
+  // Global
+  --body-background: 243 244 246;
+  --text-color: 23 23 23;
+  --text-secondary-color: 102 102 102;
+  --header-border: 0 0 0 / 10%;
+
+  // Buttons
+  --button-secondary-border: var(--button-secondary-hover-color) / 10%;
+  --button-secondary-hover-color: 0 0 0;
+  --button-secondary-color: var(--text-secondary-color);
+  --button-secondary-active: var(--button-secondary-hover-color) / 6%;
+  --button-secondary-active-color: var(--button-secondary-hover-color);
 
   // Nav
   --nav-color: var(--text-secondary-color);
+  --nav-color-hover: 0 0 0;
+  --nav-active: var(--button-secondary-active);
+  --nav-active-color: 0 0 0;
+}
+
+[theme='dark']:root {
+  // Global
+  --body-background: 2 4 9;
+  --text-color: 237 237 237;
+  --text-secondary-color: 136 136 136;
+  --header-border: 255 255 255 / 10%;
+
+  // Buttons
+  --button-secondary-hover-color: 255 255 255;
+  --button-secondary-active: var(--button-secondary-hover-color) / 8%;
+
+  // Nav
   --nav-color-hover: 255 255 255;
-  --nav-active: 255 255 255 / 8%;
   --nav-active-color: 255 255 255;
 
   color-scheme: dark;

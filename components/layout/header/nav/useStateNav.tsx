@@ -4,7 +4,11 @@ import {
   Comment24Filled,
   Apps24Regular,
   Apps24Filled,
-  Comment24Regular
+  Comment24Regular,
+  Question24Filled,
+  Question24Regular,
+  Mail24Filled,
+  Mail24Regular
 } from '@fluentui/react-icons';
 
 import { ItemNavProps } from './item/ItemNav';
@@ -27,6 +31,22 @@ export const useStateNav = (): ItemNavProps[] => {
         unActive: <Apps24Regular />
       },
       activeWithChildren: true
+    },
+    {
+      id: 'faq',
+      href: '/faq',
+      icons: {
+        active: <Question24Filled />,
+        unActive: <Question24Regular />
+      }
+    },
+    {
+      id: 'contact',
+      href: '/contact',
+      icons: {
+        active: <Mail24Filled />,
+        unActive: <Mail24Regular />
+      }
     }
   ];
 };

@@ -1,9 +1,16 @@
 {
   "global": {
-    "test": "Test EN"
+    "test": "Test EN",
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
   },
   "nav": {
     "forum": "Forum",
-    "products": "Products"
+    "products": "Products",
+    "faq": "FAQ",
+    "contact": "Contact"
   }
 }

@@ -1,5 +1,11 @@
 @mixin mobile-tablet {
-  @media screen and (width < 960px) {
+  @media screen and (width <= 960px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (width > 960px) {
     @content;
   }
 }

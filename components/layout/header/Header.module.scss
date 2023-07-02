@@ -5,8 +5,9 @@
 
   width: 100%;
 
-  background-color: rgb(255 255 255 / 9%);
+  background-color: transparent;
   backdrop-filter: saturate(180%) blur(0.375rem);
+  border-bottom: 1px solid rgb(var(--header-border));
 
   > div {
     display: flex;

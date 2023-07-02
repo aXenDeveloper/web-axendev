@@ -1,4 +1,10 @@
+@use '@/styles/media' as *;
+
 .button {
+  @include desktop {
+    display: none;
+  }
+
   cursor: pointer;
 
   flex-shrink: 0;

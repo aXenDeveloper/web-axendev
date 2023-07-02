@@ -1,9 +1,16 @@
 {
   "global": {
-    "test": "Test PL"
+    "test": "Test PL",
+    "theme": {
+      "light": "Jasny",
+      "dark": "Ciemny",
+      "system": "Systemowy"
+    }
   },
   "nav": {
     "forum": "Forum",
-    "products": "Produkty"
+    "products": "Produkty",
+    "faq": "FAQ",
+    "contact": "Kontakt"
   }
 }
