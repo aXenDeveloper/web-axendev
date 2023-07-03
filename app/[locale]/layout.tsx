@@ -1,18 +1,11 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
-import { Montserrat } from 'next/font/google';
 import { NextIntlClientProvider, useLocale } from 'next-intl';
 import { Metadata } from 'next';
 
 import { Layout } from '@/components/layout/Layout';
 import { CONFIG_TITLE } from '@/config';
-import '@/styles/global.scss';
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  display: 'swap'
-});
 
 export function generateMetadata(): Metadata {
   return {
@@ -49,13 +42,8 @@ export default async function LocaleLayout({ children, params }: Props) {
   }
 
   return (
-    <html lang={locale} className={montserrat.className}>
-      <body>
-        <script src="/aXenDev_theme.js" />
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Layout>{children}</Layout>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <Layout>{children}</Layout>
+    </NextIntlClientProvider>
   );
 }
