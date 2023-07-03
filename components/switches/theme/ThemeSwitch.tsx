@@ -25,7 +25,7 @@ enum ThemeType {
 
 export const ThemeSwitch = () => {
   const t = useTranslations('global');
-  const [theme, setTheme] = useState<ThemeType>(ThemeType.system);
+  const [theme, setTheme] = useState<ThemeType | null>(null);
 
   useEffect(() => {
     const theme = localStorage.getItem(CONFIG_LOCAL_STORAGE_THEME);
