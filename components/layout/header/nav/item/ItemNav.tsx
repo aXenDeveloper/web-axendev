@@ -13,13 +13,15 @@ export interface ItemNavProps {
   };
   id: string;
   activeWithChildren?: boolean;
+  onClick?: () => void;
 }
 
 export const ItemNav = ({
   activeWithChildren,
   href,
   icons,
-  id
+  id,
+  onClick
 }: ItemNavProps) => {
   const t = useTranslations('nav');
   const pathname = usePathname();
@@ -35,6 +37,7 @@ export const ItemNav = ({
           [style.active]: isActive
         })}
         href={href}
+        onClick={onClick}
       >
         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
         {/* @ts-expect-error - Dynamic value */}

@@ -11,12 +11,18 @@ import { Dispatch, SetStateAction } from 'react';
 import { motion } from 'framer-motion';
 
 import style from './DrawerContent.module.scss';
+import { Switches } from '@/components/switches/Switches';
+
+import { useStateNav } from '../../nav/useStateNav';
+import { ItemNav } from '../../nav/item/ItemNav';
 
 interface Props {
   setOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 export const DrawerContent = ({ setOpen }: Props) => {
+  const state = useStateNav();
+
   const { context, refs } = useFloating({
     open: true,
     onOpenChange: setOpen
@@ -40,7 +46,19 @@ export const DrawerContent = ({ setOpen }: Props) => {
             ref={refs.setFloating}
             {...getFloatingProps()}
           >
-            DrawerContent
+            <nav className={style.nav}>
+              <ul>
+                {state.map(item => (
+                  <ItemNav
+                    key={item.id}
+                    onClick={() => setOpen(false)}
+                    {...item}
+                  />
+                ))}
+              </ul>
+            </nav>
+
+            <Switches className={style.switches} disableTooltip />
           </motion.div>
         </FloatingFocusManager>
       </FloatingOverlay>

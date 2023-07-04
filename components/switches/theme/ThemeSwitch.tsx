@@ -23,7 +23,11 @@ enum ThemeType {
   system = 'system'
 }
 
-export const ThemeSwitch = () => {
+interface Props {
+  disableTooltip?: boolean;
+}
+
+export const ThemeSwitch = ({ disableTooltip }: Props) => {
   const t = useTranslations('global');
   const [theme, setTheme] = useState<ThemeType | null>(null);
 
@@ -104,7 +108,11 @@ export const ThemeSwitch = () => {
   return (
     <div className={style.wrapper}>
       {themes.map(item => (
-        <Tooltip content={t(`theme.${item.id}`)} key={item.id}>
+        <Tooltip
+          content={t(`theme.${item.id}`)}
+          key={item.id}
+          disable={disableTooltip}
+        >
           <button
             type="button"
             className={cx({

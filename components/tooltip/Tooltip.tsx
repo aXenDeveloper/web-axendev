@@ -22,6 +22,7 @@ interface Props {
   children: JSX.Element;
   content: JSX.Element | string;
   closeOnClick?: boolean;
+  disable?: boolean;
   placement?: Placement;
   strategy?: 'fixed' | 'absolute';
 }
@@ -32,6 +33,7 @@ export const Tooltip = forwardRef<HTMLButtonElement & HTMLAnchorElement, Props>(
       children,
       closeOnClick,
       content,
+      disable,
       placement,
       strategy: strategyFromProps,
       ...parentProps
@@ -68,6 +70,8 @@ export const Tooltip = forwardRef<HTMLButtonElement & HTMLAnchorElement, Props>(
       useRole(context, { role: 'tooltip' }),
       useDismiss(context)
     ]);
+
+    if (disable) return children;
 
     return (
       <>
