@@ -1,0 +1,26 @@
+.wrapper {
+  --layout-max-width: 52rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.title {
+  margin: 4rem 0 1rem;
+
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.125;
+  letter-spacing: -0.04em;
+}
+
+.desc {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.33;
+  color: rgb(var(--text-secondary-color));
+}

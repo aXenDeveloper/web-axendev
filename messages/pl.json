@@ -12,5 +12,9 @@
     "products": "Produkty",
     "faq": "FAQ",
     "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Kodowanie w przyszłości",
+    "desc": "Web Developer i Web Designer tworzący niesamowite aplikacje łącząc kod, projekt oraz użytkowników."
   }
 }

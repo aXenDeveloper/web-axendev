@@ -1,4 +1,10 @@
+@use '@/styles/media' as *;
+
 .wrapper {
+  @include desktop {
+    display: none;
+  }
+
   position: fixed;
   z-index: 100;
   top: var(--header-height);

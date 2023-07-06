@@ -12,5 +12,9 @@
     "products": "Products",
     "faq": "FAQ",
     "contact": "Contact"
+  },
+  "home": {
+    "title": "Coding in The Future",
+    "desc": "Web Developer and Web Designer creating amazing applications by combining code, design and users."
   }
 }
