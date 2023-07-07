@@ -6,12 +6,12 @@
   align-items: center;
   justify-content: center;
 
+  padding: 4rem 0;
+
   text-align: center;
 }
 
 .title {
-  margin: 4rem 0 1rem;
-
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.125;
@@ -19,8 +19,17 @@
 }
 
 .desc {
+  margin: 2rem 0;
+
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.33;
   color: rgb(var(--text-secondary-color));
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
-import { NextIntlClientProvider, useLocale } from 'next-intl';
+import { NextIntlClientProvider } from 'next-intl';
 import { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 
@@ -33,18 +33,14 @@ interface Props {
   params: { locale: string };
 }
 
-export default async function LocaleLayout({ children, params }: Props) {
-  const locale = useLocale();
-
+export default async function LocaleLayout({
+  children,
+  params: { locale }
+}: Props) {
   let messages;
   try {
     messages = (await import(`@/messages/${locale}.json`)).default;
   } catch (error) {
-    notFound();
-  }
-
-  // Show a 404 error for unknown locales
-  if (params.locale !== locale) {
     notFound();
   }
 

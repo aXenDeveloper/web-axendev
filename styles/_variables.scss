@@ -12,9 +12,18 @@
   --header-border: var(--border-color);
 
   // Buttons
+  // Primary
+  --button-primary: var(--text-color);
+  --button-primary-border: var(--button-primary);
+  --button-primary-color: 255 255 255;
+  --button-primary-hover: var(--text-secondary-color);
+  --button-primary-hover-border: var(--button-primary-hover);
+
+  // Secondary
+  --button-secondary: 0 0 0 / 0%;
   --button-secondary-border: var(--button-secondary-hover-color) / 10%;
+  --button-secondary-color: var(--text-color);
   --button-secondary-hover-color: 0 0 0;
-  --button-secondary-color: var(--text-secondary-color);
   --button-secondary-active: var(--button-secondary-hover-color) / 6%;
   --button-secondary-active-color: var(--button-secondary-hover-color);
 
@@ -38,6 +47,10 @@
   --header-border: var(--border-color);
 
   // Buttons
+  // Primary
+  --button-primary-color: 0 0 0;
+
+  // Secondary
   --button-secondary-hover-color: 255 255 255;
   --button-secondary-active: var(--button-secondary-hover-color) / 8%;
 

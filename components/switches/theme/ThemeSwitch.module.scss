@@ -9,6 +9,8 @@
   border-radius: 2rem;
 
   > button {
+    --button-secondary-color: var(--text-secondary-color);
+
     cursor: pointer;
 
     display: flex;

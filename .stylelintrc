@@ -1,18 +1,12 @@
 {
-  "extends": [
-    "stylelint-config-standard-scss",
-    "stylelint-prettier/recommended",
-    "stylelint-config-clean-order"
-  ],
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-clean-order"],
   "ignoreFiles": ["node_modules/**", "coverage/**"],
-  "plugins": ["stylelint-prettier"],
   "rules": {
     "selector-pseudo-class-no-unknown": [
       true,
       {
         "ignorePseudoClasses": ["global"]
       }
-    ],
-    "prettier/prettier": true
+    ]
   }
 }
