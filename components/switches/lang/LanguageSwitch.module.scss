@@ -10,6 +10,8 @@
   border-radius: 2rem;
 
   > a {
+    --button-secondary-color: var(--text-secondary-color);
+
     display: flex;
     align-items: center;
     justify-content: center;
