@@ -11,13 +11,19 @@
   --border-color: 0 0 0 / 10%;
   --header-border: var(--border-color);
 
+  // Colors
+  --primary: 226 17 36;
+  --primary-hover: 196 15 32;
+  --secondary: 245 139 31;
+
   // Buttons
   // Primary
-  --button-primary: var(--text-color);
+  --button-primary: var(--primary);
   --button-primary-border: var(--button-primary);
-  --button-primary-color: 255 255 255;
-  --button-primary-hover: var(--text-secondary-color);
+  --button-primary-color: 237 237 2373;
+  --button-primary-hover: var(--primary-hover);
   --button-primary-hover-border: var(--button-primary-hover);
+  --button-primary-hover-color: var(--button-primary-color);
 
   // Secondary
   --button-secondary: 0 0 0 / 0%;
@@ -47,9 +53,6 @@
   --header-border: var(--border-color);
 
   // Buttons
-  // Primary
-  --button-primary-color: 0 0 0;
-
   // Secondary
   --button-secondary-hover-color: 255 255 255;
   --button-secondary-active: var(--button-secondary-hover-color) / 8%;

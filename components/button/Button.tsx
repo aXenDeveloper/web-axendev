@@ -20,14 +20,16 @@ export const Button = ({
   onClick
 }: Props) => {
   if (href) {
-    <Link
-      className={cx(style.wrapper, style[kind])}
-      href={href}
-      onClick={onClick}
-      data-testid={`button_${id}`}
-    >
-      {children}
-    </Link>;
+    return (
+      <Link
+        className={cx(style.wrapper, style[kind])}
+        href={href}
+        onClick={onClick}
+        data-testid={`button_${id}`}
+      >
+        {children}
+      </Link>
+    );
   }
 
   return (

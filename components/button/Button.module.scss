@@ -17,8 +17,14 @@ $kinds: 'primary', 'secondary';
   border: 1px solid transparent;
   border-radius: var(--radius);
 
-  transition: background-color var(--animation), border-color var(--animation),
+  transition:
+    background-color var(--animation),
+    border-color var(--animation),
     color var(--animation);
+
+  &:hover {
+    text-decoration: none;
+  }
 
   @each $kind in $kinds {
     &.#{$kind} {

@@ -15,6 +15,13 @@
   },
   "home": {
     "title": "Coding in The Future",
-    "desc": "Web Developer and Web Designer creating amazing applications by combining code, design and users."
+    "desc": "Web Developer and Web Designer creating amazing applications by combining code, design and users.",
+    "buttons": {
+      "products": "Check products",
+      "contact": "Contact me"
+    }
+  },
+  "products": {
+    "title": "Products"
   }
 }

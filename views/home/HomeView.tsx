@@ -8,15 +8,24 @@ export const HomeView = () => {
   const t = useTranslations('home');
 
   return (
-    <div className={cx('layout_wrapper', style.wrapper)}>
-      <h1 className={style.title}>{t('title')}</h1>
-      <p className={style.desc}>{t('desc')}</p>
+    <div className={style.wrapper}>
+      <div className={cx('layout_wrapper', style.content)}>
+        <h1 className={style.title}>{t('title')}</h1>
+        <p className={style.desc}>{t('desc')}</p>
 
-      <div className={style.buttons}>
-        <Button id="test">Test</Button>
-        <Button kind="secondary" id="test">
-          Test
-        </Button>
+        <div className={style.buttons}>
+          <Button id="products" href="/products">
+            {t('buttons.products')}
+          </Button>
+          <Button kind="secondary" id="contact">
+            {t('buttons.contact')}
+          </Button>
+        </div>
+
+        <div className={style.background}>
+          <div />
+          <div />
+        </div>
       </div>
     </div>
   );

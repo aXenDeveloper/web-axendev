@@ -10,10 +10,10 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
   const t = await getTranslator(locale, 'nav');
 
   return {
-    title: t('products')
+    title: t('faq')
   };
 }
 
 export default function Page() {
-  return <div>Products</div>;
+  return <div>FAQ</div>;
 }

@@ -1,11 +1,12 @@
 @use '@/styles/media' as *;
 
 .wrapper {
-  position: sticky;
+  position: fixed;
   z-index: 100;
   top: 0;
 
   width: 100%;
+  height: var(--header-height);
 
   background-color: transparent;
   backdrop-filter: saturate(180%) blur(0.375rem);
@@ -14,7 +15,7 @@
   > div {
     display: flex;
     align-items: center;
-    height: var(--header-height);
+    height: 100%;
   }
 }
 
