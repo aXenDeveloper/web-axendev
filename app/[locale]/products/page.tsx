@@ -1,5 +1,7 @@
 import { getTranslator } from 'next-intl/server';
 
+import { ProductsView } from '@/views/products/ProductsView';
+
 interface MetadataProps {
   params: {
     locale: string;
@@ -15,5 +17,5 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
 }
 
 export default function Page() {
-  return <div>Products</div>;
+  return <ProductsView />;
 }
