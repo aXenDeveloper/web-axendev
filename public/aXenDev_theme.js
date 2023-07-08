@@ -8,5 +8,9 @@
     localStorage.getItem('aXenDev_theme') === 'dark'
   ) {
     document.documentElement.setAttribute('theme', 'dark');
+
+    return;
   }
+
+  document.documentElement.setAttribute('theme', 'light');
 })();

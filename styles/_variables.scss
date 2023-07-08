@@ -1,11 +1,68 @@
 :root {
+  --radius: 0.5rem;
+  --header-height: 4rem;
+  --layout-max-width: 80rem;
+  --animation: 0.2s ease;
+
+  // Global
   --body-background: 243 244 246;
-  --text-color: 26 26 28;
+  --text-color: 23 23 23;
+  --text-secondary-color: 102 102 102;
+  --border-color: 0 0 0 / 10%;
+  --header-border: var(--border-color);
+
+  // Colors
+  --primary: 226 17 36;
+  --primary-hover: 196 15 32;
+  --secondary: 245 139 31;
+
+  // Buttons
+  // Primary
+  --button-primary: var(--primary);
+  --button-primary-border: var(--button-primary);
+  --button-primary-color: 237 237 2373;
+  --button-primary-hover: var(--primary-hover);
+  --button-primary-hover-border: var(--button-primary-hover);
+  --button-primary-hover-color: var(--button-primary-color);
+
+  // Secondary
+  --button-secondary: 0 0 0 / 0%;
+  --button-secondary-border: var(--button-secondary-hover-color) / 10%;
+  --button-secondary-color: var(--text-color);
+  --button-secondary-hover-color: 0 0 0;
+  --button-secondary-active: var(--button-secondary-hover-color) / 6%;
+  --button-secondary-active-color: var(--button-secondary-hover-color);
+
+  // Nav
+  --nav-color: var(--text-secondary-color);
+  --nav-color-hover: 0 0 0;
+  --nav-active: var(--button-secondary-active);
+  --nav-active-color: 0 0 0;
+
+  // Tooltip
+  --tooltip: 255 255 255;
+  --tooltip-border: var(--border-color);
 }
 
 [theme='dark']:root {
+  // Global
   --body-background: 2 4 9;
-  --text-color: 224 224 227;
+  --text-color: 237 237 237;
+  --text-secondary-color: 136 136 136;
+  --border-color: 255 255 255 / 10%;
+  --header-border: var(--border-color);
+
+  // Buttons
+  // Secondary
+  --button-secondary-hover-color: 255 255 255;
+  --button-secondary-active: var(--button-secondary-hover-color) / 8%;
+
+  // Nav
+  --nav-color-hover: 255 255 255;
+  --nav-active-color: 255 255 255;
+
+  // Tooltip
+  --tooltip: 10 10 10;
 
   color-scheme: dark;
 }

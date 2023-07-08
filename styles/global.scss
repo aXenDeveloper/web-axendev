@@ -1,4 +1,5 @@
 @import './variables';
+@import './helpers';
 
 *,
 *::after,
@@ -16,4 +17,12 @@ body {
   color: rgb(var(--text-color));
 
   background-color: rgb(var(--body-background));
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

@@ -1,0 +1,14 @@
+.wrapper {
+  z-index: 1000;
+
+  max-width: 20rem;
+  padding: 0.25rem 0.5rem;
+
+  color: inherit;
+
+  background-color: rgb(var(--tooltip));
+  border: 1px solid rgb(var(--tooltip-border));
+  border-radius: var(--radius);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 2%), 0 4px 8px -4px rgb(0 0 0 / 4%),
+    0 16px 24px -8px rgb(0 0 0 / 6%);
+}

@@ -1,5 +1,27 @@
 {
   "global": {
-    "test": "Test PL"
+    "test": "Test PL",
+    "theme": {
+      "light": "Jasny",
+      "dark": "Ciemny",
+      "system": "Systemowy"
+    }
+  },
+  "nav": {
+    "forum": "Forum",
+    "products": "Produkty",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Kodowanie w przyszłości",
+    "desc": "Web Developer i Web Designer tworzący niesamowite aplikacje łącząc kod, projekt oraz użytkowników.",
+    "buttons": {
+      "products": "Sprawdź produkty",
+      "contact": "Skontaktuj się ze mną"
+    }
+  },
+  "products": {
+    "title": "Produkty"
   }
 }

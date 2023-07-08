@@ -1,0 +1,34 @@
+@use '@/styles/media' as *;
+
+.wrapper {
+  @include desktop {
+    display: none;
+  }
+
+  position: fixed;
+  z-index: 100;
+  top: var(--header-height);
+
+  overflow-x: auto;
+
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  padding: 1.25rem;
+
+  background-color: rgb(var(--body-background));
+}
+
+.nav > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+
+  > li > a {
+    justify-content: flex-start;
+  }
+}
+
+.switches {
+  margin-top: 1.25rem;
+}

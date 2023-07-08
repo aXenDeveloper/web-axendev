@@ -1,5 +1,27 @@
 {
   "global": {
-    "test": "Test EN"
+    "test": "Test EN",
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "nav": {
+    "forum": "Forum",
+    "products": "Products",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Coding in The Future",
+    "desc": "Web Developer and Web Designer creating amazing applications by combining code, design and users.",
+    "buttons": {
+      "products": "Check products",
+      "contact": "Contact me"
+    }
+  },
+  "products": {
+    "title": "Products"
   }
 }
