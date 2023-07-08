@@ -75,6 +75,10 @@
 }
 
 .background {
+  @include mobile {
+    filter: blur(10rem);
+  }
+
   position: absolute;
   z-index: -1;
   top: 0;
@@ -84,10 +88,15 @@
   width: 100%;
   height: 100%;
 
-  opacity: 0.6;
+  opacity: 0.5;
   filter: blur(14rem);
 
   > div {
+    @include mobile {
+      width: 20rem;
+      height: 20rem;
+    }
+
     position: absolute;
 
     width: 34rem;
