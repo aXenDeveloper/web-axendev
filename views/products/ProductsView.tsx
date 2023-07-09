@@ -1,3 +1,5 @@
+import { HeaderProducts } from './header/HeaderProducts';
+
 export const ProductsView = () => {
-  return <div>ProductsView</div>;
+  return <HeaderProducts />;
 };

@@ -22,6 +22,7 @@
     }
   },
   "products": {
-    "title": "Produkty"
+    "title": "Produkty",
+    "desc": "Eksploruj moje produkty i znajdź ten, który najbardziej Ci odpowiada."
   }
 }

@@ -17,11 +17,12 @@
     "title": "Coding in The Future",
     "desc": "Web Developer and Web Designer creating amazing applications by combining code, design and users.",
     "buttons": {
-      "products": "Check products",
-      "contact": "Contact me"
+      "products": "Check Products",
+      "contact": "Contact Me"
     }
   },
   "products": {
-    "title": "Products"
+    "title": "Products",
+    "desc": "Explore my products and find the one that suits you best."
   }
 }
