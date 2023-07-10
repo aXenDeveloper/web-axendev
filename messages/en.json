@@ -23,6 +23,9 @@
   },
   "products": {
     "title": "Products",
-    "desc": "Explore my products and find the one that suits you best."
+    "desc": "Explore my products and find the one that suits you best.",
+    "filters": {
+      "title": "Filters"
+    }
   }
 }

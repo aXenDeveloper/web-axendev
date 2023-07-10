@@ -23,6 +23,9 @@
   },
   "products": {
     "title": "Produkty",
-    "desc": "Eksploruj moje produkty i znajdź ten, który najbardziej Ci odpowiada."
+    "desc": "Eksploruj moje produkty i znajdź ten, który najbardziej Ci odpowiada.",
+    "filters": {
+      "title": "Filtry"
+    }
   }
 }

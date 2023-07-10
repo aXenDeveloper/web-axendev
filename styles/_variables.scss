@@ -6,9 +6,10 @@
 
   // Global
   --body-background: 243 244 246;
+  --container-background: 255 255 255;
   --text-color: 23 23 23;
   --text-secondary-color: 102 102 102;
-  --border-color: 0 0 0 / 10%;
+  --border-color: 0 0 0 / 8%;
   --header-border: var(--border-color);
 
   // Colors
@@ -47,9 +48,10 @@
 [theme='dark']:root {
   // Global
   --body-background: 2 4 9;
+  --container-background: 12 13 18;
   --text-color: 237 237 237;
   --text-secondary-color: 136 136 136;
-  --border-color: 255 255 255 / 10%;
+  --border-color: 255 255 255 / 8%;
   --header-border: var(--border-color);
 
   // Buttons
