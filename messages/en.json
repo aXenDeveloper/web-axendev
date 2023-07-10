@@ -26,6 +26,16 @@
     "desc": "Explore my products and find the one that suits you best.",
     "filters": {
       "title": "Filters"
+    },
+    "categories": {
+      "ips_apps": "IPS Apps",
+      "ips_themes": "IPS Themes",
+      "ips_translations": "IPS Translations",
+      "react": "React",
+      "react_native": "React Native",
+      "node_js": "Node.js",
+      "typescript": "TypeScript",
+      "others": "Others"
     }
   }
 }

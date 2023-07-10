@@ -1,5 +1,6 @@
 :root {
   --radius: 0.5rem;
+  --radius-2: 0.25rem;
   --header-height: 4rem;
   --layout-max-width: 90rem;
   --animation: 0.2s ease;
@@ -43,6 +44,9 @@
   // Tooltip
   --tooltip: 255 255 255;
   --tooltip-border: var(--border-color);
+
+  // Inputs
+  --input-border: var(--border-color);
 }
 
 [theme='dark']:root {
