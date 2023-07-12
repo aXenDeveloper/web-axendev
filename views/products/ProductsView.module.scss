@@ -1,6 +1,9 @@
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+.list {
   flex: 1;
-  gap: 2rem;
+
+  :global(.virtuoso-grid-list) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 2rem;
+  }
 }

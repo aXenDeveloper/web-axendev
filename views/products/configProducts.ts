@@ -9,7 +9,7 @@ export enum CategoriesProductEnum {
   OTHERS = 'others'
 }
 
-interface ProductsInterface {
+export interface ProductsInterface {
   categories: CategoriesProductEnum[];
   createdAt: number;
   id: string;
@@ -421,5 +421,180 @@ export const products: ProductsInterface[] = [
     },
     price: 0,
     createdAt: 1623602915
+  },
+  {
+    id: 'ips-lact-activity-in-hovercard',
+    name: '(aXen) Last activity in Hovercard',
+    categories: [CategoriesProductEnum.IPS_APPS],
+    imgs: [
+      'https://raw.githubusercontent.com/aXenDeveloper/ips-lact-activity-in-hovercard/master/screenshots/1.png'
+    ],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-lact-activity-in-hovercard',
+      ipsMarketplace:
+        'https://invisioncommunity.com/files/file/9895-axen-last-activity-in-hovercard/'
+    },
+    price: 0,
+    createdAt: 1624808433
+  },
+  {
+    id: 'ips-app-vacation',
+    name: '(aXen) Vacation',
+    categories: [CategoriesProductEnum.IPS_APPS],
+    imgs: [
+      'https://files.axendev.net/projects/ips/applications/vacation/1.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/2.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/3.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/4.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/5.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/6.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/7.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/8.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/9.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/10.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/11.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/12.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/13.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/14.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/15.png',
+      'https://files.axendev.net/projects/ips/applications/vacation/16.png'
+    ],
+    links: {
+      ipsMarketplace:
+        'https://invisioncommunity.com/files/file/9928-axen-vacation/'
+    },
+    price: 19.99,
+    createdAt: 1629042033
+  },
+  {
+    id: 'ips-lang-polish-axen-vacation',
+    name: '(aXen) Vacation - Polish translation',
+    categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
+    imgs: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
+    links: {
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-axen-vacation'
+    },
+    price: 0,
+    createdAt: 1629042033
+  },
+  {
+    id: 'ips-app-fontawesome6',
+    name: '(aXen) Font Awesome 6 in IPS',
+    categories: [CategoriesProductEnum.IPS_APPS],
+    imgs: [
+      'https://files.axendev.net/projects/ips/applications/fontawesome6/1.png'
+    ],
+    links: {
+      ipsMarketplace:
+        'https://invisioncommunity.com/files/file/10056-axen-font-awesome-6-in-ips/',
+      github: 'https://github.com/aXenDeveloper/ips-app-fontawesome6'
+    },
+    price: 0,
+    createdAt: 1643992833
+  },
+  {
+    id: 'ips-app-content-notes',
+    name: '(aXen) Content Notes',
+    categories: [CategoriesProductEnum.IPS_APPS],
+    imgs: [
+      'https://files.axendev.net/projects/ips/applications/contentnotes/1.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/2.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/3.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/4.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/5.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/6.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/7.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/8.png'
+    ],
+    links: {
+      ipsMarketplace:
+        'https://invisioncommunity.com/files/file/10065-axen-content-notes/'
+    },
+    price: 29.99,
+    createdAt: 1646584833
+  },
+  {
+    id: 'ips-app-content-notes',
+    name: '(aXen) Content Notes',
+    categories: [CategoriesProductEnum.IPS_APPS],
+    imgs: [
+      'https://files.axendev.net/projects/ips/applications/contentnotes/1.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/2.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/3.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/4.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/5.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/6.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/7.png',
+      'https://files.axendev.net/projects/ips/applications/contentnotes/8.png'
+    ],
+    links: {
+      ipsMarketplace:
+        'https://invisioncommunity.com/files/file/10065-axen-content-notes/'
+    },
+    price: 29.99,
+    createdAt: 1646584833
+  },
+  {
+    id: 'ips-lang-polish-axen-content-notes',
+    name: '(aXen) Content Notes - Polish translation',
+    categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
+    imgs: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
+    links: {
+      github:
+        'https://github.com/aXenDeveloper/ips-lang-polish-axen-content-notes'
+    },
+    price: 0,
+    createdAt: 1646584833
+  },
+  {
+    id: 'ips-app-axen-player-panel',
+    name: '(aXen) Player Panel',
+    categories: [CategoriesProductEnum.IPS_APPS],
+    imgs: [
+      'https://files.axendev.net/projects/ips/applications/playerpanel/1.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/2.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/3.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/4.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/5.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/6.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/7.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/8.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/9.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/10.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/11.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/12.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/13.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/14.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/15.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/16.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/17.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/18.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/19.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/20.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/21.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/22.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/23.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/24.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/25.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/26.png'
+    ],
+    links: {
+      ipsMarketplace:
+        'https://invisioncommunity.com/files/file/10158-axen-player-panel/'
+    },
+    price: 59.99,
+    createdAt: 1664552433
+  },
+  {
+    id: 'ips-lang-polish-axen-player-panel',
+    name: '(aXen) Player Panel - Polish translation',
+    categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
+    imgs: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
+    links: {
+      ipsMarketplace:
+        'https://invisioncommunity.com/files/file/10158-axen-player-panel/'
+    },
+    price: 0,
+    createdAt: 1664552433
   }
 ];

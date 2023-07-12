@@ -1,4 +1,7 @@
 .wrapper {
+  --layout-max-width: 80rem;
+
   display: flex;
   gap: 4rem;
+  align-items: flex-start;
 }

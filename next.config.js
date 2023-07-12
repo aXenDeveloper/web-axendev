@@ -5,6 +5,23 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 const withNextIntl = require('next-intl/plugin')();
 
-const nextConfig = { ...withBundleAnalyzer() };
+const nextConfig = {
+  ...withBundleAnalyzer(),
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        hostname: 'raw.githubusercontent.com',
+        protocol: 'https',
+        pathname: '/aXenDeveloper/**'
+      },
+      {
+        hostname: 'files.axendev.net',
+        protocol: 'https',
+        pathname: '/projects/**'
+      }
+    ]
+  }
+};
 
 module.exports = withNextIntl(nextConfig);
