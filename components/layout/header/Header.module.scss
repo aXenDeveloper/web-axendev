@@ -9,8 +9,18 @@
   height: var(--header-height);
 
   background-color: transparent;
-  backdrop-filter: saturate(180%) blur(0.375rem);
-  border-bottom: 1px solid rgb(var(--header-border));
+  border-bottom: 1px solid transparent;
+
+  transition:
+    background-color var(--animation),
+    border-color var(--animation),
+    backdrop-filter var(--animation);
+
+  &.scrolled {
+    background-color: rgb(var(--body-background) / 80%);
+    backdrop-filter: saturate(180%) blur(0.375rem);
+    border-color: rgb(var(--header-border));
+  }
 
   > div {
     display: flex;
