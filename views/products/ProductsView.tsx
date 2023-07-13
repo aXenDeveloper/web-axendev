@@ -1,6 +1,6 @@
 'use client';
 
-import { VirtuosoGrid } from 'react-virtuoso';
+import { VirtuosoGrid, LogLevel } from 'react-virtuoso';
 import { useMemo } from 'react';
 
 import style from './ProductsView.module.scss';
@@ -22,7 +22,7 @@ export const ProductsView = () => {
       useWindowScroll
       className={style.list}
       data={data}
-      overscan={200}
+      logLevel={LogLevel.DEBUG}
       itemContent={(_index, item) => <ItemProductsView {...item} />}
     />
   );

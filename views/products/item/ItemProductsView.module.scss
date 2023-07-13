@@ -29,4 +29,20 @@
 
 .info {
   padding: 1rem;
+
+  > h3 {
+    font-size: 1rem;
+  }
+
+  > p {
+    overflow: hidden;
+    display: -webkit-box;
+
+    margin-top: 0.25rem;
+
+    color: rgb(var(--text-secondary-color));
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
 }

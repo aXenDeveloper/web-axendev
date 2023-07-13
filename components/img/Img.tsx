@@ -10,7 +10,6 @@ interface InitialProps {
   className?: string;
   priority?: boolean;
   quality?: number;
-  sizes?: string;
   style?: CSSProperties;
 }
 
@@ -19,13 +18,15 @@ interface PropsWithWidthAndHeight extends InitialProps {
   width: number;
   fill?: never;
   heightLoading?: number;
+  sizes?: string;
   widthLoading?: number;
 }
 
 interface PropsWithFill extends InitialProps {
   fill: true;
+  sizes: string;
   height?: never;
-  heightLoading?: never;
+  heightLoading?: number;
   width?: never;
   widthLoading?: never;
 }

@@ -36,6 +36,38 @@
       "node_js": "Node.js",
       "typescript": "TypeScript",
       "others": "Others"
+    },
+    "descriptions": {
+      "react-weather": "Weather app that allows you to check the current weather and forecast in your chosen city.",
+      "ips-theme-fluent-design": "Fluent Design Theme Edition is a combination of Fluent Design styles Microsoft, iOS Design, Android Design and Google Design. We have also introduced many interesting features that are unique in standard themes.",
+      "ips-article-system-in-pages": "The modification allows you to change the appearance and add many functionalities to manage records. Requires Pages IPS (CMS) application.",
+      "ips-app-advanced-serverlist": "(IPS App) This app shows servers information from GameQ library.",
+      "ips-number-of-entries-chatbox-plus": "(IPS Plugin) Plugin displays users the number of their entries from Chatbox+ application.",
+      "ips-administrative-bar": "(IPS Plugin) The plugin adds the administration bar known from previous versions of IP.Board.",
+      "ips-fontawesome5": "(IPS Plugin) The plugin shows icons from Font Awesome 5.",
+      "ips-group-formatting-in-mention": "(IPS Plugin) The plugin formats the user name in the mention.",
+      "ips-number-of-entries-chatbox": "(IPS Plugin) Plugin displays users the number of their entries from Chatbox Free application.",
+      "ips-secondary-groups-indicator": "(IPS Plugin) The plugin show secondary groups.",
+      "ips-lang-polish-chatbox-plus": "Polish translation app - (BIM) Chatbox+",
+      "ips-lang-polish-cj-duplicate-member": "Polish translation app - [BNS] CJ Duplicate Member Logger",
+      "ips-lang-polish-axen-advanced-serverlist": "Polish translation app - (aXen) Advanced Server List",
+      "ips-lang-polish-adriano-contact-us": "Polish translation app - (Adriano Faria) Contact Us",
+      "ips-lang-polish-axen-advanced-members": "Polish translation app - (aXen) Advanced Members",
+      "ips-lang-polish-axen-vacation": "Polish translation app - (aXen) Vacation",
+      "ips-lang-polish-axen-content-notes": "Polish translation app - (aXen) Content Notes",
+      "ips-lang-polish-axen-player-panel": "Polish translation app - (aXen) Player Panel",
+      "express-react-recipes": "An application that manages recipes added by users. It has a login and registration system with a CSRF key.",
+      "sourcebans-web-theme-fluent": "Fluent Design Theme Edition is a combination of Fluent Design styles Microsoft, iOS Design, Android Design and Google Design. We have also introduced many interesting features that are unique in standard themes.",
+      "ts-apex-legends-random-equipment": "Application randomizes equipment with improvements and a random character in Apex Legends game.",
+      "react-native-basic-to-do": "To do list with a start date, an end option, and an option to delete.",
+      "ips-theme-dynamic": "(IPS Theme) Dynamic theme with Font Awesome 5",
+      "ips-full-width-widget-containers": "(IPS Plugin) Adds two full-width widget containers (Header and Footer).",
+      "ips-app-advanced-members": "The application extends the functions of users on the forum with: a group legend, a widget who is online, a better distinction of groups and a widget for contact with the administration.",
+      "ips-lact-activity-in-hovercard": "Converts the current value of hovercard activity to real time along with its last activity.",
+      "ips-app-vacation": "Application adds an automatic vacation system.",
+      "ips-app-fontawesome6": "The application updates the Font Awesome version to version 6 without destroying the icons embedded in IPS version 4.",
+      "ips-app-content-notes": "Application for create notes on contents.",
+      "ips-app-axen-player-panel": "Application for managing multiplayer game servers."
     }
   }
 }
