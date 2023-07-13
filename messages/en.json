@@ -24,6 +24,7 @@
   "products": {
     "title": "Products",
     "desc": "Explore my products and find the one that suits you best.",
+    "free": "Free",
     "filters": {
       "title": "Filters"
     },

@@ -28,6 +28,11 @@
 }
 
 .info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.25rem;
+
   padding: 1rem;
 
   > h3 {
@@ -38,11 +43,16 @@
     overflow: hidden;
     display: -webkit-box;
 
-    margin-top: 0.25rem;
-
     color: rgb(var(--text-secondary-color));
 
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+  }
+
+  > span {
+    margin-top: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(var(--price));
   }
 }
