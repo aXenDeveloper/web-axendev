@@ -1,0 +1,12 @@
+.list {
+  flex: 1;
+
+  :global(.virtuoso-grid-list) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+
+    > div {
+      padding: 1rem;
+    }
+  }
+}

@@ -22,6 +22,53 @@
     }
   },
   "products": {
-    "title": "Produkty"
+    "title": "Produkty",
+    "desc": "Eksploruj moje produkty i znajdź ten, który najbardziej Ci odpowiada.",
+    "free": "Darmowe",
+    "filters": {
+      "title": "Filtry"
+    },
+    "categories": {
+      "ips_apps": "Aplikacje IPS",
+      "ips_themes": "Motywy IPS",
+      "ips_translations": "Tłumaczenia IPS",
+      "react": "React",
+      "react_native": "React Native",
+      "node_js": "Node.js",
+      "typescript": "TypeScript",
+      "others": "Inne"
+    },
+    "descriptions": {
+      "react-weather": "Aplikacja pogodowa, która pozwala sprawdzić aktualną pogodę i prognozę w wybranym mieście.",
+      "ips-theme-fluent-design": "Fluent Design Theme Edition to połączenie stylów Fluent Design Microsoft, iOS Design, Android Design i Google Design. Wprowadziliśmy również wiele interesujących funkcji, które są unikalne w standardowych motywach.",
+      "ips-article-system-in-pages": "Modyfikacja pozwala na zmianę wyglądu oraz dodanie wielu funkcjonalności do zarządzania rekordami. Wymaga aplikacji Pages IPS (CMS).",
+      "ips-app-advanced-serverlist": "(IPS App) Aplikacja pokazuje informacje o serwerach z biblioteki GameQ.",
+      "ips-number-of-entries-chatbox-plus": "(IPS Plugin) Wtyczka wyświetla użytkownikom liczbę ich wpisów z aplikacji Chatbox+.",
+      "ips-administrative-bar": "(IPS Plugin) Wtyczka dodaje pasek administracyjny znany z poprzednich wersji IP.Board.",
+      "ips-fontawesome5": "(IPS Plugin) Wtyczka wyświetla ikony z Font Awesome 5.",
+      "ips-group-formatting-in-mention": "(IPS Plugin) Wtyczka formatuje nazwę użytkownika we wzmiance.",
+      "ips-number-of-entries-chatbox": "(IPS Plugin) Wtyczka wyświetla użytkownikom liczbę ich wpisów z aplikacji Chatbox Free.",
+      "ips-secondary-groups-indicator": "(IPS Plugin) Wtyczka wyświetla grupy dodatkowe.",
+      "ips-lang-polish-chatbox-plus": "Spolszczenie aplikacji - (BIM) Chatbox+",
+      "ips-lang-polish-cj-duplicate-member": "Spolszczenie aplikacji - [BNS] CJ Duplicate Member Logger",
+      "ips-lang-polish-axen-advanced-serverlist": "Spolszczenie aplikacji - (aXen) Advanced Server List",
+      "ips-lang-polish-adriano-contact-us": "Spolszczenie aplikacji - (Adriano Faria) Contact Us",
+      "ips-lang-polish-axen-advanced-members": "Spolszczenie aplikacji - (aXen) Advanced Members",
+      "ips-lang-polish-axen-vacation": "Spolszczenie aplikacji - (aXen) Vacation",
+      "ips-lang-polish-axen-content-notes": "Spolszczenie aplikacji - (aXen) Content Notes",
+      "ips-lang-polish-axen-player-panel": "Spolszczenie aplikacji - (aXen) Player Panel",
+      "express-react-recipes": "Aplikacja zarządzająca przepisami dodanymi przez użytkowników. Posiada system logowania i rejestracji z kluczem CSRF.",
+      "sourcebans-web-theme-fluent": "Fluent Design Theme Edition to połączenie stylów Fluent Design Microsoft, iOS Design, Android Design i Google Design. Wprowadziliśmy również wiele interesujących funkcji, które są unikalne w standardowych motywach.",
+      "ts-apex-legends-random-equipment": "Aplikacja losuje sprzęt z ulepszeniami i losową postacią w grze Apex Legends.",
+      "react-native-basic-to-do": "To do list z datą rozpoczęcia, opcją zakończenia oraz z opcją usunięcia.",
+      "ips-theme-dynamic": "(IPS Theme) Dynamic theme z Font Awesome 5",
+      "ips-full-width-widget-containers": "(IPS Plugin) Dodaje dwa kontenery widżetów na całą szerokość (nagłówek i stopka).",
+      "ips-app-advanced-members": "Aplikacja rozszerza funkcje użytkowników na forum o: legendę grup, widget kto jest online, lepsze wyróżnienie grup oraz widget kontaktu z administracją.",
+      "ips-lact-activity-in-hovercard": "Zamienia bieżącą wartość o aktywności w hovercard na czas rzeczywisty, wraz z jego ostatnią aktywnością.",
+      "ips-app-vacation": "Aplikacja dodaje automatyczny system urlopów.",
+      "ips-app-fontawesome6": "Aplikacja aktualizuje wersję Font Awesome do wersji 6 bez niszczenia ikon osadzonych w IPS w wersji 4.",
+      "ips-app-content-notes": "Aplikacja do tworzenia notatek na zawartości.",
+      "ips-app-axen-player-panel": "Aplikacja do zarządzania serwerami multiplayer."
+    }
   }
 }
