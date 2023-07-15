@@ -1,7 +1,6 @@
 @use '@/styles/media' as *;
 
 .wrapper {
-  overflow: hidden;
   margin-top: calc(var(--header-height) - 2 * var(--header-height));
 }
 

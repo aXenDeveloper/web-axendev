@@ -185,7 +185,7 @@ export const products: ProductsInterface[] = [
   {
     id: 'sourcebans-web-theme-fluent',
     name: '(Sourcebans++) Fluent Design Theme Edition',
-    categories: [CategoriesProductEnum.IPS_APPS],
+    categories: [CategoriesProductEnum.OTHERS],
     imgs: [
       'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/screenshot.jpg',
       'https://raw.githubusercontent.com/aXenDeveloper/sourcebans-web-theme-fluent/master/images/demo/1.png',
@@ -287,7 +287,7 @@ export const products: ProductsInterface[] = [
     createdAt: 1629564515
   },
   {
-    id: 'ips-lang-polish-adriano-contact-us',
+    id: 'express-react-recipes',
     name: '(Express / React) Recipes app',
     categories: [
       CategoriesProductEnum.REACT,
@@ -491,27 +491,6 @@ export const products: ProductsInterface[] = [
     },
     price: 0,
     createdAt: 1643992833
-  },
-  {
-    id: 'ips-app-content-notes',
-    name: '(aXen) Content Notes',
-    categories: [CategoriesProductEnum.IPS_APPS],
-    imgs: [
-      'https://files.axendev.net/projects/ips/applications/contentnotes/1.png',
-      'https://files.axendev.net/projects/ips/applications/contentnotes/2.png',
-      'https://files.axendev.net/projects/ips/applications/contentnotes/3.png',
-      'https://files.axendev.net/projects/ips/applications/contentnotes/4.png',
-      'https://files.axendev.net/projects/ips/applications/contentnotes/5.png',
-      'https://files.axendev.net/projects/ips/applications/contentnotes/6.png',
-      'https://files.axendev.net/projects/ips/applications/contentnotes/7.png',
-      'https://files.axendev.net/projects/ips/applications/contentnotes/8.png'
-    ],
-    links: {
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/10065-axen-content-notes/'
-    },
-    price: 29.99,
-    createdAt: 1646584833
   },
   {
     id: 'ips-app-content-notes',

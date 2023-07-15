@@ -16,19 +16,19 @@ export const ItemFiltersProductsView = ({ name }: Props) => {
   const searchParams = useSearchParams();
   const t = useTranslations('products');
 
-  const filter = searchParams.getAll('filter');
+  const filters = searchParams.getAll('filter');
 
   const handleCheck = () => {
     const params = new URLSearchParams(`${searchParams}`);
     params.delete('filter');
 
-    if (filter.length > 0) {
-      filter
+    if (filters.length > 0) {
+      filters
         .filter(item => item !== name)
         .forEach(item => params.append('filter', item));
     }
 
-    if (!filter.includes(name)) {
+    if (!filters.includes(name)) {
       params.append('filter', name);
     }
 
@@ -49,7 +49,7 @@ export const ItemFiltersProductsView = ({ name }: Props) => {
         <Checkbox
           onChange={handleCheck}
           tabIndex={-1}
-          checked={filter.includes(name)}
+          checked={filters.includes(name)}
         />
         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
         {/* @ts-expect-error */}
