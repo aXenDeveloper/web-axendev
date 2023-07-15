@@ -237,7 +237,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-app-advanced-serverlist',
-    name: '(aXen) Advanced Server List',
+    name: 'Advanced Server List',
     categories: [CategoriesProductEnum.IPS_APPS],
     imgs: [
       'https://files.axendev.net/projects/ips/applications/serverlist/1.png',
@@ -264,7 +264,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-lang-polish-axen-advanced-serverlist',
-    name: '(aXen) Advanced Server List - Polish translation',
+    name: 'Advanced Server List - Polish translation',
     categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
     imgs: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {
@@ -370,7 +370,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-full-width-widget-containers',
-    name: '(aXen) Full width widget containers',
+    name: 'Full width widget containers',
     categories: [CategoriesProductEnum.IPS_APPS],
     imgs: [
       'https://raw.githubusercontent.com/aXenDeveloper/ips-full-width-widget-containers/master/screenshots/1.png',
@@ -385,7 +385,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-app-advanced-members',
-    name: '(aXen) Advanced Members',
+    name: 'Advanced Members',
     categories: [CategoriesProductEnum.IPS_APPS],
     imgs: [
       'https://files.axendev.net/projects/ips/applications/members/2.png',
@@ -412,7 +412,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-lang-polish-axen-advanced-members',
-    name: '(aXen) Advanced Members - Polish translation',
+    name: 'Advanced Members - Polish translation',
     categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
     imgs: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {
@@ -424,7 +424,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-lact-activity-in-hovercard',
-    name: '(aXen) Last activity in Hovercard',
+    name: 'Last activity in Hovercard',
     categories: [CategoriesProductEnum.IPS_APPS],
     imgs: [
       'https://raw.githubusercontent.com/aXenDeveloper/ips-lact-activity-in-hovercard/master/screenshots/1.png'
@@ -439,7 +439,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-app-vacation',
-    name: '(aXen) Vacation',
+    name: 'Vacation',
     categories: [CategoriesProductEnum.IPS_APPS],
     imgs: [
       'https://files.axendev.net/projects/ips/applications/vacation/1.png',
@@ -468,7 +468,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-lang-polish-axen-vacation',
-    name: '(aXen) Vacation - Polish translation',
+    name: 'Vacation - Polish translation',
     categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
     imgs: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {
@@ -479,7 +479,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-app-fontawesome6',
-    name: '(aXen) Font Awesome 6 in IPS',
+    name: 'Font Awesome 6 in IPS',
     categories: [CategoriesProductEnum.IPS_APPS],
     imgs: [
       'https://files.axendev.net/projects/ips/applications/fontawesome6/1.png'
@@ -494,7 +494,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-app-content-notes',
-    name: '(aXen) Content Notes',
+    name: 'Content Notes',
     categories: [CategoriesProductEnum.IPS_APPS],
     imgs: [
       'https://files.axendev.net/projects/ips/applications/contentnotes/1.png',
@@ -515,7 +515,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-lang-polish-axen-content-notes',
-    name: '(aXen) Content Notes - Polish translation',
+    name: 'Content Notes - Polish translation',
     categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
     imgs: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {
@@ -527,7 +527,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-app-axen-player-panel',
-    name: '(aXen) Player Panel',
+    name: 'Player Panel',
     categories: [CategoriesProductEnum.IPS_APPS],
     imgs: [
       'https://files.axendev.net/projects/ips/applications/playerpanel/1.png',
@@ -566,7 +566,7 @@ export const products: ProductsInterface[] = [
   },
   {
     id: 'ips-lang-polish-axen-player-panel',
-    name: '(aXen) Player Panel - Polish translation',
+    name: 'Player Panel - Polish translation',
     categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
     imgs: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {

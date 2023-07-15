@@ -1,0 +1,44 @@
+@use '@/styles/media' as *;
+
+.wrapper {
+  --layout-max-width: 80rem;
+
+  @include mobile-tablet {
+    flex-direction: column;
+  }
+
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin: 2rem auto;
+
+  > aside {
+    @include mobile-tablet {
+      flex: 1;
+    }
+
+    flex: 0 0 28rem;
+
+    > .header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: flex-start;
+
+      > h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      > p {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        color: rgb(var(--text-secondary-color));
+      }
+    }
+  }
+
+  > article {
+    flex: 1;
+  }
+}
