@@ -5,8 +5,14 @@ import { ProductsInterface } from '../configProducts';
 import style from './ProductView.module.scss';
 import { BackLinkProduct } from './backLink/BackLinkProduct';
 import { SwiperProduct } from './swiper/SwiperProduct';
+import { DetailsProduct } from './details/DetailsProduct';
 
-export const ProductView = ({ id, images, name }: ProductsInterface) => {
+export const ProductView = ({
+  id,
+  images,
+  name,
+  ...props
+}: ProductsInterface) => {
   const t = useTranslations('products');
 
   return (
@@ -21,6 +27,8 @@ export const ProductView = ({ id, images, name }: ProductsInterface) => {
           {/* @ts-expect-error */}
           <p>{t(`descriptions.${id}`)}</p>
         </div>
+
+        <DetailsProduct id={id} name={name} {...props} />
       </aside>
 
       <article>

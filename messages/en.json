@@ -29,6 +29,9 @@
     "filters": {
       "title": "Filters"
     },
+    "details": {
+      "categories": "Categories"
+    },
     "categories": {
       "ips_apps": "IPS Apps",
       "ips_themes": "IPS Themes",

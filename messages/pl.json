@@ -29,6 +29,9 @@
     "filters": {
       "title": "Filtry"
     },
+    "details": {
+      "categories": "Kategorie"
+    },
     "categories": {
       "ips_apps": "Aplikacje IPS",
       "ips_themes": "Motywy IPS",
