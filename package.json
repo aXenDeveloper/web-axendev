@@ -20,7 +20,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-use": "^17.4.0",
-    "react-virtuoso": "^4.4.0"
+    "react-virtuoso": "^4.4.0",
+    "swiper": "^10.0.4"
   },
   "devDependencies": {
     "@floating-ui/react": "^0.24.8",

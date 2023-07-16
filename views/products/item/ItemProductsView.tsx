@@ -7,7 +7,7 @@ import { Img } from '@/components/img/Img';
 
 export const ItemProductsView = ({
   id,
-  imgs,
+  images,
   name,
   price
 }: ProductsInterface) => {
@@ -17,7 +17,7 @@ export const ItemProductsView = ({
     <Link href={`/products/${id}`} className={style.wrapper}>
       <div className={style.img}>
         <Img
-          src={imgs[0]}
+          src={images[0]}
           alt={name}
           fill
           heightLoading={192}

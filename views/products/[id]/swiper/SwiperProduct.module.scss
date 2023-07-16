@@ -1,0 +1,24 @@
+@use '@/styles/media' as *;
+
+.wrapper {
+  @include mobile {
+    height: 20rem;
+  }
+
+  height: 30rem;
+  border-radius: var(--radius);
+}
+
+.item {
+  cursor: zoom-in;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+  border: 0;
+
+  img {
+    object-fit: cover;
+  }
+}

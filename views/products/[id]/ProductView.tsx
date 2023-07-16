@@ -4,8 +4,9 @@ import { useTranslations } from 'next-intl';
 import { ProductsInterface } from '../configProducts';
 import style from './ProductView.module.scss';
 import { BackLinkProduct } from './backLink/BackLinkProduct';
+import { SwiperProduct } from './swiper/SwiperProduct';
 
-export const ProductView = ({ id, name }: ProductsInterface) => {
+export const ProductView = ({ id, images, name }: ProductsInterface) => {
   const t = useTranslations('products');
 
   return (
@@ -22,7 +23,9 @@ export const ProductView = ({ id, name }: ProductsInterface) => {
         </div>
       </aside>
 
-      <article>ProductView</article>
+      <article>
+        <SwiperProduct images={images} />
+      </article>
     </div>
   );
 };

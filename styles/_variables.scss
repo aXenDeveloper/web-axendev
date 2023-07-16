@@ -5,6 +5,11 @@
   --layout-max-width: 90rem;
   --animation: 0.2s ease;
 
+  // Colors
+  --primary: 226 17 36;
+  --primary-hover: 196 15 32;
+  --secondary: 245 139 31;
+
   // Global
   --body-background: 243 244 246;
   --container-background: 255 255 255;
@@ -13,11 +18,7 @@
   --border-color: 0 0 0 / 8%;
   --header-border: var(--border-color);
   --price: 94 187 104;
-
-  // Colors
-  --primary: 226 17 36;
-  --primary-hover: 196 15 32;
-  --secondary: 245 139 31;
+  --swiper-navigation-color: rgb(var(--primary));
 
   // Buttons
   // Primary
