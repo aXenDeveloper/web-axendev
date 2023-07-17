@@ -1,7 +1,7 @@
 @use '@/styles/media' as *;
 
 .wrapper {
-  --layout-max-width: 80rem;
+  --layout-max-width: 84rem;
 
   @include mobile {
     padding: 0;

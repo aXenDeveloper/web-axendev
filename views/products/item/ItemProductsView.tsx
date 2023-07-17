@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 
@@ -5,7 +6,11 @@ import { ProductsInterface } from '../configProducts';
 import style from './ItemProductsView.module.scss';
 import { Img } from '@/components/img/Img';
 
+import { Badge } from '../../../components/badge/Badge';
+
 export const ItemProductsView = ({
+  categories,
+  deprecated,
   id,
   images,
   name,
@@ -26,11 +31,21 @@ export const ItemProductsView = ({
       </div>
 
       <div className={style.info}>
-        <h3>{name}</h3>
-        {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+        <div className={style.title}>
+          <span>
+            {categories.map(category => t(`categories.${category}`)).join(', ')}
+          </span>
+
+          <h3>{name}</h3>
+        </div>
+
         {/* @ts-expect-error */}
         <p>{t(`descriptions.${id}`)}</p>
-        <span>{price !== 0 ? <>${price}</> : t('free')}</span>
+
+        <div className={style.footer}>
+          <span>{price !== 0 ? <>${price}</> : t('free')}</span>
+          {deprecated && <Badge kind="warning">{t('deprecated.title')}</Badge>}
+        </div>
       </div>
     </Link>
   );

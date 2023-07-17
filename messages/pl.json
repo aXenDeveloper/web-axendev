@@ -26,11 +26,17 @@
     "desc": "Eksploruj moje produkty i znajdź ten, który najbardziej Ci odpowiada.",
     "back": "Wróć do projektów",
     "free": "Darmowe",
+    "deprecated": {
+      "title": "Przestarzały",
+      "desc": "Produkt nie jest już wspierany i nie będzie otrzymywać aktualizacji. Nadal możesz pobrać ten produkt."
+    },
     "filters": {
       "title": "Filtry"
     },
     "details": {
-      "categories": "Kategorie"
+      "categories": "Kategorie",
+      "release_date": "Data wydania",
+      "price": "Cena"
     },
     "categories": {
       "ips_apps": "Aplikacje IPS",

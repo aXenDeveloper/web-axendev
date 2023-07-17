@@ -9,16 +9,18 @@ export enum CategoriesProductEnum {
   OTHERS = 'others'
 }
 
+export interface LinksProductsInterface {
+  demo?: string;
+  github?: string;
+  ipsMarketplace?: string;
+}
+
 export interface ProductsInterface {
   categories: CategoriesProductEnum[];
   createdAt: number;
   id: string;
   images: string[];
-  links: {
-    demo?: string;
-    github?: string;
-    ipsMarketplace?: string;
-  };
+  links: LinksProductsInterface;
   name: string;
   price: number;
   deprecated?: boolean;

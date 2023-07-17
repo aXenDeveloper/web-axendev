@@ -6,8 +6,10 @@ import style from './ProductView.module.scss';
 import { BackLinkProduct } from './backLink/BackLinkProduct';
 import { SwiperProduct } from './swiper/SwiperProduct';
 import { DetailsProduct } from './details/DetailsProduct';
+import { DeprecatedProduct } from './deprecated/DeprecatedProduct';
 
 export const ProductView = ({
+  deprecated,
   id,
   images,
   name,
@@ -28,10 +30,16 @@ export const ProductView = ({
           <p>{t(`descriptions.${id}`)}</p>
         </div>
 
-        <DetailsProduct id={id} name={name} {...props} />
+        <DetailsProduct
+          id={id}
+          name={name}
+          deprecated={deprecated}
+          {...props}
+        />
       </aside>
 
       <article>
+        {deprecated && <DeprecatedProduct />}
         <SwiperProduct images={images} />
       </article>
     </div>
