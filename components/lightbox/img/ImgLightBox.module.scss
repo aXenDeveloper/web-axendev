@@ -1,11 +1,6 @@
 .wrapper {
   pointer-events: all;
-
-  // Loader
-  > div {
-    position: absolute;
-    inset: 0;
-  }
+  line-height: 1;
 }
 
 .img {
@@ -13,7 +8,7 @@
   user-select: none;
 
   position: absolute;
-  inset: 1.25rem;
+  inset: 0;
 
   display: flex;
   align-items: center;
@@ -25,7 +20,7 @@
 
     width: 100%;
     height: auto;
-    max-height: calc(100vh - 2.5rem);
+    max-height: 100vh;
 
     object-fit: contain;
   }

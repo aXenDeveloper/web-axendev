@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    width: 3rem;
+    line-height: 0;
+
+    > svg {
+      @keyframes rotate-spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      animation: rotate-spin 1.2s linear infinite;
+    }
+  }
+
+  &.inline {
+    > div {
+      width: 1.25rem;
+    }
+  }
+
+  &.padding {
+    padding: 1.25rem;
+  }
+}
+
+.circle {
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+    }
+
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+    }
+  }
+
+  fill: none;
+  stroke: rgb(var(--primary));
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke-width: 4px;
+
+  animation: dash 1.5s ease-in-out infinite;
+
+  &_background {
+    fill: none;
+    stroke: rgb(var(--primary) 0.2);
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-width: 4px;
+  }
+}

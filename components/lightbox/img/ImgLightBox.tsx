@@ -4,6 +4,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 import style from './ImgLightBox.module.scss';
 
+import { GlobalLoader } from '../../loader/global/GlobalLoader';
+
 interface Props {
   direction: number;
   image: string;
@@ -65,7 +67,7 @@ export const ImgLightBox = forwardRef<HTMLDivElement, Props>(
               }
             />
 
-            {/* {isLoading && <Loader />} */}
+            {isLoading && <GlobalLoader />}
           </div>
         </motion.div>
       </AnimatePresence>
