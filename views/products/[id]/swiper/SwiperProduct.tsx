@@ -4,6 +4,7 @@ import { Navigation, Thumbs, FreeMode } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useState } from 'react';
 import ThumbsSwiper from 'swiper';
+import { AnimatePresence } from 'framer-motion';
 
 import { Img } from '@/components/img/Img';
 import style from './SwiperProduct.module.scss';
@@ -12,6 +13,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import 'swiper/css/free-mode';
+import { LightBox } from '../../../../components/lightbox/LightBox';
 
 interface Props {
   images: string[];
@@ -19,6 +21,7 @@ interface Props {
 
 export const SwiperProduct = ({ images }: Props) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<ThumbsSwiper | null>(null);
+  const [activeIdLightBox, setActiveIdLightBox] = useState('');
 
   return (
     <>
@@ -31,7 +34,11 @@ export const SwiperProduct = ({ images }: Props) => {
       >
         {images.map(image => (
           <SwiperSlide key={image}>
-            <button type="button" className={style.item}>
+            <button
+              type="button"
+              className={style.item}
+              onClick={() => setActiveIdLightBox(image)}
+            >
               <Img
                 src={image}
                 alt=""
@@ -73,6 +80,16 @@ export const SwiperProduct = ({ images }: Props) => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <AnimatePresence>
+        {activeIdLightBox && (
+          <LightBox
+            activeId={activeIdLightBox}
+            images={images}
+            setActiveId={setActiveIdLightBox}
+          />
+        )}
+      </AnimatePresence>
     </>
   );
 };

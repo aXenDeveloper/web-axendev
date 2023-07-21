@@ -1,0 +1,41 @@
+.main {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--modal-background);
+  backdrop-filter: blur(0.5rem);
+  outline: 0;
+}
+
+.buttons {
+  position: absolute;
+
+  &_close {
+    top: 0;
+    left: 0;
+  }
+
+  &_prev,
+  &_next {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &_prev {
+    left: 0;
+  }
+
+  &_next {
+    right: 0;
+  }
+}

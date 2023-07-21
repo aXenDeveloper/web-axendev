@@ -1,0 +1,32 @@
+.wrapper {
+  pointer-events: all;
+
+  // Loader
+  > div {
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.img {
+  pointer-events: none;
+  user-select: none;
+
+  position: absolute;
+  inset: 1.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    pointer-events: none;
+    user-select: none;
+
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 2.5rem);
+
+    object-fit: contain;
+  }
+}
