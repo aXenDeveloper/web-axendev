@@ -60,7 +60,6 @@ export const ImgLightBox = forwardRef<HTMLDivElement, Props>(
               width={3840}
               height={2160}
               loader={ownLoader}
-              sizes="100vw"
               priority
               /* istanbul ignore next */ onLoadingComplete={
                 /* istanbul ignore next */ () => setIsLoading(false)

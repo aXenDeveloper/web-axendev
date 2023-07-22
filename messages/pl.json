@@ -5,6 +5,11 @@
       "light": "Jasny",
       "dark": "Ciemny",
       "system": "Systemowy"
+    },
+    "lightBox": {
+      "prev": "Poprzedni",
+      "next": "Następny",
+      "close": "Zamknij"
     }
   },
   "nav": {

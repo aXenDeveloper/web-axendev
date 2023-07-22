@@ -12,12 +12,15 @@ import { motion } from 'framer-motion';
 import cx from 'classnames';
 import {
   ChevronLeft24Filled,
-  ChevronRight24Filled
+  ChevronRight24Filled,
+  Dismiss24Filled
 } from '@fluentui/react-icons';
+import { useTranslations } from 'next-intl';
 
 import style from './LightBox.module.scss';
 import { ImgLightBox } from './img/ImgLightBox';
 import { Button } from '../button/Button';
+import { useActionsLightBox } from './hooks/useActionsLightBox';
 
 interface Props {
   activeId: string;
@@ -26,7 +29,7 @@ interface Props {
 }
 
 export const LightBox = ({ activeId, images, setActiveId }: Props) => {
-  // const t = useTranslations('global');
+  const t = useTranslations('global');
   const [direction, setDirection] = useState(1);
   const { context, refs } = useFloating({
     open: true,
@@ -59,6 +62,11 @@ export const LightBox = ({ activeId, images, setActiveId }: Props) => {
     return;
   };
 
+  const { handlers } = useActionsLightBox({
+    activeId,
+    handleChangePhoto
+  });
+
   const currentImage = images.find(item => item === activeId);
   if (!currentImage) return null;
 
@@ -74,7 +82,11 @@ export const LightBox = ({ activeId, images, setActiveId }: Props) => {
             transition={{ duration: 0.25 }}
           >
             <div ref={refs.setFloating} {...getFloatingProps()}>
-              <ImgLightBox direction={direction} image={currentImage} />
+              <ImgLightBox
+                direction={direction}
+                image={currentImage}
+                {...handlers}
+              />
 
               {currentImageIndex !== 0 && (
                 <motion.div
@@ -86,7 +98,9 @@ export const LightBox = ({ activeId, images, setActiveId }: Props) => {
                 >
                   <Button
                     id="prev"
+                    kind="secondary"
                     onClick={() => handleChangePhoto({ next: false })}
+                    iconOnlyText={t('lightBox.prev')}
                   >
                     <ChevronLeft24Filled />
                   </Button>
@@ -103,12 +117,24 @@ export const LightBox = ({ activeId, images, setActiveId }: Props) => {
                 >
                   <Button
                     id="next"
+                    kind="secondary"
                     onClick={() => handleChangePhoto({ next: true })}
+                    iconOnlyText={t('lightBox.next')}
                   >
                     <ChevronRight24Filled />
                   </Button>
                 </motion.div>
               )}
+
+              <Button
+                id="close"
+                kind="secondary"
+                className={cx(style.buttons, style.buttons_close)}
+                onClick={() => setActiveId('')}
+                iconOnlyText={t('lightBox.close')}
+              >
+                <Dismiss24Filled />
+              </Button>
             </div>
           </motion.div>
         </FloatingPortal>
