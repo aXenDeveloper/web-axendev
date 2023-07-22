@@ -9,7 +9,7 @@ export const DetailsProduct = ({
   categories,
   createdAt,
   price
-}: Omit<ProductsInterface, 'images'>) => {
+}: Omit<ProductsInterface, 'images' | 'links'>) => {
   const t = useTranslations('products');
 
   return (

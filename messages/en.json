@@ -31,6 +31,7 @@
     "desc": "Explore my products and find the one that suits you best.",
     "back": "Back to Products",
     "free": "Free",
+    "buy_now_on": "Buy Now on {name}",
     "deprecated": {
       "title": "Deprecated",
       "desc": "This product is no longer supported and will not receive updates. You can still download this product."

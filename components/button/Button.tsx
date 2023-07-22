@@ -9,6 +9,7 @@ interface Props {
   children: ReactNode;
   id: string;
   className?: string;
+  externalLink?: boolean;
   href?: string;
   iconOnlyText?: string;
   kind?: 'primary' | 'secondary';
@@ -18,6 +19,7 @@ interface Props {
 export const Button = ({
   children,
   className,
+  externalLink,
   href,
   iconOnlyText,
   id,
@@ -25,6 +27,23 @@ export const Button = ({
   onClick
 }: Props) => {
   const content = () => {
+    if (externalLink) {
+      return (
+        <a
+          className={cx(style.wrapper, style[kind], className, {
+            [style.icon]: iconOnlyText
+          })}
+          href={href}
+          onClick={onClick}
+          data-testid={`button_${id}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
+      );
+    }
+
     if (href) {
       return (
         <Link

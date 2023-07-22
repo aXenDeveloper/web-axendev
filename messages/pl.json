@@ -31,6 +31,7 @@
     "desc": "Eksploruj moje produkty i znajdź ten, który najbardziej Ci odpowiada.",
     "back": "Wróć do projektów",
     "free": "Darmowe",
+    "buy_now_on": "Kup teraz na {name}",
     "deprecated": {
       "title": "Przestarzały",
       "desc": "Produkt nie jest już wspierany i nie będzie otrzymywać aktualizacji. Nadal możesz pobrać ten produkt."

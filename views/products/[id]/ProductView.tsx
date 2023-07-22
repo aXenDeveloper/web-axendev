@@ -7,12 +7,15 @@ import { BackLinkProduct } from './backLink/BackLinkProduct';
 import { SwiperProduct } from './swiper/SwiperProduct';
 import { DetailsProduct } from './details/DetailsProduct';
 import { DeprecatedProduct } from './deprecated/DeprecatedProduct';
+import { LinksProduct } from './links/LinksProduct';
 
 export const ProductView = ({
   deprecated,
   id,
   images,
+  links,
   name,
+  price,
   ...props
 }: ProductsInterface) => {
   const t = useTranslations('products');
@@ -34,8 +37,10 @@ export const ProductView = ({
           id={id}
           name={name}
           deprecated={deprecated}
+          price={price}
           {...props}
         />
+        <LinksProduct links={links} price={price} />
       </aside>
 
       <article>
