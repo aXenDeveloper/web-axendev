@@ -47,13 +47,11 @@ export const Img = ({
   width,
   widthLoading
 }: ImgProps) => {
-  const [isLoading, setIsLoading] = useState(!priority);
+  const [isLoading, setIsLoading] = useState(true);
 
   // Refresh loading state when changing src
   useEffect(() => {
-    if (!priority) {
-      setIsLoading(true);
-    }
+    setIsLoading(true);
   }, [src]);
 
   return (

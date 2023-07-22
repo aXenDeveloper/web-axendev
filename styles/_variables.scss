@@ -5,6 +5,11 @@
   --layout-max-width: 90rem;
   --animation: 0.2s ease;
 
+  // Colors
+  --primary: 226 17 36;
+  --primary-hover: 196 15 32;
+  --secondary: 245 139 31;
+
   // Global
   --body-background: 243 244 246;
   --container-background: 255 255 255;
@@ -12,12 +17,10 @@
   --text-secondary-color: 102 102 102;
   --border-color: 0 0 0 / 8%;
   --header-border: var(--border-color);
-  --price: 94 187 104;
-
-  // Colors
-  --primary: 226 17 36;
-  --primary-hover: 196 15 32;
-  --secondary: 245 139 31;
+  --price: 24 135 36;
+  --category: var(--price);
+  --swiper-navigation-color: rgb(var(--container-background));
+  --modal-background: 0 0 0 / 80%;
 
   // Buttons
   // Primary
@@ -48,6 +51,12 @@
 
   // Inputs
   --input-border: var(--border-color);
+
+  // Messages
+  --message-error: 209 36 47;
+  --message-success: 26 127 55;
+  --message-warning: 154 103 0;
+  --message-info: 9 105 218;
 }
 
 [theme='dark']:root {
@@ -58,6 +67,7 @@
   --text-secondary-color: 136 136 136;
   --border-color: 255 255 255 / 8%;
   --header-border: var(--border-color);
+  --price: 94 187 104;
 
   // Buttons
   // Secondary
@@ -70,6 +80,12 @@
 
   // Tooltip
   --tooltip: 10 10 10;
+
+  // Messages
+  --message-error: 248 81 73;
+  --message-success: 46 160 67;
+  --message-warning: 187 128 9;
+  --message-info: 56 139 253;
 
   color-scheme: dark;
 }

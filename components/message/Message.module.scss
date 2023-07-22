@@ -1,0 +1,39 @@
+$types: 'info', 'success', 'warning', 'error';
+
+.wrapper {
+  position: relative;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  padding: 0.875rem 1.25rem;
+
+  border: 0.25rem solid transparent;
+  border-radius: var(--radius);
+
+  @each $type in $types {
+    &.#{$type} {
+      color: rgb(var(--message-#{$type}));
+      border-color: rgb(var(--message-#{$type}) / 15%);
+    }
+  }
+
+  > svg {
+    align-self: flex-start;
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+.content {
+  .title {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .desc {
+    margin: 0;
+    font-weight: 500;
+  }
+}

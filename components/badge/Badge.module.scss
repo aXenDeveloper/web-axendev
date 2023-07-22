@@ -1,0 +1,15 @@
+$types: 'info', 'success', 'warning', 'error';
+
+.wrapper {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+
+  @each $type in $types {
+    &.#{$type} {
+      color: rgb(var(--message-#{$type}));
+      border-color: rgb(var(--message-#{$type}) / 15%);
+    }
+  }
+}

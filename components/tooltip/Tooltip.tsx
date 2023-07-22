@@ -1,3 +1,5 @@
+'use client';
+
 import { MutableRefObject, cloneElement, forwardRef, useState } from 'react';
 import {
   autoUpdate,

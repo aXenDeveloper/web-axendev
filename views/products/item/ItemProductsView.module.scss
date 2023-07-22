@@ -35,10 +35,6 @@
 
   padding: 1rem;
 
-  > h3 {
-    font-size: 1rem;
-  }
-
   > p {
     overflow: hidden;
     display: -webkit-box;
@@ -48,11 +44,35 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
   }
+}
+
+.title {
+  > h3 {
+    font-size: 1.25rem;
+  }
+
+  // Category
+  > span {
+    font-weight: 500;
+    color: rgb(var(--category));
+  }
+}
+
+.footer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: auto;
 
   > span {
-    margin-top: auto;
-    font-size: 1rem;
     font-weight: 500;
-    color: rgb(var(--price));
+
+    &:first-child {
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgb(var(--price));
+    }
   }
 }

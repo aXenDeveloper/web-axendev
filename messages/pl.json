@@ -5,6 +5,11 @@
       "light": "Jasny",
       "dark": "Ciemny",
       "system": "Systemowy"
+    },
+    "lightBox": {
+      "prev": "Poprzedni",
+      "next": "Następny",
+      "close": "Zamknij"
     }
   },
   "nav": {
@@ -24,9 +29,20 @@
   "products": {
     "title": "Produkty",
     "desc": "Eksploruj moje produkty i znajdź ten, który najbardziej Ci odpowiada.",
+    "back": "Wróć do projektów",
     "free": "Darmowe",
+    "buy_now_on": "Kup teraz na {name}",
+    "deprecated": {
+      "title": "Przestarzały",
+      "desc": "Produkt nie jest już wspierany i nie będzie otrzymywać aktualizacji. Nadal możesz pobrać ten produkt."
+    },
     "filters": {
       "title": "Filtry"
+    },
+    "details": {
+      "categories": "Kategorie",
+      "release_date": "Data wydania",
+      "price": "Cena"
     },
     "categories": {
       "ips_apps": "Aplikacje IPS",

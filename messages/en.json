@@ -5,6 +5,11 @@
       "light": "Light",
       "dark": "Dark",
       "system": "System"
+    },
+    "lightBox": {
+      "prev": "Previous",
+      "next": "Next",
+      "close": "Close"
     }
   },
   "nav": {
@@ -24,9 +29,20 @@
   "products": {
     "title": "Products",
     "desc": "Explore my products and find the one that suits you best.",
+    "back": "Back to Products",
     "free": "Free",
+    "buy_now_on": "Buy Now on {name}",
+    "deprecated": {
+      "title": "Deprecated",
+      "desc": "This product is no longer supported and will not receive updates. You can still download this product."
+    },
     "filters": {
       "title": "Filters"
+    },
+    "details": {
+      "categories": "Categories",
+      "release_date": "Release Date",
+      "price": "Price"
     },
     "categories": {
       "ips_apps": "IPS Apps",

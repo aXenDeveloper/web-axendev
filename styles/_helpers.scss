@@ -1,3 +1,4 @@
+/* stylelint-disable prettier/prettier */
 @media screen and (width <= 767px) {
   textarea,
   input[type='text'],
@@ -24,6 +25,46 @@
     max-width: var(--layout-max-width);
     margin: 0 auto;
     padding: 0 1.5rem;
+  }
+}
+
+.skeleton {
+  z-index: 1;
+  background:
+    linear-gradient(
+      -75deg,
+      transparent 40%,
+      rgb(var(--container-background) / 50%),
+      transparent 60%
+    )
+    0 0 / 200% 100%,
+    rgb(var(--text-color) / 15%);
+  animation:
+    load 1s infinite linear,
+    load-opacity 1.5s infinite ease-in-out;
+
+  @keyframes load-opacity {
+    0% {
+      opacity: 1;
+    }
+    
+    50% {
+      opacity: 0.5;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
+    
+  @keyframes load {
+    to {
+      background-position: 200% 0;
+    }
+  }
+
+  &_absolute {
+    position: absolute;
   }
 }
 

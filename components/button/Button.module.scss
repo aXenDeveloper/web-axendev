@@ -26,6 +26,12 @@ $kinds: 'primary', 'secondary';
     text-decoration: none;
   }
 
+  &.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+  }
+
   @each $kind in $kinds {
     &.#{$kind} {
       color: rgb(var(--button-#{$kind}-color));
