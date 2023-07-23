@@ -16,7 +16,7 @@ export const LastProductsHomeSection = () => {
     <section className="layout_wrapper">
       <div className={style.header}>
         <h2>{t('lastProducts.title')}</h2>
-        <Button id="all_products" kind="secondary">
+        <Button id="all_products" kind="secondary" href="/products">
           {t('lastProducts.link')}
         </Button>
       </div>
