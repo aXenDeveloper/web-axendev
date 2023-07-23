@@ -72,3 +72,9 @@
   margin: 1rem 0;
   border: 1px solid rgb(var(--border-color));
 }
+
+
+::selection {
+  color: #fff;
+  background: rgb(var(--primary) / 50%);
+}
