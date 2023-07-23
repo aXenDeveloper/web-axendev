@@ -1,6 +1,7 @@
 @use '@/styles/media' as *;
 
 .wrapper {
+  overflow: hidden;
   margin-top: calc(var(--header-height) - 2 * var(--header-height));
 }
 
@@ -8,7 +9,7 @@
   --layout-max-width: 52rem;
 
   @include mobile {
-    padding: calc(var(--header-height) + 4rem) 1rem 10rem;
+    padding: calc(var(--header-height) + 4rem) 1rem 8rem;
   }
 
   position: relative;
@@ -18,7 +19,7 @@
   align-items: center;
   justify-content: center;
 
-  padding: calc(var(--header-height) + 8rem) 1rem 5rem;
+  padding: calc(var(--header-height) + 8rem) 1rem 10rem;
 
   text-align: center;
 }
@@ -83,8 +84,6 @@
   top: 0;
   left: 0;
   transform-origin: top;
-
-  overflow: hidden;
 
   width: 100%;
   height: 100%;

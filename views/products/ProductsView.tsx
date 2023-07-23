@@ -6,7 +6,7 @@ import { useSearchParams } from 'next/navigation';
 
 import style from './ProductsView.module.scss';
 import { CategoriesProductEnum, products } from './configProducts';
-import { ItemProductsView } from './item/ItemProductsView';
+import { ItemProducts } from './item/ItemProducts';
 
 export const ProductsView = () => {
   const searchParams = useSearchParams();
@@ -42,7 +42,7 @@ export const ProductsView = () => {
       className={style.list}
       data={data}
       logLevel={LogLevel.DEBUG}
-      itemContent={(_index, item) => <ItemProductsView {...item} />}
+      itemContent={(_index, item) => <ItemProducts {...item} />}
     />
   );
 };

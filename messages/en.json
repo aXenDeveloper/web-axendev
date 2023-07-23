@@ -24,6 +24,10 @@
     "buttons": {
       "products": "Check Products",
       "contact": "Contact Me"
+    },
+    "lastProducts": {
+      "title": "Last Products",
+      "link": "View More"
     }
   },
   "products": {

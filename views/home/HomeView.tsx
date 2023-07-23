@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 
 import style from './HomeView.module.scss';
 import { Button } from '@/components/button/Button';
+import { LastProductsHomeSection } from './sections/lastProducts/LastProductsHomeSection';
 
 export const HomeView = () => {
   const t = useTranslations('home');
@@ -27,6 +28,8 @@ export const HomeView = () => {
           <div />
         </div>
       </div>
+
+      <LastProductsHomeSection />
     </div>
   );
 };
