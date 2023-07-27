@@ -22,9 +22,7 @@ export const DetailsProduct = ({
       </li>
       <li>
         <span>{t('details.price')}</span>
-        <p className={style.highlight}>
-          {price !== 0 ? <>${price}</> : t('free')}
-        </p>
+        <p className={style.highlight}>{price !== 0 ? <>${price}</> : t('free')}</p>
       </li>
       <li>
         <span>{t('details.release_date')}</span>

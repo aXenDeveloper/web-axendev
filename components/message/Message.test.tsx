@@ -17,18 +17,14 @@ describe('Message', () => {
       </Message>
     );
 
-    expect(
-      getByTestId(`message_${kind}_test`).querySelector('svg')
-    ).toBeDefined();
+    expect(getByTestId(`message_${kind}_test`).querySelector('svg')).toBeDefined();
 
     expect(getByText('Test message')).toBeDefined();
     expect(getByText('Test title')).toBeDefined();
   });
 
   it('renders a message without a title', () => {
-    const { queryByText } = render(
-      <Message id="test">This is a message without a title</Message>
-    );
+    const { queryByText } = render(<Message id="test">This is a message without a title</Message>);
     expect(queryByText('Title')).toBeFalsy();
   });
 });

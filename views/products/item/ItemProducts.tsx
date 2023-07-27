@@ -33,9 +33,7 @@ export const ItemProducts = ({
 
       <div className={style.info}>
         <div className={style.title}>
-          <span>
-            {categories.map(category => t(`categories.${category}`)).join(', ')}
-          </span>
+          <span>{categories.map(category => t(`categories.${category}`)).join(', ')}</span>
 
           <h3>{name}</h3>
         </div>

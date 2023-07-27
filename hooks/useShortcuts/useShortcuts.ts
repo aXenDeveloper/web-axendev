@@ -27,9 +27,7 @@ const filterTags = ({ target }: KeyboardEvent) =>
 export const useShortcuts = ({ shortcuts }: UseShortcutsArgs) => {
   const handlerCallback = useCallback(
     (e: KeyboardEvent, hke: HotkeysEvent) => {
-      const filteredShortcuts = shortcuts.filter(
-        value => value.keys.join('&') === hke.shortcut
-      );
+      const filteredShortcuts = shortcuts.filter(value => value.keys.join('&') === hke.shortcut);
       filteredShortcuts.forEach(shortcut => {
         if (!filterTags(e)) {
           if (shortcut.preventDefaultInputs) {

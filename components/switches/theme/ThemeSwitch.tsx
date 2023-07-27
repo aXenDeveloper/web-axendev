@@ -51,8 +51,7 @@ export const ThemeSwitch = ({ disableTooltip }: Props) => {
 
   const handleTheme = (theme: ThemeType) => {
     const checkDark =
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches;
+      window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (theme === ThemeType.system) {
       localStorage.removeItem(`${CONFIG_LOCAL_STORAGE_THEME}_manual`);
@@ -108,11 +107,7 @@ export const ThemeSwitch = ({ disableTooltip }: Props) => {
   return (
     <div className={style.wrapper}>
       {themes.map(item => (
-        <Tooltip
-          content={t(`theme.${item.id}`)}
-          key={item.id}
-          disable={disableTooltip}
-        >
+        <Tooltip content={t(`theme.${item.id}`)} key={item.id} disable={disableTooltip}>
           <button
             type="button"
             className={cx({

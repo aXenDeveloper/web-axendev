@@ -34,11 +34,7 @@ export const SwiperProduct = ({ images }: Props) => {
       >
         {images.map(image => (
           <SwiperSlide key={image}>
-            <button
-              type="button"
-              className={style.item}
-              onClick={() => setActiveIdLightBox(image)}
-            >
+            <button type="button" className={style.item} onClick={() => setActiveIdLightBox(image)}>
               <Img
                 src={image}
                 alt=""
@@ -83,11 +79,7 @@ export const SwiperProduct = ({ images }: Props) => {
 
       <AnimatePresence>
         {activeIdLightBox && (
-          <LightBox
-            activeId={activeIdLightBox}
-            images={images}
-            setActiveId={setActiveIdLightBox}
-          />
+          <LightBox activeId={activeIdLightBox} images={images} setActiveId={setActiveIdLightBox} />
         )}
       </AnimatePresence>
     </>

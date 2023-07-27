@@ -28,6 +28,18 @@
     "lastProducts": {
       "title": "Last Products",
       "link": "View More"
+    },
+    "reviews": {
+      "title": "Reviews",
+      "desc": "I've worked with thousands of amazing people",
+      "items": {
+        "item_1": "I have spend hundreds on themes for invision and have always wanted more.... i think i found it what I looking for. I'm very happy for all, nice work!!",
+        "item_2": "Passed this by chance. Tried a few others but not suitable for me. I like the design and how it works. Great job! Keep it up though which seems to be a problem with some plugins. Great stuff, very pleased.",
+        "item_3": "This theme is excellent. I love the simplicity and style of it. Easy on the eyes, link hover colors and other various colors are real easy to make your own. Excellent work as always, aXen.",
+        "item_4": "This is the best style I have found. The customization is endless and the included features save you from purchasing other plugins.  It is an excellent value for the money considering all the features and customization. You will not find a better theme!",
+        "item_5": "Awesome plugin! There are a lot of use cases for this function, as the secondary user group can be customised to do a wide range of things. It's also a lot more convent than the custom profile field, the flexibility is very nice.",
+        "item_6": "Amazing theme and my users like it. Great support. Very fast theme for arcade games. Recommended to all IPS arcade sities!"
+      }
     }
   },
   "products": {

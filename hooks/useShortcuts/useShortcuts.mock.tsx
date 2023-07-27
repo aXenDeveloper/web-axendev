@@ -4,9 +4,7 @@ interface ComponentUseShortcutsMockProps {
   shortcuts: ShortcutObject[];
 }
 
-export const ShortcutsMock = ({
-  shortcuts
-}: ComponentUseShortcutsMockProps) => {
+export const ShortcutsMock = ({ shortcuts }: ComponentUseShortcutsMockProps) => {
   useShortcuts({ shortcuts });
 
   return (

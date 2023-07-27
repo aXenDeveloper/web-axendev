@@ -49,11 +49,7 @@ export const DrawerContent = ({ setOpen }: Props) => {
             <nav className={style.nav}>
               <ul>
                 {state.map(item => (
-                  <ItemNav
-                    key={item.id}
-                    onClick={() => setOpen(false)}
-                    {...item}
-                  />
+                  <ItemNav key={item.id} onClick={() => setOpen(false)} {...item} />
                 ))}
               </ul>
             </nav>

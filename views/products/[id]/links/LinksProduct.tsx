@@ -34,8 +34,7 @@ export const LinksProduct = ({ links, price }: Props) => {
         >
           {price ? (
             <>
-              <ShoppingBag24Filled />{' '}
-              {t('buy_now_on', { name: 'IPS Marketplace' })}
+              <ShoppingBag24Filled /> {t('buy_now_on', { name: 'IPS Marketplace' })}
             </>
           ) : (
             'IPS Marketplace'

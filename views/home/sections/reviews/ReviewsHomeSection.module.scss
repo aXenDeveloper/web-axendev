@@ -1,0 +1,62 @@
+@use '@/styles/media' as *;
+
+.wrapper {
+  --layout-max-width: 80rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  @include mobile {
+    padding: 3rem 0 1rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  max-width: 32rem;
+  padding: 6rem 0 2rem;
+
+  text-align: center;
+
+  > h2 {
+    @include mobile {
+      font-size: 1rem;
+    }
+
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: rgb(var(--link));
+  }
+
+  > span {
+    @include mobile {
+      font-size: 1.75rem;
+    }
+
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.125;
+    letter-spacing: -0.04em;
+  }
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem 0;
+
+  > div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

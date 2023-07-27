@@ -28,6 +28,18 @@
     "lastProducts": {
       "title": "Ostatnie produkty",
       "link": "Zobacz więcej"
+    },
+    "reviews": {
+      "title": "Recenzje",
+      "desc": "Pracowałem z tysiącami niesamowitych ludzi",
+      "items": {
+        "item_1": "Wydałem setki na motywy dla Invision i zawsze chciałem więcej.... Myślę, że znalazłem to co chciałem tutaj. Jestem bardzo zadowolony ze wszystkiego, dobra robota!",
+        "item_2": "Przyszedłem tu przez przypadek. Wypróbowałem kilka innych aplikacji, ale inne nie są dla mnie odpowiednie. Podoba mi się projekt i sposób działania. Dobra robota! Tak trzymaj, co wydaje się być problemem w przypadku niektórych wtyczek. Super sprawa, jestem bardzo zadowolony.",
+        "item_3": "Ten motyw jest doskonały. Uwielbiam jego prostotę i styl. Łatwy dla oczu, kolory najechania na link i inne różne kolory są naprawdę łatwe do stworzenia własnych. Doskonała robota jak zawsze, aXen.",
+        "item_4": "To najlepszy motyw, jaki znalazłem. Możliwości dostosowywania są nieograniczone, a dołączone funkcje pozwalają uniknąć zakupu innych wtyczek. Jest to doskonały stosunek jakości do ceny, biorąc pod uwagę wszystkie funkcje i możliwości dostosowywania. Nie znajdziesz lepszego motywu!",
+        "item_5": "Świetna wtyczka! Istnieje wiele przypadków użycia tej funkcji, ponieważ dodatkowa grupa użytkowników może być dostosowana do wykonywania szerokiego zakresu czynności. Jest to również o wiele bardziej wygodne niż niestandardowe pole profilu, elastyczność jest bardzo dobra.",
+        "item_6": "Niesamowity motyw, który podoba się moim użytkownikom. Świetne wsparcie. Bardzo szybki motyw dla gier zręcznościowych. Polecam wszystkim stronom zręcznościowym IPS!"
+      }
     }
   },
   "products": {

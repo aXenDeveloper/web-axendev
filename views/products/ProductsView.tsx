@@ -16,16 +16,10 @@ export const ProductsView = () => {
     return products
       .filter(item => {
         if (filters.length <= 0)
-          return !item.categories.includes(
-            CategoriesProductEnum.IPS_TRANSLATIONS
-          );
+          return !item.categories.includes(CategoriesProductEnum.IPS_TRANSLATIONS);
 
         return filters.some(filter => {
-          if (
-            Object.values(CategoriesProductEnum).includes(
-              filter as CategoriesProductEnum
-            )
-          ) {
+          if (Object.values(CategoriesProductEnum).includes(filter as CategoriesProductEnum)) {
             return item.categories.includes(filter as CategoriesProductEnum);
           }
 

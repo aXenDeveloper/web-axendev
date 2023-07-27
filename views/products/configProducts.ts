@@ -72,8 +72,7 @@ export const products: ProductsInterface[] = [
       'https://raw.githubusercontent.com/aXenDeveloper/ips-group-formatting-in-mention/master/1.png'
     ],
     links: {
-      github:
-        'https://github.com/aXenDeveloper/ips-group-formatting-in-mention',
+      github: 'https://github.com/aXenDeveloper/ips-group-formatting-in-mention',
       ipsMarketplace:
         'https://invisioncommunity.com/files/file/9273-axen-group-formatting-in-mention/'
     },
@@ -84,13 +83,10 @@ export const products: ProductsInterface[] = [
     id: 'ips-fontawesome5',
     name: 'Font Awesome 5 in IPS',
     categories: [CategoriesProductEnum.IPS_APPS],
-    images: [
-      'https://files.axendev.net/projects/ips/plugins/fontawesome5/1.png'
-    ],
+    images: ['https://files.axendev.net/projects/ips/plugins/fontawesome5/1.png'],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-fontawesome5',
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/9439-axen-font-awesome-5-in-ips/'
+      ipsMarketplace: 'https://invisioncommunity.com/files/file/9439-axen-font-awesome-5-in-ips/'
     },
     price: 0,
     createdAt: 1562787360,
@@ -110,8 +106,7 @@ export const products: ProductsInterface[] = [
       'https://files.axendev.net/projects/ips/plugins/articlesystem/7.png'
     ],
     links: {
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/9490-axen-article-system-in-pages/',
+      ipsMarketplace: 'https://invisioncommunity.com/files/file/9490-axen-article-system-in-pages/',
       demo: 'https://1shot2kill.pl/portal/'
     },
     price: 10,
@@ -127,8 +122,7 @@ export const products: ProductsInterface[] = [
     ],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-administrative-bar',
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/9497-axen-administrative-bar/'
+      ipsMarketplace: 'https://invisioncommunity.com/files/file/9497-axen-administrative-bar/'
     },
     price: 0,
     createdAt: 1565370360
@@ -177,8 +171,7 @@ export const products: ProductsInterface[] = [
       'https://raw.githubusercontent.com/aXenDeveloper/ips-number-of-entries-chatbox-plus/main/3.png'
     ],
     links: {
-      github:
-        'https://github.com/aXenDeveloper/ips-number-of-entries-chatbox-plus',
+      github: 'https://github.com/aXenDeveloper/ips-number-of-entries-chatbox-plus',
       ipsMarketplace:
         'https://invisioncommunity.com/files/file/9598-axen-number-of-entries-chatbox/'
     },
@@ -232,8 +225,7 @@ export const products: ProductsInterface[] = [
     categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
     images: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {
-      github:
-        'https://github.com/aXenDeveloper/ips-lang-polish-cj-duplicate-member'
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-cj-duplicate-member'
     },
     price: 0,
     createdAt: 1610901960,
@@ -259,8 +251,7 @@ export const products: ProductsInterface[] = [
     ],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-app-advanced-serverlist',
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/9852-axen-advanced-server-list/',
+      ipsMarketplace: 'https://invisioncommunity.com/files/file/9852-axen-advanced-server-list/',
       demo: 'https://ips.axendev.net/'
     },
     price: 0,
@@ -272,8 +263,7 @@ export const products: ProductsInterface[] = [
     categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
     images: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {
-      github:
-        'https://github.com/aXenDeveloper/ips-lang-polish-axen-advanced-serverlist'
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-axen-advanced-serverlist'
     },
     price: 0,
     createdAt: 1615897680
@@ -284,8 +274,7 @@ export const products: ProductsInterface[] = [
     categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
     images: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {
-      github:
-        'https://github.com/aXenDeveloper/ips-lang-polish-adriano-contact-us'
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-adriano-contact-us'
     },
     price: 0,
     createdAt: 1629532140
@@ -325,8 +314,7 @@ export const products: ProductsInterface[] = [
       'https://raw.githubusercontent.com/aXenDeveloper/ts-apex-legends-random-equipment/master/screenshots/4.png'
     ],
     links: {
-      github:
-        'https://github.com/aXenDeveloper/ts-apex-legends-random-equipment',
+      github: 'https://github.com/aXenDeveloper/ts-apex-legends-random-equipment',
       demo: 'https://apex.axendev.net/'
     },
     price: 0,
@@ -335,10 +323,7 @@ export const products: ProductsInterface[] = [
   {
     id: 'react-native-basic-to-do',
     name: 'Basic To Do List',
-    categories: [
-      CategoriesProductEnum.REACT_NATIVE,
-      CategoriesProductEnum.TYPESCRIPT
-    ],
+    categories: [CategoriesProductEnum.REACT_NATIVE, CategoriesProductEnum.TYPESCRIPT],
     images: [
       'https://raw.githubusercontent.com/aXenDeveloper/react-native-basic-to-do/main/screenshots/2.png',
       'https://raw.githubusercontent.com/aXenDeveloper/react-native-basic-to-do/main/screenshots/1.png',
@@ -365,8 +350,7 @@ export const products: ProductsInterface[] = [
     ],
     links: {
       github: 'https://github.com/aXenDeveloper/ips-theme-dynamic',
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/9882-dynamic-theme/',
+      ipsMarketplace: 'https://invisioncommunity.com/files/file/9882-dynamic-theme/',
       demo: 'https://ips.axendev.net/index.php?app=core&module=system&controller=theme&do=change&id=3'
     },
     price: 0,
@@ -381,8 +365,7 @@ export const products: ProductsInterface[] = [
       'https://raw.githubusercontent.com/aXenDeveloper/ips-full-width-widget-containers/master/screenshots/2.png'
     ],
     links: {
-      github:
-        'https://github.com/aXenDeveloper/ips-full-width-widget-containers'
+      github: 'https://github.com/aXenDeveloper/ips-full-width-widget-containers'
     },
     price: 0,
     createdAt: 1621608360
@@ -408,8 +391,7 @@ export const products: ProductsInterface[] = [
       'https://files.axendev.net/projects/ips/applications/members/14.png'
     ],
     links: {
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/9892-axen-advanced-members/'
+      ipsMarketplace: 'https://invisioncommunity.com/files/file/9892-axen-advanced-members/'
     },
     price: 19.99,
     createdAt: 1623602700
@@ -420,8 +402,7 @@ export const products: ProductsInterface[] = [
     categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
     images: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {
-      github:
-        'https://github.com/aXenDeveloper/ips-lang-polish-axen-advanced-members'
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-axen-advanced-members'
     },
     price: 0,
     createdAt: 1623602700
@@ -464,8 +445,7 @@ export const products: ProductsInterface[] = [
       'https://files.axendev.net/projects/ips/applications/vacation/16.png'
     ],
     links: {
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/9928-axen-vacation/'
+      ipsMarketplace: 'https://invisioncommunity.com/files/file/9928-axen-vacation/'
     },
     price: 19.99,
     createdAt: 1629019800
@@ -485,12 +465,9 @@ export const products: ProductsInterface[] = [
     id: 'ips-app-fontawesome6',
     name: 'Font Awesome 6 in IPS',
     categories: [CategoriesProductEnum.IPS_APPS],
-    images: [
-      'https://files.axendev.net/projects/ips/applications/fontawesome6/1.png'
-    ],
+    images: ['https://files.axendev.net/projects/ips/applications/fontawesome6/1.png'],
     links: {
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/10056-axen-font-awesome-6-in-ips/',
+      ipsMarketplace: 'https://invisioncommunity.com/files/file/10056-axen-font-awesome-6-in-ips/',
       github: 'https://github.com/aXenDeveloper/ips-app-fontawesome6'
     },
     price: 0,
@@ -511,8 +488,7 @@ export const products: ProductsInterface[] = [
       'https://files.axendev.net/projects/ips/applications/contentnotes/8.png'
     ],
     links: {
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/10065-axen-content-notes/'
+      ipsMarketplace: 'https://invisioncommunity.com/files/file/10065-axen-content-notes/'
     },
     price: 29.99,
     createdAt: 1646567160
@@ -523,8 +499,7 @@ export const products: ProductsInterface[] = [
     categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
     images: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {
-      github:
-        'https://github.com/aXenDeveloper/ips-lang-polish-axen-content-notes'
+      github: 'https://github.com/aXenDeveloper/ips-lang-polish-axen-content-notes'
     },
     price: 0,
     createdAt: 1646567520
@@ -562,8 +537,7 @@ export const products: ProductsInterface[] = [
       'https://files.axendev.net/projects/ips/applications/playerpanel/26.png'
     ],
     links: {
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/10158-axen-player-panel/'
+      ipsMarketplace: 'https://invisioncommunity.com/files/file/10158-axen-player-panel/'
     },
     price: 59.99,
     createdAt: 1664550960
@@ -574,8 +548,7 @@ export const products: ProductsInterface[] = [
     categories: [CategoriesProductEnum.IPS_TRANSLATIONS],
     images: ['https://files.axendev.net/projects/ips/langs/poland.jpg'],
     links: {
-      ipsMarketplace:
-        'https://invisioncommunity.com/files/file/10158-axen-player-panel/'
+      ipsMarketplace: 'https://invisioncommunity.com/files/file/10158-axen-player-panel/'
     },
     price: 0,
     createdAt: 1664551320

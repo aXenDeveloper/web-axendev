@@ -74,9 +74,7 @@ describe('Tooltip', () => {
       fireEvent.mouseEnter(getByText('Button'));
 
       await waitFor(() => {
-        expect(getByRole('tooltip').getAttribute('data-placement')).toBe(
-          expected
-        );
+        expect(getByRole('tooltip').getAttribute('data-placement')).toBe(expected);
       });
     }
   );

@@ -23,9 +23,7 @@ export const ItemFiltersProductsView = ({ name }: Props) => {
     params.delete('filter');
 
     if (filters.length > 0) {
-      filters
-        .filter(item => item !== name)
-        .forEach(item => params.append('filter', item));
+      filters.filter(item => item !== name).forEach(item => params.append('filter', item));
     }
 
     if (!filters.includes(name)) {
@@ -46,11 +44,7 @@ export const ItemFiltersProductsView = ({ name }: Props) => {
   return (
     <li>
       <label tabIndex={0}>
-        <Checkbox
-          onChange={handleCheck}
-          tabIndex={-1}
-          checked={filters.includes(name)}
-        />
+        <Checkbox onChange={handleCheck} tabIndex={-1} checked={filters.includes(name)} />
         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
         {/* @ts-expect-error */}
         {t(`categories.${name}`)}
