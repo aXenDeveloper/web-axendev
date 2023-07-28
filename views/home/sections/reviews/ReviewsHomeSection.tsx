@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 
 import style from './ReviewsHomeSection.module.scss';
 import { ItemReviewsHomeSection } from './item/ItemReviewsHomeSection';
+import { HeaderSection } from '../header/HeaderSection';
 
 const reviews = [
   {
@@ -66,10 +67,7 @@ export const ReviewsHomeSection = () => {
 
   return (
     <section className={cx('layout_wrapper', style.wrapper)}>
-      <div className={style.header}>
-        <h2>{t('reviews.title')}</h2>
-        <span>{t('reviews.desc')}</span>
-      </div>
+      <HeaderSection title={t('reviews.title')} desc={t('reviews.desc')} />
 
       <div className={style.content}>
         <div>

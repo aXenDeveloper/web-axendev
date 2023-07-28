@@ -19,41 +19,14 @@ export const Footer = () => {
           <SocialFooter />
         </div>
 
-        <div className={style.list}>
-          <span>Test</span>
-          <ul>
-            <li>
-              <Link href="/faq">FAQ</Link>
-            </li>
-            <li>
-              <Link href="/faq">FAQ</Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className={style.list}>
-          <span>Test</span>
-          <ul>
-            <li>
-              <Link href="/faq">FAQ</Link>
-            </li>
-            <li>
-              <Link href="/faq">FAQ</Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className={style.list}>
-          <span>Test</span>
-          <ul>
-            <li>
-              <Link href="/faq">FAQ</Link>
-            </li>
-            <li>
-              <Link href="/faq">FAQ</Link>
-            </li>
-          </ul>
-        </div>
+        <ul className={style.list}>
+          <li>
+            <Link href="/faq">FAQ</Link>
+          </li>
+          <li>
+            <Link href="/faq">FAQ</Link>
+          </li>
+        </ul>
       </div>
     </footer>
   );

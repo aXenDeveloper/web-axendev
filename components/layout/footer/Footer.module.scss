@@ -8,39 +8,47 @@
 
 .wrapper {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
   padding: 2rem 1.5rem;
 }
 
 .logo {
+  @include mobile {
+    flex-direction: column;
+    order: 2;
+  }
+
   display: flex;
   flex: 1;
-  flex-direction: column;
   gap: 1rem;
+  align-items: center;
+
+  text-align: center;
 
   > a {
-    max-width: 10rem;
+    display: contents;
+    flex-shrink: 0;
+
+    > svg {
+      max-width: 10rem;
+    }
   }
 }
 
 .list {
   @include mobile {
-    display: none;
+    order: 1;
   }
 
   display: flex;
-  flex: 1;
-  flex-direction: column;
   gap: 0.5rem;
+  align-items: center;
+  justify-content: space-evenly;
 
-  > ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    list-style: none;
+  list-style: none;
 
-    > li > a {
-      color: rgb(var(--text-secondary-color));
-    }
+  > li > a {
+    color: rgb(var(--text-secondary-color));
   }
 }
