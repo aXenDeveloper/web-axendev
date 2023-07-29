@@ -2,7 +2,7 @@
 
 .header {
   @include mobile {
-    padding: 2rem 0 1rem;
+    padding-bottom: 1rem;
   }
 
   display: flex;
@@ -10,7 +10,7 @@
   gap: 0.5rem;
 
   max-width: 32rem;
-  padding: 4rem 0 2rem;
+  padding-bottom: 2rem;
 
   text-align: center;
 

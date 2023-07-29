@@ -7,6 +7,7 @@ import { LastProductsHomeSection } from './sections/lastProducts/LastProductsHom
 import { ReviewsHomeSection } from './sections/reviews/ReviewsHomeSection';
 import { AboutHomeSection } from './sections/about/AboutHomeSection';
 import { TechnologiesHomeSection } from './sections/technology/TechnologiesHomeSection';
+import { WorkHomeSection } from './sections/work/WorkHomeSection';
 
 export const HomeView = () => {
   const t = useTranslations('home');
@@ -35,6 +36,7 @@ export const HomeView = () => {
       <LastProductsHomeSection />
       <AboutHomeSection />
       <TechnologiesHomeSection />
+      <WorkHomeSection />
       <ReviewsHomeSection />
     </div>
   );
