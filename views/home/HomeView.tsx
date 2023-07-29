@@ -6,7 +6,7 @@ import { Button } from '@/components/button/Button';
 import { LastProductsHomeSection } from './sections/lastProducts/LastProductsHomeSection';
 import { ReviewsHomeSection } from './sections/reviews/ReviewsHomeSection';
 import { AboutHomeSection } from './sections/about/AboutHomeSection';
-import { TechnologyHomeSection } from './sections/technology/TechnologyHomeSection';
+import { TechnologiesHomeSection } from './sections/technology/TechnologiesHomeSection';
 
 export const HomeView = () => {
   const t = useTranslations('home');
@@ -34,7 +34,7 @@ export const HomeView = () => {
 
       <LastProductsHomeSection />
       <AboutHomeSection />
-      <TechnologyHomeSection />
+      <TechnologiesHomeSection />
       <ReviewsHomeSection />
     </div>
   );

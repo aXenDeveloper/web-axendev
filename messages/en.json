@@ -40,6 +40,10 @@
         "item_5": "Awesome plugin! There are a lot of use cases for this function, as the secondary user group can be customised to do a wide range of things. It's also a lot more convent than the custom profile field, the flexibility is very nice.",
         "item_6": "Amazing theme and my users like it. Great support. Very fast theme for arcade games. Recommended to all IPS arcade sities!"
       }
+    },
+    "technologies": {
+      "title": "Technologies",
+      "desc": "What do I use?"
     }
   },
   "products": {
