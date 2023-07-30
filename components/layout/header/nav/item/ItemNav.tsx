@@ -16,19 +16,11 @@ export interface ItemNavProps {
   onClick?: () => void;
 }
 
-export const ItemNav = ({
-  activeWithChildren,
-  href,
-  icons,
-  id,
-  onClick
-}: ItemNavProps) => {
+export const ItemNav = ({ activeWithChildren, href, icons, id, onClick }: ItemNavProps) => {
   const t = useTranslations('nav');
   const pathname = usePathname();
   const isActive =
-    activeWithChildren && pathname
-      ? pathname.lastIndexOf(href) === 0
-      : pathname === href;
+    activeWithChildren && pathname ? pathname.lastIndexOf(href) === 0 : pathname === href;
 
   return (
     <li>

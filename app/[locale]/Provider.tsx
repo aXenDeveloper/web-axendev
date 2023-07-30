@@ -9,8 +9,7 @@ interface Props {
 export const Provider = ({ children }: Props) => {
   useEffect(() => {
     const checkDark =
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches;
+      window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (
       (checkDark && !localStorage.getItem('aXenDev_theme_manual')) ||

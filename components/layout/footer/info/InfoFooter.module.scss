@@ -1,0 +1,16 @@
+@use '@/styles/media' as *;
+
+.wrapper {
+  @include tablet-desktop {
+    margin-right: auto;
+  }
+
+  > p {
+    color: rgb(var(--text-secondary-color));
+
+    > span {
+      font-weight: 500;
+      color: rgb(var(--text-color));
+    }
+  }
+}

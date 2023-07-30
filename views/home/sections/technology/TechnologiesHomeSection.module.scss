@@ -1,0 +1,33 @@
+.wrapper {
+  --layout-max-width: 60rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+
+  > li > a {
+    display: block;
+    color: inherit;
+    opacity: 0.75;
+    transition: opacity-color var(--animation);
+
+    &:hover {
+      opacity: 1;
+    }
+
+    > svg {
+      max-width: 8rem;
+      max-height: 6rem;
+    }
+  }
+}

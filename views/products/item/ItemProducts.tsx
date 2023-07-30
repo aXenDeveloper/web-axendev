@@ -1,14 +1,15 @@
+'use client';
+
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 
 import { ProductsInterface } from '../configProducts';
-import style from './ItemProductsView.module.scss';
+import style from './ItemProducts.module.scss';
 import { Img } from '@/components/img/Img';
+import { Badge } from '@/components/badge/Badge';
 
-import { Badge } from '../../../components/badge/Badge';
-
-export const ItemProductsView = ({
+export const ItemProducts = ({
   categories,
   deprecated,
   id,
@@ -32,9 +33,7 @@ export const ItemProductsView = ({
 
       <div className={style.info}>
         <div className={style.title}>
-          <span>
-            {categories.map(category => t(`categories.${category}`)).join(', ')}
-          </span>
+          <span>{categories.map(category => t(`categories.${category}`)).join(', ')}</span>
 
           <h3>{name}</h3>
         </div>

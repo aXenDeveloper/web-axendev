@@ -58,21 +58,14 @@ export const Img = ({
     <div
       className={cs(className, styleModule.wrapper)}
       style={{
-        height: !height
-          ? heightLoading && isLoading
-            ? `${heightLoading}px`
-            : '100%'
-          : undefined
+        height: !height ? (heightLoading && isLoading ? `${heightLoading}px` : '100%') : undefined
       }}
     >
       {isLoading && (
         <div
           className="skeleton skeleton_absolute"
           style={{
-            height:
-              height !== undefined
-                ? `${heightLoading ? heightLoading : height}px`
-                : '100%',
+            height: height !== undefined ? `${heightLoading ? heightLoading : height}px` : '100%',
             width: width ? `${widthLoading ? widthLoading : width}px` : '100%'
           }}
         />

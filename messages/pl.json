@@ -24,6 +24,46 @@
     "buttons": {
       "products": "Sprawdź produkty",
       "contact": "Skontaktuj się ze mną"
+    },
+    "lastProducts": {
+      "title": "Ostatnie produkty",
+      "link": "Zobacz więcej"
+    },
+    "reviews": {
+      "title": "Recenzje",
+      "desc": "Pracowałem z tysiącami niesamowitych ludzi",
+      "items": {
+        "item_1": "Wydałem setki na motywy dla Invision i zawsze chciałem więcej.... Myślę, że znalazłem to co chciałem tutaj. Jestem bardzo zadowolony ze wszystkiego, dobra robota!",
+        "item_2": "Przyszedłem tu przez przypadek. Wypróbowałem kilka innych aplikacji, ale inne nie są dla mnie odpowiednie. Podoba mi się projekt i sposób działania. Dobra robota! Tak trzymaj, co wydaje się być problemem w przypadku niektórych wtyczek. Super sprawa, jestem bardzo zadowolony.",
+        "item_3": "Ten motyw jest doskonały. Uwielbiam jego prostotę i styl. Łatwy dla oczu, kolory najechania na link i inne różne kolory są naprawdę łatwe do stworzenia własnych. Doskonała robota jak zawsze, aXen.",
+        "item_4": "To najlepszy motyw, jaki znalazłem. Możliwości dostosowywania są nieograniczone, a dołączone funkcje pozwalają uniknąć zakupu innych wtyczek. Jest to doskonały stosunek jakości do ceny, biorąc pod uwagę wszystkie funkcje i możliwości dostosowywania. Nie znajdziesz lepszego motywu!",
+        "item_5": "Świetna wtyczka! Istnieje wiele przypadków użycia tej funkcji, ponieważ dodatkowa grupa użytkowników może być dostosowana do wykonywania szerokiego zakresu czynności. Jest to również o wiele bardziej wygodne niż niestandardowe pole profilu, elastyczność jest bardzo dobra.",
+        "item_6": "Niesamowity motyw, który podoba się moim użytkownikom. Świetne wsparcie. Bardzo szybki motyw dla gier zręcznościowych. Polecam wszystkim stronom zręcznościowym IPS!"
+      }
+    },
+    "technologies": {
+      "title": "Technologie",
+      "desc": "Co ja używam?"
+    },
+    "about": {
+      "title": "O mnie",
+      "desc": "Hej! 👋",
+      "text": "Jestem Maciej Piotr Balcerzak i pracuje jako Software Engineer z pasją do tworzenia pięknych, przyjaznych dla użytkownika produktów. Mam doświadczenie w dziedzinach front-end, back-end, testach oraz UX/UI design, lecz moje główne zajęcie to front-end. Oraz jestem współ-twórcą dla Invision Community tworzący motywy i aplikacje.",
+      "image_alt": "Na zdjęciu widać {name} jako postać z Disneya",
+      "hobbies": {
+        "title": "Hobby",
+        "gym": "Siłownia i kalistenika",
+        "game": "Gry (Zwłaszcza Apex Legends :D)",
+        "cooking": "Gotowanie"
+      }
+    },
+    "questions": {
+      "title": "Więcej informacji",
+      "desc": "Masz jakieś pytanie dotyczące mojej pracy?",
+      "butons": {
+        "contact": "Skontaktuj się ze mną",
+        "faq": "FAQ"
+      }
     }
   },
   "products": {

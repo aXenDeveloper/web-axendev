@@ -4,8 +4,8 @@ import { useTranslations } from 'next-intl';
 import { ShoppingBag24Filled } from '@fluentui/react-icons';
 
 import style from './LinksProduct.module.scss';
+import { Button } from '@/components/button/Button';
 
-import { Button } from '../../../../components/button/Button';
 import { LinksProductsInterface } from '../../configProducts';
 
 interface Props {
@@ -15,6 +15,8 @@ interface Props {
 
 export const LinksProduct = ({ links, price }: Props) => {
   const t = useTranslations('products');
+
+  if (!links.demo && !links.github && !links.ipsMarketplace) return null;
 
   return (
     <div className={style.wrapper}>
@@ -32,8 +34,7 @@ export const LinksProduct = ({ links, price }: Props) => {
         >
           {price ? (
             <>
-              <ShoppingBag24Filled />{' '}
-              {t('buy_now_on', { name: 'IPS Marketplace' })}
+              <ShoppingBag24Filled /> {t('buy_now_on', { name: 'IPS Marketplace' })}
             </>
           ) : (
             'IPS Marketplace'

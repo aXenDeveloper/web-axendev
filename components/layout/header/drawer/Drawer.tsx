@@ -23,9 +23,7 @@ export const Drawer = () => {
         <div />
       </button>
 
-      <AnimatePresence>
-        {isOpen && <DrawerContent setOpen={setOpen} />}
-      </AnimatePresence>
+      <AnimatePresence>{isOpen && <DrawerContent setOpen={setOpen} />}</AnimatePresence>
     </>
   );
 };

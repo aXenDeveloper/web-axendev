@@ -10,11 +10,7 @@ import {
 import { Dispatch, SetStateAction, useState } from 'react';
 import { motion } from 'framer-motion';
 import cx from 'classnames';
-import {
-  ChevronLeft24Filled,
-  ChevronRight24Filled,
-  Dismiss24Filled
-} from '@fluentui/react-icons';
+import { ChevronLeft24Filled, ChevronRight24Filled, Dismiss24Filled } from '@fluentui/react-icons';
 import { useTranslations } from 'next-intl';
 
 import style from './LightBox.module.scss';
@@ -40,10 +36,7 @@ export const LightBox = ({ activeId, images, setActiveId }: Props) => {
     }
   });
 
-  const { getFloatingProps } = useInteractions([
-    useClick(context),
-    useDismiss(context)
-  ]);
+  const { getFloatingProps } = useInteractions([useClick(context), useDismiss(context)]);
   const currentImageIndex = images.findIndex(item => item === activeId);
 
   const handleChangePhoto = ({ next }: { next: boolean }) => {
@@ -82,11 +75,7 @@ export const LightBox = ({ activeId, images, setActiveId }: Props) => {
             transition={{ duration: 0.25 }}
           >
             <div ref={refs.setFloating} {...getFloatingProps()}>
-              <ImgLightBox
-                direction={direction}
-                image={currentImage}
-                {...handlers}
-              />
+              <ImgLightBox direction={direction} image={currentImage} {...handlers} />
 
               {currentImageIndex !== 0 && (
                 <motion.div

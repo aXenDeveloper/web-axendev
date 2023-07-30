@@ -33,13 +33,7 @@ export const ProductView = ({
           <p>{t(`descriptions.${id}`)}</p>
         </div>
 
-        <DetailsProduct
-          id={id}
-          name={name}
-          deprecated={deprecated}
-          price={price}
-          {...props}
-        />
+        <DetailsProduct id={id} name={name} deprecated={deprecated} price={price} {...props} />
         <LinksProduct links={links} price={price} />
       </aside>
 

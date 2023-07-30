@@ -24,6 +24,46 @@
     "buttons": {
       "products": "Check Products",
       "contact": "Contact Me"
+    },
+    "lastProducts": {
+      "title": "Last Products",
+      "link": "View More"
+    },
+    "reviews": {
+      "title": "Reviews",
+      "desc": "I've worked with thousands of amazing people",
+      "items": {
+        "item_1": "I have spend hundreds on themes for invision and have always wanted more.... i think i found it what I looking for. I'm very happy for all, nice work!!",
+        "item_2": "Passed this by chance. Tried a few others but not suitable for me. I like the design and how it works. Great job! Keep it up though which seems to be a problem with some plugins. Great stuff, very pleased.",
+        "item_3": "This theme is excellent. I love the simplicity and style of it. Easy on the eyes, link hover colors and other various colors are real easy to make your own. Excellent work as always, aXen.",
+        "item_4": "This is the best style I have found. The customization is endless and the included features save you from purchasing other plugins.  It is an excellent value for the money considering all the features and customization. You will not find a better theme!",
+        "item_5": "Awesome plugin! There are a lot of use cases for this function, as the secondary user group can be customised to do a wide range of things. It's also a lot more convent than the custom profile field, the flexibility is very nice.",
+        "item_6": "Amazing theme and my users like it. Great support. Very fast theme for arcade games. Recommended to all IPS arcade sities!"
+      }
+    },
+    "technologies": {
+      "title": "Technologies",
+      "desc": "What do I use?"
+    },
+    "about": {
+      "title": "About Me",
+      "desc": "Hi! 👋",
+      "text": "I'm Maciej Piotr Balcerzak and I'm working as Software Engineer with a passion for creating beautiful and user-friendly products. I have experience in front-end, back-end, testing and UX/UI design, but my primary experience is front-end. Also I'm contributor for Invision Community making themes and apps.",
+      "image_alt": "In the photo you can see {name} as a character from Disney",
+      "hobbies": {
+        "title": "Hobbies",
+        "gym": "Gym & Calisthenics",
+        "game": "Gaming (Especially Apex Legends :D)",
+        "cooking": "Cooking"
+      }
+    },
+    "questions": {
+      "title": "More information",
+      "desc": "Have a question about my work?",
+      "buttons": {
+        "contact": "Contact Me",
+        "faq": "FAQ"
+      }
     }
   },
   "products": {

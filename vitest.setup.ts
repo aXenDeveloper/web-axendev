@@ -1,12 +1,7 @@
 import { afterEach, vi, beforeEach, Mock } from 'vitest';
 import { cleanup } from '@testing-library/react';
 import resizeObserverPolyfill from 'resize-observer-polyfill';
-import {
-  useRouter,
-  useSearchParams,
-  useParams,
-  usePathname
-} from 'next/navigation';
+import { useRouter, useSearchParams, useParams, usePathname } from 'next/navigation';
 
 // runs a cleanup after each test case (e.g. clearing jsdom)
 afterEach(() => {

@@ -3,6 +3,11 @@ import { useTranslations } from 'next-intl';
 
 import style from './HomeView.module.scss';
 import { Button } from '@/components/button/Button';
+import { LastProductsHomeSection } from './sections/lastProducts/LastProductsHomeSection';
+import { ReviewsHomeSection } from './sections/reviews/ReviewsHomeSection';
+import { AboutHomeSection } from './sections/about/AboutHomeSection';
+import { TechnologiesHomeSection } from './sections/technology/TechnologiesHomeSection';
+import { FaqHomeSection } from './sections/faq/FaqHomeSection';
 
 export const HomeView = () => {
   const t = useTranslations('home');
@@ -27,6 +32,12 @@ export const HomeView = () => {
           <div />
         </div>
       </div>
+
+      <LastProductsHomeSection />
+      <AboutHomeSection />
+      <TechnologiesHomeSection />
+      <FaqHomeSection />
+      <ReviewsHomeSection />
     </div>
   );
 };

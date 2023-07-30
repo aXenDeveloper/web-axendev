@@ -1,10 +1,7 @@
 import { useMemo } from 'react';
 import { useSwipeable } from 'react-swipeable';
 
-import {
-  ShortcutObject,
-  useShortcuts
-} from '@/hooks/useShortcuts/useShortcuts';
+import { ShortcutObject, useShortcuts } from '@/hooks/useShortcuts/useShortcuts';
 
 interface Args {
   activeId: string;

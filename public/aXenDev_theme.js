@@ -1,7 +1,5 @@
 (function () {
-  const checkDark =
-    window.matchMedia &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const checkDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
   if (
     (checkDark && !localStorage.getItem('aXenDev_theme_manual')) ||
