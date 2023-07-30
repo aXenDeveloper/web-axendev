@@ -5,12 +5,22 @@
     margin: 3rem 0;
   }
 
+  position: relative;
+
   margin: 6rem 0;
 
   background-color: rgb(var(--container-background));
   border: 1px solid rgb(var(--border-color));
   border-right-width: 0;
   border-left-width: 0;
+
+  > svg {
+    transform: rotateY(180deg);
+
+    > svg {
+      fill: transparent;
+    }
+  }
 }
 
 .wrapper {
@@ -21,8 +31,12 @@
     gap: 2rem;
   }
 
+  position: relative;
+  z-index: 1;
+
   display: flex;
   gap: 4rem;
+
   padding: 4rem 1.5rem;
 
   .image {

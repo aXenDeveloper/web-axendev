@@ -21,10 +21,37 @@ export const Footer = () => {
 
         <ul className={style.list}>
           <li>
-            <Link href="/faq">FAQ</Link>
+            <a href="mailto:aXenDeveloper@gmail.com">aXenDeveloper@gmail.com</a>
           </li>
+
           <li>
-            <Link href="/faq">FAQ</Link>
+            <a
+              href="https://invisioncommunity.com/profile/580858-axendev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Invision Community
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.pecetowicz.pl/profile/36319-axendev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pecetowicz.pl
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://forum.invisionize.pl/profile/19185-axen/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Invisionize PL
+            </a>
           </li>
         </ul>
       </div>

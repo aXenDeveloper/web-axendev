@@ -5,17 +5,19 @@ import { useTranslations } from 'next-intl';
 import person from '@/assets/person.webp';
 import style from './AboutHomeSection.module.scss';
 
-import { GymIcon } from '../../../../assets/hobbies/GymIcon';
-import { CookingIcon } from '../../../../assets/hobbies/CookingIcon';
-import { GameIcon } from '../../../../assets/hobbies/GameIcon';
-import { Tooltip } from '../../../../components/tooltip/Tooltip';
-import { SocialFooter } from '../../../../components/layout/footer/socials/SocialsFooter';
+import { GymIcon } from '@/assets/hobbies/GymIcon';
+import { CookingIcon } from '@/assets/hobbies/CookingIcon';
+import { GameIcon } from '@/assets/hobbies/GameIcon';
+import { Tooltip } from '@/components/tooltip/Tooltip';
+import { SocialFooter } from '@/components/layout/footer/socials/SocialsFooter';
+import { BackgroundSVG } from '@/assets/background/BackgroundSVG';
 
 export const AboutHomeSection = () => {
   const t = useTranslations('home');
 
   return (
     <section className={style.main}>
+      <BackgroundSVG />
       <div className={cx('layout_wrapper', style.wrapper)}>
         <div className={style.image}>
           <Image src={person} alt={t('about.image_alt', { name: 'Maciej Piotr Balcerzak' })} />
