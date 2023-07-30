@@ -56,6 +56,14 @@
         "game": "Gry (Zwłaszcza Apex Legends :D)",
         "cooking": "Gotowanie"
       }
+    },
+    "questions": {
+      "title": "Więcej informacji",
+      "desc": "Masz jakieś pytanie dotyczące mojej pracy?",
+      "butons": {
+        "contact": "Skontaktuj się ze mną",
+        "faq": "FAQ"
+      }
     }
   },
   "products": {

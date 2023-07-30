@@ -56,6 +56,14 @@
         "game": "Gaming (Especially Apex Legends :D)",
         "cooking": "Cooking"
       }
+    },
+    "questions": {
+      "title": "More information",
+      "desc": "Have a question about my work?",
+      "buttons": {
+        "contact": "Contact Me",
+        "faq": "FAQ"
+      }
     }
   },
   "products": {

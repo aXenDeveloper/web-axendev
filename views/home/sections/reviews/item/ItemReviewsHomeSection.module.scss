@@ -12,6 +12,10 @@
     color: rgb(var(--text-secondary-color));
   }
 
+  > blockquote > p {
+    line-height: 1.5rem;
+  }
+
   > a {
     display: inline-block;
 

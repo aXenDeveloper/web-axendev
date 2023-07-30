@@ -4,7 +4,6 @@ import { useTranslations } from 'next-intl';
 
 import person from '@/assets/person.webp';
 import style from './AboutHomeSection.module.scss';
-
 import { GymIcon } from '@/assets/hobbies/GymIcon';
 import { CookingIcon } from '@/assets/hobbies/CookingIcon';
 import { GameIcon } from '@/assets/hobbies/GameIcon';
