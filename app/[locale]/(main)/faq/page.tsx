@@ -1,5 +1,7 @@
 import { getTranslator } from 'next-intl/server';
 
+import { FaqView } from '@/views/faq/FaqView';
+
 interface MetadataProps {
   params: {
     locale: string;
@@ -15,5 +17,5 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
 }
 
 export default function Page() {
-  return <div>FAQ</div>;
+  return <FaqView />;
 }
