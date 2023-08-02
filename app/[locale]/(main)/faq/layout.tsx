@@ -1,11 +1,9 @@
-import { ReactNode } from 'react';
+import { ErrorView } from '@/views/global/error/ErrorView';
 
-import { WrapperFaq } from '@/views/faq/wrapper/WrapperFaq';
+// interface Props {
+//   children: ReactNode;
+// }
 
-interface Props {
-  children: ReactNode;
-}
-
-export default function Layout({ children }: Props) {
-  return <WrapperFaq>{children}</WrapperFaq>;
+export default function Layout() {
+  return <ErrorView code={404} />;
 }

@@ -3,11 +3,13 @@
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import cx from 'classnames';
+import { useTranslations } from 'next-intl';
 
 import { DrawerContent } from './content/DrawerContent';
 import style from './Drawer.module.scss';
 
 export const Drawer = () => {
+  const t = useTranslations('global');
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -18,6 +20,7 @@ export const Drawer = () => {
         })}
         type="button"
         onClick={() => setOpen(prev => !prev)}
+        aria-label={t('drawer')}
       >
         <div />
         <div />

@@ -22,7 +22,7 @@ export const HomeView = () => {
           <Button id="products" href="/products">
             {t('buttons.products')}
           </Button>
-          <Button kind="secondary" id="contact">
+          <Button kind="secondary" id="contact" href="/contact">
             {t('buttons.contact')}
           </Button>
         </div>
