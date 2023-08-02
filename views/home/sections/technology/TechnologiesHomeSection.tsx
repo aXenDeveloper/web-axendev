@@ -26,7 +26,12 @@ export const TechnologiesHomeSection = () => {
       <ul className={style.list}>
         <li>
           <Tooltip content="NextJS">
-            <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://nextjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="NextJS"
+            >
               <NextJSIcon />
             </a>
           </Tooltip>
@@ -34,7 +39,12 @@ export const TechnologiesHomeSection = () => {
 
         <li>
           <Tooltip content="NestJS">
-            <a href="https://nestjs.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://nestjs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="NestJS"
+            >
               <NestJSIcon />
             </a>
           </Tooltip>
@@ -42,7 +52,12 @@ export const TechnologiesHomeSection = () => {
 
         <li>
           <Tooltip content="Typescript">
-            <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Typescript"
+            >
               <TypescriptIcon />
             </a>
           </Tooltip>
@@ -50,7 +65,12 @@ export const TechnologiesHomeSection = () => {
 
         <li>
           <Tooltip content="PHP">
-            <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.php.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="PHP"
+            >
               <PhpIcon />
             </a>
           </Tooltip>
@@ -58,7 +78,12 @@ export const TechnologiesHomeSection = () => {
 
         <li>
           <Tooltip content="React / React Native">
-            <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://react.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="React / React Native"
+            >
               <ReactIcon />
             </a>
           </Tooltip>
@@ -66,7 +91,12 @@ export const TechnologiesHomeSection = () => {
 
         <li>
           <Tooltip content="NodeJS">
-            <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://nodejs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="NodeJS"
+            >
               <NodeJSIcon />
             </a>
           </Tooltip>
@@ -74,7 +104,12 @@ export const TechnologiesHomeSection = () => {
 
         <li>
           <Tooltip content="SCSS">
-            <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://sass-lang.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="SCSS"
+            >
               <ScssIcon />
             </a>
           </Tooltip>
@@ -82,7 +117,12 @@ export const TechnologiesHomeSection = () => {
 
         <li>
           <Tooltip content="Vitest">
-            <a href="https://vitest.dev/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://vitest.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Vitest"
+            >
               <VitestIcon />
             </a>
           </Tooltip>
@@ -90,7 +130,12 @@ export const TechnologiesHomeSection = () => {
 
         <li>
           <Tooltip content="Playwright">
-            <a href="https://playwright.dev/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://playwright.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Playwright"
+            >
               <PlaywrightIcon />
             </a>
           </Tooltip>
@@ -98,7 +143,12 @@ export const TechnologiesHomeSection = () => {
 
         <li>
           <Tooltip content="Figma">
-            <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.figma.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Figma"
+            >
               <FigmaIcon />
             </a>
           </Tooltip>

@@ -1,10 +1,10 @@
 import { useTranslations } from 'next-intl';
 
-import style from './FiltersProductsView.module.scss';
+import style from './FiltersProducts.module.scss';
 import { CategoriesProductEnum } from '../configProducts';
-import { ItemFiltersProductsView } from './item/ItemFiltersProductsView';
+import { ItemFiltersProducts } from './item/ItemFiltersProducts';
 
-export const FiltersProductsView = () => {
+export const FiltersProducts = () => {
   const t = useTranslations('products');
 
   return (
@@ -13,9 +13,9 @@ export const FiltersProductsView = () => {
 
       <hr className="hr" />
 
-      <ul>
+      <ul className={style.list}>
         {Object.values(CategoriesProductEnum).map(item => (
-          <ItemFiltersProductsView key={item} name={item} />
+          <ItemFiltersProducts key={item} name={item} />
         ))}
       </ul>
     </aside>

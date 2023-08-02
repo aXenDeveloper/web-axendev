@@ -1,5 +1,14 @@
 {
-  "cSpell.words": ["datetime", "overscan", "stylelint", "Swipeable", "swiper", "testid", "webp"],
+  "cSpell.words": [
+    "datetime",
+    "fluentui",
+    "overscan",
+    "stylelint",
+    "Swipeable",
+    "swiper",
+    "testid",
+    "webp"
+  ],
   "stylelint.validate": ["css", "scss"],
   "[css]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"

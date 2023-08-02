@@ -26,7 +26,7 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
   }
 
   return (
-    <html className={montserrat.className}>
+    <html lang={locale} className={montserrat.className}>
       <body>
         <script src="/aXenDev_theme.js" />
         <NextIntlClientProvider locale={locale} messages={messages}>

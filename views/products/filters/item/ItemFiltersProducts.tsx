@@ -10,7 +10,7 @@ interface Props {
   name: string;
 }
 
-export const ItemFiltersProductsView = ({ name }: Props) => {
+export const ItemFiltersProducts = ({ name }: Props) => {
   const { replace } = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();

@@ -1,6 +1,13 @@
 {
   "global": {
-    "test": "Test EN",
+    "drawer": "Menu",
+    "logo": "Logo {name}",
+    "errors": {
+      "something_wrong": "Oops, something went wrong (╯°□°）╯︵ ┻━┻",
+      "error_404": "This page does not exist.",
+      "error_500": "Internal Server Error",
+      "code": "Error code: {code}"
+    },
     "theme": {
       "light": "Light",
       "dark": "Dark",

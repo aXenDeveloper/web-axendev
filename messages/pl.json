@@ -1,6 +1,13 @@
 {
   "global": {
-    "test": "Test PL",
+    "drawer": "Menu",
+    "logo": "Logo {name}",
+    "errors": {
+      "something_wrong": "Ups, coś poszło nie tak (╯°□°）╯︵ ┻━┻",
+      "error_404": "Ta strona nie istnieje.",
+      "error_500": "Błąd wewnętrzny serwera.",
+      "code": "Kod błędu: {code}"
+    },
     "theme": {
       "light": "Jasny",
       "dark": "Ciemny",
@@ -60,7 +67,7 @@
     "questions": {
       "title": "Więcej informacji",
       "desc": "Masz jakieś pytanie dotyczące mojej pracy?",
-      "butons": {
+      "buttons": {
         "contact": "Skontaktuj się ze mną",
         "faq": "FAQ"
       }
