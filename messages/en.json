@@ -1,0 +1,137 @@
+{
+  "global": {
+    "drawer": "Menu",
+    "logo": "Logo {name}",
+    "errors": {
+      "something_wrong": "Oops, something went wrong (╯°□°）╯︵ ┻━┻",
+      "error_404": "This page does not exist.",
+      "error_500": "Internal Server Error",
+      "code": "Error code: {code}"
+    },
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "lightBox": {
+      "prev": "Previous",
+      "next": "Next",
+      "close": "Close"
+    }
+  },
+  "nav": {
+    "forum": "Forum",
+    "products": "Products",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Coding in The Future",
+    "desc": "Web Developer and Web Designer creating amazing applications by combining code, design and users.",
+    "buttons": {
+      "products": "Check Products",
+      "contact": "Contact Me"
+    },
+    "lastProducts": {
+      "title": "Last Products",
+      "link": "View More"
+    },
+    "reviews": {
+      "title": "Reviews",
+      "desc": "I've worked with thousands of amazing people",
+      "items": {
+        "item_1": "I have spend hundreds on themes for invision and have always wanted more.... i think i found it what I looking for. I'm very happy for all, nice work!!",
+        "item_2": "Passed this by chance. Tried a few others but not suitable for me. I like the design and how it works. Great job! Keep it up though which seems to be a problem with some plugins. Great stuff, very pleased.",
+        "item_3": "This theme is excellent. I love the simplicity and style of it. Easy on the eyes, link hover colors and other various colors are real easy to make your own. Excellent work as always, aXen.",
+        "item_4": "This is the best style I have found. The customization is endless and the included features save you from purchasing other plugins.  It is an excellent value for the money considering all the features and customization. You will not find a better theme!",
+        "item_5": "Awesome plugin! There are a lot of use cases for this function, as the secondary user group can be customised to do a wide range of things. It's also a lot more convent than the custom profile field, the flexibility is very nice.",
+        "item_6": "Amazing theme and my users like it. Great support. Very fast theme for arcade games. Recommended to all IPS arcade sities!"
+      }
+    },
+    "technologies": {
+      "title": "Technologies",
+      "desc": "What do I use?"
+    },
+    "about": {
+      "title": "About Me",
+      "desc": "Hi! 👋",
+      "text": "I'm Maciej Piotr Balcerzak and I'm working as Software Engineer with a passion for creating beautiful and user-friendly products. I have experience in front-end, back-end, testing and UX/UI design, but my primary experience is front-end. Also I'm contributor for Invision Community making themes and apps.",
+      "image_alt": "In the photo you can see {name} as a character from Disney",
+      "hobbies": {
+        "title": "Hobbies",
+        "gym": "Gym & Calisthenics",
+        "game": "Gaming (Especially Apex Legends :D)",
+        "cooking": "Cooking"
+      }
+    },
+    "questions": {
+      "title": "More information",
+      "desc": "Have a question about my work?",
+      "buttons": {
+        "contact": "Contact Me",
+        "faq": "FAQ"
+      }
+    }
+  },
+  "products": {
+    "title": "Products",
+    "desc": "Explore my products and find the one that suits you best.",
+    "back": "Back to Products",
+    "free": "Free",
+    "buy_now_on": "Buy Now on {name}",
+    "deprecated": {
+      "title": "Deprecated",
+      "desc": "This product is no longer supported and will not receive updates. You can still download this product."
+    },
+    "filters": {
+      "title": "Filters"
+    },
+    "details": {
+      "categories": "Categories",
+      "release_date": "Release Date",
+      "price": "Price"
+    },
+    "categories": {
+      "ips_apps": "IPS Apps",
+      "ips_themes": "IPS Themes",
+      "ips_translations": "IPS Translations",
+      "react": "React",
+      "react_native": "React Native",
+      "node_js": "Node.js",
+      "typescript": "TypeScript",
+      "others": "Others"
+    },
+    "descriptions": {
+      "react-weather": "Weather app that allows you to check the current weather and forecast in your chosen city.",
+      "ips-theme-fluent-design": "Fluent Design Theme Edition is a combination of Fluent Design styles Microsoft, iOS Design, Android Design and Google Design. We have also introduced many interesting features that are unique in standard themes.",
+      "ips-article-system-in-pages": "The modification allows you to change the appearance and add many functionalities to manage records. Requires Pages IPS (CMS) application.",
+      "ips-app-advanced-serverlist": "(IPS App) This app shows servers information from GameQ library.",
+      "ips-number-of-entries-chatbox-plus": "(IPS Plugin) Plugin displays users the number of their entries from Chatbox+ application.",
+      "ips-administrative-bar": "(IPS Plugin) The plugin adds the administration bar known from previous versions of IP.Board.",
+      "ips-fontawesome5": "(IPS Plugin) The plugin shows icons from Font Awesome 5.",
+      "ips-group-formatting-in-mention": "(IPS Plugin) The plugin formats the user name in the mention.",
+      "ips-number-of-entries-chatbox": "(IPS Plugin) Plugin displays users the number of their entries from Chatbox Free application.",
+      "ips-secondary-groups-indicator": "(IPS Plugin) The plugin show secondary groups.",
+      "ips-lang-polish-chatbox-plus": "Polish translation app - (BIM) Chatbox+",
+      "ips-lang-polish-cj-duplicate-member": "Polish translation app - [BNS] CJ Duplicate Member Logger",
+      "ips-lang-polish-axen-advanced-serverlist": "Polish translation app - (aXen) Advanced Server List",
+      "ips-lang-polish-adriano-contact-us": "Polish translation app - (Adriano Faria) Contact Us",
+      "ips-lang-polish-axen-advanced-members": "Polish translation app - (aXen) Advanced Members",
+      "ips-lang-polish-axen-vacation": "Polish translation app - (aXen) Vacation",
+      "ips-lang-polish-axen-content-notes": "Polish translation app - (aXen) Content Notes",
+      "ips-lang-polish-axen-player-panel": "Polish translation app - (aXen) Player Panel",
+      "express-react-recipes": "An application that manages recipes added by users. It has a login and registration system with a CSRF key.",
+      "sourcebans-web-theme-fluent": "Fluent Design Theme Edition is a combination of Fluent Design styles Microsoft, iOS Design, Android Design and Google Design. We have also introduced many interesting features that are unique in standard themes.",
+      "ts-apex-legends-random-equipment": "Application randomizes equipment with improvements and a random character in Apex Legends game.",
+      "react-native-basic-to-do": "To do list with a start date, an end option, and an option to delete.",
+      "ips-theme-dynamic": "(IPS Theme) Dynamic theme with Font Awesome 5",
+      "ips-full-width-widget-containers": "(IPS Plugin) Adds two full-width widget containers (Header and Footer).",
+      "ips-app-advanced-members": "The application extends the functions of users on the forum with: a group legend, a widget who is online, a better distinction of groups and a widget for contact with the administration.",
+      "ips-lact-activity-in-hovercard": "Converts the current value of hovercard activity to real time along with its last activity.",
+      "ips-app-vacation": "Application adds an automatic vacation system.",
+      "ips-app-fontawesome6": "The application updates the Font Awesome version to version 6 without destroying the icons embedded in IPS version 4.",
+      "ips-app-content-notes": "Application for create notes on contents.",
+      "ips-app-axen-player-panel": "Application for managing multiplayer game servers."
+    }
+  }
+}

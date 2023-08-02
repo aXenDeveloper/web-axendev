@@ -1,137 +1,29 @@
-html {
-  font-size: 10px;
-}
+@import './variables';
+@import './helpers';
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@import './variables';
-@import './dark';
-
 body {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
-    Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 1.6rem;
-  background-color: var(--background-body);
-  color: var(--color-body);
-  line-height: 1.5;
-  padding: 0;
   margin: 0;
+
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: rgb(var(--text-color));
+
+  background-color: rgb(var(--body-background));
 }
 
 a {
-  color: inherit;
+  color: rgb(var(--link));
   text-decoration: none;
-  transition: color 0.4s ease, text-decoration 0.4s ease;
 
   &:hover {
-    color: var(--color-main);
     text-decoration: underline;
   }
 }
-
-/* ===== Flex ===== */
-.flex {
-  display: flex;
-
-  &_jc {
-    &\:between {
-      justify-content: space-between;
-    }
-
-    &\:center {
-      justify-content: center;
-    }
-  }
-
-  &_ai {
-    &\:center {
-      align-items: center;
-    }
-  }
-}
-
-/* ===== Padding ===== */
-.padding {
-  padding: var(--sp-6);
-
-  &\:half {
-    padding: var(--sp-3);
-  }
-}
-
-/* ===== Margin ===== */
-.margin {
-  margin: var(--sp-6);
-
-  &\:half {
-    margin: var(--sp-3);
-  }
-
-  &_top {
-    margin-top: var(--sp-6);
-
-    &\:half {
-      margin-top: var(--sp-3);
-    }
-  }
-}
-
-/* ===== Text ===== */
-.text {
-  &_weight {
-    &\:700 {
-      font-weight: 700;
-    }
-  }
-
-  &\:color {
-    color: var(--color-main);
-  }
-
-  &\:gradient {
-    color: var(--color-main);
-    background-image: var(--button-primary);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    &::selection {
-      -webkit-text-fill-color: #fff;
-    }
-  }
-
-  &\:light {
-    color: var(--color-light);
-  }
-
-  &_align {
-    &\:center {
-      text-align: center;
-    }
-  }
-}
-
-::selection {
-  color: #fff;
-  background: var(--color-main);
-}
-
-// Fix recaptcha z-index
-.grecaptcha-badge {
-  z-index: 100;
-}
-
-@import './layout';
-@import './userbar';
-@import './drawer';
-@import './buttons';
-@import './inputs';
-@import './pages/home';
-@import './pages/products';
-@import './pages/faq';
-
-@import './responsive';
-@import './animations';

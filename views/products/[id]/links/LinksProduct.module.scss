@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+
+  > a,
+  > button {
+    flex: 1;
+    min-width: calc(50% - 0.5rem);
+  }
+}

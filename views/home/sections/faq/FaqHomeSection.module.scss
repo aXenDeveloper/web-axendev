@@ -1,0 +1,65 @@
+@use '@/styles/media' as *;
+
+.main {
+  @include mobile {
+    margin: 3rem 0;
+  }
+
+  position: relative;
+
+  margin: 6rem 0;
+
+  background-color: rgb(var(--container-background));
+  border: 1px solid rgb(var(--border-color));
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.wrapper {
+  --layout-max-width: 60rem;
+
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 4rem 1.5rem;
+
+  > svg {
+    @include mobile {
+      display: none;
+    }
+
+    max-width: 10rem;
+    max-height: 10rem;
+  }
+}
+
+.content {
+  > h2 {
+    @include mobile {
+      font-size: 1.75rem;
+    }
+
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.125;
+    letter-spacing: -0.04em;
+  }
+
+  > p {
+    @include mobile {
+      font-size: 1rem;
+    }
+
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+}

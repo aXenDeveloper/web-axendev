@@ -1,0 +1,15 @@
+@use '@/styles/media' as *;
+
+.logo {
+  display: flex;
+
+  > svg {
+    width: 10rem;
+  }
+}
+
+.switches:first-of-type {
+  @include mobile-tablet {
+    display: none;
+  }
+}

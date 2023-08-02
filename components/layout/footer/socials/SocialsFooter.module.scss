@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  list-style: none;
+
+  > li > a {
+    display: flex;
+    line-height: 1;
+
+    > svg > path {
+      fill: rgb(var(--text-secondary-color));
+      transition: fill var(--animation);
+    }
+
+    &:hover {
+      > svg > path {
+        fill: rgb(var(--text-color));
+      }
+    }
+  }
+}

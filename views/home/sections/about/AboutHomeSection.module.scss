@@ -1,0 +1,108 @@
+@use '@/styles/media' as *;
+
+.main {
+  @include mobile {
+    margin: 3rem 0;
+  }
+
+  position: relative;
+
+  margin: 6rem 0;
+
+  background-color: rgb(var(--container-background));
+  border: 1px solid rgb(var(--border-color));
+  border-right-width: 0;
+  border-left-width: 0;
+
+  > svg {
+    transform: rotateY(180deg);
+
+    > svg {
+      fill: transparent;
+    }
+  }
+}
+
+.wrapper {
+  --layout-max-width: 60rem;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  gap: 4rem;
+
+  padding: 4rem 1.5rem;
+
+  .image {
+    @include tablet-desktop {
+      align-items: center;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    > img {
+      max-width: 14rem;
+      max-height: 14rem;
+      border-radius: var(--radius);
+    }
+  }
+}
+
+.content {
+  > h2 {
+    @include mobile {
+      font-size: 1rem;
+    }
+
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: rgb(var(--link));
+  }
+
+  > span {
+    @include mobile {
+      font-size: 1.75rem;
+    }
+
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.125;
+    letter-spacing: -0.04em;
+  }
+
+  .texts {
+    margin-top: 1rem;
+
+    > span {
+      display: inline-block;
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    > p {
+      line-height: 1.75rem;
+    }
+
+    > ul {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+      list-style: none;
+
+      > li > svg {
+        width: 2.75rem;
+        height: 2.75rem;
+        color: rgb(var(--link));
+      }
+    }
+  }
+}

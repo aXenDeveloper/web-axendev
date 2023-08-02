@@ -1,35 +1,27 @@
-const nextTranslate = require('next-translate');
-const withPWA = require('next-pwa');
-const runtimeCaching = require('next-pwa/cache');
+/* eslint-disable @typescript-eslint/no-var-requires */
+/** @type {import('next').NextConfig} */
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true'
+});
+const withNextIntl = require('next-intl/plugin')();
 
-module.exports = withPWA({
-  async redirects() {
-    return [
+const nextConfig = {
+  ...withBundleAnalyzer(),
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
       {
-        source: '/contact',
-        destination: 'https://ips.axendev.net/contact',
-        permanent: true
+        hostname: 'raw.githubusercontent.com',
+        protocol: 'https',
+        pathname: '/aXenDeveloper/**'
       },
       {
-        source: '/forum',
-        destination: 'https://ips.axendev.net',
-        permanent: true
+        hostname: 'files.axendev.net',
+        protocol: 'https',
+        pathname: '/projects/**'
       }
-    ];
-  },
-  async rewrites() {
-    return [
-      { source: '/contact', destination: 'https://ips.axendev.net/contact' },
-      { source: '/forum', destination: 'https://ips.axendev.net' }
-    ];
-  },
-  ...nextTranslate(),
-  images: {
-    domains: ['raw.githubusercontent.com', 'files.axendev.net']
-  },
-  pwa: {
-    dest: 'public',
-    disable: process.env.NODE_ENV === 'development',
-    runtimeCaching
+    ]
   }
-});
+};
+
+module.exports = withNextIntl(nextConfig);

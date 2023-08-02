@@ -1,0 +1,49 @@
+$kinds: 'primary', 'secondary';
+
+.wrapper {
+  cursor: pointer;
+
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 2.5rem;
+  padding: 0.5rem 1.5rem;
+
+  font-family: inherit;
+  font-weight: 500;
+  text-align: center;
+
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+
+  transition:
+    background-color var(--animation),
+    border-color var(--animation),
+    color var(--animation);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+  }
+
+  @each $kind in $kinds {
+    &.#{$kind} {
+      color: rgb(var(--button-#{$kind}-color));
+      background-color: rgb(var(--button-#{$kind}));
+      border-color: rgb(var(--button-#{$kind}-border));
+
+      &:hover {
+        color: rgb(var(--button-#{$kind}-hover-color));
+        background-color: rgb(var(--button-#{$kind}-hover));
+        border-color: rgb(var(--button-#{$kind}-hover-border));
+      }
+    }
+  }
+}

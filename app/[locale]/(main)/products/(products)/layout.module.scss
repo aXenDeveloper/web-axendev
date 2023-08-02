@@ -1,0 +1,13 @@
+@use '@/styles/media' as *;
+
+.wrapper {
+  --layout-max-width: 84rem;
+
+  @include mobile {
+    padding: 0;
+  }
+
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}

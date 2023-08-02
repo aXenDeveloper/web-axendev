@@ -1,0 +1,137 @@
+{
+  "global": {
+    "drawer": "Menu",
+    "logo": "Logo {name}",
+    "errors": {
+      "something_wrong": "Ups, coś poszło nie tak (╯°□°）╯︵ ┻━┻",
+      "error_404": "Ta strona nie istnieje.",
+      "error_500": "Błąd wewnętrzny serwera.",
+      "code": "Kod błędu: {code}"
+    },
+    "theme": {
+      "light": "Jasny",
+      "dark": "Ciemny",
+      "system": "Systemowy"
+    },
+    "lightBox": {
+      "prev": "Poprzedni",
+      "next": "Następny",
+      "close": "Zamknij"
+    }
+  },
+  "nav": {
+    "forum": "Forum",
+    "products": "Produkty",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Kodowanie w przyszłości",
+    "desc": "Web Developer i Web Designer tworzący niesamowite aplikacje łącząc kod, projekt oraz użytkowników.",
+    "buttons": {
+      "products": "Sprawdź produkty",
+      "contact": "Skontaktuj się ze mną"
+    },
+    "lastProducts": {
+      "title": "Ostatnie produkty",
+      "link": "Zobacz więcej"
+    },
+    "reviews": {
+      "title": "Recenzje",
+      "desc": "Pracowałem z tysiącami niesamowitych ludzi",
+      "items": {
+        "item_1": "Wydałem setki na motywy dla Invision i zawsze chciałem więcej.... Myślę, że znalazłem to co chciałem tutaj. Jestem bardzo zadowolony ze wszystkiego, dobra robota!",
+        "item_2": "Przyszedłem tu przez przypadek. Wypróbowałem kilka innych aplikacji, ale inne nie są dla mnie odpowiednie. Podoba mi się projekt i sposób działania. Dobra robota! Tak trzymaj, co wydaje się być problemem w przypadku niektórych wtyczek. Super sprawa, jestem bardzo zadowolony.",
+        "item_3": "Ten motyw jest doskonały. Uwielbiam jego prostotę i styl. Łatwy dla oczu, kolory najechania na link i inne różne kolory są naprawdę łatwe do stworzenia własnych. Doskonała robota jak zawsze, aXen.",
+        "item_4": "To najlepszy motyw, jaki znalazłem. Możliwości dostosowywania są nieograniczone, a dołączone funkcje pozwalają uniknąć zakupu innych wtyczek. Jest to doskonały stosunek jakości do ceny, biorąc pod uwagę wszystkie funkcje i możliwości dostosowywania. Nie znajdziesz lepszego motywu!",
+        "item_5": "Świetna wtyczka! Istnieje wiele przypadków użycia tej funkcji, ponieważ dodatkowa grupa użytkowników może być dostosowana do wykonywania szerokiego zakresu czynności. Jest to również o wiele bardziej wygodne niż niestandardowe pole profilu, elastyczność jest bardzo dobra.",
+        "item_6": "Niesamowity motyw, który podoba się moim użytkownikom. Świetne wsparcie. Bardzo szybki motyw dla gier zręcznościowych. Polecam wszystkim stronom zręcznościowym IPS!"
+      }
+    },
+    "technologies": {
+      "title": "Technologie",
+      "desc": "Co ja używam?"
+    },
+    "about": {
+      "title": "O mnie",
+      "desc": "Hej! 👋",
+      "text": "Jestem Maciej Piotr Balcerzak i pracuje jako Software Engineer z pasją do tworzenia pięknych, przyjaznych dla użytkownika produktów. Mam doświadczenie w dziedzinach front-end, back-end, testach oraz UX/UI design, lecz moje główne zajęcie to front-end. Oraz jestem współ-twórcą dla Invision Community tworzący motywy i aplikacje.",
+      "image_alt": "Na zdjęciu widać {name} jako postać z Disneya",
+      "hobbies": {
+        "title": "Hobby",
+        "gym": "Siłownia i kalistenika",
+        "game": "Gry (Zwłaszcza Apex Legends :D)",
+        "cooking": "Gotowanie"
+      }
+    },
+    "questions": {
+      "title": "Więcej informacji",
+      "desc": "Masz jakieś pytanie dotyczące mojej pracy?",
+      "buttons": {
+        "contact": "Skontaktuj się ze mną",
+        "faq": "FAQ"
+      }
+    }
+  },
+  "products": {
+    "title": "Produkty",
+    "desc": "Eksploruj moje produkty i znajdź ten, który najbardziej Ci odpowiada.",
+    "back": "Wróć do projektów",
+    "free": "Darmowe",
+    "buy_now_on": "Kup teraz na {name}",
+    "deprecated": {
+      "title": "Przestarzały",
+      "desc": "Produkt nie jest już wspierany i nie będzie otrzymywać aktualizacji. Nadal możesz pobrać ten produkt."
+    },
+    "filters": {
+      "title": "Filtry"
+    },
+    "details": {
+      "categories": "Kategorie",
+      "release_date": "Data wydania",
+      "price": "Cena"
+    },
+    "categories": {
+      "ips_apps": "Aplikacje IPS",
+      "ips_themes": "Motywy IPS",
+      "ips_translations": "Tłumaczenia IPS",
+      "react": "React",
+      "react_native": "React Native",
+      "node_js": "Node.js",
+      "typescript": "TypeScript",
+      "others": "Inne"
+    },
+    "descriptions": {
+      "react-weather": "Aplikacja pogodowa, która pozwala sprawdzić aktualną pogodę i prognozę w wybranym mieście.",
+      "ips-theme-fluent-design": "Fluent Design Theme Edition to połączenie stylów Fluent Design Microsoft, iOS Design, Android Design i Google Design. Wprowadziliśmy również wiele interesujących funkcji, które są unikalne w standardowych motywach.",
+      "ips-article-system-in-pages": "Modyfikacja pozwala na zmianę wyglądu oraz dodanie wielu funkcjonalności do zarządzania rekordami. Wymaga aplikacji Pages IPS (CMS).",
+      "ips-app-advanced-serverlist": "(IPS App) Aplikacja pokazuje informacje o serwerach z biblioteki GameQ.",
+      "ips-number-of-entries-chatbox-plus": "(IPS Plugin) Wtyczka wyświetla użytkownikom liczbę ich wpisów z aplikacji Chatbox+.",
+      "ips-administrative-bar": "(IPS Plugin) Wtyczka dodaje pasek administracyjny znany z poprzednich wersji IP.Board.",
+      "ips-fontawesome5": "(IPS Plugin) Wtyczka wyświetla ikony z Font Awesome 5.",
+      "ips-group-formatting-in-mention": "(IPS Plugin) Wtyczka formatuje nazwę użytkownika we wzmiance.",
+      "ips-number-of-entries-chatbox": "(IPS Plugin) Wtyczka wyświetla użytkownikom liczbę ich wpisów z aplikacji Chatbox Free.",
+      "ips-secondary-groups-indicator": "(IPS Plugin) Wtyczka wyświetla grupy dodatkowe.",
+      "ips-lang-polish-chatbox-plus": "Spolszczenie aplikacji - (BIM) Chatbox+",
+      "ips-lang-polish-cj-duplicate-member": "Spolszczenie aplikacji - [BNS] CJ Duplicate Member Logger",
+      "ips-lang-polish-axen-advanced-serverlist": "Spolszczenie aplikacji - (aXen) Advanced Server List",
+      "ips-lang-polish-adriano-contact-us": "Spolszczenie aplikacji - (Adriano Faria) Contact Us",
+      "ips-lang-polish-axen-advanced-members": "Spolszczenie aplikacji - (aXen) Advanced Members",
+      "ips-lang-polish-axen-vacation": "Spolszczenie aplikacji - (aXen) Vacation",
+      "ips-lang-polish-axen-content-notes": "Spolszczenie aplikacji - (aXen) Content Notes",
+      "ips-lang-polish-axen-player-panel": "Spolszczenie aplikacji - (aXen) Player Panel",
+      "express-react-recipes": "Aplikacja zarządzająca przepisami dodanymi przez użytkowników. Posiada system logowania i rejestracji z kluczem CSRF.",
+      "sourcebans-web-theme-fluent": "Fluent Design Theme Edition to połączenie stylów Fluent Design Microsoft, iOS Design, Android Design i Google Design. Wprowadziliśmy również wiele interesujących funkcji, które są unikalne w standardowych motywach.",
+      "ts-apex-legends-random-equipment": "Aplikacja losuje sprzęt z ulepszeniami i losową postacią w grze Apex Legends.",
+      "react-native-basic-to-do": "To do list z datą rozpoczęcia, opcją zakończenia oraz z opcją usunięcia.",
+      "ips-theme-dynamic": "(IPS Theme) Dynamic theme z Font Awesome 5",
+      "ips-full-width-widget-containers": "(IPS Plugin) Dodaje dwa kontenery widżetów na całą szerokość (nagłówek i stopka).",
+      "ips-app-advanced-members": "Aplikacja rozszerza funkcje użytkowników na forum o: legendę grup, widget kto jest online, lepsze wyróżnienie grup oraz widget kontaktu z administracją.",
+      "ips-lact-activity-in-hovercard": "Zamienia bieżącą wartość o aktywności w hovercard na czas rzeczywisty, wraz z jego ostatnią aktywnością.",
+      "ips-app-vacation": "Aplikacja dodaje automatyczny system urlopów.",
+      "ips-app-fontawesome6": "Aplikacja aktualizuje wersję Font Awesome do wersji 6 bez niszczenia ikon osadzonych w IPS w wersji 4.",
+      "ips-app-content-notes": "Aplikacja do tworzenia notatek na zawartości.",
+      "ips-app-axen-player-panel": "Aplikacja do zarządzania serwerami multiplayer."
+    }
+  }
+}
