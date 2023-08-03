@@ -3,6 +3,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
+import cx from 'classnames';
 
 import { ProductsInterface } from '../configProducts';
 import style from './ItemProducts.module.scss';
@@ -15,12 +16,18 @@ export const ItemProducts = ({
   id,
   images,
   name,
-  price
+  price,
+  single
 }: ProductsInterface) => {
   const t = useTranslations('products');
 
   return (
-    <Link href={`/products/${id}`} className={style.wrapper}>
+    <Link
+      href={`/products/${id}`}
+      className={cx(style.wrapper, {
+        [style.single]: single
+      })}
+    >
       <div className={style.img}>
         <Img
           src={images[0]}

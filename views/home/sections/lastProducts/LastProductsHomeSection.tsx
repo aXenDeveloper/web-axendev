@@ -23,7 +23,7 @@ export const LastProductsHomeSection = () => {
           .sort((a, b) => b.createdAt - a.createdAt)
           .slice(0, 4)
           .map(item => (
-            <ItemProducts key={item.id} {...item} />
+            <ItemProducts key={item.id} {...item} single />
           ))}
       </div>
     </section>

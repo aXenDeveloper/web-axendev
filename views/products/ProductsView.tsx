@@ -1,6 +1,6 @@
 'use client';
 
-import { VirtuosoGrid, LogLevel } from 'react-virtuoso';
+import { Virtuoso } from 'react-virtuoso';
 import { useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 
@@ -31,11 +31,11 @@ export const ProductsView = () => {
 
   // TODO: Add empty state
   return (
-    <VirtuosoGrid
+    <Virtuoso
       useWindowScroll
-      className={style.list}
+      className={style.wrapper}
       data={data}
-      logLevel={LogLevel.DEBUG}
+      overscan={200}
       itemContent={(_index, item) => <ItemProducts {...item} />}
     />
   );

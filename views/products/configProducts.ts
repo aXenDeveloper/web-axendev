@@ -24,6 +24,7 @@ export interface ProductsInterface {
   name: string;
   price: number;
   deprecated?: boolean;
+  single?: boolean;
 }
 
 export const products: ProductsInterface[] = [

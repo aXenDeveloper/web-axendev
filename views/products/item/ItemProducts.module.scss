@@ -1,6 +1,25 @@
+@use '@/styles/media' as *;
+
 .wrapper {
+  @include mobile-tablet {
+    flex-direction: column;
+  }
+
+  @include desktop {
+    &.single {
+      flex-direction: column;
+
+      .img {
+        width: 100%;
+
+        > div {
+          border-radius: var(--radius) var(--radius) 0 0;
+        }
+      }
+    }
+  }
+
   display: flex;
-  flex-direction: column;
 
   height: 100%;
 
@@ -12,21 +31,30 @@
     0 10px 15px -3px rgb(0 0 0 / 10%),
     0 4px 6px -4px rgb(0 0 0 / 10%);
 
+  .img {
+    @include mobile-tablet {
+      width: 100%;
+
+      > div {
+        border-radius: var(--radius) var(--radius) 0 0;
+      }
+    }
+
+    flex-shrink: 0;
+    width: 20rem;
+    height: 12rem;
+
+    > div {
+      border-radius: var(--radius) 0 0 var(--radius);
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
   &:hover {
     text-decoration: none;
-  }
-}
-
-.img {
-  width: 100%;
-  height: 12rem;
-
-  > div {
-    border-radius: var(--radius) var(--radius) 0 0;
-  }
-
-  img {
-    object-fit: cover;
   }
 }
 
