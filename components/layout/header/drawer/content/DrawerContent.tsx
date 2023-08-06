@@ -35,7 +35,7 @@ export const DrawerContent = ({ setOpen }: Props) => {
 
   return (
     <FloatingPortal>
-      <FloatingOverlay lockScroll>
+      <FloatingOverlay className={style.overlay} lockScroll>
         <FloatingFocusManager context={context}>
           <motion.div
             className={style.wrapper}

@@ -1,12 +1,16 @@
 @use '@/styles/media' as *;
 
+.overlay {
+  z-index: 1;
+}
+
 .wrapper {
   @include desktop {
     display: none;
   }
 
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
   top: var(--header-height);
 
   overflow-x: auto;
