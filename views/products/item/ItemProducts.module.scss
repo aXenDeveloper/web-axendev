@@ -35,7 +35,7 @@
     @include mobile-tablet {
       width: 100%;
 
-      > div {
+      > div:first-of-type {
         border-radius: var(--radius) var(--radius) 0 0;
       }
     }

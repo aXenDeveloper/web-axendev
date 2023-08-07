@@ -17,7 +17,7 @@ export function generateMetadata(): Metadata {
       shortcut: '/icons/favicon.ico'
     },
     description: desc,
-    themeColor: '#e21124',
+    themeColor: '#200706',
     openGraph: {
       title: CONFIG_TITLE,
       description: desc,
