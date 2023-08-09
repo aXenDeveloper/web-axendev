@@ -1,4 +1,4 @@
-import cx from 'classnames';
+import cx from 'clsx';
 import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 

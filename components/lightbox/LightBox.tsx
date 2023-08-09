@@ -9,7 +9,7 @@ import {
 } from '@floating-ui/react';
 import { Dispatch, SetStateAction, useState } from 'react';
 import { motion } from 'framer-motion';
-import cx from 'classnames';
+import cx from 'clsx';
 import { ChevronLeft24Filled, ChevronRight24Filled, Dismiss24Filled } from '@fluentui/react-icons';
 import { useTranslations } from 'next-intl';
 

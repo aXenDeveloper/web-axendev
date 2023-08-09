@@ -1,4 +1,4 @@
-import cx from 'classnames';
+import cx from 'clsx';
 
 import { LanguageSwitch } from './lang/LanguageSwitch';
 import { ThemeSwitch } from './theme/ThemeSwitch';

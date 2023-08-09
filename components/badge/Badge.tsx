@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import cs from 'classnames';
+import cx from 'clsx';
 
 import style from './Badge.module.scss';
 import { MessageKindTypes } from '../message/Message';
@@ -11,5 +11,5 @@ interface Props {
 }
 
 export const Badge = ({ children, className, kind = 'info' }: Props) => (
-  <span className={cs(style.wrapper, className, style[kind])}>{children}</span>
+  <span className={cx(style.wrapper, className, style[kind])}>{children}</span>
 );

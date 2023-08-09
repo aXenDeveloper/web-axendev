@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import cx from 'classnames';
+import cx from 'clsx';
 
 import { ListFaq } from './list/ListFaq';
 import style from './WrapperFaq.module.scss';

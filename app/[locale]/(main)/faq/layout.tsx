@@ -1,9 +1,9 @@
-import { ErrorView } from '@/views/global/error/ErrorView';
+import { ReactNode } from 'react';
 
-// interface Props {
-//   children: ReactNode;
-// }
+interface Props {
+  children: ReactNode;
+}
 
-export default function Layout() {
-  return <ErrorView code={404} />;
+export default function Layout({ children }: Props) {
+  return <div>{children}</div>;
 }

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import cx from 'classnames';
+import cx from 'clsx';
 import { useTranslations } from 'next-intl';
 
 import { DrawerContent } from './content/DrawerContent';

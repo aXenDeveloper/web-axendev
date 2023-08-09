@@ -1,6 +1,6 @@
 import { CSSProperties, useEffect, useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
-import cs from 'classnames';
+import cx from 'clsx';
 
 import styleModule from './Img.module.scss';
 
@@ -56,7 +56,7 @@ export const Img = ({
 
   return (
     <div
-      className={cs(className, styleModule.wrapper)}
+      className={cx(className, styleModule.wrapper)}
       style={{
         height: !height ? (heightLoading && isLoading ? `${heightLoading}px` : '100%') : undefined
       }}

@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { usePathname } from 'next-intl/client';
 import Link from 'next-intl/link';
-import cx from 'classnames';
+import cx from 'clsx';
 
 import style from './ItemNav.module.scss';
 

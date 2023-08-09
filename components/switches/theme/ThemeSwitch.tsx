@@ -8,7 +8,7 @@ import {
   WeatherSunny24Filled,
   WeatherSunny24Regular
 } from '@fluentui/react-icons';
-import cx from 'classnames';
+import cx from 'clsx';
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 

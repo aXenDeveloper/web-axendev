@@ -5,7 +5,7 @@ import {
   Info24Filled
 } from '@fluentui/react-icons';
 import { ReactNode } from 'react';
-import cs from 'classnames';
+import cx from 'clsx';
 
 import style from './Message.module.scss';
 
@@ -36,7 +36,7 @@ export const Message = ({ children, id, kind = 'info', title }: Props) => {
   };
 
   return (
-    <div className={cs(style.wrapper, style[kind])} data-testid={`message_${kind}_${id}`}>
+    <div className={cx(style.wrapper, style[kind])} data-testid={`message_${kind}_${id}`}>
       {generateIcon()}
       <div className={style.content}>
         {title && <span className={style.title}>{title}</span>}

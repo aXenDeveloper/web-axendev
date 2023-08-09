@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
-import cx from 'classnames';
+import cx from 'clsx';
 
 import { ProductsInterface } from '../configProducts';
 import style from './ItemProducts.module.scss';
