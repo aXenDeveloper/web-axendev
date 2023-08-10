@@ -9,8 +9,8 @@
     "analyze": "cross-env ANALYZE=true npm run build",
     "lint": "eslint . && stylelint \"**/*.{css,scss}\"",
     "lint:fix": "eslint . --fix && stylelint \"**/*.{css,scss}\" --fix",
-    "test": "vitest",
-    "t:coverage": "vitest run --coverage"
+    "test": "cross-env TZ=UTC vitest",
+    "t:coverage": "cross-env TZ=UTC vitest run --coverage"
   },
   "dependencies": {
     "clsx": "^2.0.0",

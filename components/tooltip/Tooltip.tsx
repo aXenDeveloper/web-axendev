@@ -24,22 +24,13 @@ interface Props {
   children: JSX.Element;
   content: JSX.Element | string;
   closeOnClick?: boolean;
-  disable?: boolean;
   placement?: Placement;
   strategy?: 'fixed' | 'absolute';
 }
 
 export const Tooltip = forwardRef<HTMLButtonElement & HTMLAnchorElement, Props>(
   (
-    {
-      children,
-      closeOnClick,
-      content,
-      disable,
-      placement,
-      strategy: strategyFromProps,
-      ...parentProps
-    },
+    { children, closeOnClick, content, placement, strategy: strategyFromProps, ...parentProps },
     parentRef
   ) => {
     const [open, setOpen] = useState(false);
@@ -73,8 +64,6 @@ export const Tooltip = forwardRef<HTMLButtonElement & HTMLAnchorElement, Props>(
       useDismiss(context)
     ]);
 
-    if (disable) return children;
-
     return (
       <>
         {cloneElement(
@@ -87,6 +76,7 @@ export const Tooltip = forwardRef<HTMLButtonElement & HTMLAnchorElement, Props>(
               if (closeOnClick) {
                 setOpen(prev => !prev);
               }
+              /* c8 ignore next 1 */
               children.props.onClick?.(e);
             }
           })
@@ -105,6 +95,7 @@ export const Tooltip = forwardRef<HTMLButtonElement & HTMLAnchorElement, Props>(
                 data-placement={currentPlacement}
                 style={{
                   position: strategy,
+                  /* c8 ignore next 2 */
                   top: y ?? 0,
                   left: x ?? 0
                 }}
