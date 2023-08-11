@@ -6,12 +6,11 @@ import style from './Switches.module.scss';
 
 interface Props {
   className?: string;
-  disableTooltip?: boolean;
 }
 
-export const Switches = ({ className, disableTooltip }: Props) => (
+export const Switches = ({ className }: Props) => (
   <div className={cx(style.wrapper, className)}>
-    <ThemeSwitch disableTooltip={disableTooltip} />
+    <ThemeSwitch />
     <LanguageSwitch />
   </div>
 );

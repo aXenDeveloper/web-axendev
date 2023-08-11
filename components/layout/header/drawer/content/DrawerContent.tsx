@@ -54,7 +54,7 @@ export const DrawerContent = ({ setOpen }: Props) => {
               </ul>
             </nav>
 
-            <Switches className={style.switches} disableTooltip />
+            <Switches className={style.switches} />
           </motion.div>
         </FloatingFocusManager>
       </FloatingOverlay>
