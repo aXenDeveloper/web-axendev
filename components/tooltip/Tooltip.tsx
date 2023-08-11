@@ -19,7 +19,8 @@ import {
 import { AnimatePresence, motion } from 'framer-motion';
 
 import style from './Tooltip.module.scss';
-import { useGlobal } from '@/hooks/useGlobal';
+
+import { useGlobal } from '../../hooks/useGlobal';
 
 interface Props {
   children: JSX.Element;

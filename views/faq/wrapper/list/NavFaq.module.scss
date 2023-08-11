@@ -1,0 +1,18 @@
+@use '@/styles/media' as *;
+
+.wrapper {
+  @include mobile-tablet {
+    display: none;
+  }
+
+  width: 20rem;
+}
+
+.category {
+  > span {
+    display: inline-block;
+    margin: 0.5rem 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}

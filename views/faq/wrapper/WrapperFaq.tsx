@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import cx from 'clsx';
 
-import { ListFaq } from './list/ListFaq';
+import { NavFaq } from './list/NavFaq';
 import style from './WrapperFaq.module.scss';
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
 export const WrapperFaq = ({ children }: Props) => {
   return (
     <div className={cx('layout_wrapper', style.wrapper)}>
-      <ListFaq />
+      <NavFaq />
       <main>{children}</main>
     </div>
   );

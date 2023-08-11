@@ -1,9 +1,10 @@
 import { ReactNode } from 'react';
+import { WrapperFaq } from '@/views/faq/wrapper/WrapperFaq';
 
 interface Props {
   children: ReactNode;
 }
 
 export default function Layout({ children }: Props) {
-  return <div className="layout_wrapper">{children}</div>;
+  return <WrapperFaq>{children}</WrapperFaq>;
 }
