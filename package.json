@@ -14,8 +14,7 @@
     "lint": "eslint . && stylelint \"**/*.{css,scss}\"",
     "lint:fix": "eslint . --fix && stylelint \"**/*.{css,scss}\" --fix",
     "test": "cross-env TZ=UTC vitest",
-    "t:coverage": "cross-env TZ=UTC vitest run --coverage",
-    "commit": "commit"
+    "t:coverage": "cross-env TZ=UTC vitest run --coverage"
   },
   "dependencies": {
     "clsx": "^2.0.0",
@@ -35,16 +34,15 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
-    "@commitlint/prompt-cli": "^17.7.1",
-    "@floating-ui/react": "^0.25.0",
+    "@floating-ui/react": "^0.25.1",
     "@fluentui/react-icons": "^2.0.209",
     "@next/bundle-analyzer": "^13.4.13",
     "@testing-library/react": "^14.0.0",
     "@types/node": "^20.4.9",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.61.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "@vitejs/plugin-react": "^4.0.4",
     "@vitest/coverage-v8": "^0.34.1",
     "@vitest/ui": "^0.34.1",
@@ -59,7 +57,7 @@
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
     "prettier": "^3.0.1",
-    "sass": "^1.64.2",
+    "sass": "^1.65.1",
     "stylelint": "^15.10.2",
     "stylelint-config-clean-order": "^5.0.1",
     "stylelint-config-standard": "^34.0.0",
