@@ -6,7 +6,7 @@
   "license": "GPL-3.0 license",
   "private": true,
   "scripts": {
-    "init": "husky install",
+    "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

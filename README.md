@@ -14,7 +14,7 @@ Use commands:
 
 ```bash
 npm i
-npm run init
+npm run prepare
 ```
 
 ## 🛠 Run
