@@ -1,5 +1,3 @@
-'use client';
-
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';

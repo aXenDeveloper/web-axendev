@@ -5,5 +5,5 @@ interface Props {
 }
 
 export default function Layout({ children }: Props) {
-  return <div>{children}</div>;
+  return <div className="layout_wrapper">{children}</div>;
 }

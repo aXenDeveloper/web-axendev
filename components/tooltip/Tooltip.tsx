@@ -19,6 +19,7 @@ import {
 import { AnimatePresence, motion } from 'framer-motion';
 
 import style from './Tooltip.module.scss';
+import { useGlobal } from '@/hooks/useGlobal';
 
 interface Props {
   children: JSX.Element;
@@ -34,6 +35,7 @@ export const Tooltip = forwardRef<HTMLButtonElement & HTMLAnchorElement, Props>(
     parentRef
   ) => {
     const [open, setOpen] = useState(false);
+    const { floatingPortalNode } = useGlobal();
 
     const {
       context,
@@ -82,7 +84,7 @@ export const Tooltip = forwardRef<HTMLButtonElement & HTMLAnchorElement, Props>(
           })
         )}
 
-        <FloatingPortal>
+        <FloatingPortal root={floatingPortalNode}>
           <AnimatePresence>
             {open && (
               <motion.div

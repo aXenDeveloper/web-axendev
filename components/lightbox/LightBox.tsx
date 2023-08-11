@@ -17,6 +17,7 @@ import style from './LightBox.module.scss';
 import { ImgLightBox } from './img/ImgLightBox';
 import { Button } from '../button/Button';
 import { useActionsLightBox } from './hooks/useActionsLightBox';
+import { useGlobal } from '@/hooks/useGlobal';
 
 interface Props {
   activeId: string;
@@ -27,6 +28,7 @@ interface Props {
 export const LightBox = ({ activeId, images, setActiveId }: Props) => {
   const t = useTranslations('global');
   const [direction, setDirection] = useState(1);
+  const { floatingPortalNode } = useGlobal();
   const { context, refs } = useFloating({
     open: true,
     onOpenChange: prev => {
@@ -66,7 +68,7 @@ export const LightBox = ({ activeId, images, setActiveId }: Props) => {
   return (
     <FloatingOverlay lockScroll>
       <FloatingFocusManager context={context} initialFocus={-1}>
-        <FloatingPortal>
+        <FloatingPortal root={floatingPortalNode}>
           <motion.div
             className={style.main}
             initial={{ opacity: 0 }}

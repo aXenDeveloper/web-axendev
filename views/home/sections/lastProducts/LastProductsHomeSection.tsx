@@ -17,6 +17,7 @@ export const LastProductsHomeSection = () => {
           {t('lastProducts.link')}
         </Button>
       </div>
+
       <div className={style.list}>
         {products
           .filter(item => !item.categories.includes(CategoriesProductEnum.IPS_TRANSLATIONS))

@@ -1,4 +1,4 @@
-import { CSSProperties, useEffect, useState } from 'react';
+import { CSSProperties } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import cx from 'clsx';
 
@@ -19,7 +19,6 @@ interface PropsWithWidthAndHeight extends InitialProps {
   fill?: never;
   heightLoading?: number;
   sizes?: string;
-  widthLoading?: number;
 }
 
 interface PropsWithFill extends InitialProps {
@@ -28,7 +27,6 @@ interface PropsWithFill extends InitialProps {
   height?: never;
   heightLoading?: number;
   width?: never;
-  widthLoading?: never;
 }
 
 export type ImgProps = PropsWithWidthAndHeight | PropsWithFill;
@@ -44,32 +42,15 @@ export const Img = ({
   sizes,
   src,
   style,
-  width,
-  widthLoading
+  width
 }: ImgProps) => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  // Refresh loading state when changing src
-  useEffect(() => {
-    setIsLoading(true);
-  }, [src]);
-
   return (
     <div
       className={cx(className, styleModule.wrapper)}
       style={{
-        height: !height ? (heightLoading && isLoading ? `${heightLoading}px` : '100%') : undefined
+        height: !height ? (heightLoading ? `${heightLoading}px` : '100%') : undefined
       }}
     >
-      {isLoading && (
-        <div
-          className="skeleton skeleton_absolute"
-          style={{
-            height: height !== undefined ? `${heightLoading ? heightLoading : height}px` : '100%',
-            width: width ? `${widthLoading ? widthLoading : width}px` : '100%'
-          }}
-        />
-      )}
       <Image
         width={width}
         height={height}
@@ -80,9 +61,6 @@ export const Img = ({
         priority={priority}
         fill={fill}
         style={style}
-        /* istanbul ignore next */ onLoadingComplete={
-          /* istanbul ignore next */ () => setIsLoading(false)
-        }
       />
     </div>
   );

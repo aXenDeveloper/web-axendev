@@ -12,6 +12,7 @@ import { motion } from 'framer-motion';
 
 import style from './DrawerContent.module.scss';
 import { Switches } from '@/components/switches/Switches';
+import { useGlobal } from '@/hooks/useGlobal';
 
 import { useStateNav } from '../../nav/useStateNav';
 import { ItemNav } from '../../nav/item/ItemNav';
@@ -22,6 +23,7 @@ interface Props {
 
 export const DrawerContent = ({ setOpen }: Props) => {
   const state = useStateNav();
+  const { floatingPortalNode } = useGlobal();
 
   const { context, refs } = useFloating({
     open: true,
@@ -34,7 +36,7 @@ export const DrawerContent = ({ setOpen }: Props) => {
   ]);
 
   return (
-    <FloatingPortal>
+    <FloatingPortal root={floatingPortalNode}>
       <FloatingOverlay className={style.overlay} lockScroll>
         <FloatingFocusManager context={context}>
           <motion.div
