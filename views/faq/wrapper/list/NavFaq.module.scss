@@ -5,7 +5,24 @@
     display: none;
   }
 
-  width: 20rem;
+  position: sticky;
+  top: var(--header-height);
+
+  overflow: hidden;
+
+  width: 16rem;
+  height: calc(100vh - var(--header-height));
+
+  > div {
+    position: relative;
+    width: 16rem;
+
+    > ul {
+      overflow-y: scroll;
+      height: calc(100vh - 6rem);
+      list-style: none;
+    }
+  }
 }
 
 .category {

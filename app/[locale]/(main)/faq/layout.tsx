@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+
 import { WrapperFaq } from '@/views/faq/wrapper/WrapperFaq';
 
 interface Props {

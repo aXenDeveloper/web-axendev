@@ -1,0 +1,16 @@
+.wrapper {
+  display: block;
+  margin: 0.25rem 0;
+  color: rgb(var(--text-secondary-color));
+  transition: color var(--animation);
+
+  &:hover {
+    color: rgb(var(--link));
+    text-decoration: none;
+  }
+
+  &.active {
+    font-weight: 500;
+    color: rgb(var(--link));
+  }
+}

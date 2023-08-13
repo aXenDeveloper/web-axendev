@@ -1,4 +1,10 @@
+'use client';
+
 import Link from 'next-intl/link';
+import cx from 'clsx';
+import { usePathname } from 'next-intl/client';
+
+import style from './ItemNavFaq.module.scss';
 
 export interface ItemNavFaqType {
   id: string;
@@ -6,13 +12,20 @@ export interface ItemNavFaqType {
 }
 
 export interface ItemsNavFaqType extends ItemNavFaqType {
-  children: ItemNavFaqType[];
+  children?: ItemNavFaqType[];
 }
 
 export const ItemNavFaq = ({ id, url }: ItemsNavFaqType) => {
+  const pathname = usePathname();
+
   return (
-    <div>
-      <Link href={url}>ItemNavFaq - {id}</Link>
-    </div>
+    <Link
+      href={url}
+      className={cx(style.wrapper, {
+        [style.active]: pathname === url
+      })}
+    >
+      ItemNavFaq - {id}
+    </Link>
   );
 };
