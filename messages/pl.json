@@ -133,5 +133,13 @@
       "ips-app-content-notes": "Aplikacja do tworzenia notatek na zawartości.",
       "ips-app-axen-player-panel": "Aplikacja do zarządzania serwerami multiplayer."
     }
+  },
+  "faq": {
+    "pages": {
+      "welcome": "Witaj",
+      "collaboration": {
+        "get_started": "Zacznijmy"
+      }
+    }
   }
 }

@@ -10,7 +10,7 @@ export const faqData: NavFaqType[] = [
     id: 'global',
     items: [
       {
-        id: 'faq',
+        id: 'welcome',
         url: '/faq'
       },
       {
@@ -30,17 +30,11 @@ export const faqData: NavFaqType[] = [
     ]
   },
   {
-    id: 'main',
+    id: 'collaboration',
     items: [
       {
-        id: 'tes2',
-        url: '/faq/tes2',
-        children: [
-          {
-            id: 'tasfasf',
-            url: '/faq/tes2/child'
-          }
-        ]
+        id: 'collaboration.get_started',
+        url: '/faq/collaboration'
       }
     ]
   }

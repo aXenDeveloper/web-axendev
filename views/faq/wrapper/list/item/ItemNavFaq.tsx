@@ -5,6 +5,8 @@ import cx from 'clsx';
 import { usePathname } from 'next-intl/client';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useParams } from 'next/navigation';
+import { CaretRight24Filled } from '@fluentui/react-icons';
+import { useTranslations } from 'next-intl';
 
 import style from './ItemNavFaq.module.scss';
 
@@ -18,6 +20,7 @@ export interface ItemsNavFaqType extends ItemNavFaqType {
 }
 
 export const ItemNavFaq = ({ children = [], id, url }: ItemsNavFaqType) => {
+  const t = useTranslations('faq');
   const pathname = usePathname();
   const { id: parentId } = useParams();
 
@@ -26,10 +29,14 @@ export const ItemNavFaq = ({ children = [], id, url }: ItemsNavFaqType) => {
       <Link
         href={url}
         className={cx(style.wrapper, {
-          [style.active]: pathname === url
+          [style.active]: pathname === url,
+          [style.open]: children.length > 0 && parentId === id
         })}
       >
-        ItemNavFaq - {id} - {children.length}
+        {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+        {/* @ts-expect-error */}
+        <span>{t(`pages.${id}`)}</span>
+        {children.length > 0 && <CaretRight24Filled />}
       </Link>
 
       {children.length > 0 && (
