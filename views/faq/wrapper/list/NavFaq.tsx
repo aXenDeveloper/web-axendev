@@ -7,8 +7,8 @@ export const NavFaq = () => {
   return (
     <aside className={style.wrapper}>
       <div>
-        <ul>
-          {[...faqData, ...faqData, ...faqData, ...faqData].map(category => (
+        <ul className="styled-scrollbar">
+          {faqData.map(category => (
             <li className={style.category} key={category.id}>
               <span>{category.id}</span>
 

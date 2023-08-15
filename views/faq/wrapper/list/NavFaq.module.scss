@@ -11,7 +11,7 @@
   overflow: hidden;
 
   width: 16rem;
-  height: calc(100vh - var(--header-height));
+  height: 100%;
 
   > div {
     position: relative;
@@ -19,7 +19,7 @@
 
     > ul {
       overflow-y: scroll;
-      height: calc(100vh - 6rem);
+      max-height: calc(100vh - 6rem);
       list-style: none;
     }
   }

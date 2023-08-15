@@ -10,9 +10,9 @@ interface Props {
 
 export const WrapperFaq = ({ children }: Props) => {
   return (
-    <div className={cx('layout_wrapper', style.wrapper)}>
+    <main className={cx('layout_wrapper', style.wrapper)}>
       <NavFaq />
       <main>{children}</main>
-    </div>
+    </main>
   );
 };
