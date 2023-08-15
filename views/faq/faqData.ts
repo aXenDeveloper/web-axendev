@@ -14,19 +14,19 @@ export const faqData: NavFaqType[] = [
         url: '/faq'
       },
       {
-        id: 'test',
-        url: '/faq/test',
-        children: [
-          {
-            id: 'testChild',
-            url: '/faq/test/testChild'
-          }
-        ]
-      },
-      {
-        id: 'faq/test3',
-        url: '/faq/test3'
+        id: 'welcome',
+        url: '/faq/welcome'
+        // children: [
+        //   {
+        //     id: 'testChild',
+        //     url: '/faq/test/testChild'
+        //   }
+        // ]
       }
+      // {
+      //   id: 'faq/test3',
+      //   url: '/faq/test3'
+      // }
     ]
   },
   {
