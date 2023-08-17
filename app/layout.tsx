@@ -18,6 +18,7 @@ export function generateMetadata(): Metadata {
     },
     description: desc,
     themeColor: '#200706',
+    metadataBase: new URL('https://axendev.net/'),
     openGraph: {
       title: CONFIG_TITLE,
       description: desc,

@@ -1,7 +1,7 @@
 'use client';
 
 import { ReactNode, useEffect, useState } from 'react';
-import cx from 'classnames';
+import cx from 'clsx';
 import { useWindowScroll } from 'react-use';
 
 import style from './WrapperHeader.module.scss';

@@ -1,4 +1,4 @@
-import cx from 'classnames';
+import cx from 'clsx';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 

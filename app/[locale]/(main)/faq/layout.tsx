@@ -1,9 +1,32 @@
-import { ErrorView } from '@/views/global/error/ErrorView';
+import { ReactNode } from 'react';
+import { getTranslator } from 'next-intl/server';
+import { Metadata } from 'next';
 
-// interface Props {
-//   children: ReactNode;
-// }
+import { WrapperFaq } from '@/views/faq/wrapper/WrapperFaq';
 
-export default function Layout() {
-  return <ErrorView code={404} />;
+import { CONFIG_TITLE } from '../../../../config';
+
+interface MetadataProps {
+  params: {
+    locale: string;
+  };
+}
+
+export async function generateMetadata({ params: { locale } }: MetadataProps): Promise<Metadata> {
+  const t = await getTranslator(locale, 'nav');
+
+  return {
+    title: {
+      default: t('faq'),
+      template: `%s - ${t('faq')} - ${CONFIG_TITLE}`
+    }
+  };
+}
+
+interface Props {
+  children: ReactNode;
+}
+
+export default function Layout({ children }: Props) {
+  return <WrapperFaq>{children}</WrapperFaq>;
 }

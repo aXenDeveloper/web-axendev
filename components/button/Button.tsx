@@ -1,6 +1,6 @@
 import Link from 'next-intl/link';
 import { MouseEvent, ReactNode } from 'react';
-import cx from 'classnames';
+import cx from 'clsx';
 
 import style from './Button.module.scss';
 import { Tooltip } from '../tooltip/Tooltip';
@@ -26,19 +26,18 @@ export const Button = ({
   kind = 'primary',
   onClick
 }: Props) => {
+  const rest = {
+    className: cx(style.wrapper, style[kind], className, {
+      [style.icon]: iconOnlyText
+    }),
+    ['data-testid']: `button_${id}`,
+    onClick
+  };
+
   const content = () => {
     if (externalLink) {
       return (
-        <a
-          className={cx(style.wrapper, style[kind], className, {
-            [style.icon]: iconOnlyText
-          })}
-          href={href}
-          onClick={onClick}
-          data-testid={`button_${id}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={href} target="_blank" rel="noopener noreferrer" {...rest}>
           {children}
         </a>
       );
@@ -46,30 +45,13 @@ export const Button = ({
 
     if (href) {
       return (
-        <Link
-          className={cx(style.wrapper, style[kind], className, {
-            [style.icon]: iconOnlyText
-          })}
-          href={href}
-          onClick={onClick}
-          data-testid={`button_${id}`}
-        >
+        <Link href={href} {...rest}>
           {children}
         </Link>
       );
     }
 
-    return (
-      <button
-        className={cx(style.wrapper, style[kind], className, {
-          [style.icon]: iconOnlyText
-        })}
-        onClick={onClick}
-        data-testid={`button_${id}`}
-      >
-        {children}
-      </button>
-    );
+    return <button {...rest}>{children}</button>;
   };
 
   if (iconOnlyText) {

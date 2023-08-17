@@ -1,6 +1,6 @@
 'use client';
 
-import cx from 'classnames';
+import cx from 'clsx';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';

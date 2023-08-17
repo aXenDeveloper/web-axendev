@@ -1,4 +1,4 @@
-import cs from 'classnames';
+import cx from 'clsx';
 
 import style from './Loader.module.scss';
 
@@ -10,7 +10,7 @@ interface Props {
 
 export const Loader = ({ className, inline, padding }: Props) => (
   <div
-    className={cs(style.wrapper, className, {
+    className={cx(style.wrapper, className, {
       [style.inline]: inline,
       [style.padding]: padding
     })}

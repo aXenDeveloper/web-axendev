@@ -38,7 +38,8 @@ export const useStateNav = (): ItemNavProps[] => {
       icons: {
         active: <Question24Filled />,
         unActive: <Question24Regular />
-      }
+      },
+      activeWithChildren: true
     },
     {
       id: 'contact',

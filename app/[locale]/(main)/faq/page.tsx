@@ -1,14 +1,16 @@
 import { getTranslator } from 'next-intl/server';
+import { Suspense, lazy } from 'react';
+import { notFound } from 'next/navigation';
 
-import { FaqView } from '@/views/faq/FaqView';
+import { LoadingView } from '@/views/global/loading/LoadingView';
 
-interface MetadataProps {
+interface Props {
   params: {
     locale: string;
   };
 }
 
-export async function generateMetadata({ params: { locale } }: MetadataProps) {
+export async function generateMetadata({ params: { locale } }: Props) {
   const t = await getTranslator(locale, 'nav');
 
   return {
@@ -16,6 +18,14 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
   };
 }
 
-export default function Page() {
-  return <FaqView />;
+export default function Page({ params: { locale } }: Props) {
+  const MDXComponent = lazy(() =>
+    import(`@/assets/faq/welcome/welcome-${locale}.mdx`).catch(() => notFound())
+  );
+
+  return (
+    <Suspense fallback={<LoadingView />}>
+      <MDXComponent />
+    </Suspense>
+  );
 }

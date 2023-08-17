@@ -1,0 +1,35 @@
+@use '@/styles/media' as *;
+
+.wrapper {
+  @include mobile-tablet {
+    display: none;
+  }
+
+  position: sticky;
+  top: var(--header-height);
+
+  overflow: hidden;
+
+  width: 16rem;
+  height: 100%;
+
+  > div {
+    position: relative;
+    width: 16rem;
+
+    > ul {
+      overflow-y: scroll;
+      max-height: calc(100vh - 6rem);
+      list-style: none;
+    }
+  }
+}
+
+.category {
+  > span {
+    display: inline-block;
+    margin: 0.5rem 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}

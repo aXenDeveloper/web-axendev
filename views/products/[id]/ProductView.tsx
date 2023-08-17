@@ -1,4 +1,4 @@
-import cx from 'classnames';
+import cx from 'clsx';
 import { useTranslations } from 'next-intl';
 
 import { ProductsInterface } from '../configProducts';

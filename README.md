@@ -1,5 +1,7 @@
 # (NextJS) aXenDev 2.0 - Portfolio
 
+Personal portfolio application.
+
 ## ⚠️ Requirements for VSCode
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -12,6 +14,7 @@ Use commands:
 
 ```bash
 npm i
+npm run prepare
 ```
 
 ## 🛠 Run
