@@ -141,7 +141,8 @@
       "technology": "Technologie i narzędzia",
       "collaboration": "Współpraca",
       "collaboration_pages": {
-        "get_started": "Zacznijmy"
+        "get_started": "Zacznijmy",
+        "vat": "Faktura VAT"
       }
     }
   }

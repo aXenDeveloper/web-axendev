@@ -141,7 +141,8 @@
       "technology": "Technology & Tools",
       "collaboration": "Collaboration",
       "collaboration_pages": {
-        "get_started": "Get Started"
+        "get_started": "Get Started",
+        "vat": "Vat Invoice"
       }
     }
   }

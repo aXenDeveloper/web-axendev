@@ -36,9 +36,13 @@ export const faqData: NavFaqType[] = [
   {
     id: 'collaboration',
     items: [
+      // {
+      //   id: 'collaboration_pages.get_started',
+      //   url: '/faq/collaboration'
+      // },
       {
-        id: 'collaboration_pages.get_started',
-        url: '/faq/collaboration'
+        id: 'collaboration_pages.vat',
+        url: '/faq/collaboration/vat'
       }
     ]
   }
