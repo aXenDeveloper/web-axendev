@@ -14,15 +14,19 @@ export const faqData: NavFaqType[] = [
         url: '/faq'
       },
       {
-        id: 'welcome',
-        url: '/faq/welcome'
-        // children: [
-        //   {
-        //     id: 'testChild',
-        //     url: '/faq/test/testChild'
-        //   }
-        // ]
+        id: 'technology',
+        url: '/faq/technology'
       }
+      // {
+      //   id: 'welcome',
+      //   url: '/faq/welcome',
+      //   children: [
+      //     {
+      //       id: 'testChild',
+      //       url: '/faq/test/testChild'
+      //     }
+      //   ]
+      // }
       // {
       //   id: 'faq/test3',
       //   url: '/faq/test3'
@@ -33,7 +37,7 @@ export const faqData: NavFaqType[] = [
     id: 'collaboration',
     items: [
       {
-        id: 'collaboration.get_started',
+        id: 'collaboration_pages.get_started',
         url: '/faq/collaboration'
       }
     ]

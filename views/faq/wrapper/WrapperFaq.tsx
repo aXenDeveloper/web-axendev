@@ -8,11 +8,9 @@ interface Props {
   children: ReactNode;
 }
 
-export const WrapperFaq = ({ children }: Props) => {
-  return (
-    <main className={cx('layout_wrapper', style.wrapper)}>
-      <NavFaq />
-      <main>{children}</main>
-    </main>
-  );
-};
+export const WrapperFaq = ({ children }: Props) => (
+  <main className={cx('layout_wrapper', style.wrapper)}>
+    <NavFaq />
+    <main className={style.main}>{children}</main>
+  </main>
+);

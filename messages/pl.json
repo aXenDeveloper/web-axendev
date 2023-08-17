@@ -135,9 +135,12 @@
     }
   },
   "faq": {
+    "collaboration": "Współpraca",
     "pages": {
       "welcome": "Witaj",
-      "collaboration": {
+      "technology": "Technologie i narzędzia",
+      "collaboration": "Współpraca",
+      "collaboration_pages": {
         "get_started": "Zacznijmy"
       }
     }

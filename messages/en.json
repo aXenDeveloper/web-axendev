@@ -135,9 +135,12 @@
     }
   },
   "faq": {
+    "collaboration": "Collaboration",
     "pages": {
       "welcome": "Welcome",
-      "collaboration": {
+      "technology": "Technology & Tools",
+      "collaboration": "Collaboration",
+      "collaboration_pages": {
         "get_started": "Get Started"
       }
     }
