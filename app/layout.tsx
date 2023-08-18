@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import '@/styles/global.scss';
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 import { CONFIG_TITLE } from '../config';
 
@@ -39,5 +40,10 @@ interface Props {
 }
 
 export default function RootLayout({ children }: Props) {
-  return children;
+  return (
+    <>
+      {children}
+      <Analytics />
+    </>
+  );
 }
