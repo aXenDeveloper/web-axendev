@@ -1,4 +1,10 @@
+@use '@/styles/media' as *;
+
 .wrapper {
+  @include mobile-tablet {
+    flex-direction: column;
+  }
+
   position: relative;
   display: flex;
   gap: 2rem;

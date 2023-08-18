@@ -6,7 +6,7 @@ import { ShoppingBag24Filled } from '@fluentui/react-icons';
 import style from './LinksProduct.module.scss';
 import { Button } from '@/components/button/Button';
 
-import { LinksProductsInterface } from '../../configProducts';
+import { LinksProductsInterface } from '../../dataProducts';
 
 interface Props {
   links: LinksProductsInterface;

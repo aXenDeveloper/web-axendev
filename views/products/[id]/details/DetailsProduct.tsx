@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import style from './DetailsProduct.module.scss';
 import { DateFormat } from '@/components/dateFormat/DateFormat';
 
-import { ProductsInterface } from '../../configProducts';
+import { ProductsInterface } from '../../dataProducts';
 
 export const DetailsProduct = ({
   categories,

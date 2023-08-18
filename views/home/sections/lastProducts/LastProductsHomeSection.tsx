@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import style from './LastProductsHomeSection.module.scss';
 import { Button } from '@/components/button/Button';
 
-import { CategoriesProductEnum, products } from '../../../products/configProducts';
+import { CategoriesProductEnum, dataProducts } from '../../../products/dataProducts';
 import { ItemProducts } from '../../../products/item/ItemProducts';
 
 export const LastProductsHomeSection = () => {
@@ -19,7 +19,7 @@ export const LastProductsHomeSection = () => {
       </div>
 
       <div className={style.list}>
-        {products
+        {dataProducts
           .filter(item => !item.categories.includes(CategoriesProductEnum.IPS_TRANSLATIONS))
           .sort((a, b) => b.createdAt - a.createdAt)
           .slice(0, 4)

@@ -5,7 +5,7 @@ import { useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 import style from './ProductsView.module.scss';
-import { CategoriesProductEnum, products } from './configProducts';
+import { CategoriesProductEnum, dataProducts } from './dataProducts';
 import { ItemProducts } from './item/ItemProducts';
 
 export const ProductsView = () => {
@@ -13,7 +13,7 @@ export const ProductsView = () => {
   const filters = searchParams.getAll('filter');
 
   const data = useMemo(() => {
-    return products
+    return dataProducts
       .filter(item => {
         if (filters.length <= 0)
           return !item.categories.includes(CategoriesProductEnum.IPS_TRANSLATIONS);

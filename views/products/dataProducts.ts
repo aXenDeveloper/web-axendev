@@ -27,7 +27,7 @@ export interface ProductsInterface {
   single?: boolean;
 }
 
-export const products: ProductsInterface[] = [
+export const dataProducts: ProductsInterface[] = [
   {
     id: 'ips-secondary-groups-indicator',
     name: 'Secondary Groups Indicator',
@@ -510,8 +510,8 @@ export const products: ProductsInterface[] = [
     name: 'Player Panel',
     categories: [CategoriesProductEnum.IPS_APPS],
     images: [
-      'https://files.axendev.net/projects/ips/applications/playerpanel/1.png',
       'https://files.axendev.net/projects/ips/applications/playerpanel/2.png',
+      'https://files.axendev.net/projects/ips/applications/playerpanel/1.png',
       'https://files.axendev.net/projects/ips/applications/playerpanel/3.png',
       'https://files.axendev.net/projects/ips/applications/playerpanel/4.png',
       'https://files.axendev.net/projects/ips/applications/playerpanel/5.png',

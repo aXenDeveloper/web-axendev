@@ -9,7 +9,7 @@ import { ItemFiltersProducts } from '../item/ItemFiltersProducts';
 import style from './MobileFiltersProducts.module.scss';
 import styleMain from '../FiltersProducts.module.scss';
 
-import { CategoriesProductEnum } from '../../configProducts';
+import { CategoriesProductEnum } from '../../dataProducts';
 
 export const MobileFiltersProducts = () => {
   const t = useTranslations('products');

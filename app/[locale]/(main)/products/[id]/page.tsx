@@ -2,7 +2,7 @@ import { getTranslator } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 import { ProductView } from '@/views/products/[id]/ProductView';
-import { products } from '@/views/products/configProducts';
+import { dataProducts } from '@/views/products/dataProducts';
 
 interface Props {
   params: {
@@ -14,7 +14,7 @@ interface Props {
 export async function generateMetadata({ params: { id, locale } }: Props) {
   const t = await getTranslator(locale, 'nav');
 
-  const findProduct = products.find(product => product.id === id);
+  const findProduct = dataProducts.find(product => product.id === id);
 
   if (findProduct) {
     return {
@@ -28,7 +28,7 @@ export async function generateMetadata({ params: { id, locale } }: Props) {
 }
 
 export default function Page({ params: { id } }: Props) {
-  const findProduct = products.find(product => product.id === id);
+  const findProduct = dataProducts.find(product => product.id === id);
 
   if (!findProduct) {
     notFound();
