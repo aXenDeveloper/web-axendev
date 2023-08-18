@@ -1,7 +1,7 @@
 import cx from 'clsx';
 import { useTranslations } from 'next-intl';
 
-import { ProductsInterface } from '../configProducts';
+import { ProductsInterface } from '../dataProducts';
 import style from './ProductView.module.scss';
 import { BackLinkProduct } from './backLink/BackLinkProduct';
 import { SwiperProduct } from './swiper/SwiperProduct';

@@ -1,0 +1,49 @@
+@use '@/styles/media' as *;
+
+.main {
+  @include desktop {
+    display: none;
+  }
+
+  padding: 1rem;
+}
+
+.button {
+  cursor: pointer;
+
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem 1.5rem;
+
+  font-family: inherit;
+  font-weight: 500;
+  color: rgb(var(--button-secondary-color));
+  text-align: center;
+
+  background-color: rgb(var(--button-secondary));
+  border: 1px solid rgb(var(--button-secondary-border));
+  border-radius: var(--radius);
+
+  transition:
+    background-color var(--animation),
+    border-color var(--animation),
+    color var(--animation);
+
+  &:hover {
+    color: rgb(var(--button-secondary-hover-color));
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.list {
+  padding-top: 1rem;
+  list-style: none;
+
+  ul {
+    list-style: none;
+  }
+}
