@@ -7,9 +7,6 @@ const withMDX = require('@next/mdx')();
 
 const nextConfig = {
   ...withBundleAnalyzer(),
-  experimental: {
-    mdxRs: true
-  },
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [

@@ -135,15 +135,17 @@
     }
   },
   "faq": {
-    "collaboration": "Collaboration",
     "menu": "Menu",
     "pages": {
-      "welcome": "Welcome",
-      "technology": "Technology & Tools",
-      "collaboration": "Collaboration",
-      "collaboration_pages": {
+      "global": {
+        "welcome": "Welcome",
+        "technology": "Technology & Tools"
+      },
+      "collaboration": {
+        "title": "Collaboration",
         "get_started": "Get Started",
-        "vat": "Vat Invoice"
+        "vat": "Vat Invoice",
+        "psd_files": "PSD Files"
       }
     }
   }

@@ -12,6 +12,7 @@ import style from './ItemNavFaq.module.scss';
 
 export interface ItemNavFaqType {
   id: string;
+  parentId: string;
   url: string;
 }
 
@@ -19,10 +20,10 @@ export interface ItemsNavFaqType extends ItemNavFaqType {
   children?: ItemNavFaqType[];
 }
 
-export const ItemNavFaq = ({ children = [], id, url }: ItemsNavFaqType) => {
+export const ItemNavFaq = ({ children = [], id, parentId, url }: ItemsNavFaqType) => {
   const t = useTranslations('faq');
   const pathname = usePathname();
-  const { id: parentId } = useParams();
+  const { id: parentIdFromParams } = useParams();
 
   return (
     <li>
@@ -30,18 +31,18 @@ export const ItemNavFaq = ({ children = [], id, url }: ItemsNavFaqType) => {
         href={url}
         className={cx(style.wrapper, {
           [style.active]: pathname === url,
-          [style.open]: children.length > 0 && parentId === id
+          [style.open]: children.length > 0 && parentIdFromParams === id
         })}
       >
         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
         {/* @ts-expect-error */}
-        <span>{t(`pages.${id}`)}</span>
+        <span>{t(`pages.${parentId}.${id}`)}</span>
         {children.length > 0 && <CaretRight24Filled />}
       </Link>
 
       {children.length > 0 && (
         <AnimatePresence initial={false}>
-          {parentId === id && (
+          {parentIdFromParams === id && (
             <motion.div
               className={style.children}
               key={id}
@@ -55,7 +56,12 @@ export const ItemNavFaq = ({ children = [], id, url }: ItemsNavFaqType) => {
             >
               <ul>
                 {children.map(item => (
-                  <ItemNavFaq key={item.id} {...item} />
+                  <ItemNavFaq
+                    key={item.id}
+                    id={`${parentId}.${id}.${item.id}`}
+                    parentId={parentId}
+                    url={item.url}
+                  />
                 ))}
               </ul>
             </motion.div>

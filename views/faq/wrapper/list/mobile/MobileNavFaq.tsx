@@ -41,7 +41,7 @@ export const MobileNavFaq = () => {
 
                   <ul>
                     {category.items.map(item => (
-                      <ItemNavFaq key={item.id} {...item} />
+                      <ItemNavFaq key={item.id} parentId={category.id} {...item} />
                     ))}
                   </ul>
                 </li>

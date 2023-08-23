@@ -16,11 +16,11 @@ export const NavFaq = () => {
             <li className={style.category} key={category.id}>
               {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
               {/* @ts-expect-error */}
-              {category.id !== 'global' && <span>{t(category.id)}</span>}
+              {category.id !== 'global' && <span>{t(`pages.${category.id}.title`)}</span>}
 
               <ul>
                 {category.items.map(item => (
-                  <ItemNavFaq key={item.id} {...item} />
+                  <ItemNavFaq key={item.id} parentId={category.id} {...item} />
                 ))}
               </ul>
             </li>

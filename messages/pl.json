@@ -135,15 +135,17 @@
     }
   },
   "faq": {
-    "collaboration": "Współpraca",
     "menu": "Menu",
     "pages": {
-      "welcome": "Witaj",
-      "technology": "Technologie i narzędzia",
-      "collaboration": "Współpraca",
-      "collaboration_pages": {
+      "global": {
+        "welcome": "Witaj",
+        "technology": "Technologie i narzędzia"
+      },
+      "collaboration": {
+        "title": "Współpraca",
         "get_started": "Zacznijmy",
-        "vat": "Faktura VAT"
+        "vat": "Faktura VAT",
+        "psd_files": "Pliki PSD"
       }
     }
   }

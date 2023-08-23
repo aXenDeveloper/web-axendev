@@ -2,7 +2,7 @@ import { ItemsNavFaqType } from './wrapper/list/item/ItemNavFaq';
 
 interface NavFaqType {
   id: string;
-  items: ItemsNavFaqType[];
+  items: Omit<ItemsNavFaqType, 'parentId'>[];
 }
 
 export const faqData: NavFaqType[] = [
@@ -17,32 +17,18 @@ export const faqData: NavFaqType[] = [
         id: 'technology',
         url: '/faq/technology'
       }
-      // {
-      //   id: 'welcome',
-      //   url: '/faq/welcome',
-      //   children: [
-      //     {
-      //       id: 'testChild',
-      //       url: '/faq/test/testChild'
-      //     }
-      //   ]
-      // }
-      // {
-      //   id: 'faq/test3',
-      //   url: '/faq/test3'
-      // }
     ]
   },
   {
     id: 'collaboration',
     items: [
-      // {
-      //   id: 'collaboration_pages.get_started',
-      //   url: '/faq/collaboration'
-      // },
       {
-        id: 'collaboration_pages.vat',
+        id: 'vat',
         url: '/faq/collaboration/vat'
+      },
+      {
+        id: 'psd_files',
+        url: '/faq/collaboration/psd_files'
       }
     ]
   }
