@@ -3,6 +3,8 @@ import { expect, describe, it } from 'vitest';
 
 import { Button } from './Button';
 
+import { RootMock } from '../../__mocks__/RootMock';
+
 describe('Button', () => {
   it('renders children', () => {
     const { getByText } = render(<Button id="test">Hello World</Button>);
@@ -19,7 +21,8 @@ describe('Button', () => {
     const { getByTestId } = render(
       <Button id="test" href="/foo">
         Click me
-      </Button>
+      </Button>,
+      { wrapper: RootMock }
     );
     const button = getByTestId('button_test');
     expect(button.tagName).toBe('A');

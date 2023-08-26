@@ -1,4 +1,4 @@
-import { NextIntlProvider } from 'next-intl';
+import { NextIntlClientProvider } from 'next-intl';
 import { ReactNode } from 'react';
 import Cookies from 'js-cookie';
 
@@ -12,8 +12,8 @@ export const RootMock = ({ children }: Props) => {
   Cookies.set('NEXT_LOCALE', 'en');
 
   return (
-    <NextIntlProvider messages={messages} locale="en">
+    <NextIntlClientProvider messages={messages} locale="en">
       {children}
-    </NextIntlProvider>
+    </NextIntlClientProvider>
   );
 };
