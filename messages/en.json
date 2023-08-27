@@ -55,7 +55,7 @@
     "about": {
       "title": "About Me",
       "desc": "Hi! 👋",
-      "text": "I'm Maciej Piotr Balcerzak and I'm working as Software Engineer with a passion for creating beautiful and user-friendly products. I have experience in front-end, back-end, testing and UX/UI design, but my primary experience is front-end. Also I'm contributor for Invision Community making themes and apps.",
+      "text": "I'm Maciej Piotr Balcerzak and I'm working as Software Engineer with a passion for creating beautiful and user-friendly products. I have experience in frontend, backend, testing and UX/UI design, but my primary experience is frontend. Also I'm contributor for Invision Community making themes and apps.",
       "image_alt": "In the photo you can see {name} as a character from Disney",
       "hobbies": {
         "title": "Hobbies",

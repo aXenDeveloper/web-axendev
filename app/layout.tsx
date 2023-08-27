@@ -7,7 +7,7 @@ import { CONFIG } from '../config';
 
 export function generateMetadata(): Metadata {
   const desc =
-    "I'm Maciej Piotr Balcerzak and I'm working as Software Engineer with a passion for creating beautiful and user-friendly products. I have experience in front-end, back-end, testing and UX/UI design, but my primary experience is front-end. Also I'm contributor for Invision Community making themes and apps.";
+    "I'm Maciej Piotr Balcerzak and I'm working as Software Engineer with a passion for creating beautiful and user-friendly products. I have experience in frontend, back-end, testing and UX/UI design, but my primary experience is frontend. Also I'm contributor for Invision Community making themes and apps.";
 
   return {
     title: {
