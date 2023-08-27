@@ -3,7 +3,7 @@ import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 import cx from 'clsx';
 
-import { ProductsInterface } from '../dataProducts';
+import { ProductsInterface } from '../productsData';
 import style from './ItemProducts.module.scss';
 import { Img } from '@/components/img/Img';
 import { Badge } from '@/components/badge/Badge';
