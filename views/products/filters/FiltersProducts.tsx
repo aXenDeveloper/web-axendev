@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 
 import style from './FiltersProducts.module.scss';
-import { CategoriesProductEnum } from '../dataProducts';
+import { CategoriesProductEnum } from '../productsData';
 import { ItemFiltersProducts } from './item/ItemFiltersProducts';
 
 export const FiltersProducts = () => {

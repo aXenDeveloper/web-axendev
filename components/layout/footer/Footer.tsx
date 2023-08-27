@@ -6,7 +6,7 @@ import style from './Footer.module.scss';
 import { Logo } from '@/assets/Logo';
 import { SocialFooter } from './socials/SocialsFooter';
 import { InfoFooter } from './info/InfoFooter';
-import { CONFIG_TITLE } from '@/config';
+import { CONFIG } from '@/config';
 
 export const Footer = () => {
   const t = useTranslations('global');
@@ -15,7 +15,7 @@ export const Footer = () => {
     <footer className={style.main}>
       <div className={cx('layout_wrapper', style.wrapper)}>
         <div className={style.logo}>
-          <Link href="/" aria-label={t('logo', { name: CONFIG_TITLE })}>
+          <Link href="/" aria-label={t('logo', { name: CONFIG.title })}>
             <Logo />
           </Link>
 

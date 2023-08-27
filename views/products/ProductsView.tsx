@@ -5,15 +5,19 @@ import { useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 import style from './ProductsView.module.scss';
-import { CategoriesProductEnum, dataProducts } from './dataProducts';
+import { CategoriesProductEnum, productsData } from './productsData';
 import { ItemProducts } from './item/ItemProducts';
 
-export const ProductsView = () => {
+interface Props {
+  oneUSDtoPLN: number | undefined;
+}
+
+export const ProductsView = ({ oneUSDtoPLN }: Props) => {
   const searchParams = useSearchParams();
   const filters = searchParams.getAll('filter');
 
   const data = useMemo(() => {
-    return dataProducts
+    return productsData
       .filter(item => {
         if (filters.length <= 0)
           return !item.categories.includes(CategoriesProductEnum.IPS_TRANSLATIONS);
@@ -36,7 +40,7 @@ export const ProductsView = () => {
       className={style.wrapper}
       data={data}
       overscan={200}
-      itemContent={(_index, item) => <ItemProducts {...item} />}
+      itemContent={(_index, item) => <ItemProducts {...item} oneUSDtoPLN={oneUSDtoPLN} />}
     />
   );
 };

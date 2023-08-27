@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 
 import style from './ItemReviewsHomeSection.module.scss';
 
-import { dataProducts } from '../../../../products/dataProducts';
+import { productsData } from '../../../../products/productsData';
 
 interface Props {
   from: {
@@ -18,7 +18,7 @@ interface Props {
 export const ItemReviewsHomeSection = ({ from, id, name, productId }: Props) => {
   const t = useTranslations('home');
 
-  const product = dataProducts.find(product => product.id === productId);
+  const product = productsData.find(product => product.id === productId);
   if (!product) return null;
 
   return (

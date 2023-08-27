@@ -76,6 +76,8 @@
   "products": {
     "title": "Produkty",
     "desc": "Eksploruj moje produkty i znajdź ten, który najbardziej Ci odpowiada.",
+    "or": "lub",
+    "price_calc_info": "Cena jest przeliczana na bazie PLN => USD aktualnego kursu walut.",
     "back": "Wróć do projektów",
     "free": "Darmowe",
     "buy_now_on": "Kup teraz na {name}",
@@ -139,7 +141,8 @@
     "pages": {
       "global": {
         "welcome": "Witaj",
-        "technology": "Technologie i narzędzia"
+        "technology": "Technologie i narzędzia",
+        "transfer_products_from_ips_marketplace": "Przenoszenie produktów z IPS Marketplace"
       },
       "collaboration": {
         "title": "Współpraca",

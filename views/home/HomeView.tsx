@@ -6,10 +6,14 @@ import { AboutHomeSection } from './sections/about/AboutHomeSection';
 import { TechnologiesHomeSection } from './sections/technology/TechnologiesHomeSection';
 import { FaqHomeSection } from './sections/faq/FaqHomeSection';
 
-export const HomeView = () => (
+interface Props {
+  oneUSDtoPLN: number | undefined;
+}
+
+export const HomeView = ({ oneUSDtoPLN }: Props) => (
   <div className={style.wrapper}>
     <MainHomeSection />
-    <LastProductsHomeSection />
+    <LastProductsHomeSection oneUSDtoPLN={oneUSDtoPLN} />
     <AboutHomeSection />
     <TechnologiesHomeSection />
     <FaqHomeSection />

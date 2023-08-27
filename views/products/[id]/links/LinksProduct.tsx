@@ -6,7 +6,7 @@ import { ShoppingBag24Filled } from '@fluentui/react-icons';
 import style from './LinksProduct.module.scss';
 import { Button } from '@/components/button/Button';
 
-import { LinksProductsInterface } from '../../dataProducts';
+import { LinksProductsInterface } from '../../productsData';
 
 interface Props {
   links: LinksProductsInterface;
@@ -16,7 +16,7 @@ interface Props {
 export const LinksProduct = ({ links, price }: Props) => {
   const t = useTranslations('products');
 
-  if (!links.demo && !links.github && !links.ipsMarketplace) return null;
+  if (!links.demo && !links.github && !links.invisionize) return null;
 
   return (
     <div className={style.wrapper}>
@@ -25,19 +25,19 @@ export const LinksProduct = ({ links, price }: Props) => {
           GitHub
         </Button>
       )}
-      {links.ipsMarketplace && (
+      {links.invisionize && (
         <Button
-          id="ipsMarketplace"
-          href={links.ipsMarketplace}
+          id="invisionize"
+          href={links.invisionize}
           kind={links.github ? 'secondary' : 'primary'}
           externalLink
         >
           {price ? (
             <>
-              <ShoppingBag24Filled /> {t('buy_now_on', { name: 'IPS Marketplace' })}
+              <ShoppingBag24Filled /> {t('buy_now_on', { name: 'Invisionize' })}
             </>
           ) : (
-            'IPS Marketplace'
+            'Invisionize'
           )}
         </Button>
       )}
