@@ -6,7 +6,11 @@ import { Button } from '@/components/button/Button';
 import { CategoriesProductEnum, productsData } from '../../../products/productsData';
 import { ItemProducts } from '../../../products/item/ItemProducts';
 
-export const LastProductsHomeSection = () => {
+interface Props {
+  oneUSDtoPLN: number | undefined;
+}
+
+export const LastProductsHomeSection = ({ oneUSDtoPLN }: Props) => {
   const t = useTranslations('home');
 
   return (
@@ -24,7 +28,7 @@ export const LastProductsHomeSection = () => {
           .sort((a, b) => b.createdAt - a.createdAt)
           .slice(0, 4)
           .map(item => (
-            <ItemProducts key={item.id} {...item} single />
+            <ItemProducts key={item.id} {...item} oneUSDtoPLN={oneUSDtoPLN} single />
           ))}
       </div>
     </section>

@@ -8,7 +8,11 @@ import style from './ProductsView.module.scss';
 import { CategoriesProductEnum, productsData } from './productsData';
 import { ItemProducts } from './item/ItemProducts';
 
-export const ProductsView = () => {
+interface Props {
+  oneUSDtoPLN: number | undefined;
+}
+
+export const ProductsView = ({ oneUSDtoPLN }: Props) => {
   const searchParams = useSearchParams();
   const filters = searchParams.getAll('filter');
 
@@ -36,7 +40,7 @@ export const ProductsView = () => {
       className={style.wrapper}
       data={data}
       overscan={200}
-      itemContent={(_index, item) => <ItemProducts {...item} />}
+      itemContent={(_index, item) => <ItemProducts {...item} oneUSDtoPLN={oneUSDtoPLN} />}
     />
   );
 };

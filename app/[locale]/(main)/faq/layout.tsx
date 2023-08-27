@@ -3,8 +3,7 @@ import { getTranslator } from 'next-intl/server';
 import { Metadata } from 'next';
 
 import { WrapperFaq } from '@/views/faq/wrapper/WrapperFaq';
-
-import { CONFIG_TITLE } from '../../../../config';
+import { CONFIG } from '@/config';
 
 interface MetadataProps {
   params: {
@@ -18,7 +17,7 @@ export async function generateMetadata({ params: { locale } }: MetadataProps): P
   return {
     title: {
       default: t('faq'),
-      template: `%s - ${t('faq')} - ${CONFIG_TITLE}`
+      template: `%s - ${t('faq')} - ${CONFIG.title}`
     }
   };
 }

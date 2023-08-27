@@ -13,7 +13,7 @@ import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 import style from './ThemeSwitch.module.scss';
-import { CONFIG_LOCAL_STORAGE_THEME } from '@/config';
+import { CONFIG } from '@/config';
 
 import { Tooltip } from '../../tooltip/Tooltip';
 
@@ -28,7 +28,7 @@ export const ThemeSwitch = () => {
   const [theme, setTheme] = useState<ThemeType | null>(null);
 
   useEffect(() => {
-    const theme = localStorage.getItem(CONFIG_LOCAL_STORAGE_THEME);
+    const theme = localStorage.getItem(CONFIG.local_storage_theme);
 
     if (theme === ThemeType.light) {
       setTheme(ThemeType.light);
@@ -50,8 +50,8 @@ export const ThemeSwitch = () => {
       window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (theme === ThemeType.system) {
-      localStorage.removeItem(`${CONFIG_LOCAL_STORAGE_THEME}_manual`);
-      localStorage.removeItem(CONFIG_LOCAL_STORAGE_THEME);
+      localStorage.removeItem(`${CONFIG.local_storage_theme}_manual`);
+      localStorage.removeItem(CONFIG.local_storage_theme);
 
       if (checkDark) {
         document.documentElement.setAttribute('theme', 'dark');
@@ -64,8 +64,8 @@ export const ThemeSwitch = () => {
       return;
     }
 
-    localStorage.setItem(`${CONFIG_LOCAL_STORAGE_THEME}_manual`, '1');
-    localStorage.setItem(CONFIG_LOCAL_STORAGE_THEME, theme);
+    localStorage.setItem(`${CONFIG.local_storage_theme}_manual`, '1');
+    localStorage.setItem(CONFIG.local_storage_theme, theme);
 
     if (theme === ThemeType.dark) {
       document.documentElement.setAttribute('theme', 'dark');

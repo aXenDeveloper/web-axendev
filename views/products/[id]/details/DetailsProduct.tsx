@@ -8,9 +8,26 @@ import { ProductsInterface } from '../../productsData';
 export const DetailsProduct = ({
   categories,
   createdAt,
+  oneUSDtoPLN,
   price
 }: Omit<ProductsInterface, 'images' | 'links'>) => {
   const t = useTranslations('products');
+
+  const convertPrice = () => {
+    if (!price) return <span className={style.highlight}>{t('free')}</span>;
+
+    return (
+      <>
+        <span className={style.highlight}>{price} PLN</span>
+        {oneUSDtoPLN && (
+          <>
+            <span>{t('or')}</span>
+            <span className={style.highlight}>${(price / oneUSDtoPLN).toFixed(2)}</span>
+          </>
+        )}
+      </>
+    );
+  };
 
   return (
     <ul className={style.wrapper}>
@@ -22,7 +39,10 @@ export const DetailsProduct = ({
       </li>
       <li>
         <span>{t('details.price')}</span>
-        <p className={style.highlight}>{price !== 0 ? <>${price}</> : t('free')}</p>
+        <div>
+          <p>{convertPrice()}</p>
+          {price > 0 && <span>{t('price_calc_info')}</span>}
+        </div>
       </li>
       <li>
         <span>{t('details.release_date')}</span>

@@ -14,10 +14,27 @@ export const ItemProducts = ({
   id,
   images,
   name,
+  oneUSDtoPLN,
   price,
   single
 }: ProductsInterface) => {
   const t = useTranslations('products');
+
+  const convertPrice = () => {
+    if (!price) return <span className={style.highlight}>{t('free')}</span>;
+
+    return (
+      <>
+        <span className={style.highlight}>{price} PLN</span>
+        {oneUSDtoPLN && (
+          <>
+            <span>{t('or')}</span>
+            <span className={style.highlight}>${(price / oneUSDtoPLN).toFixed(2)}</span>
+          </>
+        )}
+      </>
+    );
+  };
 
   return (
     <Link
@@ -47,7 +64,7 @@ export const ItemProducts = ({
         <p>{t(`descriptions.${id}`)}</p>
 
         <div className={style.footer}>
-          <span>{price !== 0 ? <>${price}</> : t('free')}</span>
+          <span>{convertPrice()}</span>
           {deprecated && <Badge kind="warning">{t('deprecated.title')}</Badge>}
         </div>
       </div>

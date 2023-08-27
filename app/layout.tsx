@@ -3,7 +3,7 @@ import '@/styles/global.scss';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 
-import { CONFIG_TITLE } from '../config';
+import { CONFIG } from '../config';
 
 export function generateMetadata(): Metadata {
   const desc =
@@ -11,8 +11,8 @@ export function generateMetadata(): Metadata {
 
   return {
     title: {
-      default: CONFIG_TITLE,
-      template: `%s - ${CONFIG_TITLE}`
+      default: CONFIG.title,
+      template: `%s - ${CONFIG.title}`
     },
     icons: {
       shortcut: '/icons/favicon.ico'
@@ -21,14 +21,14 @@ export function generateMetadata(): Metadata {
     themeColor: '#200706',
     metadataBase: new URL('https://axendev.net/'),
     openGraph: {
-      title: CONFIG_TITLE,
+      title: CONFIG.title,
       description: desc,
       images: [
         {
           url: '/icons/og.png',
           width: 1050,
           height: 350,
-          alt: CONFIG_TITLE
+          alt: CONFIG.title
         }
       ]
     }

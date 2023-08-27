@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 
 import { ProductView } from '@/views/products/[id]/ProductView';
 import { productsData } from '@/views/products/productsData';
+import { CONFIG, ExchangeRateToUSD } from '@/config';
 
 interface Props {
   params: {
@@ -27,12 +28,23 @@ export async function generateMetadata({ params: { id, locale } }: Props) {
   };
 }
 
-export default function Page({ params: { id } }: Props) {
+const fetchExchangeRateToUSD = async (): Promise<ExchangeRateToUSD> => {
+  const current = await fetch(CONFIG.nbpAPI);
+
+  return current.json();
+};
+
+export default async function Page({ params: { id } }: Props) {
   const findProduct = productsData.find(product => product.id === id);
 
   if (!findProduct) {
     notFound();
   }
 
-  return <ProductView {...findProduct} />;
+  const exchangeRateToUSD = await fetchExchangeRateToUSD();
+  const current = exchangeRateToUSD.rates;
+
+  return (
+    <ProductView {...findProduct} oneUSDtoPLN={current.length > 0 ? current[0].mid : undefined} />
+  );
 }

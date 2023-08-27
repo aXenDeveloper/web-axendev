@@ -22,12 +22,13 @@ export interface ProductsInterface {
   images: string[];
   links: LinksProductsInterface;
   name: string;
+  oneUSDtoPLN: number | undefined;
   price: number;
   deprecated?: boolean;
   single?: boolean;
 }
 
-export const productsData: ProductsInterface[] = [
+export const productsData: Omit<ProductsInterface, 'oneUSDtoPLN'>[] = [
   {
     id: 'ips-secondary-groups-indicator',
     name: 'Secondary Groups Indicator',
@@ -108,7 +109,7 @@ export const productsData: ProductsInterface[] = [
       invisionize: 'https://forum.invisionize.pl/files/file/791-axen-article-system-in-pages/',
       demo: 'https://1shot2kill.pl/portal/'
     },
-    price: 10,
+    price: 54.99,
     createdAt: 1567063140
   },
   {
@@ -157,7 +158,7 @@ export const productsData: ProductsInterface[] = [
         'https://forum.invisionize.pl/files/file/794-dark-light-fluent-design-theme-edition/',
       demo: 'https://ips.axendev.net/index.php?app=core&module=system&controller=theme&do=change&id=12'
     },
-    price: 36.99,
+    price: 159.99,
     createdAt: 1572346320
   },
   {
@@ -392,7 +393,7 @@ export const productsData: ProductsInterface[] = [
     links: {
       invisionize: 'https://forum.invisionize.pl/files/file/831-axen-advanced-members/'
     },
-    price: 19.99,
+    price: 134.99,
     createdAt: 1623602700
   },
   {
@@ -445,7 +446,7 @@ export const productsData: ProductsInterface[] = [
     links: {
       invisionize: 'https://forum.invisionize.pl/files/file/835-axen-vacation/'
     },
-    price: 19.99,
+    price: 89.99,
     createdAt: 1629019800
   },
   {
@@ -488,7 +489,7 @@ export const productsData: ProductsInterface[] = [
     links: {
       invisionize: 'https://forum.invisionize.pl/files/file/838-axen-content-notes/'
     },
-    price: 29.99,
+    price: 129.99,
     createdAt: 1646567160
   },
   {
@@ -537,7 +538,7 @@ export const productsData: ProductsInterface[] = [
     links: {
       invisionize: 'https://forum.invisionize.pl/files/file/844-axen-player-panel/'
     },
-    price: 59.99,
+    price: 249.99,
     createdAt: 1664550960
   },
   {

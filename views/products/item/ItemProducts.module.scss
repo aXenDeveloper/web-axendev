@@ -101,9 +101,14 @@
     font-weight: 500;
 
     &:first-child {
+      display: flex;
+      gap: 0.25rem;
       font-size: 1rem;
-      font-weight: 500;
-      color: rgb(var(--price));
     }
   }
+}
+
+.highlight {
+  font-weight: 500;
+  color: rgb(var(--category));
 }

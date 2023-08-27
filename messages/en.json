@@ -76,6 +76,8 @@
   "products": {
     "title": "Products",
     "desc": "Explore my products and find the one that suits you best.",
+    "or": "or",
+    "price_calc_info": "The price is calculated based on the PLN => USD current exchange rate.",
     "back": "Back to Products",
     "free": "Free",
     "buy_now_on": "Buy Now on {name}",
