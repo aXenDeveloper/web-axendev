@@ -139,7 +139,8 @@
     "pages": {
       "global": {
         "welcome": "Witaj",
-        "technology": "Technologie i narzędzia"
+        "technology": "Technologie i narzędzia",
+        "transfer_products_from_ips_marketplace": "Przenoszenie produktów z IPS Marketplace"
       },
       "collaboration": {
         "title": "Współpraca",

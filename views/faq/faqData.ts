@@ -16,6 +16,10 @@ export const faqData: NavFaqType[] = [
       {
         id: 'technology',
         url: '/faq/technology'
+      },
+      {
+        id: 'transfer_products_from_ips_marketplace',
+        url: '/faq/transfer_products_from_ips_marketplace'
       }
     ]
   },
