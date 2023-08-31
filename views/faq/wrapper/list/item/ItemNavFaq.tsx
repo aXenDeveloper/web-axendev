@@ -14,13 +14,14 @@ export interface ItemNavFaqType {
   id: string;
   parentId: string;
   url: string;
+  onClick?: () => void;
 }
 
 export interface ItemsNavFaqType extends ItemNavFaqType {
   children?: ItemNavFaqType[];
 }
 
-export const ItemNavFaq = ({ children = [], id, parentId, url }: ItemsNavFaqType) => {
+export const ItemNavFaq = ({ children = [], id, onClick, parentId, url }: ItemsNavFaqType) => {
   const t = useTranslations('faq');
   const pathname = usePathname();
   const { id: parentIdFromParams } = useParams();
@@ -29,6 +30,7 @@ export const ItemNavFaq = ({ children = [], id, parentId, url }: ItemsNavFaqType
     <li>
       <Link
         href={url}
+        onClick={onClick}
         className={cx(style.wrapper, {
           [style.active]: pathname === url,
           [style.open]: children.length > 0 && parentIdFromParams === id
