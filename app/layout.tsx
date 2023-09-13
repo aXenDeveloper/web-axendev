@@ -15,7 +15,9 @@ export function generateMetadata(): Metadata {
       template: `%s - ${CONFIG.title}`
     },
     icons: {
-      shortcut: '/icons/favicon.ico'
+      shortcut: '/icons/favicon.ico',
+      apple: '/icons/favicon.ico',
+      icon: '/icons/favicon.ico'
     },
     description: desc,
     themeColor: '#200706',
