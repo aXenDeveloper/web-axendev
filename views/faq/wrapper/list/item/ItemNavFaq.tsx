@@ -5,7 +5,7 @@ import cx from 'clsx';
 import { usePathname } from 'next-intl/client';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useParams } from 'next/navigation';
-import { CaretRight24Filled } from '@fluentui/react-icons';
+import { ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 import style from './ItemNavFaq.module.scss';
@@ -39,7 +39,7 @@ export const ItemNavFaq = ({ children = [], id, onClick, parentId, url }: ItemsN
         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
         {/* @ts-expect-error */}
         <span>{t(`pages.${parentId}.${id}`)}</span>
-        {children.length > 0 && <CaretRight24Filled />}
+        {children.length > 0 && <ChevronRight />}
       </Link>
 
       {children.length > 0 && (

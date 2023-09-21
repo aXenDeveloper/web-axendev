@@ -60,7 +60,7 @@
   --message-info: 9 105 218;
 }
 
-[theme='dark']:root {
+[data-theme='dark']:root {
   // Global
   --body-background: 0 0 0;
   --container-background: 11 11 15;

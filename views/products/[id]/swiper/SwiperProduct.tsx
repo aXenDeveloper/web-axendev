@@ -8,12 +8,11 @@ import { AnimatePresence } from 'framer-motion';
 
 import { Img } from '@/components/img/Img';
 import style from './SwiperProduct.module.scss';
-
+import { LightBox } from '@/components/lightbox/LightBox';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import 'swiper/css/free-mode';
-import { LightBox } from '../../../../components/lightbox/LightBox';
 
 interface Props {
   images: string[];
@@ -29,7 +28,7 @@ export const SwiperProduct = ({ images }: Props) => {
         slidesPerView={1}
         className={style.swiper}
         modules={[Navigation, Thumbs, FreeMode]}
-        thumbs={{ swiper: thumbsSwiper }}
+        thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
         navigation
       >
         {images.map(image => (
@@ -48,6 +47,7 @@ export const SwiperProduct = ({ images }: Props) => {
           </SwiperSlide>
         ))}
       </Swiper>
+
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}

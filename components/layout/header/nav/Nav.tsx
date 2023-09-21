@@ -1,5 +1,3 @@
-'use client';
-
 import style from './Nav.module.scss';
 import { ItemNav } from './item/ItemNav';
 import { useStateNav } from './useStateNav';

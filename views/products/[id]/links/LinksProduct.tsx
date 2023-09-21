@@ -1,7 +1,5 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
-import { ShoppingBag24Filled } from '@fluentui/react-icons';
+import { ShoppingCart } from 'lucide-react';
 
 import style from './LinksProduct.module.scss';
 import { Button } from '@/components/button/Button';
@@ -34,7 +32,7 @@ export const LinksProduct = ({ links, price }: Props) => {
         >
           {price ? (
             <>
-              <ShoppingBag24Filled /> {t('buy_now_on', { name: 'Invisionize' })}
+              <ShoppingCart /> {t('buy_now_on', { name: 'Invisionize' })}
             </>
           ) : (
             'Invisionize'

@@ -1,15 +1,4 @@
-'use client';
-
-import {
-  Comment24Filled,
-  Apps24Regular,
-  Apps24Filled,
-  Comment24Regular,
-  Question24Filled,
-  Question24Regular,
-  Mail24Filled,
-  Mail24Regular
-} from '@fluentui/react-icons';
+import { Mail, Blocks, HelpCircle, MessagesSquare } from 'lucide-react';
 
 import { ItemNavProps } from './item/ItemNav';
 
@@ -18,36 +7,24 @@ export const useStateNav = (): ItemNavProps[] => {
     {
       id: 'forum',
       href: '/forum',
-      icons: {
-        active: <Comment24Filled />,
-        unActive: <Comment24Regular />
-      }
+      icon: <MessagesSquare />
     },
     {
       id: 'products',
       href: '/products',
-      icons: {
-        active: <Apps24Filled />,
-        unActive: <Apps24Regular />
-      },
+      icon: <Blocks />,
       activeWithChildren: true
     },
     {
       id: 'faq',
       href: '/faq',
-      icons: {
-        active: <Question24Filled />,
-        unActive: <Question24Regular />
-      },
+      icon: <HelpCircle />,
       activeWithChildren: true
     },
     {
       id: 'contact',
       href: '/contact',
-      icons: {
-        active: <Mail24Filled />,
-        unActive: <Mail24Regular />
-      }
+      icon: <Mail />
     }
   ];
 };

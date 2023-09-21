@@ -1,118 +1,57 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 'use client';
 
-import {
-  System24Filled,
-  System24Regular,
-  WeatherMoon24Filled,
-  WeatherMoon24Regular,
-  WeatherSunny24Filled,
-  WeatherSunny24Regular
-} from '@fluentui/react-icons';
+import { Sun, Moon, Computer } from 'lucide-react';
 import cx from 'clsx';
-import { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
 import { useTranslations } from 'next-intl';
+import { useEffect, useState } from 'react';
 
 import style from './ThemeSwitch.module.scss';
-import { CONFIG } from '@/config';
 
 import { Tooltip } from '../../tooltip/Tooltip';
 
-enum ThemeType {
-  light = 'light',
-  dark = 'dark',
-  system = 'system'
-}
-
 export const ThemeSwitch = () => {
   const t = useTranslations('global');
-  const [theme, setTheme] = useState<ThemeType | null>(null);
+  const { setTheme, theme } = useTheme();
+  const [currentTheme, setCurrentTheme] = useState('system');
 
   useEffect(() => {
-    const theme = localStorage.getItem(CONFIG.local_storage_theme);
+    if (!theme) return;
 
-    if (theme === ThemeType.light) {
-      setTheme(ThemeType.light);
-
-      return;
-    }
-
-    if (theme === ThemeType.dark) {
-      setTheme(ThemeType.dark);
-
-      return;
-    }
-
-    setTheme(ThemeType.system);
-  }, []);
-
-  const handleTheme = (theme: ThemeType) => {
-    const checkDark =
-      window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (theme === ThemeType.system) {
-      localStorage.removeItem(`${CONFIG.local_storage_theme}_manual`);
-      localStorage.removeItem(CONFIG.local_storage_theme);
-
-      if (checkDark) {
-        document.documentElement.setAttribute('theme', 'dark');
-      } else {
-        document.documentElement.removeAttribute('theme');
-      }
-
-      setTheme(theme);
-
-      return;
-    }
-
-    localStorage.setItem(`${CONFIG.local_storage_theme}_manual`, '1');
-    localStorage.setItem(CONFIG.local_storage_theme, theme);
-
-    if (theme === ThemeType.dark) {
-      document.documentElement.setAttribute('theme', 'dark');
-    } else {
-      document.documentElement.removeAttribute('theme');
-    }
-
-    setTheme(theme);
-  };
+    setCurrentTheme(theme);
+  }, [theme]);
 
   const themes = [
     {
-      id: ThemeType.light,
-      icons: {
-        active: <WeatherSunny24Filled />,
-        unActive: <WeatherSunny24Regular />
-      }
+      id: 'light',
+      icon: <Sun />
     },
     {
-      id: ThemeType.dark,
-      icons: {
-        active: <WeatherMoon24Filled />,
-        unActive: <WeatherMoon24Regular />
-      }
+      id: 'dark',
+      icon: <Moon />
     },
     {
-      id: ThemeType.system,
-      icons: {
-        active: <System24Filled />,
-        unActive: <System24Regular />
-      }
+      id: 'system',
+      icon: <Computer />
     }
   ];
 
   return (
     <div className={style.wrapper}>
       {themes.map(item => (
+        // @ts-expect-error
         <Tooltip content={t(`theme.${item.id}`)} key={item.id}>
           <button
             type="button"
             className={cx({
-              [style.active]: theme === item.id
+              [style.active]: currentTheme === item.id
             })}
-            onClick={() => handleTheme(item.id)}
+            onClick={() => setTheme(item.id)}
+            // @ts-expect-error
             aria-label={t(`theme.${item.id}`)}
           >
-            {theme === item.id ? item.icons.active : item.icons.unActive}
+            {item.icon}
           </button>
         </Tooltip>
       ))}

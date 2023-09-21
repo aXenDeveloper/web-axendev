@@ -1,6 +1,4 @@
-'use client';
-
-import { ArrowLeft24Filled } from '@fluentui/react-icons';
+import { ArrowLeft } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
@@ -11,7 +9,7 @@ export const BackLinkProduct = () => {
 
   return (
     <Link className={style.wrapper} href="/products">
-      <ArrowLeft24Filled />
+      <ArrowLeft />
       {t('back')}
     </Link>
   );

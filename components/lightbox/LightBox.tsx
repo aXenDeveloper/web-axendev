@@ -10,8 +10,8 @@ import {
 import { Dispatch, SetStateAction, useState } from 'react';
 import { motion } from 'framer-motion';
 import cx from 'clsx';
-import { ChevronLeft24Filled, ChevronRight24Filled, Dismiss24Filled } from '@fluentui/react-icons';
 import { useTranslations } from 'next-intl';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 import style from './LightBox.module.scss';
 import { ImgLightBox } from './img/ImgLightBox';
@@ -93,7 +93,7 @@ export const LightBox = ({ activeId, images, setActiveId }: Props) => {
                     onClick={() => handleChangePhoto({ next: false })}
                     iconOnlyText={t('lightBox.prev')}
                   >
-                    <ChevronLeft24Filled />
+                    <ChevronLeft />
                   </Button>
                 </motion.div>
               )}
@@ -112,7 +112,7 @@ export const LightBox = ({ activeId, images, setActiveId }: Props) => {
                     onClick={() => handleChangePhoto({ next: true })}
                     iconOnlyText={t('lightBox.next')}
                   >
-                    <ChevronRight24Filled />
+                    <ChevronRight />
                   </Button>
                 </motion.div>
               )}
@@ -124,7 +124,7 @@ export const LightBox = ({ activeId, images, setActiveId }: Props) => {
                 onClick={() => setActiveId('')}
                 iconOnlyText={t('lightBox.close')}
               >
-                <Dismiss24Filled />
+                <X />
               </Button>
             </div>
           </motion.div>

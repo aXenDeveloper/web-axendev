@@ -1,9 +1,9 @@
 import { ReactNode } from 'react';
-import '@/styles/global.scss';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 
-import { CONFIG } from '../config';
+import { CONFIG } from '@/config';
+import '@/styles/global.scss';
 
 export function generateMetadata(): Metadata {
   const desc =

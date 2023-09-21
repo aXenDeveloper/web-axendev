@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import { usePathname } from 'next-intl/client';
 import Link from 'next-intl/link';
@@ -7,16 +9,13 @@ import style from './ItemNav.module.scss';
 
 export interface ItemNavProps {
   href: string;
-  icons: {
-    active: JSX.Element;
-    unActive: JSX.Element;
-  };
+  icon: JSX.Element;
   id: string;
   activeWithChildren?: boolean;
   onClick?: () => void;
 }
 
-export const ItemNav = ({ activeWithChildren, href, icons, id, onClick }: ItemNavProps) => {
+export const ItemNav = ({ activeWithChildren, href, icon, id, onClick }: ItemNavProps) => {
   const t = useTranslations('nav');
   const pathname = usePathname();
   const isActive =
@@ -33,7 +32,7 @@ export const ItemNav = ({ activeWithChildren, href, icons, id, onClick }: ItemNa
       >
         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
         {/* @ts-expect-error - Dynamic value */}
-        {isActive ? icons.active : icons.unActive} <span>{t(id)}</span>
+        {icon} <span>{t(id)}</span>
       </Link>
     </li>
   );

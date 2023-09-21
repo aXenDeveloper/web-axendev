@@ -1,9 +1,4 @@
-import {
-  Checkmark24Filled,
-  ErrorCircle24Filled,
-  Warning24Filled,
-  Info24Filled
-} from '@fluentui/react-icons';
+import { XCircle, AlertTriangle, CheckCircle, Info } from 'lucide-react';
 import { ReactNode } from 'react';
 import cx from 'clsx';
 
@@ -21,18 +16,18 @@ interface Props {
 export const Message = ({ children, id, kind = 'info', title }: Props) => {
   const generateIcon = () => {
     if (kind === 'error') {
-      return <ErrorCircle24Filled />;
+      return <XCircle />;
     }
 
     if (kind === 'warning') {
-      return <Warning24Filled />;
+      return <AlertTriangle />;
     }
 
     if (kind === 'success') {
-      return <Checkmark24Filled />;
+      return <CheckCircle />;
     }
 
-    return <Info24Filled />;
+    return <Info />;
   };
 
   return (

@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-sync-scripts */
 import { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
@@ -28,7 +27,6 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
   return (
     <html lang={locale} className={montserrat.className}>
       <body>
-        <script src="/aXenDev_theme.js" />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Provider>
             <Layout>{children}</Layout>
