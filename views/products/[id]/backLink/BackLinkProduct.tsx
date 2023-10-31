@@ -1,8 +1,8 @@
 import { ArrowLeft } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 
 import style from './BackLinkProduct.module.scss';
+import { Link } from '@/i18n';
 
 export const BackLinkProduct = () => {
   const t = useTranslations('products');

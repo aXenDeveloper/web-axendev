@@ -1,4 +1,3 @@
-import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 
 import { Logo } from '@/assets/Logo';
@@ -7,6 +6,7 @@ import { Nav } from './nav/Nav';
 import { Drawer } from './drawer/Drawer';
 import { WrapperHeader } from './wrapper/WrapperHeader';
 import { CONFIG } from '@/config';
+import { Link } from '@/i18n';
 
 import { Switches } from '../../switches/Switches';
 

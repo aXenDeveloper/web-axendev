@@ -1,14 +1,13 @@
 'use client';
 
-import Link from 'next-intl/link';
 import cx from 'clsx';
-import { usePathname } from 'next-intl/client';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useParams } from 'next/navigation';
 import { ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 import style from './ItemNavFaq.module.scss';
+import { Link, usePathname } from '@/i18n';
 
 export interface ItemNavFaqType {
   id: string;

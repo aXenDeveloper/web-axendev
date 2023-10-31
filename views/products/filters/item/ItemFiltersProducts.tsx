@@ -1,10 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { usePathname, useRouter } from 'next-intl/client';
 import { useSearchParams } from 'next/navigation';
 
 import { Checkbox } from '@/components/inputs/checkbox/Checkbox';
+import { usePathname, useRouter } from '@/i18n';
 
 interface Props {
   name: string;

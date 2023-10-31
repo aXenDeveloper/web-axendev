@@ -20,7 +20,6 @@ export function generateMetadata(): Metadata {
       icon: '/icons/favicon.ico'
     },
     description: desc,
-    themeColor: '#200706',
     metadataBase: new URL('https://axendev.net/'),
     openGraph: {
       title: CONFIG.title,

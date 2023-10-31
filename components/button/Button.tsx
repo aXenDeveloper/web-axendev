@@ -1,9 +1,9 @@
-import Link from 'next-intl/link';
 import { MouseEvent, ReactNode } from 'react';
 import cx from 'clsx';
 
 import style from './Button.module.scss';
 import { Tooltip } from '../tooltip/Tooltip';
+import { Link } from '@/i18n';
 
 interface Props {
   children: ReactNode;

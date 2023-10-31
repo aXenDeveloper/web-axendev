@@ -1,11 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { usePathname } from 'next-intl/client';
-import Link from 'next-intl/link';
 import cx from 'clsx';
 
 import style from './ItemNav.module.scss';
+import { Link, usePathname } from '@/i18n';
 
 export interface ItemNavProps {
   href: string;

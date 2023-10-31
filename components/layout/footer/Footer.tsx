@@ -1,5 +1,4 @@
 import cx from 'clsx';
-import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 
 import style from './Footer.module.scss';
@@ -7,6 +6,7 @@ import { Logo } from '@/assets/Logo';
 import { SocialFooter } from './socials/SocialsFooter';
 import { InfoFooter } from './info/InfoFooter';
 import { CONFIG } from '@/config';
+import { Link } from '@/i18n';
 
 export const Footer = () => {
   const t = useTranslations('global');

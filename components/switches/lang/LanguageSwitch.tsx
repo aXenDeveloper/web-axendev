@@ -1,11 +1,10 @@
 'use client';
 
-import Link from 'next-intl/link';
-import { usePathname } from 'next-intl/client';
 import cx from 'clsx';
 import { useLocale } from 'next-intl';
 
 import style from './LanguageSwitch.module.scss';
+import { Link, usePathname } from '@/i18n';
 
 export const LanguageSwitch = () => {
   const pathname = usePathname();

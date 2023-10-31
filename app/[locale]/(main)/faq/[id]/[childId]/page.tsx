@@ -1,9 +1,10 @@
 import { Suspense, lazy } from 'react';
 import { Metadata } from 'next';
-import { getTranslator, redirect } from 'next-intl/server';
+import { getTranslator } from 'next-intl/server';
 
 import { LoadingView } from '@/views/global/loading/LoadingView';
 import { faqData } from '@/views/faq/faqData';
+import { redirect } from '@/i18n';
 
 interface Props {
   params: {

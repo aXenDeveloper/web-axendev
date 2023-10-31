@@ -1,7 +1,7 @@
-import Link from 'next-intl/link';
 import { useTranslations } from 'next-intl';
 
 import style from './ItemReviewsHomeSection.module.scss';
+import { Link } from '@/i18n';
 
 import { productsData } from '../../../../products/productsData';
 
