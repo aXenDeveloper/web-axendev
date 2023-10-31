@@ -27,7 +27,7 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
   return (
     <html lang={locale} className={montserrat.className}>
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages} timeZone="Europe/Warsaw">
           <Provider>
             <Layout>{children}</Layout>
           </Provider>
