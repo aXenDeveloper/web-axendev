@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { getTranslator } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 
 import { WrapperFaq } from '@/views/faq/wrapper/WrapperFaq';
@@ -12,7 +12,7 @@ interface MetadataProps {
 }
 
 export async function generateMetadata({ params: { locale } }: MetadataProps): Promise<Metadata> {
-  const t = await getTranslator(locale, 'nav');
+  const t = await getTranslations({ locale, namespace: 'nav' });
 
   return {
     title: {

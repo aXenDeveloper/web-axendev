@@ -1,4 +1,4 @@
-import { getTranslator } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 
 import { ProductsView } from '@/views/products/ProductsView';
 import { CONFIG, ExchangeRateToUSD } from '@/config';
@@ -10,7 +10,7 @@ interface MetadataProps {
 }
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
-  const t = await getTranslator(locale, 'nav');
+  const t = await getTranslations({ locale, namespace: 'nav' });
 
   return {
     title: t('products')

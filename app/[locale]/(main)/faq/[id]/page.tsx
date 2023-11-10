@@ -1,6 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { Metadata } from 'next';
-import { getTranslator } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 
 import { LoadingView } from '@/views/global/loading/LoadingView';
 import { faqData } from '@/views/faq/faqData';
@@ -14,7 +14,7 @@ interface Props {
 }
 
 export async function generateMetadata({ params: { id, locale } }: Props): Promise<Metadata> {
-  const t = await getTranslator(locale, 'faq');
+  const t = await getTranslations({ locale, namespace: 'faq' });
 
   const isDataExist = faqData
     .map(data => data.items)

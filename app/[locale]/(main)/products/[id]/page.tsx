@@ -1,4 +1,4 @@
-import { getTranslator } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 import { ProductView } from '@/views/products/[id]/ProductView';
@@ -13,7 +13,7 @@ interface Props {
 }
 
 export async function generateMetadata({ params: { id, locale } }: Props) {
-  const t = await getTranslator(locale, 'nav');
+  const t = await getTranslations({ locale, namespace: 'nav' });
 
   const findProduct = productsData.find(product => product.id === id);
 

@@ -1,4 +1,4 @@
-import { getTranslator } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import { Suspense, lazy } from 'react';
 import { notFound } from 'next/navigation';
 
@@ -11,7 +11,7 @@ interface Props {
 }
 
 export async function generateMetadata({ params: { locale } }: Props) {
-  const t = await getTranslator(locale, 'nav');
+  const t = await getTranslations({ locale, namespace: 'nav' });
 
   return {
     title: t('faq')
