@@ -139,6 +139,9 @@ devDependencies:
   prettier:
     specifier: ^3.0.3
     version: 3.1.1
+  resize-observer-polyfill:
+    specifier: ^1.5.1
+    version: 1.5.1
   sass:
     specifier: ^1.69.5
     version: 1.69.6
@@ -6125,7 +6128,6 @@ packages:
 
   /resize-observer-polyfill@1.5.1:
     resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
-    dev: false
 
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}

@@ -5,6 +5,7 @@
   "author": "Maciej Piotr (aXenDev) Balcerzak",
   "license": "GPL-3.0 license",
   "private": true,
+  "type": "module",
   "scripts": {
     "prepare": "husky install",
     "dev": "next dev",
@@ -63,6 +64,7 @@
     "husky": "^8.0.3",
     "jsdom": "^23.0.1",
     "prettier": "^3.0.3",
+    "resize-observer-polyfill": "^1.5.1",
     "sass": "^1.69.5",
     "stylelint": "^16.1.0",
     "stylelint-config-clean-order": "^5.2.0",
