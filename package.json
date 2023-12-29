@@ -16,17 +16,12 @@
     "test": "cross-env TZ=UTC vitest",
     "t:coverage": "cross-env TZ=UTC vitest run --coverage"
   },
-  "overrides": {
-    "next-intl": {
-      "next": "^14.0.0"
-    }
-  },
   "dependencies": {
     "clsx": "^2.0.0",
-    "date-fns": "^2.30.0",
+    "date-fns": "^3.0.6",
     "framer-motion": "^10.16.4",
     "hotkeys-js": "^3.12.0",
-    "lucide-react": "^0.292.0",
+    "lucide-react": "^0.303.0",
     "next": "^14.0.2",
     "next-intl": "^3.0.0-rc.10",
     "next-themes": "^0.2.1",
@@ -35,7 +30,7 @@
     "react-swipeable": "^7.0.1",
     "react-use": "^17.4.0",
     "react-virtuoso": "^4.6.2",
-    "sharp": "^0.32.6",
+    "sharp": "^0.33.1",
     "swiper": "^11.0.4"
   },
   "devDependencies": {
@@ -55,8 +50,8 @@
     "@typescript-eslint/parser": "^6.10.0",
     "@vercel/analytics": "^1.1.1",
     "@vitejs/plugin-react": "^4.1.1",
-    "@vitest/coverage-v8": "^0.34.6",
-    "@vitest/ui": "^0.34.6",
+    "@vitest/coverage-v8": "^1.1.0",
+    "@vitest/ui": "^1.1.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.53.0",
     "eslint-config-next": "^14.0.2",
@@ -66,15 +61,15 @@
     "eslint-plugin-testing-library": "^6.1.2",
     "eslint-plugin-typescript-sort-keys": "^3.1.0",
     "husky": "^8.0.3",
-    "jsdom": "^22.1.0",
+    "jsdom": "^23.0.1",
     "prettier": "^3.0.3",
     "sass": "^1.69.5",
-    "stylelint": "^15.11.0",
+    "stylelint": "^16.1.0",
     "stylelint-config-clean-order": "^5.2.0",
-    "stylelint-config-standard": "^34.0.0",
-    "stylelint-config-standard-scss": "^11.1.0",
-    "stylelint-prettier": "^4.0.2",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^12.0.0",
+    "stylelint-prettier": "^5.0.0",
     "typescript": "^5.2.2",
-    "vitest": "^0.34.6"
+    "vitest": "^1.1.0"
   }
 }
