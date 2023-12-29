@@ -13,14 +13,14 @@ Personal portfolio application.
 Use commands:
 
 ```bash
-npm i
-npm run prepare
+pnpm i
+pnpm prepare
 ```
 
 ## 🛠 Run
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 ## 🔨 Deployment
@@ -28,32 +28,29 @@ npm run dev
 Command:
 
 ```bash
-npm run build
+pnpm build
 ```
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## 💻 Server
 
-Commands:
+Before run server, you need to build project.
 
-1. ```bash
-   npm run build
-   ```
-2. ```bash
-   npm start
-   ```
+```bash
+pnpm start
+```
 
 ## 👍 Tests
 
-- `npm t Button.test.tsx` - run only one test `Button.test.tsx`
-- `npm run t:coverage` - run tests coverage for frontend
+- `pnpm t Button.test.tsx` - run only one test `Button.test.tsx`
+- `pnpm t:coverage` - run tests coverage for frontend
 
 ## 👍 Lint
 
 Commands:
 
 ```bash
-npm run lint
-npm run lint:fix
+pnpm lint
+pnpm lint:fix
 ```
