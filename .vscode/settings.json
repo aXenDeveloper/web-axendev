@@ -11,6 +11,7 @@
     "Swipeable",
     "swiper",
     "testid",
+    "vitnode",
     "webp"
   ],
   "stylelint.validate": ["css", "scss"],
