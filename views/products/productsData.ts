@@ -551,5 +551,38 @@ export const productsData: Omit<ProductsInterface, 'oneUSDtoPLN'>[] = [
     },
     price: 0,
     createdAt: 1664551320
+  },
+  {
+    id: 'vitnode',
+    name: 'VitNode',
+    categories: [
+      CategoriesProductEnum.NODE_JS,
+      CategoriesProductEnum.REACT,
+      CategoriesProductEnum.TYPESCRIPT
+    ],
+    images: [
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/1.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/2.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/3.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/4.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/5.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/6.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/7.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/8.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/9.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/10.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/11.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/12.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/13.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/14.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/15.png',
+      'https://raw.githubusercontent.com/aXenDeveloper/vitnode/canary/docs/assets/screenshots/16.png'
+    ],
+    links: {
+      github: 'https://github.com/aXenDeveloper/vitnode',
+      demo: 'https://frontend.vitnode.com/'
+    },
+    price: 0,
+    createdAt: 1709541781
   }
 ];

@@ -4,7 +4,7 @@
   --layout-max-width: 52rem;
 
   @include mobile {
-    padding: calc(var(--header-height) + 4rem) 1rem 8rem;
+    padding: calc(var(--header-height) + 2rem) 1rem 2rem;
   }
 
   position: relative;
@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
 
-  padding: calc(var(--header-height) + 8rem) 1rem 10rem;
+  padding: calc(var(--header-height) + 8rem) 1rem 8rem;
 
   text-align: center;
 }
@@ -162,5 +162,32 @@
         }
       }
     }
+  }
+}
+
+.vitnode {
+  margin-bottom: 2rem;
+  padding: 0.75rem 1rem;
+
+  color: rgb(var(--button-primary-color));
+
+  background-color: rgb(var(--primary) / 20%);
+  border: 1px solid rgb(var(--button-primary-border));
+  border-radius: var(--radius);
+
+  transition:
+    background-color var(--animation),
+    border-color var(--animation),
+    color var(--animation);
+
+  &:hover {
+    color: rgb(var(--button-primary-hover-color));
+    text-decoration: none;
+    background-color: rgb(var(--button-primary-hover) / 40%);
+    border-color: rgb(var(--button-primary-hover-border));
+  }
+
+  &_bold {
+    font-weight: bold;
   }
 }

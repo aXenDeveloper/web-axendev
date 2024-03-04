@@ -14,7 +14,6 @@ Use commands:
 
 ```bash
 pnpm i
-pnpm prepare
 ```
 
 ## 🛠 Run

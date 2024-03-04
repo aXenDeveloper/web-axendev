@@ -69,10 +69,10 @@
   > p {
     overflow: hidden;
     display: -webkit-box;
+    -webkit-box-orient: vertical;
 
     color: rgb(var(--text-secondary-color));
 
-    -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
   }
 }
