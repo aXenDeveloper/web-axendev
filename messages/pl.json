@@ -133,7 +133,8 @@
       "ips-app-vacation": "Aplikacja dodaje automatyczny system urlopów.",
       "ips-app-fontawesome6": "Aplikacja aktualizuje wersję Font Awesome do wersji 6 bez niszczenia ikon osadzonych w IPS w wersji 4.",
       "ips-app-content-notes": "Aplikacja do tworzenia notatek na zawartości.",
-      "ips-app-axen-player-panel": "Aplikacja do zarządzania serwerami multiplayer."
+      "ips-app-axen-player-panel": "Aplikacja do zarządzania serwerami multiplayer.",
+      "vitnode": "Vitnode to CMS zbudowany z NextJS i NestJS. Zaprojektowany tak, aby był skalowalną i elastyczną platformą do tworzenia stron internetowych i aplikacji opartych na społeczności."
     }
   },
   "faq": {
