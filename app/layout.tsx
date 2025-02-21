@@ -1,50 +1,29 @@
-import { ReactNode } from 'react';
-import { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/react';
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-import { CONFIG } from '@/config';
-import '@/styles/global.scss';
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"]
+});
 
-export function generateMetadata(): Metadata {
-  const desc =
-    "I'm Maciej Piotr Balcerzak and I'm working as Software Engineer with a passion for creating beautiful and user-friendly products. I have experience in frontend, back-end, testing and UX/UI design, but my primary experience is frontend. Also I'm contributor for Invision Community making themes and apps.";
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"]
+});
 
-  return {
-    title: {
-      default: CONFIG.title,
-      template: `%s - ${CONFIG.title}`
-    },
-    icons: {
-      shortcut: '/icons/favicon.ico',
-      apple: '/icons/favicon.ico',
-      icon: '/icons/favicon.ico'
-    },
-    description: desc,
-    metadataBase: new URL('https://axendev.net/'),
-    openGraph: {
-      title: CONFIG.title,
-      description: desc,
-      images: [
-        {
-          url: '/icons/og.png',
-          width: 1050,
-          height: 350,
-          alt: CONFIG.title
-        }
-      ]
-    }
-  };
-}
+export const metadata: Metadata = {
+  title: "aXenDev"
+};
 
-interface Props {
-  children: ReactNode;
-}
-
-export default function RootLayout({ children }: Props) {
+export default function RootLayout({
+  children
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <>
-      {children}
-      <Analytics />
-    </>
+    <html lang="en">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+    </html>
   );
 }
